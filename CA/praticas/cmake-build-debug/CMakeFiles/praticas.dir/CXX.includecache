@@ -1,0 +1,26 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+C:/Users/sofas/Documents/GitHub/Y1S1/CA/praticas/Guide1.cpp
+iostream
+-
+string
+-
+fstream
+-
+iosfwd
+-
+sstream
+-
+cctype
+-
+algorithm
+-
+regex
+-
+

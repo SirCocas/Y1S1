@@ -38,7 +38,7 @@ std::string plainText(std::string fileName){
         std::string stringToRet = str.str();
         stringToRet.erase(std::remove_if(stringToRet.begin(), stringToRet.end(), isIgnorable), stringToRet.end());
         std::transform(stringToRet.begin(), stringToRet.end(), stringToRet.begin(),
-                       [](unsigned char c){ return std::toupper(c); });
+                       [](unsigned char c){ return std::tolower(c); });
         return stringToRet;
     }
     return "";
@@ -82,24 +82,25 @@ void countFrequentLetters(std::string s, int frequencies[26]) {
     }
 }
 
-void frequentNgrams(std::string s, int length, std::map<std::string, int> &ngrams){
-    //there is a problem here somewhere
-    for (int startIndex = 0; startIndex < s.length(); ++startIndex) {
+void frequentNgrams(std::string s, int length, std::map<std::string, std::string> &ngrams){
+    //TODO em vez de count adicionar em string a distância
+    for (int startIndex = 0; startIndex < s.length(); startIndex+=length) {
         std::string sub = s.substr(startIndex,length);
             if(sub.length()==length){
-            int count = 0;
-            for (size_t offset = s.find(sub); offset != std::string::npos;
-                 offset = s.find(sub, offset + sub.length()))
-                {
-                    ++count;
-                }
-            ngrams[sub]=count;
+                std::string count = "";
+                int prev_offset = 0;
+                for (size_t offset = s.find(sub); offset != std::string::npos; offset = s.find(sub, offset + sub.length()))
+                    {
+                        count+= " "+ std::to_string(offset - prev_offset);
+                        prev_offset = offset;
+                    }
+                ngrams[sub]=count;
         }
 
     }
 }
 
-void printMap (std::map <std::string, int> &map){
+void printMap (std::map <std::string, std::string> &map){
     int count = 0;
     for (auto const& x : map)
     {
@@ -136,17 +137,17 @@ std::string getKey (std::string pool, int len){
 int main() {
     std::string masterKey = "QWERTYUIOPASDFGHJKLZXCVBNM"; //every letter of the alphabet
     //Getting plain text from file
-    std::string plaintext = plainText("telltale.txt");
-    double maximumNGram = 0.010;
-    double maxCoincidence = 0.010;
-    int sizeOfNgram = 10;
+    std::string plaintext = plainText("1.txt");
+    //double maximumNGram = 0.10;
+    //double maxCoincidence = 0.010;
+    //int sizeOfNgram = 10;
     //get most frequent ngrams here, iterate possible keys to get a good length -> both in terms of ngrams % and max index of coincidence
-    for (int keylen = 1; keylen < plaintext.length() ; ++keylen) {
-        std::string key = getKey(masterKey, keylen);
-        std::cout << key ;
+    //for (int keylen = 1; keylen < plaintext.length() ; ++keylen) {
+        //std::string key = getKey(masterKey, keylen);
+        //std::cout << key ;
         //int sizeOfNgram = keylen%10;
         //ciphering plaintext
-        std::string ciphered = cipherText(plaintext, key);
+        std::string ciphered = plaintext;
 
         /*
         //deciphering ciphered text
@@ -162,38 +163,38 @@ int main() {
         //counting letter frequency
         int arr [26];
         countFrequentLetters(ciphered, arr);
-        int worstICAppearances = *std::max_element(arr, arr + 26);
-        double worstIC =  ((worstICAppearances+0.0)/(ciphered.length()+0.0))*((0.0+worstICAppearances-1)/(ciphered.length()-1));
+        //int worstICAppearances = *std::max_element(arr, arr + 26);
+        //double worstIC =  ((worstICAppearances+0.0)/(ciphered.length()+0.0))*((0.0+worstICAppearances-1)/(ciphered.length()-1));
 
         //getting NGrams frequency (N is an argument)
-        std::map<std::string, int> ngrams;
-        frequentNgrams(ciphered, sizeOfNgram, ngrams);
+        std::map<std::string, std::string> ngrams;
+        frequentNgrams(ciphered, 3, ngrams);
 
-        /*
+        ///*/*
         // printing frequent NGrams
         printMap(ngrams);
-        */
+        //*/
 
         //getting the most frequent Ngram
-        std::string word = mostFrequentNGram(ngrams);
-        double worstNgram = (ngrams[word]+0.0)/((ciphered.length()/word.length())+0.0);
+        //std::string word = mostFrequentNGram(ngrams);
+
+        //double worstNgram = (ngrams[word]+0.0)/((ciphered.length()/word.length())+0.0);
         /*
         //printing most frequent NGram and its frequency
         std::cout<< word <<std::endl;
         std::cout << ngrams[word] << std::endl;
          */
-        if(worstNgram<= maximumNGram && worstIC <= maxCoincidence){
-            std::cout << " was a good key" <<std::endl;
-            std::cout << word << std::endl;
+        //if(worstNgram<= maximumNGram && worstIC <= maxCoincidence){
+            //std::cout << " was a good key" <<std::endl;
+            //std::cout << word << std::endl;
             //printf("%d\n",worstNgram);
             //std::cout << ciphered <<std::endl;
-            std::cout << "................" << std::endl;
-        }
-        else
-            std::cout << " was a bad key" <<std::endl;
+            //std::cout << "................" << std::endl;
+        //}
+        //else
+           // std::cout << " was a bad key" <<std::endl;
 
-    }
-
+    //}
 
     /*
     Print frequent letters count
@@ -203,12 +204,5 @@ int main() {
 
     */
 
-
-    /*
-     TODO
-     generate key length -> se incidência de n-gram mais frequente for < x%, we gucci,
-     tornar isto num for para parar no primeiro que tiver key length aceitável
-     sendo que o x% pode até ser roubado do ngrama mais comum do plaintext
-     */
     return 0;
 }

@@ -1,0 +1,60 @@
+Exercise: Identify different character encodings
+
+===============================================================================================================================
+    The following instructions are for the Linux command line
+    but this exercise can also be performed on Windows: 
+   
+    https://www.windowscentral.com/install-windows-subsystem-linux-windows-10
+===============================================================================================================================
+
+1) Download the file texts.zip to an empty directory
+
+2) Uncompress the file:
+
+    unzip texts.zip
+    
+3) Observe the content of all files:
+    cat *.txt
+
+    NOTE: the text inside the files is in Portuguese to ensure the appearence of non-ascii characters
+    
+    a. Do all files have the same content?
+    
+    
+4) Observe files size:
+
+    ls -l *.txt
+    
+    a. what is the size of each file?
+
+        text1.txt: 
+        text2.txt: 
+        text3.txt: 
+        text4.txt: 
+  	text5.txt: 
+
+5) Observe file contents files in hexadecimal:
+
+    xxd text1.txt
+    xxd text2.txt
+    xxd text3.txt
+    xxd text4.txt
+    xxd text5.txt
+    
+    Tip 1: for Linux you can use also the Bless GUI application
+    Tip 2: for Windows try https://mh-nexus.de/en/hxd/
+    
+    a. What are the differences between files?
+    
+    
+6) Use the "file" tool to identify file types:
+
+    file *.txt
+    
+    a. Do all files have the same character encoding?
+    
+    b. Which character encoding uses more storage space? And which uses less?
+    
+ 
+    
+    

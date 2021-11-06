@@ -1,0 +1,44 @@
+﻿Created By AccessData® FTK® Imager 4.5.0.3 
+
+Case Information: 
+Acquired using: ADI4.5.0.3
+Case Number: 1
+Evidence Number: 1
+Unique description: HWC3P2
+Examiner: Sofia
+Notes: Homework Class 3 Part 2
+
+--------------------------------------------------------------
+
+Information for C:\Users\sofas\Desktop\ForensicsHW\HWC3P2:
+
+Physical Evidentiary Item (Source) Information:
+[Device Info]
+ Source Type: Physical
+[Drive Geometry]
+ Cylinders: 8 411
+ Heads: 16
+ Sectors per Track: 63
+ Bytes per Sector: 512
+ Sector Count: 8 478 848
+[Physical Drive Information]
+ Drive Interface Type: ide
+[Image]
+ Image Type: VMWare Virtual Disk
+ Source data size: 4140 MB
+ Sector count:    8478848
+[Computed Hashes]
+ MD5 checksum:    31711e85ad17e7fc6aaef7008f117c97
+ SHA1 checksum:   1b09eccfa643e6d2876343523609cfb8403451fe
+
+Image Information:
+ Acquisition started:   Wed Nov  3 09:11:58 2021
+ Acquisition finished:  Wed Nov  3 09:12:19 2021
+ Segment list:
+  C:\Users\sofas\Desktop\ForensicsHW\HWC3P2.E01
+
+Image Verification Results:
+ Verification started:  Wed Nov  3 09:12:19 2021
+ Verification finished: Wed Nov  3 09:12:32 2021
+ MD5 checksum:    31711e85ad17e7fc6aaef7008f117c97 : verified
+ SHA1 checksum:   1b09eccfa643e6d2876343523609cfb8403451fe : verified

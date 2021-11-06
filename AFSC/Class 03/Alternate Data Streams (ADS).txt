@@ -1,0 +1,46 @@
+ADS (Alternate Data Streams) 
+
+Alternate Data Streams (ADS) are a file attribute only found on the NTFS (New Technology File System). 
+
+In this system a file is built up from a couple of attributes, one of them is $Data, aka the data attribute.  
+
+Looking at the regular data stream of a text file it simply contains the text inside the text file.  
+
+But that is only the primary data stream. 
+
+This one is sometimes referred to as the unnamed data stream since the name string of this attribute is empty ( “” ) . So any data stream that has a name is considered alternate. 
+
+These data streams suffer from a bad reputation since they have been used and abused to write hidden data. Varying from data about where a file came from to complete malware files (e.g. Backdoor.Rustock.A) 
+
+ADS is stored inside the NTFS MFT (Master File Table), next to other files attributes, like creation time and date. 
+
+Use FTK Imager to identify ADS info.  
+
+ 
+
+(CMD) 
+
+cd desktop 
+
+echo afsc20212022 > example.txt:showme  (add an ads to a file)
+
+more < example.txt:showme 		(show the content of the ads)
+
+dir example.txt /r			(show all the ads of the file)	
+ 
+ren filename temp.exe			(remove ads from the file)
+- type temp.exe > filename
+- del temp.exe
+
+
+(PowerShell) 
+
+get-item -path c:\users\artur\desktop\example.txt -stream * 
+
+get-content -path c:\users\artur\desktop\example.txt -stream showme 
+
+set-content -path c:\users\artur\desktop\example.txt - stream newstream  (end with ESC) 
+
+gci -recurse | % {gi $_.FullName -stream *} | where stream -ne ':$Data' | where stream -ne 'Zone.Identifier' 
+
+remove-item -path c:\users\artur\desktop\example.txt -stream newstream 

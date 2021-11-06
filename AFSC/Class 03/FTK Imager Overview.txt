@@ -1,0 +1,76 @@
+
+Capturing RAM from a Live Windows Machine
+1) run FTK Imager portable from a USB disk with write blocker
+To enable write protection:
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\StorageDevicePolicies] "WriteProtect"=dword:00000001
+To disable  write protection:
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\StorageDevicePolicies] "WriteProtect"=dword:00000000
+2) The USB disk shall have two partitions: Tools and Evidences 
+3) Run action “Capture Memory” > memory.dump (include pagefile.sys)
+4) pagefile.sys is the "paging file" that contains Windows' virtual memory.  
+5) Select AD1 if you want to analyse the file with Access Data tools. 
+6) Select destination folder “Evidences\Memory” and press OK
+7) Use a hashing tool to hash the results and document all your actions
+8) Digitally sign the report.
+9) memory.dump file will be analysed latter with “Volatility” tool. 
+
+Capturing Protected Files (Registry Settings) from a Live Windows Machine
+1) Run action “Obtain Protected Files”
+2) Notice “warning message”
+3) Select destination folder “Evidences\Registry”, select “full capture” and press OK
+4) Check results and use a hashing tool to hash the results and document all your actions
+7) Digitally sign the report.
+6) Use the “RegistryReport”, “ForensicUserInfo” and “WRR” tools to analyse the captured files.
+
+Create a Forensic Live Image 
+1) Use a write blocker
+2) Run action “Create Image” and select source type (Physical, Logic, Image File, Contents  Folder and Fernico Device)
+3) Select source Drive and Add a destination image format type
+4) RAW dd (bit by bit copy), Smart (used for older linux processes), e01 (encase) and aff (advanced forensics format, open-source similar to e01)
+5) Fill evidence information (adopt evidence tags from your organization)
+6) Select folder destination (Evidences\Image), image file name, fragmentation and compression levels and remember to use 4096 MB fragmentation (or less) if destination drive is FAT32.  
+8) Verify the result hashes and the Report.txt
+9) Digitally sign the report.
+
+Create Custom Content Image 
+1) Locate Custom Content Pane and Drag it to de top
+2) View -> Reset Docked Windows if needed
+3) Select a folder and Add to the Custom Content Sources
+4) Edit the content to use filters (? -replace a char, * -replace all chars, | separate folders)
+5) Create a AD1 image and fill evidence information (set filter by file owner)
+6) Check image summary
+
+Examining Evidence
+- Never work on the original (must reimage or create a copy first)
+  - Create image from source (Physical Drive, Logical Drive, Image File, Content Folder, Fernico Device)
+- Actions in FTK Imager may start either from the menu or from the icons in the top bar
+- If the image is AD encrypted, it must be decrypted first.
+- Add Evidence > Image File (initial E01 file) to the "Evidence Tree" (up left window)
+  - Check partitions and Unpartitioned Space (EFI system partition, main partition, recovery partition)
+  - Notice the Properties panes (bottom windows) 
+  - Notice the Remove Evidence Item action
+- Add Evidence > Custom Image (AD1 file)
+- Image Mounting (Physical and/or Logical only; if we want to use Windows Explorer we must Mount Logical)
+  - Choose read block only or writable (a cache will be used to register the changes, so the original will not be changed)
+  - At the end, do not forget to unmount the image
+
+Triaging Evidence
+- After we add evidence, if we select a folder, the property panes start to show information
+- Check File List, Properties and View panes after you select a Folder
+  - View (Automatic, Text e Hexadecimal); it is possible to export the file (check EXIF properties, if present)
+  - Properties pane gives details about dates and times, verification hashes and NTFS information (MFT record number, Owner Security Identifier (SID), etc).
+- Inside the root is %MFT (Master File Table). It is a database of every file inside the NTFS
+  - Use “find” to look for files; find record holder (magic number: FILE0)
+  - go to offset (current position) to find (creation time of the file 80d (8 bytes) , file change time, file read time)  
+  - This is not the file itself, is just its record on the MFT. 
+- Find deleted files on $Recycle.Bin (user’s SID)
+- Find ADS (Alternate Data Streams) (see ADS explanation)
+
+
+Note:
+
+If you want to install FTK Imager on Linux:
+https://accessdata.com/product-download/debian-and-ubuntu-x64-3-1-1
+tar zxvf ftkimager.3.1.1_ubuntu64.tar.gz
+mv ftkimager /usr/local/bin
+ftkimager –help

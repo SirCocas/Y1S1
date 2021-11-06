@@ -128,29 +128,53 @@ praticas/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\praticas.dir\build.make CMakeFiles/praticas.dir/build
 .PHONY : praticas/fast
 
-Guide1.obj: Guide1.cpp.obj
-.PHONY : Guide1.obj
+Extra1.obj: Extra1.cpp.obj
+.PHONY : Extra1.obj
 
 # target to build an object file
-Guide1.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\praticas.dir\build.make CMakeFiles/praticas.dir/Guide1.cpp.obj
-.PHONY : Guide1.cpp.obj
+Extra1.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\praticas.dir\build.make CMakeFiles/praticas.dir/Extra1.cpp.obj
+.PHONY : Extra1.cpp.obj
 
-Guide1.i: Guide1.cpp.i
-.PHONY : Guide1.i
+Extra1.i: Extra1.cpp.i
+.PHONY : Extra1.i
 
 # target to preprocess a source file
-Guide1.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\praticas.dir\build.make CMakeFiles/praticas.dir/Guide1.cpp.i
-.PHONY : Guide1.cpp.i
+Extra1.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\praticas.dir\build.make CMakeFiles/praticas.dir/Extra1.cpp.i
+.PHONY : Extra1.cpp.i
 
-Guide1.s: Guide1.cpp.s
-.PHONY : Guide1.s
+Extra1.s: Extra1.cpp.s
+.PHONY : Extra1.s
 
 # target to generate assembly for a file
-Guide1.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\praticas.dir\build.make CMakeFiles/praticas.dir/Guide1.cpp.s
-.PHONY : Guide1.cpp.s
+Extra1.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\praticas.dir\build.make CMakeFiles/praticas.dir/Extra1.cpp.s
+.PHONY : Extra1.cpp.s
+
+utils.obj: utils.cpp.obj
+.PHONY : utils.obj
+
+# target to build an object file
+utils.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\praticas.dir\build.make CMakeFiles/praticas.dir/utils.cpp.obj
+.PHONY : utils.cpp.obj
+
+utils.i: utils.cpp.i
+.PHONY : utils.i
+
+# target to preprocess a source file
+utils.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\praticas.dir\build.make CMakeFiles/praticas.dir/utils.cpp.i
+.PHONY : utils.cpp.i
+
+utils.s: utils.cpp.s
+.PHONY : utils.s
+
+# target to generate assembly for a file
+utils.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\praticas.dir\build.make CMakeFiles/praticas.dir/utils.cpp.s
+.PHONY : utils.cpp.s
 
 # Help Target
 help:
@@ -161,9 +185,12 @@ help:
 	@echo ... edit_cache
 	@echo ... rebuild_cache
 	@echo ... praticas
-	@echo ... Guide1.obj
-	@echo ... Guide1.i
-	@echo ... Guide1.s
+	@echo ... Extra1.obj
+	@echo ... Extra1.i
+	@echo ... Extra1.s
+	@echo ... utils.obj
+	@echo ... utils.i
+	@echo ... utils.s
 .PHONY : help
 
 

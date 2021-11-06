@@ -3,4 +3,4 @@ project(praticas)
 
 set(CMAKE_CXX_STANDARD 14)
 
-add_executable(praticas Guide1.cpp)
+add_executable(praticas utils.h utils.cpp Extra1.cpp)

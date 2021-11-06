@@ -1,0 +1,37 @@
+Exercise 1 - Endianness
+
+=======================================================================================
+    The following instructions are for the Linux command line
+    but this exercise can also be performed on Windows
+
+     https://www.windowscentral.com/install-windows-subsystem-linux-windows-10
+=======================================================================================
+
+1) Consider the following data structure:
+   typedef struct {
+      char name[32];           // 32 bytes
+      char postalcode[16];     // 16 bytes
+      uint32_t partner_num;    // 4 bytes
+      float quota;             // 4 bytes
+      char empty[8];           // 8 bytes to lineup the structure to multiples of 16 bytes
+    };                         // Total = 64 bytes
+    
+    
+    a. download the file "file.dat" (available in Moodle)
+    
+    b. do the following command to see the binary content of the file:
+        xxd file.dat
+        Tip: for windows try https://mh-nexus.de/en/hxd/
+    
+    c. can you tell which character encoding is in use for the strings? 
+        Tip: take a look at the name field of several records and the number of bytes for each character.
+    
+    d. what are the hexadecimal values of partner_num and quota for the last record?
+    
+    e. If the system has a big-endian architecture, what are the decimal values of partner_num and quota for the last record? 
+
+        Tip 1: use Bless, an hexadecimal editor you can install in linux: sudo apt-get install bless
+        Tip 2: or you can also use one the onlines tools http://www.h-schmidt.net/FloatConverter/IEEE754.html or https://www.binaryconvert.com
+    
+    f. And if the system has a little-endian architecture?
+    

@@ -65,32 +65,47 @@ include CMakeFiles/praticas.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/praticas.dir/flags.make
 
-CMakeFiles/praticas.dir/Guide1.cpp.obj: CMakeFiles/praticas.dir/flags.make
-CMakeFiles/praticas.dir/Guide1.cpp.obj: ../Guide1.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\sofas\Documents\GitHub\Y1S1\CA\praticas\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/praticas.dir/Guide1.cpp.obj"
-	C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\praticas.dir\Guide1.cpp.obj -c C:\Users\sofas\Documents\GitHub\Y1S1\CA\praticas\Guide1.cpp
+CMakeFiles/praticas.dir/utils.cpp.obj: CMakeFiles/praticas.dir/flags.make
+CMakeFiles/praticas.dir/utils.cpp.obj: ../utils.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\sofas\Documents\GitHub\Y1S1\CA\praticas\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/praticas.dir/utils.cpp.obj"
+	C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\praticas.dir\utils.cpp.obj -c C:\Users\sofas\Documents\GitHub\Y1S1\CA\praticas\utils.cpp
 
-CMakeFiles/praticas.dir/Guide1.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/praticas.dir/Guide1.cpp.i"
-	C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\sofas\Documents\GitHub\Y1S1\CA\praticas\Guide1.cpp > CMakeFiles\praticas.dir\Guide1.cpp.i
+CMakeFiles/praticas.dir/utils.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/praticas.dir/utils.cpp.i"
+	C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\sofas\Documents\GitHub\Y1S1\CA\praticas\utils.cpp > CMakeFiles\praticas.dir\utils.cpp.i
 
-CMakeFiles/praticas.dir/Guide1.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/praticas.dir/Guide1.cpp.s"
-	C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\sofas\Documents\GitHub\Y1S1\CA\praticas\Guide1.cpp -o CMakeFiles\praticas.dir\Guide1.cpp.s
+CMakeFiles/praticas.dir/utils.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/praticas.dir/utils.cpp.s"
+	C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\sofas\Documents\GitHub\Y1S1\CA\praticas\utils.cpp -o CMakeFiles\praticas.dir\utils.cpp.s
+
+CMakeFiles/praticas.dir/Extra1.cpp.obj: CMakeFiles/praticas.dir/flags.make
+CMakeFiles/praticas.dir/Extra1.cpp.obj: ../Extra1.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\sofas\Documents\GitHub\Y1S1\CA\praticas\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/praticas.dir/Extra1.cpp.obj"
+	C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\praticas.dir\Extra1.cpp.obj -c C:\Users\sofas\Documents\GitHub\Y1S1\CA\praticas\Extra1.cpp
+
+CMakeFiles/praticas.dir/Extra1.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/praticas.dir/Extra1.cpp.i"
+	C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\sofas\Documents\GitHub\Y1S1\CA\praticas\Extra1.cpp > CMakeFiles\praticas.dir\Extra1.cpp.i
+
+CMakeFiles/praticas.dir/Extra1.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/praticas.dir/Extra1.cpp.s"
+	C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\sofas\Documents\GitHub\Y1S1\CA\praticas\Extra1.cpp -o CMakeFiles\praticas.dir\Extra1.cpp.s
 
 # Object files for target praticas
 praticas_OBJECTS = \
-"CMakeFiles/praticas.dir/Guide1.cpp.obj"
+"CMakeFiles/praticas.dir/utils.cpp.obj" \
+"CMakeFiles/praticas.dir/Extra1.cpp.obj"
 
 # External object files for target praticas
 praticas_EXTERNAL_OBJECTS =
 
-praticas.exe: CMakeFiles/praticas.dir/Guide1.cpp.obj
+praticas.exe: CMakeFiles/praticas.dir/utils.cpp.obj
+praticas.exe: CMakeFiles/praticas.dir/Extra1.cpp.obj
 praticas.exe: CMakeFiles/praticas.dir/build.make
 praticas.exe: CMakeFiles/praticas.dir/linklibs.rsp
 praticas.exe: CMakeFiles/praticas.dir/objects1.rsp
 praticas.exe: CMakeFiles/praticas.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=C:\Users\sofas\Documents\GitHub\Y1S1\CA\praticas\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable praticas.exe"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=C:\Users\sofas\Documents\GitHub\Y1S1\CA\praticas\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX executable praticas.exe"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\praticas.dir\link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

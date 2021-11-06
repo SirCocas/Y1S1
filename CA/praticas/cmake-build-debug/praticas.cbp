@@ -80,7 +80,13 @@
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="C:/Users/sofas/Documents/GitHub/Y1S1/CA/praticas/Guide1.cpp">
+		<Unit filename="C:/Users/sofas/Documents/GitHub/Y1S1/CA/praticas/Extra1.cpp">
+			<Option target="praticas"/>
+		</Unit>
+		<Unit filename="C:/Users/sofas/Documents/GitHub/Y1S1/CA/praticas/utils.cpp">
+			<Option target="praticas"/>
+		</Unit>
+		<Unit filename="C:/Users/sofas/Documents/GitHub/Y1S1/CA/praticas/utils.h">
 			<Option target="praticas"/>
 		</Unit>
 		<Unit filename="C:/Users/sofas/Documents/GitHub/Y1S1/CA/praticas/CMakeLists.txt">

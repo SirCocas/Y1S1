@@ -1,0 +1,17 @@
+1. Without extracting the virtual machine assigned to your team, add it as an
+evidence source to FTK Imager running on your computer
+
+2. Create a .e01 forensic image from the virtual machine with FTK Imager
+✓ make sure you have enough disk space for the acquisition
+✓ split into 4 096 MB files to fit into FAT32 file systems if needed
+✓ enable compression, it’s slower, but takes less space
+✓ validate the forensic image
+
+
+Note
+====
+
+To convert the Micro XP.vdi into a .vmdk file (readable by FTK), use the following elevated command:
+
+VBoxManage clonehd --format VMDK mydisk.vdi mydisk.vmdk
+

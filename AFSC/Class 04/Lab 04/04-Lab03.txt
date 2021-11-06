@@ -1,0 +1,60 @@
+Exercise: Character encoding conversion
+
+===============================================================================================================================
+    The following instructions are for the Linux command line
+    but this exercise can also be performed on Windows: 
+   
+    https://www.windowscentral.com/install-windows-subsystem-linux-windows-10
+===============================================================================================================================
+
+1) The "iconv" command line tool allows to convert between character encodings. Observe all supported encodings:
+    
+	iconv -l
+    
+    
+2) The "iconv" tool syntax is:
+
+	iconv -f original-encoding -t destination-encoding source-file.txt > destination-file.txt
+
+	# -f stands "from"
+	# -t stands "to"
+    
+	Here is an example:
+
+	iconv -f utf8 -t WINDOWS-1258 in.txt > out.txt
+    
+3) Use again the files inside "texts.zip" from Lab 2.
+
+	a. inside the same directory do the following command:
+        
+	sha256sum *.txt
+        
+	copy/paste the result into this file:
+    
+    
+4) With the "iconv" tool, convert files "text2.txt" and "text4.txt" to UTF-8. 
+
+	The output filenames should be: "textX-utf8.txt" (replace X by 2, or 4 accordingly to the source file). 
+
+	Write into this file the commands you used:
+
+
+
+5) Calculate the SHA256 value again:
+
+	sha256sum *.txt
+    
+	a. Are there any files with the same hash value? If so, which?
+    
+	b. What can you say about the message inside files "text2.txt" and "text4.txt"? 
+		
+	Is it the same?
+	
+	Check the files types again using the file tool (file *.txt).
+
+
+6) To remove the Byte Order Mark (BOM) from a UTF-8 file, use the following command:    
+
+	sed -i 's/\xef\xbb\xbf//' $filename      
+
+   Verify that the "text2-utf8.txt" and "text4-utf8.txt" files have now the same hash value. 

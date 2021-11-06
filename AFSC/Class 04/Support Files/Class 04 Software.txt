@@ -1,0 +1,4 @@
+HxD 2.5.0.0 (Windows x64) 			https://bit.ly/3k2YWvi  https://mh-nexus.de/downloads/HxDSetup.zip
+MFT Stampede 1.9 (Windows x86)			https://bit.ly/3k2WW6g	https://mft-stampede.software.informer.com/download/?cae8582-1.9
+BrowsingHistoryView v2.50 (Windows x64)		https://bit.ly/3q3bre5	https://www.nirsoft.net/utils/browsinghistoryview-x64.zip
+DB Browser for SQLite 3.12.2 (Windows x64) 	https://bit.ly/2ZOYvNJ	https://download.sqlitebrowser.org/DB.Browser.for.SQLite-3.12.2-win64.msi

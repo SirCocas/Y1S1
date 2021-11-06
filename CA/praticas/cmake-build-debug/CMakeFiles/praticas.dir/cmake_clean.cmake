@@ -1,5 +1,6 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/praticas.dir/Guide1.cpp.obj"
+  "CMakeFiles/praticas.dir/Extra1.cpp.obj"
+  "CMakeFiles/praticas.dir/utils.cpp.obj"
   "libpraticas.dll.a"
   "praticas.exe"
   "praticas.exe.manifest"

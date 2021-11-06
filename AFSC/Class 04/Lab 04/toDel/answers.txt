@@ -1,0 +1,69 @@
+Lab 01:
+
+O encoding será unicode, provavelmente utf-8 uma vez que nem todos os caracteres usam os 4 bytes
+
+partner number: 0x304C2020
+quota: 0x5EBA7242
+
+Considering that parter number is an unsigned int, its value would be 810295328 in big endian encoding and 538987568 in little endian encoding
+
+Considering that the quota is a flot, its value is 6.717437E+18 if big endianness is being used, or 60.682 if little endian is in use.
+
+Considering that the quota is the cost, it would be odd if someone had to pay the value set in the big endian case. Therefore, this file is probably using little endianness.
+
+
+Lab 02:
+
+All files have the same content, but their sizes are different.
+
+text1.txt -> 99  bytes
+text2.txt -> 90  bytes
+text3.txt -> 182 bytes
+text4.txt -> 364 bytes
+text5.txt -> 182 bytes
+
+When we see the files' hexadecimal, it is clear that certain ones have characters with different lengths - that is, each character is encoded using more bytes. This hints that each file is encoded differently.
+
+Running file *.txt this suspicion is confirmed.
+
+text1.txt: UTF-8 Unicode text
+text2.txt: ISO-8859 text
+text3.txt: Big-endian UTF-16 Unicode text
+text4.txt: Unicode text, UTF-32, little-endian
+text5.txt: Little-endian UTF-16 Unicode text
+
+The encoding that uses the least storage space is, in this case, ISO-8859 text. The encoding that uses the most amount is Unicode text, UTF-32 little endian.
+
+Lab 03:
+
+3)
+f562c079242a60ff4979c0f62cb72c0042e0b82b609489b0f9380228f1ee070e  text1.txt
+e92f73c778c256b0c2fa42e8f06fa0c2b2952047ef0b9ea535c5ceb4cc7bc8f2  text2.txt
+715f4c571e0354814009d2eeb1b805974b8e4cd31da60b14cfe705cde505c048  text3.txt
+2152c1e661f0d06e9ac88d8ca9ef2e8f9ce6af6d5c650dccd47dcd1aa9d6caee  text4.txt
+f869ac40f2780fdfa3bb126d2825f103bc5364b2cdaa0346d1082c37ecf25a00  text5.txt
+
+4) 
+Separate files will be sent in the archive, both have 99bytes
+
+5)
+f562c079242a60ff4979c0f62cb72c0042e0b82b609489b0f9380228f1ee070e  text1.txt
+e92f73c778c256b0c2fa42e8f06fa0c2b2952047ef0b9ea535c5ceb4cc7bc8f2  text2.txt
+f562c079242a60ff4979c0f62cb72c0042e0b82b609489b0f9380228f1ee070e  text2-utf8.txt
+715f4c571e0354814009d2eeb1b805974b8e4cd31da60b14cfe705cde505c048  text3.txt
+2152c1e661f0d06e9ac88d8ca9ef2e8f9ce6af6d5c650dccd47dcd1aa9d6caee  text4.txt
+f562c079242a60ff4979c0f62cb72c0042e0b82b609489b0f9380228f1ee070e  text4-utf8.txt
+f869ac40f2780fdfa3bb126d2825f103bc5364b2cdaa0346d1082c37ecf25a00  text5.txt
+
+
+text1.txt, text2-utf8.txt and text4-utf8.txt have the same hash value. This makes sense, as all of these files have utf-8 encoding.
+
+The file messages are all the same. When cat is run on each files, only the ones encoded in utf-8 show all characters correctly.
+
+6) The files have always had the same hash values, and it stayed the same.
+
+
+
+
+
+

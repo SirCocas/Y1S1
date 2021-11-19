@@ -1,0 +1,257 @@
+Procesing started. Please wait. This may take a few minutes...
+
+--------------------------------------------------------------------------------------
+iLEAPP v1.15.8: iLEAPP Logs, Events, and Properties Parser
+Objective: Triage iOS Full System Extractions.
+By: Alexis Brignoni | @AlexisBrignoni | abrignoni.com
+By: Yogesh Khatri   | @SwiftForensics | swiftforensics.com
+Building files listing...
+File listing complete - 2 files
+Artifact categories to parse: 105
+File/Directory selected: \\?\C:\Users\sofas\AppData\Local\Temp\Autopsy\class05_20211106_140922\Temp\iLeapp\fs_1
+
+--------------------------------------------------------------------------------------
+
+No files found for lastBuild -> *LastBuildInfo.plist
+
+No files found for accs -> **/Accounts3.sqlite
+
+No files found for addressBook -> **/AddressBook.sqlitedb
+
+No files found for aggDictpasscode -> */AggregateDictionary/ADDataStore.sqlitedb
+
+No files found for aggDictpasscodetype -> */AggregateDictionary/ADDataStore.sqlitedb
+
+No files found for alarms -> *private/var/mobile/Library/Preferences/com.apple.mobiletimerd.plist
+
+No files found for appConduit -> **/AppConduit.log.*
+
+No files found for appGrouplisting -> */Containers/Shared/AppGroup/*/.com.apple.mobile_container_manager.metadata.plist
+
+No files found for appGrouplisting -> **/PluginKitPlugin/*.metadata.plist
+
+No files found for appItunesmeta -> **/iTunesMetadata.plist
+
+No files found for appItunesmeta -> **/BundleMetadata.plist
+
+No files found for appleMapsApplication -> **/Data/Application/*/Library/Preferences/com.apple.Maps.plist
+
+No files found for appleMapsGroup -> **/Shared/AppGroup/*/Library/Preferences/group.com.apple.Maps.plist
+
+No files found for appleMapsSearchHistory -> *private/var/mobile/Containers/Data/Application/*/Library/Maps/GeoHistory.mapsdata
+
+No files found for appleWalletCards -> */private/var/mobile/Containers/Data/Application/*/Library/Caches/com.apple.Passbook/Cache.db*
+
+No files found for appleWalletPasses -> **/nanopasses.sqlite3*
+
+No files found for appleWalletPasses -> **/Cards/*.pkpass/pass.json
+
+No files found for appleWalletTransactions -> **/passes23.sqlite
+
+No files found for appleWifiPlist -> **/com.apple.wifi.plist
+
+No files found for appleWifiPlist -> **/com.apple.wifi-networks.plist.backup
+
+No files found for appleWifiPlist -> **/com.apple.wifi.known-networks.plist
+
+No files found for appleWifiPlist -> **/com.apple.wifi-private-mac-networks.plist
+
+No files found for applicationSnapshots -> **/Library/Caches/Snapshots/*
+
+No files found for applicationSnapshots -> **/SplashBoard/Snapshots/*
+
+No files found for applicationstate -> **/applicationState.db
+
+No files found for bluetooth -> **/com.apple.MobileBluetooth.*
+
+No files found for cacheRoutesGmap -> **/Library/Application Support/CachedRoutes/*.plist
+
+No files found for calendarAll -> **/Calendar.sqlitedb
+
+No files found for callHistory -> **/CallHistory.storedata
+
+No files found for celWireless -> *wireless/Library/Preferences/com.apple.*
+
+No files found for cloudkitNoteSharing -> *NoteStore.sqlite*
+
+No files found for cloudkitParticipants -> *NoteStore.sqlite*
+
+No files found for conDev -> **/iTunes_Control/iTunes/iTunesPrefs
+
+No files found for confaccts -> **/com.apple.accounts.exists.plist
+
+No files found for coreDuetAirplane -> **/coreduetd.db
+
+No files found for coreDuetLock -> **/coreduetd.db
+
+No files found for coreDuetPlugin -> **/coreduetd.db
+
+No files found for dataArk -> **/Library/Lockdown/data_ark.plist
+
+No files found for dataUsageA -> **/DataUsage.sqlite
+
+No files found for dataUsageB -> **/DataUsage-watch.sqlite
+
+No files found for dataUsageProcessA -> **/DataUsage-watch.sqlite
+
+No files found for dataUsageProcessB -> **/DataUsage.sqlite
+
+No files found for deviceActivator -> *private/var/mobile/Library/Logs/mobileactivationd/ucrt_oob_request.txt
+
+No files found for dhcphp -> **/private/var/db/dhcpd_leases*
+
+No files found for dhcpl -> **/private/var/db/dhcpclient/leases/en*
+
+No files found for discordAcct -> */var/mobile/Containers/Data/Application/*/Documents/mmkv/mmkv.default
+
+No files found for discordJson -> */com.hammerandchisel.discord/fsCachedData/*
+
+No files found for discordManifest -> */private/var/mobile/Containers/Data/Application/*/Documents/RCTAsyncLocalStorage_V1/manifest.json
+
+No files found for FacebookMessenger -> **/lightspeed-*.db*
+
+No files found for filesAppsclient -> *private/var/mobile/Library/Application Support/CloudDocs/session/db/client.db*
+
+No files found for filesAppsdb -> *private/var/mobile/Library/Application Support/CloudDocs/session/db/server.db*
+
+No files found for filesAppsm -> *private/var/mobile/Containers/Shared/AppGroup/*/smartfolders.db*
+
+No files found for geodApplications -> **/AP.db
+
+No files found for geodMapTiles -> **/MapTiles.sqlitedb
+
+No files found for geodPDPlaceCache -> **/PDPlaceCache.db
+
+No files found for healthAll -> **/healthdb_secure.sqlite
+
+No files found for icloudMeta -> */iclouddrive/Metadata.txt
+
+No files found for icloudPhotoMeta -> */cloudphotolibrary/Metadata.txt
+
+No files found for icloudSharedalbums -> */private/var/mobile/Media/PhotoData/PhotoCloudSharingData/*
+
+No files found for iCloudWifi -> **/com.apple.wifid.plist
+
+No files found for iconsScreen -> **/SpringBoard/IconState.plist
+
+No files found for imoHD_Chat -> **/IMODb2.sqlite*
+
+No files found for imoHD_Chat -> private/var/mobile/Containers/Data/Application/*/Library/Caches/videos/*.webp
+
+No files found for instagramThreads -> */mobile/Containers/Data/Application/*/Library/Application Support/DirectSQLiteDatabase/*.db*
+
+No files found for interactionCcontacts -> **/interactionC.db
+
+No files found for keyboardAppUsage -> */private/var/mobile/Library/Keyboard/app_usage_database.plist
+
+No files found for keyboardLexicon -> */private/var/mobile/Library/Keyboard/*-dynamic.lm/dynamic-lexicon.dat
+
+No files found for kikMessages -> **/kik.sqlite*
+
+No files found for knowCall -> **/CoreDuet/Knowledge/knowledgeC.db
+
+No files found for locationDallB -> **/cache_encryptedB.db
+
+No files found for locationDparked -> **/Local.sqlite
+
+No files found for locationDparkedhistorical -> **/Local.sqlite
+
+No files found for mailprotect -> **/private/var/mobile/Library/Mail/* Index*
+
+No files found for mediaLibrary -> **/Medialibrary.sqlitedb
+
+No files found for medicalID -> */private/var/mobile/Library/MedicalID/MedicalIDData.archive
+
+No files found for mobileActivationLogs -> **/mobileactivationd.log*
+
+No files found for mobileBackup -> */Preferences/com.apple.MobileBackup.plist
+
+No files found for mobileContainerManager -> **/containermanagerd.log.*
+
+No files found for mobileInstall -> **/mobile_installation.log.*
+
+No files found for notes -> */NoteStore.sqlite*
+
+No files found for notificationsXI -> *PushStore*
+
+No files found for notificationsXII -> *private/var/mobile/Library/UserNotifications*
+
+No files found for ooklaSpeedtestData -> **/speedtest.sqlite*
+
+No files found for photosMetadata -> **/Photos.sqlite
+
+No files found for powerlogAll -> **/CurrentPowerlog.PLSQL
+
+No files found for powerlogGZ -> **/Library/BatteryLife/Archives/powerlog_*.PLSQL.gz
+
+No files found for queryPredictions -> **/query_predictions.db
+
+No files found for quickLook -> */Quick Look/cloudthumbnails.db*
+
+No files found for reminders -> **/Reminders/Container_v1/Stores/*.sqlite*
+
+No files found for routineDCloud -> **/Library/Caches/com.apple.routined/Cloud-V2.sqlite*
+
+No files found for routineDlocations -> **/com.apple.routined/Cache.sqlite*
+
+No files found for routineDLocationsLocal -> **/private/var/mobile/Library/Caches/com.apple.routined/Local.sqlite*
+
+No files found for safariBookmarks -> **/Safari/Bookmarks.db
+
+No files found for safariHistory -> **/Safari/History.db
+
+No files found for safariRecentWebSearches -> **/Library/Preferences/com.apple.mobilesafari.plist
+
+No files found for safariTabs -> **/Safari/BrowserState.db
+
+No files found for safariWebsearch -> **/Safari/History.db
+
+No files found for screentimeAll -> **/RMAdminStore-Local.sqlite
+
+No files found for sms -> **/sms.db
+
+No files found for slack -> */var/mobile/Containers/Data/Application/*/Library/Application Support/Slack/*/Database/main_db*
+
+No files found for tcc -> *TCC.db*
+
+No files found for teams -> */var/mobile/Containers/Shared/AppGroup/*/SkypeSpacesDogfood/*/Skype*.sqlite*
+
+No files found for teams -> */var/mobile/Containers/Shared/AppGroup/*/SkypeSpacesDogfood/Downloads/*/Images/*
+
+No files found for teamsSegment -> */var/mobile/Containers/Data/Application/*/Library/DriveIQ/segments/current/*.*
+
+No files found for tikTok -> */Application/*/Library/Application Support/ChatFiles/*/db.sqlite*
+
+No files found for tikTok -> *AwemeIM.db*
+
+No files found for tileApp -> *private/var/mobile/Containers/Data/Application/*/Library/log/com.thetileapp.tile*
+
+No files found for tileAppDb -> *private/var/mobile/Containers/Shared/AppGroup/*/com.thetileapp.tile-TileNetworkDB.sqlite*
+
+No files found for tileAppDisc -> */private/var/mobile/Containers/Shared/AppGroup/*/com.thetileapp.tile-DiscoveredTileDB.sqlite*
+
+No files found for tileAppNetDb -> */private/var/mobile/Containers/Shared/AppGroup/*/com.thetileapp.tile-TileNetworkDB.sqlite*
+
+No files found for voiceRecordings -> **/Recordings/*.composition/manifest.plist
+
+No files found for voiceRecordings -> **/Recordings/*.m4a
+
+No files found for voiceTriggers -> **/td/audio/*.json
+
+No files found for voiceTriggers -> **/td/audio/*.wav
+
+No files found for walStrings -> **/*-wal
+
+No files found for walStrings -> **/*-journal
+
+No files found for weatherAppLocations -> */private/var/mobile/Containers/Shared/AppGroup/*/Library/Preferences/group.com.apple.weather.plist
+
+No files found for webClips -> *WebClips/*.webclip/*
+
+Processes completed.
+Processing time = 00:00:00
+
+Report generation started.
+Report generation Completed.
+
+Report location: C:\Users\sofas\Documents\GitHub\Y1S1\AFSC\Class 05\Class05\ModuleOutput\iLeapp\2021-11-06 15-01-04 GMT\iLEAPP_Reports_2021-11-06_Saturday_150106

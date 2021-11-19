@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>ALEAPP Report</title>
+        <!-- Dark mode -->
+        <link rel="stylesheet" href="_elements/dark-mode.css">
+        <!-- Font Awesome -->
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css">
+        <!-- Google Fonts Roboto -->
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap">
+        <!-- Bootstrap core CSS -->
+        <link rel="stylesheet" href="_elements/MDB-Free_4.13.0/css/bootstrap.min.css">
+        <!-- Material Design Bootstrap - TOGGLE THIS FOR ALTERNATE DESIGN!-->
+        <link rel="stylesheet" href="_elements/MDB-Free_4.13.0/css/mdb.min.css">
+        <!-- Your custom styles (optional) -->
+        <link rel="stylesheet" href="_elements/dashboard.css">
+        <!-- MDBootstrap Datatables  -->
+        <link rel="stylesheet" href="_elements/MDB-Free_4.13.0/css/addons/datatables.min.css" rel="stylesheet">
+
+        <!-- Icons -->
+        <!--script src="https://unpkg.com/feather-icons/dist/feather.min.js"></script-->
+        <script src="_elements/feather.min.js"></script>
+    </head>
+    <body>
+
+    <!-- Start your project here-->
+    <nav class="navbar navbar-dark fixed-top bg-dark flex-md-nowrap p-0 shadow">
+        <a class="navbar-brand col-sm-3 col-md-2 mr-0" href="#">ALEAPP 1.8.0</a>
+        <div class="custom-control custom-switch">
+            <input type="checkbox" class="custom-control-input" id="darkSwitch" />
+            <label class="custom-control-label mr-2" for="darkSwitch" style="color:white">Dark Switch</label>
+        </div>
+        <script src="_elements/dark-mode-switch.js"></script>
+    </nav>
+
+    <div class="container-fluid">
+        <div class="row">
+
+            <nav class="col-md-2 d-none d-md-block bg-light sidebar">
+                <div class="sidebar-sticky" id="sidebar_id">
+                    <ul class="nav flex-column">
+<h6 class="sidebar-heading justify-content-between align-items-center px-3 mt-4 mb-1 text-muted">
+        Saved Reports
+    </h6>
+    
+    <li class="nav-item">
+        <a class="nav-link  active" href="index.html">
+            <span data-feather="home"></span> Report Home
+        </a>
+    </li>
+    
+    <script>
+        feather.replace();
+        var element = document.getElementById("sidebar_id");
+        var searchParams = new URLSearchParams(window.location.search);
+        if (searchParams.has('navpos')) {
+            var nav_pos = parseInt(searchParams.get('navpos'));
+            if (!isNaN(nav_pos))
+                element.scrollTop = nav_pos;
+        }
+    </script>
+
+                    </ul>
+                    <br /><br />
+                </div>
+            </nav>
+
+            <main role="main" class="col-md-9 ml-sm-auto col-lg-10 px-4">
+
+                <div class="justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
+                    <h1 class="display-5">Android Logs Events And Protobuf Parser</h1>
+                    <h6 class="animated fadeIn mb-3">ALEAPP is an open source project that aims to parse every known Android artifact for the purpose of forensic analysis.</h6>
+                </div>
+<br />
+    <div class="card bg-white" style="padding: 20px;">
+        <h2 class="card-title">Case Information</h2>
+    
+    <ul class="nav nav-tabs" id="myTab" role="tablist">
+        <li class="nav-item">
+            <a class="nav-link active" id="case-tab" data-toggle="tab" href="#case" role="tab" aria-controls="case" aria-selected="true">Details</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" id="run-log-tab" data-toggle="tab" href="#run" role="tab" aria-controls="run" aria-selected="false">Script run log</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" id="files-list-tab" data-toggle="tab" href="#files" role="tab" aria-controls="files" aria-selected="false">Processed files list</a>
+        </li>
+    </ul>
+    <div class="tab-content" id="myTabContent">
+        <div class="tab-pane fade show active" id="case" role="tabpanel" aria-labelledby="case-tab"><br />
+        <div class="table-responsive">
+            <table class="table table-bordered table-hover table-sm" width=70%>
+                <tbody>
+    <tr><td>Extraction location</td><td>C:\Users\sofas\AppData\Local\Temp\Autopsy\class05_20211106_140922\Temp\aLeapp\fs_1</td></tr><tr><td>Extraction type</td><td>fs</td></tr><tr><td>Report directory</td><td>C:\Users\sofas\Documents\GitHub\Y1S1\AFSC\Class 05\Class05\ModuleOutput\aLeapp\2021-11-06 15-00-56 GMT\ALEAPP_Reports_2021-11-06_Saturday_150057</td></tr><tr><td>Processing time</td><td>00:00:00 (Total 0.09375 seconds)</td></tr>
+                </tbody>
+            </table>
+        </div>
+             <p class="note note-primary mb-4">
+                    All dates and times are in UTC unless noted otherwise!
+                </p>
+    </div>
+        <div class="tab-pane fade text-monospace" id="run" role="tabpanel" aria-labelledby="script-run-tab"><br />Procesing started. Please wait. This may take a few minutes...<br>
+
+--------------------------------------------------------------------------------------<br>
+ALEAPP v1.8.0: Android Logs, Events, and Protobuf Parser<br>
+Objective: Triage Android Full System Extractions.<br>
+By: Alexis Brignoni | @AlexisBrignoni | abrignoni.com<br>
+By: Yogesh Khatri   | @SwiftForensics | swiftforensics.com<br>
+Building files listing...<br>
+File listing complete - 2 files<br>
+Artifact categories to parse: 85<br>
+File/Directory selected: \\?\C:\Users\sofas\AppData\Local\Temp\Autopsy\class05_20211106_140922\Temp\aLeapp\fs_1<br>
+
+--------------------------------------------------------------------------------------<br>
+<br>
+No files found for adb_hosts -> **/data/misc/adb/adb_keys<br>
+<br>
+No files found for etc_hosts -> **/system/etc/hosts<br>
+<br>
+No files found for BashHistory -> **/.bash_history<br>
+<br>
+No files found for ChessWithFriends -> **/com.zynga.chess.googleplay/databases/wf_database.sqlite<br>
+<br>
+No files found for ChessWithFriends -> **/com.zynga.chess.googleplay/db/wf_database.sqlite<br>
+<br>
+No files found for WordsWithFriends -> **/com.zynga.words/db/wf_database.sqlite<br>
+<br>
+No files found for accounts_ce -> **/system_ce/*/accounts_ce.db<br>
+<br>
+No files found for accounts_ce_authtokens -> **/accounts_ce.db<br>
+<br>
+No files found for accounts_de -> **/system_de/*/accounts_de.db<br>
+<br>
+No files found for appicons -> */data/com.google.android.apps.nexuslauncher/databases/app_icons.db*<br>
+<br>
+No files found for build -> **/vendor/build.prop<br>
+<br>
+No files found for calllog -> **/com.android.providers.contacts/databases/calllog.db<br>
+<br>
+No files found for Cast -> **/com.google.android.gms/databases/cast.db<br>
+<br>
+No files found for Cello -> */com.google.android.apps.docs/app_cello/*/cello.db*<br>
+<br>
+No files found for Cello -> */com.google.android.apps.docs/files/shiny_blobs/blobs/*<br>
+<br>
+No files found for chrome -> **/app_chrome/Default/History*<br>
+<br>
+No files found for chrome -> **/app_sbrowser/Default/History*<br>
+<br>
+No files found for chrome -> **/app_opera/History*<br>
+<br>
+No files found for chromeBookmarks -> **/app_chrome/Default/Bookmarks*<br>
+<br>
+No files found for chromeBookmarks -> **/app_sbrowser/Default/Bookmarks*<br>
+<br>
+No files found for chromeBookmarks -> **/app_opera/Bookmarks*<br>
+<br>
+No files found for chromeCookies -> **/app_chrome/Default/Cookies*<br>
+<br>
+No files found for chromeCookies -> **/app_sbrowser/Default/Cookies*<br>
+<br>
+No files found for chromeCookies -> **/app_opera/Cookies*<br>
+<br>
+No files found for chromeDownloads -> **/app_chrome/Default/History*<br>
+<br>
+No files found for chromeDownloads -> **/app_sbrowser/Default/History*<br>
+<br>
+No files found for chromeDownloads -> **/app_opera/History*<br>
+<br>
+No files found for chromeLoginData -> **/app_chrome/Default/Login Data*<br>
+<br>
+No files found for chromeLoginData -> **/app_sbrowser/Default/Login Data*<br>
+<br>
+No files found for chromeLoginData -> **/app_opera/Login Data*<br>
+<br>
+No files found for chromeMediaHistory -> **/app_chrome/Default/Media History*<br>
+<br>
+No files found for chromeMediaHistory -> **/app_sbrowser/Default/Media History*<br>
+<br>
+No files found for chromeMediaHistory -> **/app_opera/Media History*<br>
+<br>
+No files found for chromeNetworkActionPredictor -> **/app_Chrome/Default/Network Action Predictor*<br>
+<br>
+No files found for chromeNetworkActionPredictor -> **/app_sbrowser/Default/Network Action Predictor*<br>
+<br>
+No files found for chromeNetworkActionPredictor -> **/app_opera/Network Action Predicator*<br>
+<br>
+No files found for chromeOfflinePages -> **/app_chrome/Default/Offline Pages/metadata/OfflinePages.db*<br>
+<br>
+No files found for chromeOfflinePages -> **/app_sbrowser/Default/Offline Pages/metadata/OfflinePages.db*<br>
+<br>
+No files found for chromeSearchTerms -> **/app_chrome/Default/History*<br>
+<br>
+No files found for chromeSearchTerms -> **/app_sbrowser/Default/History*<br>
+<br>
+No files found for chromeSearchTerms -> **/app_opera/History*<br>
+<br>
+No files found for chromeTopSites -> **/app_chrome/Default/Top Sites*<br>
+<br>
+No files found for chromeTopSites -> **/app_sbrowser/Default/Top Sites*<br>
+<br>
+No files found for chromeTopSites -> **/app_opera/Top Sites*<br>
+<br>
+No files found for chromeWebsearch -> **/app_chrome/Default/History*<br>
+<br>
+No files found for chromeWebsearch -> **/app_sbrowser/Default/History*<br>
+<br>
+No files found for chromeWebsearch -> **/app_opera/History*<br>
+<br>
+No files found for cmh -> **/cmh.db<br>
+<br>
+No files found for DocList -> **/com.google.android.apps.docs/databases/DocList.db*<br>
+<br>
+No files found for emulatedSmeta -> **/com.google.android.providers.media.module/databases/external.db*<br>
+<br>
+No files found for FacebookMessenger -> **/threads_db2*<br>
+<br>
+No files found for gboardCache -> **/com.google.android.inputmethod.latin/databases/trainingcache*.db<br>
+<br>
+No files found for googleNowPlaying -> **/com.google.intelligence.sense/db/history_db*<br>
+<br>
+No files found for googlePlaySearches -> **/com.android.vending/databases/suggestions.db*<br>
+<br>
+No files found for installedappsGass -> */com.google.android.gms/databases/gass.db<br>
+<br>
+No files found for installedappsLibrary -> */com.android.vending/databases/library.db<br>
+<br>
+No files found for installedappsVending -> */com.android.vending/databases/localappstate.db<br>
+<br>
+No files found for pSettings -> */com.google.android.gsf/databases/googlesettings.db*<br>
+<br>
+No files found for package_info -> */system/packages.xml<br>
+<br>
+No files found for packageGplinks -> */system/packages.list<br>
+<br>
+No files found for quicksearch -> */com.google.android.googlequicksearchbox/app_session/*.binarypb<br>
+<br>
+No files found for quicksearch_recent -> */com.google.android.googlequicksearchbox/files/recently/*<br>
+<br>
+No files found for recentactivity -> */system_ce/*<br>
+<br>
+No files found for lgRCS -> */mmssms.db*<br>
+<br>
+No files found for permissions -> */system/packages.xml<br>
+<br>
+No files found for roles -> */system/users/*/roles.xml<br>
+<br>
+No files found for roles -> */misc_de/*/apexdata/com.android.permission/roles.xml<br>
+<br>
+No files found for runtimePerms -> */system/users/*/runtime-permissions.xml<br>
+<br>
+No files found for runtimePerms -> */misc_de/*/apexdata/com.android.permission/runtime-permissions.xml<br>
+<br>
+No files found for scontextLog -> */com.samsung.android.providers.context/databases/ContextLog.db<br>
+<br>
+No files found for settingsSecure -> */system/users/*/settings_secure.xml<br>
+<br>
+No files found for siminfo -> */user_de/*/com.android.providers.telephony/databases/telephony.db<br>
+<br>
+No files found for smanagerCrash -> */com.samsung.android.sm/databases/sm.db<br>
+<br>
+No files found for smanagerLow -> */com.samsung.android.sm/databases/lowpowercontext-system-db<br>
+<br>
+No files found for smembersAppInv -> */com.samsung.oh/databases/com_pocketgeek_sdk_app_inventory.db<br>
+<br>
+No files found for smembersEvents -> */com.samsung.oh/databases/com_pocketgeek_sdk.db<br>
+<br>
+No files found for sms_mms -> */com.android.providers.telephony/databases/mmssms*<br>
+<br>
+No files found for smyfilesRecents -> */com.sec.android.app.myfiles/databases/myfiles.db<br>
+<br>
+No files found for smyFiles -> **/com.sec.android.app.myfiles/databases/MyFiles*.db*<br>
+<br>
+No files found for smyfilesStored -> **/com.sec.android.app.myfiles/databases/FileCache.db<br>
+<br>
+No files found for swellbeing -> **/com.samsung.android.forest/databases/dwbCommon.db*<br>
+<br>
+No files found for tikTok -> *_im.db*<br>
+<br>
+No files found for tikTok -> *db_im_xx*<br>
+<br>
+No files found for Turbo -> */com.google.android.apps.turbo/databases/turbo.db*<br>
+<br>
+No files found for usageapps -> **/com.google.android.as/databases/reflection_gel_events.db*<br>
+<br>
+No files found for usagestats -> */system/usagestats/*<br>
+<br>
+No files found for usagestats -> **/system_ce/*/usagestats*<br>
+<br>
+No files found for userDict -> **/com.android.providers.userdictionary/databases/user_dict.db*<br>
+<br>
+No files found for Viber -> **/com.viber.voip/databases/*<br>
+<br>
+No files found for vlcMedia -> *vlc_media.db*<br>
+<br>
+No files found for vlcThumbs -> */org.videolan.vlc/files/medialib/*.jpg<br>
+<br>
+No files found for walStrings -> **/*-wal<br>
+<br>
+No files found for walStrings -> **/*-journal<br>
+<br>
+No files found for wellbeing -> **/com.google.android.apps.wellbeing/databases/app_usage*<br>
+<br>
+No files found for wellbeingURLs -> **/com.google.android.apps.wellbeing/databases/app_usage*<br>
+<br>
+No files found for wellbeingaccount -> **/com.google.android.apps.wellbeing/files/AccountData.pb<br>
+<br>
+No files found for wifiHotspot -> **/misc/wifi/softap.conf<br>
+<br>
+No files found for wifiHotspot -> **/misc**/apexdata/com.android.wifi/WifiConfigStoreSoftAp.xml<br>
+<br>
+No files found for wifiProfiles -> **/misc/wifi/WifiConfigStore.xml<br>
+<br>
+No files found for wifiProfiles -> **/misc**/apexdata/com.android.wifi/WifiConfigStore.xml<br>
+<br>
+No files found for Xender -> **/cn.xender/databases/trans-history-db*<br>
+<br>
+No files found for Zapya -> **/com.dewmobile.kuaiya.play/databases/transfer20.db*<br>
+<br>
+No files found for Whatsapp -> */com.whatsapp/databases/*.db*<br>
+<br>
+No files found for shareit -> */com.lenovo.anyshare.gps/databases/history.db*<br>
+<br>
+No files found for tangomessage -> **/com.sgiggle.production/files/tc.db*<br>
+<br>
+No files found for imo -> **/com.imo.android.imous/databases/*.db*<br>
+<br>
+No files found for contacts -> **/com.android.providers.contacts/databases/contact*<br>
+<br>
+No files found for contacts -> **/com.sec.android.provider.logsprovider/databases/logs.db*<br>
+<br>
+No files found for calllogs -> **/com.android.providers.contacts/databases/contact*<br>
+<br>
+No files found for calllogs -> **/com.sec.android.provider.logsprovider/databases/logs.db*<br>
+<br>
+No files found for Oruxmaps -> **/oruxmaps/tracklogs/oruxmapstracks.db*<br>
+<br>
+No files found for textnow -> **/com.enflick.android.TextNow/databases/textnow_data.db*<br>
+<br>
+No files found for skype -> **/com.skype.raider/databases/live*<br>
+<br>
+No files found for line -> **/jp.naver.line.android/databases/**<br>
+<br>
+No files found for cachelocation -> **/com.google.android.location/files/cache.cell/cache.cell<br>
+<br>
+No files found for cachelocation -> **/com.google.android.location/files/cache.wifi/cache.wifi<br>
+<br>
+No files found for browserlocation -> **/com.android.browser/app_geolocation/CachedGeoposition.db<br>
+<br>
+No files found for googlemaplocation -> **/com.google.android.apps.maps/databases/da_destination_history*<br>
+<br>
+Processes completed.<br>
+Processing time = 00:00:00<br>
+<br>
+Report generation started.<br>
+</div>
+        <div class="tab-pane fade" id="files" role="tabpanel" aria-labelledby="profile-tab"><br />Extraction/Path selected: \\?\C:\Users\sofas\AppData\Local\Temp\Autopsy\class05_20211106_140922\Temp\aLeapp\fs_1<br><br>No files found for adb_hosts -> **/data/misc/adb/adb_keys<br><br>No files found for etc_hosts -> **/system/etc/hosts<br><br>No files found for BashHistory -> **/.bash_history<br><br>No files found for ChessWithFriends -> **/com.zynga.chess.googleplay/databases/wf_database.sqlite<br><br>No files found for ChessWithFriends -> **/com.zynga.chess.googleplay/db/wf_database.sqlite<br><br>No files found for WordsWithFriends -> **/com.zynga.words/db/wf_database.sqlite<br><br>No files found for accounts_ce -> **/system_ce/*/accounts_ce.db<br><br>No files found for accounts_ce_authtokens -> **/accounts_ce.db<br><br>No files found for accounts_de -> **/system_de/*/accounts_de.db<br><br>No files found for appicons -> */data/com.google.android.apps.nexuslauncher/databases/app_icons.db*<br><br>No files found for build -> **/vendor/build.prop<br><br>No files found for calllog -> **/com.android.providers.contacts/databases/calllog.db<br><br>No files found for Cast -> **/com.google.android.gms/databases/cast.db<br><br>No files found for Cello -> */com.google.android.apps.docs/app_cello/*/cello.db*<br><br>No files found for Cello -> */com.google.android.apps.docs/files/shiny_blobs/blobs/*<br><br>No files found for chrome -> **/app_chrome/Default/History*<br><br>No files found for chrome -> **/app_sbrowser/Default/History*<br><br>No files found for chrome -> **/app_opera/History*<br><br>No files found for chromeBookmarks -> **/app_chrome/Default/Bookmarks*<br><br>No files found for chromeBookmarks -> **/app_sbrowser/Default/Bookmarks*<br><br>No files found for chromeBookmarks -> **/app_opera/Bookmarks*<br><br>No files found for chromeCookies -> **/app_chrome/Default/Cookies*<br><br>No files found for chromeCookies -> **/app_sbrowser/Default/Cookies*<br><br>No files found for chromeCookies -> **/app_opera/Cookies*<br><br>No files found for chromeDownloads -> **/app_chrome/Default/History*<br><br>No files found for chromeDownloads -> **/app_sbrowser/Default/History*<br><br>No files found for chromeDownloads -> **/app_opera/History*<br><br>No files found for chromeLoginData -> **/app_chrome/Default/Login Data*<br><br>No files found for chromeLoginData -> **/app_sbrowser/Default/Login Data*<br><br>No files found for chromeLoginData -> **/app_opera/Login Data*<br><br>No files found for chromeMediaHistory -> **/app_chrome/Default/Media History*<br><br>No files found for chromeMediaHistory -> **/app_sbrowser/Default/Media History*<br><br>No files found for chromeMediaHistory -> **/app_opera/Media History*<br><br>No files found for chromeNetworkActionPredictor -> **/app_Chrome/Default/Network Action Predictor*<br><br>No files found for chromeNetworkActionPredictor -> **/app_sbrowser/Default/Network Action Predictor*<br><br>No files found for chromeNetworkActionPredictor -> **/app_opera/Network Action Predicator*<br><br>No files found for chromeOfflinePages -> **/app_chrome/Default/Offline Pages/metadata/OfflinePages.db*<br><br>No files found for chromeOfflinePages -> **/app_sbrowser/Default/Offline Pages/metadata/OfflinePages.db*<br><br>No files found for chromeSearchTerms -> **/app_chrome/Default/History*<br><br>No files found for chromeSearchTerms -> **/app_sbrowser/Default/History*<br><br>No files found for chromeSearchTerms -> **/app_opera/History*<br><br>No files found for chromeTopSites -> **/app_chrome/Default/Top Sites*<br><br>No files found for chromeTopSites -> **/app_sbrowser/Default/Top Sites*<br><br>No files found for chromeTopSites -> **/app_opera/Top Sites*<br><br>No files found for chromeWebsearch -> **/app_chrome/Default/History*<br><br>No files found for chromeWebsearch -> **/app_sbrowser/Default/History*<br><br>No files found for chromeWebsearch -> **/app_opera/History*<br><br>No files found for cmh -> **/cmh.db<br><br>No files found for DocList -> **/com.google.android.apps.docs/databases/DocList.db*<br><br>No files found for emulatedSmeta -> **/com.google.android.providers.media.module/databases/external.db*<br><br>No files found for FacebookMessenger -> **/threads_db2*<br><br>No files found for gboardCache -> **/com.google.android.inputmethod.latin/databases/trainingcache*.db<br><br>No files found for googleNowPlaying -> **/com.google.intelligence.sense/db/history_db*<br><br>No files found for googlePlaySearches -> **/com.android.vending/databases/suggestions.db*<br><br>No files found for installedappsGass -> */com.google.android.gms/databases/gass.db<br><br>No files found for installedappsLibrary -> */com.android.vending/databases/library.db<br><br>No files found for installedappsVending -> */com.android.vending/databases/localappstate.db<br><br>No files found for pSettings -> */com.google.android.gsf/databases/googlesettings.db*<br><br>No files found for package_info -> */system/packages.xml<br><br>No files found for packageGplinks -> */system/packages.list<br><br>No files found for quicksearch -> */com.google.android.googlequicksearchbox/app_session/*.binarypb<br><br>No files found for quicksearch_recent -> */com.google.android.googlequicksearchbox/files/recently/*<br><br>No files found for recentactivity -> */system_ce/*<br><br>No files found for lgRCS -> */mmssms.db*<br><br>No files found for permissions -> */system/packages.xml<br><br>No files found for roles -> */system/users/*/roles.xml<br><br>No files found for roles -> */misc_de/*/apexdata/com.android.permission/roles.xml<br><br>No files found for runtimePerms -> */system/users/*/runtime-permissions.xml<br><br>No files found for runtimePerms -> */misc_de/*/apexdata/com.android.permission/runtime-permissions.xml<br><br>No files found for scontextLog -> */com.samsung.android.providers.context/databases/ContextLog.db<br><br>No files found for settingsSecure -> */system/users/*/settings_secure.xml<br><br>No files found for siminfo -> */user_de/*/com.android.providers.telephony/databases/telephony.db<br><br>No files found for smanagerCrash -> */com.samsung.android.sm/databases/sm.db<br><br>No files found for smanagerLow -> */com.samsung.android.sm/databases/lowpowercontext-system-db<br><br>No files found for smembersAppInv -> */com.samsung.oh/databases/com_pocketgeek_sdk_app_inventory.db<br><br>No files found for smembersEvents -> */com.samsung.oh/databases/com_pocketgeek_sdk.db<br><br>No files found for sms_mms -> */com.android.providers.telephony/databases/mmssms*<br><br>No files found for smyfilesRecents -> */com.sec.android.app.myfiles/databases/myfiles.db<br><br>No files found for smyFiles -> **/com.sec.android.app.myfiles/databases/MyFiles*.db*<br><br>No files found for smyfilesStored -> **/com.sec.android.app.myfiles/databases/FileCache.db<br><br>No files found for swellbeing -> **/com.samsung.android.forest/databases/dwbCommon.db*<br><br>No files found for tikTok -> *_im.db*<br><br>No files found for tikTok -> *db_im_xx*<br><br>No files found for Turbo -> */com.google.android.apps.turbo/databases/turbo.db*<br><br>No files found for usageapps -> **/com.google.android.as/databases/reflection_gel_events.db*<br><br>No files found for usagestats -> */system/usagestats/*<br><br>No files found for usagestats -> **/system_ce/*/usagestats*<br><br>No files found for userDict -> **/com.android.providers.userdictionary/databases/user_dict.db*<br><br>No files found for Viber -> **/com.viber.voip/databases/*<br><br>No files found for vlcMedia -> *vlc_media.db*<br><br>No files found for vlcThumbs -> */org.videolan.vlc/files/medialib/*.jpg<br><br>No files found for walStrings -> **/*-wal<br><br>No files found for walStrings -> **/*-journal<br><br>No files found for wellbeing -> **/com.google.android.apps.wellbeing/databases/app_usage*<br><br>No files found for wellbeingURLs -> **/com.google.android.apps.wellbeing/databases/app_usage*<br><br>No files found for wellbeingaccount -> **/com.google.android.apps.wellbeing/files/AccountData.pb<br><br>No files found for wifiHotspot -> **/misc/wifi/softap.conf<br><br>No files found for wifiHotspot -> **/misc**/apexdata/com.android.wifi/WifiConfigStoreSoftAp.xml<br><br>No files found for wifiProfiles -> **/misc/wifi/WifiConfigStore.xml<br><br>No files found for wifiProfiles -> **/misc**/apexdata/com.android.wifi/WifiConfigStore.xml<br><br>No files found for Xender -> **/cn.xender/databases/trans-history-db*<br><br>No files found for Zapya -> **/com.dewmobile.kuaiya.play/databases/transfer20.db*<br><br>No files found for Whatsapp -> */com.whatsapp/databases/*.db*<br><br>No files found for shareit -> */com.lenovo.anyshare.gps/databases/history.db*<br><br>No files found for tangomessage -> **/com.sgiggle.production/files/tc.db*<br><br>No files found for imo -> **/com.imo.android.imous/databases/*.db*<br><br>No files found for contacts -> **/com.android.providers.contacts/databases/contact*<br><br>No files found for contacts -> **/com.sec.android.provider.logsprovider/databases/logs.db*<br><br>No files found for calllogs -> **/com.android.providers.contacts/databases/contact*<br><br>No files found for calllogs -> **/com.sec.android.provider.logsprovider/databases/logs.db*<br><br>No files found for Oruxmaps -> **/oruxmaps/tracklogs/oruxmapstracks.db*<br><br>No files found for textnow -> **/com.enflick.android.TextNow/databases/textnow_data.db*<br><br>No files found for skype -> **/com.skype.raider/databases/live*<br><br>No files found for line -> **/jp.naver.line.android/databases/**<br><br>No files found for cachelocation -> **/com.google.android.location/files/cache.cell/cache.cell<br><br>No files found for cachelocation -> **/com.google.android.location/files/cache.wifi/cache.wifi<br><br>No files found for browserlocation -> **/com.android.browser/app_geolocation/CachedGeoposition.db<br><br>No files found for googlemaplocation -> **/com.google.android.apps.maps/databases/da_destination_history*<br><br></div>
+    </div>
+</div>
+                <br /><br /><br />
+                <div class="text-center">
+                    <br />
+                    <div class="card bg-white mb-3" style="max-width: 500px; margin:auto">
+                        <div class="row no-gutters">
+                            <div class="col-md-4">
+                                <img src="_elements/logo.jpg" class="card-img" alt="DFIR">
+                            </div>
+                            <div class="col-md-8">
+                            <div class="card-body">
+                                <h5 class="card-title">Thank you for using ALEAPP</h5>
+                                <p class="card-text">
+                                    Support open source and report any bugs!
+                                </p>
+                                <!--Github-->
+                                <a class="btn-floating btn-git" type="button" role="button" href="https://github.com/abrignoni/aleapp" target="_blank"><i class="fab fa-github"></i> Project Home </a>
+                                <p class="card-text fadeIn"><small class="text-muted">ALEAPP Team</small></p>
+                            </div>
+                            </div>
+                        </div>
+                    </div>
+                    <br />
+                    <br />
+                </div><!--end text-center area-->
+
+    <div class="alert alert-light mb-4 bg-white" style="border-style: none">
+        <h4 class="text-center">Aleapp contributors</h4>
+        <ul class="list-group" style="max-width: 500px; margin:auto">
+            
+            <li class="list-group-item d-flex justify-content-between align-items-center bg-white"><i class="fas fa-medal"></i>Alexis Brignoni
+                <span>
+                    <a href="https://abrignoni.com" target="_blank"><i class="fab fa-blogger-b fa-fw"></i></a> &nbsp;
+<a href="https://twitter.com/@AlexisBrignoni" target="_blank"><i class="fab fa-twitter fa-fw"></i></a> &nbsp;
+<a href="https://github.com/abrignoni" target="_blank"><i class="fab fa-github fa-fw"></i></a>
+
+                </span>
+            </li>
+
+            <li class="list-group-item d-flex justify-content-between align-items-center bg-white"><i class="fas fa-medal"></i>Yogesh Khatri
+                <span>
+                    <a href="https://swiftforensics.com" target="_blank"><i class="fab fa-blogger-b fa-fw"></i></a> &nbsp;
+<a href="https://twitter.com/@SwiftForensics" target="_blank"><i class="fab fa-twitter fa-fw"></i></a> &nbsp;
+<a href="https://github.com/ydkhatri" target="_blank"><i class="fab fa-github fa-fw"></i></a>
+
+                </span>
+            </li>
+
+            <li class="list-group-item d-flex justify-content-between align-items-center bg-white"><i class="fas fa-medal"></i>Kevin Pagano
+                <span>
+                    <a href="https://stark4n6.com" target="_blank"><i class="fab fa-blogger-b fa-fw"></i></a> &nbsp;
+<a href="https://twitter.com/@KevinPagano3" target="_blank"><i class="fab fa-twitter fa-fw"></i></a> &nbsp;
+<a href="https://github.com/stark4n6" target="_blank"><i class="fab fa-github fa-fw"></i></a>
+
+                </span>
+            </li>
+
+        </ul>
+    </div>
+
+            </main>
+        </div>
+    </div>
+
+    <!-- End your project here-->
+
+    <!-- jQuery -->
+    <script type="text/javascript" src="_elements/MDB-Free_4.13.0/js/jquery.min.js"></script>
+    <!-- Bootstrap tooltips -->
+    <script type="text/javascript" src="_elements/MDB-Free_4.13.0/js/popper.min.js"></script>
+    <!-- Bootstrap core JavaScript -->
+    <script type="text/javascript" src="_elements/MDB-Free_4.13.0/js/bootstrap.js"></script>
+    <!-- MDB core JavaScript -->
+    <script type="text/javascript" src="_elements/MDB-Free_4.13.0/js/mdb.min.js"></script>
+    <!-- Your custom scripts -->
+    <!-- MDBootstrap Datatables  -->
+    <script type="text/javascript" src="_elements/MDB-Free_4.13.0/js/addons/datatables.min.js"></script>
+    <script>
+        feather.replace()
+    </script>
+
+    <script>
+        var elemScrollTop = document.getElementById("sidebar_id").scrollTop.toString();
+        document.addEventListener("DOMContentLoaded", function() {
+            var element = document.getElementById("sidebar_id");
+            element.addEventListener("scroll", function() {
+                elemScrollTop = document.getElementById("sidebar_id").scrollTop.toString();
+            });
+        });
+        $('a.nav-link').click(function(e) {
+            e.preventDefault();
+            location.href = $(this).attr('href') + "?navpos=" + elemScrollTop;
+        });
+    </script>
+
+    </body>
+</html>

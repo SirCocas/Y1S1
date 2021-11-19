@@ -1,0 +1,2 @@
+Prefetch Directory is  C:\Users\sofas\AppData\Local\Temp\Autopsy\class05_20211106_140922\Temp\RecentActivity\DellLatitudeCPi.E01-prefetch_0
+DB file is  C:\Users\sofas\Documents\GitHub\Y1S1\AFSC\Class 05\Class05\ModuleOutput\prefetch\DellLatitudeCPi.E01-Autopsy_PF_DB.db3

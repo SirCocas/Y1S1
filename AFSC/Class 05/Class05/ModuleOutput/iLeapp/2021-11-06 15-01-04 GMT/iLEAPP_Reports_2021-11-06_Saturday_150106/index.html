@@ -1,0 +1,679 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>iLEAPP Report</title>
+        <!-- Dark mode -->
+        <link rel="stylesheet" href="_elements/dark-mode.css">
+        <!-- Font Awesome -->
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css">
+        <!-- Google Fonts Roboto -->
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap">
+        <!-- Bootstrap core CSS -->
+        <link rel="stylesheet" href="_elements/MDB-Free_4.13.0/css/bootstrap.min.css">
+        <!-- Material Design Bootstrap - TOGGLE THIS FOR ALTERNATE DESIGN!-->
+        <link rel="stylesheet" href="_elements/MDB-Free_4.13.0/css/mdb.min.css">
+        <!-- Your custom styles (optional) -->
+        <link rel="stylesheet" href="_elements/dashboard.css">
+        <link rel="stylesheet" href="_elements/chats.css">
+        <!-- MDBootstrap Datatables  -->
+        <link rel="stylesheet" href="_elements/MDB-Free_4.13.0/css/addons/datatables.min.css" rel="stylesheet">
+
+        <!-- Icons -->
+        <!--script src="https://unpkg.com/feather-icons/dist/feather.min.js"></script-->
+        <script src="_elements/feather.min.js"></script>
+    </head>
+    <body>
+
+    <!-- Start your project here-->
+    <nav class="navbar navbar-dark fixed-top bg-dark flex-md-nowrap p-0 shadow">
+        <a class="navbar-brand col-sm-3 col-md-2 mr-0" href="#">iLEAPP 1.15.8</a>
+        <div class="custom-control custom-switch">
+            <input type="checkbox" class="custom-control-input" id="darkSwitch" />
+            <label class="custom-control-label mr-2" for="darkSwitch" style="color:white">Dark Switch</label>
+        </div>
+        <script src="_elements/dark-mode-switch.js"></script>
+    </nav>
+
+    <div class="container-fluid">
+        <div class="row">
+
+            <nav class="col-md-2 d-none d-md-block bg-light sidebar">
+                <div class="sidebar-sticky" id="sidebar_id">
+                    <ul class="nav flex-column">
+<h6 class="sidebar-heading justify-content-between align-items-center px-3 mt-4 mb-1 text-muted">
+        Saved Reports
+    </h6>
+    
+    <li class="nav-item">
+        <a class="nav-link  active" href="index.html">
+            <span data-feather="home"></span> Report Home
+        </a>
+    </li>
+    
+    <script>
+        feather.replace();
+        var element = document.getElementById("sidebar_id");
+        var searchParams = new URLSearchParams(window.location.search);
+        if (searchParams.has('navpos')) {
+            var nav_pos = parseInt(searchParams.get('navpos'));
+            if (!isNaN(nav_pos))
+                element.scrollTop = nav_pos;
+        }
+    </script>
+
+                    </ul>
+                    <br /><br />
+                </div>
+            </nav>
+
+            <main role="main" class="col-md-9 ml-sm-auto col-lg-10 px-4">
+
+                <div class="justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
+                    <h1 class="display-5">iOS Logs Events And Protobuf Parser</h1>
+                    <h6 class="animated fadeIn mb-3">iLEAPP is an open source project that aims to parse every known iOS artifact for the purpose of forensic analysis.</h6>
+                </div>
+<br />
+    <div class="card bg-white" style="padding: 20px;">
+        <h2 class="card-title">Case Information</h2>
+    
+    <ul class="nav nav-tabs" id="myTab" role="tablist">
+        <li class="nav-item">
+            <a class="nav-link active" id="case-tab" data-toggle="tab" href="#case" role="tab" aria-controls="case" aria-selected="true">Details</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" id="device-list-tab" data-toggle="tab" href="#device" role="tab" aria-controls="device" aria-selected="false">Device details</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" id="run-log-tab" data-toggle="tab" href="#run" role="tab" aria-controls="run" aria-selected="false">Script run log</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" id="files-list-tab" data-toggle="tab" href="#files" role="tab" aria-controls="files" aria-selected="false">Processed files list</a>
+        </li>
+    </ul>
+    <div class="tab-content" id="myTabContent">
+        <div class="tab-pane fade show active" id="case" role="tabpanel" aria-labelledby="case-tab"><br />
+        <div class="table-responsive">
+            <table class="table table-bordered table-hover table-sm" width=70%>
+                <tbody>
+    <tr><td>Extraction location</td><td>C:\Users\sofas\AppData\Local\Temp\Autopsy\class05_20211106_140922\Temp\iLeapp\fs_1</td></tr><tr><td>Extraction type</td><td>fs</td></tr><tr><td>Report directory</td><td>C:\Users\sofas\Documents\GitHub\Y1S1\AFSC\Class 05\Class05\ModuleOutput\iLeapp\2021-11-06 15-01-04 GMT\iLEAPP_Reports_2021-11-06_Saturday_150106</td></tr><tr><td>Processing time</td><td>00:00:00 (Total 0.078125 seconds)</td></tr>
+                </tbody>
+            </table>
+        </div>
+             <p class="note note-primary mb-4">
+                    All dates and times are in UTC unless noted otherwise!
+                </p>
+    </div>
+        <div class="tab-pane fade" id="device" role="tabpanel" aria-labelledby="device-tab"><br /><br>
+</div>
+        <div class="tab-pane fade text-monospace" id="run" role="tabpanel" aria-labelledby="script-run-tab"><br />Procesing started. Please wait. This may take a few minutes...<br>
+
+--------------------------------------------------------------------------------------<br>
+iLEAPP v1.15.8: iLEAPP Logs, Events, and Properties Parser<br>
+Objective: Triage iOS Full System Extractions.<br>
+By: Alexis Brignoni | @AlexisBrignoni | abrignoni.com<br>
+By: Yogesh Khatri   | @SwiftForensics | swiftforensics.com<br>
+Building files listing...<br>
+File listing complete - 2 files<br>
+Artifact categories to parse: 105<br>
+File/Directory selected: \\?\C:\Users\sofas\AppData\Local\Temp\Autopsy\class05_20211106_140922\Temp\iLeapp\fs_1<br>
+
+--------------------------------------------------------------------------------------<br>
+<br>
+No files found for lastBuild -> *LastBuildInfo.plist<br>
+<br>
+No files found for accs -> **/Accounts3.sqlite<br>
+<br>
+No files found for addressBook -> **/AddressBook.sqlitedb<br>
+<br>
+No files found for aggDictpasscode -> */AggregateDictionary/ADDataStore.sqlitedb<br>
+<br>
+No files found for aggDictpasscodetype -> */AggregateDictionary/ADDataStore.sqlitedb<br>
+<br>
+No files found for alarms -> *private/var/mobile/Library/Preferences/com.apple.mobiletimerd.plist<br>
+<br>
+No files found for appConduit -> **/AppConduit.log.*<br>
+<br>
+No files found for appGrouplisting -> */Containers/Shared/AppGroup/*/.com.apple.mobile_container_manager.metadata.plist<br>
+<br>
+No files found for appGrouplisting -> **/PluginKitPlugin/*.metadata.plist<br>
+<br>
+No files found for appItunesmeta -> **/iTunesMetadata.plist<br>
+<br>
+No files found for appItunesmeta -> **/BundleMetadata.plist<br>
+<br>
+No files found for appleMapsApplication -> **/Data/Application/*/Library/Preferences/com.apple.Maps.plist<br>
+<br>
+No files found for appleMapsGroup -> **/Shared/AppGroup/*/Library/Preferences/group.com.apple.Maps.plist<br>
+<br>
+No files found for appleMapsSearchHistory -> *private/var/mobile/Containers/Data/Application/*/Library/Maps/GeoHistory.mapsdata<br>
+<br>
+No files found for appleWalletCards -> */private/var/mobile/Containers/Data/Application/*/Library/Caches/com.apple.Passbook/Cache.db*<br>
+<br>
+No files found for appleWalletPasses -> **/nanopasses.sqlite3*<br>
+<br>
+No files found for appleWalletPasses -> **/Cards/*.pkpass/pass.json<br>
+<br>
+No files found for appleWalletTransactions -> **/passes23.sqlite<br>
+<br>
+No files found for appleWifiPlist -> **/com.apple.wifi.plist<br>
+<br>
+No files found for appleWifiPlist -> **/com.apple.wifi-networks.plist.backup<br>
+<br>
+No files found for appleWifiPlist -> **/com.apple.wifi.known-networks.plist<br>
+<br>
+No files found for appleWifiPlist -> **/com.apple.wifi-private-mac-networks.plist<br>
+<br>
+No files found for applicationSnapshots -> **/Library/Caches/Snapshots/*<br>
+<br>
+No files found for applicationSnapshots -> **/SplashBoard/Snapshots/*<br>
+<br>
+No files found for applicationstate -> **/applicationState.db<br>
+<br>
+No files found for bluetooth -> **/com.apple.MobileBluetooth.*<br>
+<br>
+No files found for cacheRoutesGmap -> **/Library/Application Support/CachedRoutes/*.plist<br>
+<br>
+No files found for calendarAll -> **/Calendar.sqlitedb<br>
+<br>
+No files found for callHistory -> **/CallHistory.storedata<br>
+<br>
+No files found for celWireless -> *wireless/Library/Preferences/com.apple.*<br>
+<br>
+No files found for cloudkitNoteSharing -> *NoteStore.sqlite*<br>
+<br>
+No files found for cloudkitParticipants -> *NoteStore.sqlite*<br>
+<br>
+No files found for conDev -> **/iTunes_Control/iTunes/iTunesPrefs<br>
+<br>
+No files found for confaccts -> **/com.apple.accounts.exists.plist<br>
+<br>
+No files found for coreDuetAirplane -> **/coreduetd.db<br>
+<br>
+No files found for coreDuetLock -> **/coreduetd.db<br>
+<br>
+No files found for coreDuetPlugin -> **/coreduetd.db<br>
+<br>
+No files found for dataArk -> **/Library/Lockdown/data_ark.plist<br>
+<br>
+No files found for dataUsageA -> **/DataUsage.sqlite<br>
+<br>
+No files found for dataUsageB -> **/DataUsage-watch.sqlite<br>
+<br>
+No files found for dataUsageProcessA -> **/DataUsage-watch.sqlite<br>
+<br>
+No files found for dataUsageProcessB -> **/DataUsage.sqlite<br>
+<br>
+No files found for deviceActivator -> *private/var/mobile/Library/Logs/mobileactivationd/ucrt_oob_request.txt<br>
+<br>
+No files found for dhcphp -> **/private/var/db/dhcpd_leases*<br>
+<br>
+No files found for dhcpl -> **/private/var/db/dhcpclient/leases/en*<br>
+<br>
+No files found for discordAcct -> */var/mobile/Containers/Data/Application/*/Documents/mmkv/mmkv.default<br>
+<br>
+No files found for discordJson -> */com.hammerandchisel.discord/fsCachedData/*<br>
+<br>
+No files found for discordManifest -> */private/var/mobile/Containers/Data/Application/*/Documents/RCTAsyncLocalStorage_V1/manifest.json<br>
+<br>
+No files found for FacebookMessenger -> **/lightspeed-*.db*<br>
+<br>
+No files found for filesAppsclient -> *private/var/mobile/Library/Application Support/CloudDocs/session/db/client.db*<br>
+<br>
+No files found for filesAppsdb -> *private/var/mobile/Library/Application Support/CloudDocs/session/db/server.db*<br>
+<br>
+No files found for filesAppsm -> *private/var/mobile/Containers/Shared/AppGroup/*/smartfolders.db*<br>
+<br>
+No files found for geodApplications -> **/AP.db<br>
+<br>
+No files found for geodMapTiles -> **/MapTiles.sqlitedb<br>
+<br>
+No files found for geodPDPlaceCache -> **/PDPlaceCache.db<br>
+<br>
+No files found for healthAll -> **/healthdb_secure.sqlite<br>
+<br>
+No files found for icloudMeta -> */iclouddrive/Metadata.txt<br>
+<br>
+No files found for icloudPhotoMeta -> */cloudphotolibrary/Metadata.txt<br>
+<br>
+No files found for icloudSharedalbums -> */private/var/mobile/Media/PhotoData/PhotoCloudSharingData/*<br>
+<br>
+No files found for iCloudWifi -> **/com.apple.wifid.plist<br>
+<br>
+No files found for iconsScreen -> **/SpringBoard/IconState.plist<br>
+<br>
+No files found for imoHD_Chat -> **/IMODb2.sqlite*<br>
+<br>
+No files found for imoHD_Chat -> private/var/mobile/Containers/Data/Application/*/Library/Caches/videos/*.webp<br>
+<br>
+No files found for instagramThreads -> */mobile/Containers/Data/Application/*/Library/Application Support/DirectSQLiteDatabase/*.db*<br>
+<br>
+No files found for interactionCcontacts -> **/interactionC.db<br>
+<br>
+No files found for keyboardAppUsage -> */private/var/mobile/Library/Keyboard/app_usage_database.plist<br>
+<br>
+No files found for keyboardLexicon -> */private/var/mobile/Library/Keyboard/*-dynamic.lm/dynamic-lexicon.dat<br>
+<br>
+No files found for kikMessages -> **/kik.sqlite*<br>
+<br>
+No files found for knowCall -> **/CoreDuet/Knowledge/knowledgeC.db<br>
+<br>
+No files found for locationDallB -> **/cache_encryptedB.db<br>
+<br>
+No files found for locationDparked -> **/Local.sqlite<br>
+<br>
+No files found for locationDparkedhistorical -> **/Local.sqlite<br>
+<br>
+No files found for mailprotect -> **/private/var/mobile/Library/Mail/* Index*<br>
+<br>
+No files found for mediaLibrary -> **/Medialibrary.sqlitedb<br>
+<br>
+No files found for medicalID -> */private/var/mobile/Library/MedicalID/MedicalIDData.archive<br>
+<br>
+No files found for mobileActivationLogs -> **/mobileactivationd.log*<br>
+<br>
+No files found for mobileBackup -> */Preferences/com.apple.MobileBackup.plist<br>
+<br>
+No files found for mobileContainerManager -> **/containermanagerd.log.*<br>
+<br>
+No files found for mobileInstall -> **/mobile_installation.log.*<br>
+<br>
+No files found for notes -> */NoteStore.sqlite*<br>
+<br>
+No files found for notificationsXI -> *PushStore*<br>
+<br>
+No files found for notificationsXII -> *private/var/mobile/Library/UserNotifications*<br>
+<br>
+No files found for ooklaSpeedtestData -> **/speedtest.sqlite*<br>
+<br>
+No files found for photosMetadata -> **/Photos.sqlite<br>
+<br>
+No files found for powerlogAll -> **/CurrentPowerlog.PLSQL<br>
+<br>
+No files found for powerlogGZ -> **/Library/BatteryLife/Archives/powerlog_*.PLSQL.gz<br>
+<br>
+No files found for queryPredictions -> **/query_predictions.db<br>
+<br>
+No files found for quickLook -> */Quick Look/cloudthumbnails.db*<br>
+<br>
+No files found for reminders -> **/Reminders/Container_v1/Stores/*.sqlite*<br>
+<br>
+No files found for routineDCloud -> **/Library/Caches/com.apple.routined/Cloud-V2.sqlite*<br>
+<br>
+No files found for routineDlocations -> **/com.apple.routined/Cache.sqlite*<br>
+<br>
+No files found for routineDLocationsLocal -> **/private/var/mobile/Library/Caches/com.apple.routined/Local.sqlite*<br>
+<br>
+No files found for safariBookmarks -> **/Safari/Bookmarks.db<br>
+<br>
+No files found for safariHistory -> **/Safari/History.db<br>
+<br>
+No files found for safariRecentWebSearches -> **/Library/Preferences/com.apple.mobilesafari.plist<br>
+<br>
+No files found for safariTabs -> **/Safari/BrowserState.db<br>
+<br>
+No files found for safariWebsearch -> **/Safari/History.db<br>
+<br>
+No files found for screentimeAll -> **/RMAdminStore-Local.sqlite<br>
+<br>
+No files found for sms -> **/sms.db<br>
+<br>
+No files found for slack -> */var/mobile/Containers/Data/Application/*/Library/Application Support/Slack/*/Database/main_db*<br>
+<br>
+No files found for tcc -> *TCC.db*<br>
+<br>
+No files found for teams -> */var/mobile/Containers/Shared/AppGroup/*/SkypeSpacesDogfood/*/Skype*.sqlite*<br>
+<br>
+No files found for teams -> */var/mobile/Containers/Shared/AppGroup/*/SkypeSpacesDogfood/Downloads/*/Images/*<br>
+<br>
+No files found for teamsSegment -> */var/mobile/Containers/Data/Application/*/Library/DriveIQ/segments/current/*.*<br>
+<br>
+No files found for tikTok -> */Application/*/Library/Application Support/ChatFiles/*/db.sqlite*<br>
+<br>
+No files found for tikTok -> *AwemeIM.db*<br>
+<br>
+No files found for tileApp -> *private/var/mobile/Containers/Data/Application/*/Library/log/com.thetileapp.tile*<br>
+<br>
+No files found for tileAppDb -> *private/var/mobile/Containers/Shared/AppGroup/*/com.thetileapp.tile-TileNetworkDB.sqlite*<br>
+<br>
+No files found for tileAppDisc -> */private/var/mobile/Containers/Shared/AppGroup/*/com.thetileapp.tile-DiscoveredTileDB.sqlite*<br>
+<br>
+No files found for tileAppNetDb -> */private/var/mobile/Containers/Shared/AppGroup/*/com.thetileapp.tile-TileNetworkDB.sqlite*<br>
+<br>
+No files found for voiceRecordings -> **/Recordings/*.composition/manifest.plist<br>
+<br>
+No files found for voiceRecordings -> **/Recordings/*.m4a<br>
+<br>
+No files found for voiceTriggers -> **/td/audio/*.json<br>
+<br>
+No files found for voiceTriggers -> **/td/audio/*.wav<br>
+<br>
+No files found for walStrings -> **/*-wal<br>
+<br>
+No files found for walStrings -> **/*-journal<br>
+<br>
+No files found for weatherAppLocations -> */private/var/mobile/Containers/Shared/AppGroup/*/Library/Preferences/group.com.apple.weather.plist<br>
+<br>
+No files found for webClips -> *WebClips/*.webclip/*<br>
+<br>
+Processes completed.<br>
+Processing time = 00:00:00<br>
+<br>
+Report generation started.<br>
+</div>
+        <div class="tab-pane fade" id="files" role="tabpanel" aria-labelledby="profile-tab"><br />Extraction/Path selected: \\?\C:\Users\sofas\AppData\Local\Temp\Autopsy\class05_20211106_140922\Temp\iLeapp\fs_1<br><br>No files found for lastBuild -> *LastBuildInfo.plist<br><br>No files found for accs -> **/Accounts3.sqlite<br><br>No files found for addressBook -> **/AddressBook.sqlitedb<br><br>No files found for aggDictpasscode -> */AggregateDictionary/ADDataStore.sqlitedb<br><br>No files found for aggDictpasscodetype -> */AggregateDictionary/ADDataStore.sqlitedb<br><br>No files found for alarms -> *private/var/mobile/Library/Preferences/com.apple.mobiletimerd.plist<br><br>No files found for appConduit -> **/AppConduit.log.*<br><br>No files found for appGrouplisting -> */Containers/Shared/AppGroup/*/.com.apple.mobile_container_manager.metadata.plist<br><br>No files found for appGrouplisting -> **/PluginKitPlugin/*.metadata.plist<br><br>No files found for appItunesmeta -> **/iTunesMetadata.plist<br><br>No files found for appItunesmeta -> **/BundleMetadata.plist<br><br>No files found for appleMapsApplication -> **/Data/Application/*/Library/Preferences/com.apple.Maps.plist<br><br>No files found for appleMapsGroup -> **/Shared/AppGroup/*/Library/Preferences/group.com.apple.Maps.plist<br><br>No files found for appleMapsSearchHistory -> *private/var/mobile/Containers/Data/Application/*/Library/Maps/GeoHistory.mapsdata<br><br>No files found for appleWalletCards -> */private/var/mobile/Containers/Data/Application/*/Library/Caches/com.apple.Passbook/Cache.db*<br><br>No files found for appleWalletPasses -> **/nanopasses.sqlite3*<br><br>No files found for appleWalletPasses -> **/Cards/*.pkpass/pass.json<br><br>No files found for appleWalletTransactions -> **/passes23.sqlite<br><br>No files found for appleWifiPlist -> **/com.apple.wifi.plist<br><br>No files found for appleWifiPlist -> **/com.apple.wifi-networks.plist.backup<br><br>No files found for appleWifiPlist -> **/com.apple.wifi.known-networks.plist<br><br>No files found for appleWifiPlist -> **/com.apple.wifi-private-mac-networks.plist<br><br>No files found for applicationSnapshots -> **/Library/Caches/Snapshots/*<br><br>No files found for applicationSnapshots -> **/SplashBoard/Snapshots/*<br><br>No files found for applicationstate -> **/applicationState.db<br><br>No files found for bluetooth -> **/com.apple.MobileBluetooth.*<br><br>No files found for cacheRoutesGmap -> **/Library/Application Support/CachedRoutes/*.plist<br><br>No files found for calendarAll -> **/Calendar.sqlitedb<br><br>No files found for callHistory -> **/CallHistory.storedata<br><br>No files found for celWireless -> *wireless/Library/Preferences/com.apple.*<br><br>No files found for cloudkitNoteSharing -> *NoteStore.sqlite*<br><br>No files found for cloudkitParticipants -> *NoteStore.sqlite*<br><br>No files found for conDev -> **/iTunes_Control/iTunes/iTunesPrefs<br><br>No files found for confaccts -> **/com.apple.accounts.exists.plist<br><br>No files found for coreDuetAirplane -> **/coreduetd.db<br><br>No files found for coreDuetLock -> **/coreduetd.db<br><br>No files found for coreDuetPlugin -> **/coreduetd.db<br><br>No files found for dataArk -> **/Library/Lockdown/data_ark.plist<br><br>No files found for dataUsageA -> **/DataUsage.sqlite<br><br>No files found for dataUsageB -> **/DataUsage-watch.sqlite<br><br>No files found for dataUsageProcessA -> **/DataUsage-watch.sqlite<br><br>No files found for dataUsageProcessB -> **/DataUsage.sqlite<br><br>No files found for deviceActivator -> *private/var/mobile/Library/Logs/mobileactivationd/ucrt_oob_request.txt<br><br>No files found for dhcphp -> **/private/var/db/dhcpd_leases*<br><br>No files found for dhcpl -> **/private/var/db/dhcpclient/leases/en*<br><br>No files found for discordAcct -> */var/mobile/Containers/Data/Application/*/Documents/mmkv/mmkv.default<br><br>No files found for discordJson -> */com.hammerandchisel.discord/fsCachedData/*<br><br>No files found for discordManifest -> */private/var/mobile/Containers/Data/Application/*/Documents/RCTAsyncLocalStorage_V1/manifest.json<br><br>No files found for FacebookMessenger -> **/lightspeed-*.db*<br><br>No files found for filesAppsclient -> *private/var/mobile/Library/Application Support/CloudDocs/session/db/client.db*<br><br>No files found for filesAppsdb -> *private/var/mobile/Library/Application Support/CloudDocs/session/db/server.db*<br><br>No files found for filesAppsm -> *private/var/mobile/Containers/Shared/AppGroup/*/smartfolders.db*<br><br>No files found for geodApplications -> **/AP.db<br><br>No files found for geodMapTiles -> **/MapTiles.sqlitedb<br><br>No files found for geodPDPlaceCache -> **/PDPlaceCache.db<br><br>No files found for healthAll -> **/healthdb_secure.sqlite<br><br>No files found for icloudMeta -> */iclouddrive/Metadata.txt<br><br>No files found for icloudPhotoMeta -> */cloudphotolibrary/Metadata.txt<br><br>No files found for icloudSharedalbums -> */private/var/mobile/Media/PhotoData/PhotoCloudSharingData/*<br><br>No files found for iCloudWifi -> **/com.apple.wifid.plist<br><br>No files found for iconsScreen -> **/SpringBoard/IconState.plist<br><br>No files found for imoHD_Chat -> **/IMODb2.sqlite*<br><br>No files found for imoHD_Chat -> private/var/mobile/Containers/Data/Application/*/Library/Caches/videos/*.webp<br><br>No files found for instagramThreads -> */mobile/Containers/Data/Application/*/Library/Application Support/DirectSQLiteDatabase/*.db*<br><br>No files found for interactionCcontacts -> **/interactionC.db<br><br>No files found for keyboardAppUsage -> */private/var/mobile/Library/Keyboard/app_usage_database.plist<br><br>No files found for keyboardLexicon -> */private/var/mobile/Library/Keyboard/*-dynamic.lm/dynamic-lexicon.dat<br><br>No files found for kikMessages -> **/kik.sqlite*<br><br>No files found for knowCall -> **/CoreDuet/Knowledge/knowledgeC.db<br><br>No files found for locationDallB -> **/cache_encryptedB.db<br><br>No files found for locationDparked -> **/Local.sqlite<br><br>No files found for locationDparkedhistorical -> **/Local.sqlite<br><br>No files found for mailprotect -> **/private/var/mobile/Library/Mail/* Index*<br><br>No files found for mediaLibrary -> **/Medialibrary.sqlitedb<br><br>No files found for medicalID -> */private/var/mobile/Library/MedicalID/MedicalIDData.archive<br><br>No files found for mobileActivationLogs -> **/mobileactivationd.log*<br><br>No files found for mobileBackup -> */Preferences/com.apple.MobileBackup.plist<br><br>No files found for mobileContainerManager -> **/containermanagerd.log.*<br><br>No files found for mobileInstall -> **/mobile_installation.log.*<br><br>No files found for notes -> */NoteStore.sqlite*<br><br>No files found for notificationsXI -> *PushStore*<br><br>No files found for notificationsXII -> *private/var/mobile/Library/UserNotifications*<br><br>No files found for ooklaSpeedtestData -> **/speedtest.sqlite*<br><br>No files found for photosMetadata -> **/Photos.sqlite<br><br>No files found for powerlogAll -> **/CurrentPowerlog.PLSQL<br><br>No files found for powerlogGZ -> **/Library/BatteryLife/Archives/powerlog_*.PLSQL.gz<br><br>No files found for queryPredictions -> **/query_predictions.db<br><br>No files found for quickLook -> */Quick Look/cloudthumbnails.db*<br><br>No files found for reminders -> **/Reminders/Container_v1/Stores/*.sqlite*<br><br>No files found for routineDCloud -> **/Library/Caches/com.apple.routined/Cloud-V2.sqlite*<br><br>No files found for routineDlocations -> **/com.apple.routined/Cache.sqlite*<br><br>No files found for routineDLocationsLocal -> **/private/var/mobile/Library/Caches/com.apple.routined/Local.sqlite*<br><br>No files found for safariBookmarks -> **/Safari/Bookmarks.db<br><br>No files found for safariHistory -> **/Safari/History.db<br><br>No files found for safariRecentWebSearches -> **/Library/Preferences/com.apple.mobilesafari.plist<br><br>No files found for safariTabs -> **/Safari/BrowserState.db<br><br>No files found for safariWebsearch -> **/Safari/History.db<br><br>No files found for screentimeAll -> **/RMAdminStore-Local.sqlite<br><br>No files found for sms -> **/sms.db<br><br>No files found for slack -> */var/mobile/Containers/Data/Application/*/Library/Application Support/Slack/*/Database/main_db*<br><br>No files found for tcc -> *TCC.db*<br><br>No files found for teams -> */var/mobile/Containers/Shared/AppGroup/*/SkypeSpacesDogfood/*/Skype*.sqlite*<br><br>No files found for teams -> */var/mobile/Containers/Shared/AppGroup/*/SkypeSpacesDogfood/Downloads/*/Images/*<br><br>No files found for teamsSegment -> */var/mobile/Containers/Data/Application/*/Library/DriveIQ/segments/current/*.*<br><br>No files found for tikTok -> */Application/*/Library/Application Support/ChatFiles/*/db.sqlite*<br><br>No files found for tikTok -> *AwemeIM.db*<br><br>No files found for tileApp -> *private/var/mobile/Containers/Data/Application/*/Library/log/com.thetileapp.tile*<br><br>No files found for tileAppDb -> *private/var/mobile/Containers/Shared/AppGroup/*/com.thetileapp.tile-TileNetworkDB.sqlite*<br><br>No files found for tileAppDisc -> */private/var/mobile/Containers/Shared/AppGroup/*/com.thetileapp.tile-DiscoveredTileDB.sqlite*<br><br>No files found for tileAppNetDb -> */private/var/mobile/Containers/Shared/AppGroup/*/com.thetileapp.tile-TileNetworkDB.sqlite*<br><br>No files found for voiceRecordings -> **/Recordings/*.composition/manifest.plist<br><br>No files found for voiceRecordings -> **/Recordings/*.m4a<br><br>No files found for voiceTriggers -> **/td/audio/*.json<br><br>No files found for voiceTriggers -> **/td/audio/*.wav<br><br>No files found for walStrings -> **/*-wal<br><br>No files found for walStrings -> **/*-journal<br><br>No files found for weatherAppLocations -> */private/var/mobile/Containers/Shared/AppGroup/*/Library/Preferences/group.com.apple.weather.plist<br><br>No files found for webClips -> *WebClips/*.webclip/*<br><br></div>
+    </div>
+</div>
+                <br /><br /><br />
+                <div class="text-center">
+                    <br />
+                    <div class="card bg-white mb-3" style="max-width: 500px; margin:auto">
+                        <div class="row no-gutters">
+                            <div class="col-md-4">
+                                <img src="_elements/logo.jpg" class="card-img" alt="DFIR">
+                            </div>
+                            <div class="col-md-8">
+                            <div class="card-body">
+                                <h5 class="card-title">Thank you for using iLEAPP</h5>
+                                <p class="card-text">
+                                    Support open source and report any bugs!
+                                </p>
+                                <!--Github-->
+                                <a class="btn-floating btn-git" type="button" role="button" href="https://github.com/abrignoni/ileapp" target="_blank"><i class="fab fa-github"></i> Project Home </a>
+                                <p class="card-text fadeIn"><small class="text-muted">iLEAPP Team</small></p>
+                            </div>
+                            </div>
+                        </div>
+                    </div>
+                    <br />
+                    <br />
+                </div><!--end text-center area-->
+
+    <div class="alert alert-light mb-4 bg-white" style="border-style: none">
+        <h4 class="text-center">iLEAPP contributors</h4>
+        <ul class="list-group" style="max-width: 500px; margin:auto">
+            
+            <li class="list-group-item d-flex justify-content-between align-items-center bg-white"><i class="fas fa-medal"></i>Alexis Brignoni
+                <span>
+                    <a href="https://abrignoni.com" target="_blank"><i class="fab fa-blogger-b fa-fw"></i></a> &nbsp;
+<a href="https://twitter.com/@AlexisBrignoni" target="_blank"><i class="fab fa-twitter fa-fw"></i></a> &nbsp;
+<a href="https://github.com/abrignoni" target="_blank"><i class="fab fa-github fa-fw"></i></a>
+
+                </span>
+            </li>
+
+            <li class="list-group-item d-flex justify-content-between align-items-center bg-white"><i class="fas fa-medal"></i>Yogesh Khatri
+                <span>
+                    <a href="https://swiftforensics.com" target="_blank"><i class="fab fa-blogger-b fa-fw"></i></a> &nbsp;
+<a href="https://twitter.com/@SwiftForensics" target="_blank"><i class="fab fa-twitter fa-fw"></i></a> &nbsp;
+<a href="https://github.com/ydkhatri" target="_blank"><i class="fab fa-github fa-fw"></i></a>
+
+                </span>
+            </li>
+
+            <li class="list-group-item d-flex justify-content-between align-items-center bg-white"><i class="fas fa-medal"></i>Agam Dua
+                <span>
+                    <a href="https://loopback.dev" target="_blank"><i class="fab fa-blogger-b fa-fw"></i></a> &nbsp;
+<a href="https://twitter.com/@loopbackdev" target="_blank"><i class="fab fa-twitter fa-fw"></i></a> &nbsp;
+<a href="https://github.com/agamdua" target="_blank"><i class="fab fa-github fa-fw"></i></a>
+
+                </span>
+            </li>
+
+            <li class="list-group-item d-flex justify-content-between align-items-center bg-white"><i class="fas fa-medal"></i>Sarah Edwards
+                <span>
+                    <a href="https://www.mac4n6.com" target="_blank"><i class="fab fa-blogger-b fa-fw"></i></a> &nbsp;
+<a href="https://twitter.com/@iamevltwin" target="_blank"><i class="fab fa-twitter fa-fw"></i></a> &nbsp;
+<a href="https://github.com/mac4n6" target="_blank"><i class="fab fa-github fa-fw"></i></a>
+
+                </span>
+            </li>
+
+            <li class="list-group-item d-flex justify-content-between align-items-center bg-white"><i class="fas fa-medal"></i>Heather Mahalik
+                <span>
+                    <a href="https://smarterforensics.com" target="_blank"><i class="fab fa-blogger-b fa-fw"></i></a> &nbsp;
+<a href="https://twitter.com/@HeatherMahalik" target="_blank"><i class="fab fa-twitter fa-fw"></i></a> &nbsp;
+<i class="fab fa-fw"></i>
+                </span>
+            </li>
+
+            <li class="list-group-item d-flex justify-content-between align-items-center bg-white"><i class="fas fa-medal"></i>Jessica Hyde
+                <span>
+                    <a href="https://twitter.com/B1N2H3X" target="_blank"><i class="fab fa-blogger-b fa-fw"></i></a> &nbsp;
+<a href="https://twitter.com/@B1N2H3X" target="_blank"><i class="fab fa-twitter fa-fw"></i></a> &nbsp;
+<i class="fab fa-fw"></i>
+                </span>
+            </li>
+
+            <li class="list-group-item d-flex justify-content-between align-items-center bg-white"><i class="fas fa-medal"></i>Phill Moore
+                <span>
+                    <a href="https://thinkdfir.com" target="_blank"><i class="fab fa-blogger-b fa-fw"></i></a> &nbsp;
+<a href="https://twitter.com/@phillmoore" target="_blank"><i class="fab fa-twitter fa-fw"></i></a> &nbsp;
+<a href="https://github.com/randomaccess3" target="_blank"><i class="fab fa-github fa-fw"></i></a>
+
+                </span>
+            </li>
+
+            <li class="list-group-item d-flex justify-content-between align-items-center bg-white"><i class="fas fa-medal"></i>Mattia Epifani
+                <span>
+                    <a href="https://blog.digital-forensics.it" target="_blank"><i class="fab fa-blogger-b fa-fw"></i></a> &nbsp;
+<a href="https://twitter.com/@mattiaep" target="_blank"><i class="fab fa-twitter fa-fw"></i></a> &nbsp;
+<i class="fab fa-fw"></i>
+                </span>
+            </li>
+
+            <li class="list-group-item d-flex justify-content-between align-items-center bg-white"><i class="fas fa-medal"></i>Mike Williamson
+                <span>
+                    <a href="https://forensicmike1.com" target="_blank"><i class="fab fa-blogger-b fa-fw"></i></a> &nbsp;
+<a href="https://twitter.com/@forensicmike1" target="_blank"><i class="fab fa-twitter fa-fw"></i></a> &nbsp;
+<a href="https://github.com/forensicmike" target="_blank"><i class="fab fa-github fa-fw"></i></a>
+
+                </span>
+            </li>
+
+            <li class="list-group-item d-flex justify-content-between align-items-center bg-white"><i class="fas fa-medal"></i>Geraldine Blay
+                <span>
+                    <a href="https://gforce4n6.blogspot.com" target="_blank"><i class="fab fa-blogger-b fa-fw"></i></a> &nbsp;
+<a href="https://twitter.com/@i_am_the_gia" target="_blank"><i class="fab fa-twitter fa-fw"></i></a> &nbsp;
+<i class="fab fa-fw"></i>
+                </span>
+            </li>
+
+            <li class="list-group-item d-flex justify-content-between align-items-center bg-white"><i class="fas fa-medal"></i>Christopher Vance
+                <span>
+                    <a href="https://blog.d204n6.com" target="_blank"><i class="fab fa-blogger-b fa-fw"></i></a> &nbsp;
+<a href="https://twitter.com/@cScottVance" target="_blank"><i class="fab fa-twitter fa-fw"></i></a> &nbsp;
+<i class="fab fa-fw"></i>
+                </span>
+            </li>
+
+            <li class="list-group-item d-flex justify-content-between align-items-center bg-white"><i class="fas fa-medal"></i>Brooke Gottlieb
+                <span>
+                    <i class="fab fa-fw"></i> &nbsp;
+<a href="https://twitter.com/@xbrookego" target="_blank"><i class="fab fa-twitter fa-fw"></i></a> &nbsp;
+<i class="fab fa-fw"></i>
+                </span>
+            </li>
+
+            <li class="list-group-item d-flex justify-content-between align-items-center bg-white"><i class="fas fa-medal"></i>Jack Farley
+                <span>
+                    <a href="http://farleyforensics.com" target="_blank"><i class="fab fa-blogger-b fa-fw"></i></a> &nbsp;
+<a href="https://twitter.com/@JackFarley248" target="_blank"><i class="fab fa-twitter fa-fw"></i></a> &nbsp;
+<i class="fab fa-fw"></i>
+                </span>
+            </li>
+
+            <li class="list-group-item d-flex justify-content-between align-items-center bg-white"><i class="fas fa-medal"></i>Shafik Punja
+                <span>
+                    <i class="fab fa-fw"></i> &nbsp;
+<a href="https://twitter.com/@qubytelogic" target="_blank"><i class="fab fa-twitter fa-fw"></i></a> &nbsp;
+<i class="fab fa-fw"></i>
+                </span>
+            </li>
+
+            <li class="list-group-item d-flex justify-content-between align-items-center bg-white"><i class="fas fa-medal"></i>Cheeky4N6Monkey
+                <span>
+                    <a href="https://cheeky4n6monkey.blogspot.com" target="_blank"><i class="fab fa-blogger-b fa-fw"></i></a> &nbsp;
+<a href="https://twitter.com/@Cheeky4n6Monkey" target="_blank"><i class="fab fa-twitter fa-fw"></i></a> &nbsp;
+<a href="https://github.com/cheeky4n6monkey" target="_blank"><i class="fab fa-github fa-fw"></i></a>
+
+                </span>
+            </li>
+
+            <li class="list-group-item d-flex justify-content-between align-items-center bg-white"><i class="fas fa-medal"></i>Edward Greybeard
+                <span>
+                    <i class="fab fa-fw"></i> &nbsp;
+<i class="fab fa-fw"></i> &nbsp;
+<a href="https://github.com/edward-greybeard" target="_blank"><i class="fab fa-github fa-fw"></i></a>
+
+                </span>
+            </li>
+
+            <li class="list-group-item d-flex justify-content-between align-items-center bg-white"><i class="fas fa-medal"></i>Douglas Kein
+                <span>
+                    <i class="fab fa-fw"></i> &nbsp;
+<a href="https://twitter.com/@DouglasKein" target="_blank"><i class="fab fa-twitter fa-fw"></i></a> &nbsp;
+<i class="fab fa-fw"></i>
+                </span>
+            </li>
+
+            <li class="list-group-item d-flex justify-content-between align-items-center bg-white"><i class="fas fa-medal"></i>Claudia Meda
+                <span>
+                    <i class="fab fa-fw"></i> &nbsp;
+<a href="https://twitter.com/@KlodiaMaida" target="_blank"><i class="fab fa-twitter fa-fw"></i></a> &nbsp;
+<a href="https://github.com/KlodiaMaida" target="_blank"><i class="fab fa-github fa-fw"></i></a>
+
+                </span>
+            </li>
+
+            <li class="list-group-item d-flex justify-content-between align-items-center bg-white"><i class="fas fa-medal"></i>Silvia Spallarossa
+                <span>
+                    <i class="fab fa-fw"></i> &nbsp;
+<a href="https://twitter.com/@SilviaSpallaro1" target="_blank"><i class="fab fa-twitter fa-fw"></i></a> &nbsp;
+<a href="https://github.com/spatimbs" target="_blank"><i class="fab fa-github fa-fw"></i></a>
+
+                </span>
+            </li>
+
+            <li class="list-group-item d-flex justify-content-between align-items-center bg-white"><i class="fas fa-medal"></i>Francesca Maestri
+                <span>
+                    <i class="fab fa-fw"></i> &nbsp;
+<a href="https://twitter.com/@franc3sca_m" target="_blank"><i class="fab fa-twitter fa-fw"></i></a> &nbsp;
+<a href="https://github.com/francyM" target="_blank"><i class="fab fa-github fa-fw"></i></a>
+
+                </span>
+            </li>
+
+            <li class="list-group-item d-flex justify-content-between align-items-center bg-white"><i class="fas fa-medal"></i>Christopher Vance
+                <span>
+                    <a href="https://blog.d204n6.com/" target="_blank"><i class="fab fa-blogger-b fa-fw"></i></a> &nbsp;
+<a href="https://twitter.com/@cScottVance" target="_blank"><i class="fab fa-twitter fa-fw"></i></a> &nbsp;
+<a href="https://github.com/cScottVance" target="_blank"><i class="fab fa-github fa-fw"></i></a>
+
+                </span>
+            </li>
+
+            <li class="list-group-item d-flex justify-content-between align-items-center bg-white"><i class="fas fa-medal"></i>Jesse Spangenberger
+                <span>
+                    <a href="https://cyberfenixtech.blogspot.com/" target="_blank"><i class="fab fa-blogger-b fa-fw"></i></a> &nbsp;
+<a href="https://twitter.com/@AzuleOnyx" target="_blank"><i class="fab fa-twitter fa-fw"></i></a> &nbsp;
+<a href="https://github.com/flamusdiu" target="_blank"><i class="fab fa-github fa-fw"></i></a>
+
+                </span>
+            </li>
+
+            <li class="list-group-item d-flex justify-content-between align-items-center bg-white"><i class="fas fa-medal"></i>Jon Baumann
+                <span>
+                    <a href="https://ciofecaforensics.com/" target="_blank"><i class="fab fa-blogger-b fa-fw"></i></a> &nbsp;
+<a href="https://twitter.com/@CiofecaForensic" target="_blank"><i class="fab fa-twitter fa-fw"></i></a> &nbsp;
+<a href="https://github.com/threeplanetssoftware" target="_blank"><i class="fab fa-github fa-fw"></i></a>
+
+                </span>
+            </li>
+
+            <li class="list-group-item d-flex justify-content-between align-items-center bg-white"><i class="fas fa-medal"></i>Scott Koenig
+                <span>
+                    <i class="fab fa-fw"></i> &nbsp;
+<a href="https://twitter.com/@Scott_Kjr" target="_blank"><i class="fab fa-twitter fa-fw"></i></a> &nbsp;
+<i class="fab fa-fw"></i>
+                </span>
+            </li>
+
+            <li class="list-group-item d-flex justify-content-between align-items-center bg-white"><i class="fas fa-medal"></i>Kevin Pagano
+                <span>
+                    <a href="https://stark4n6.com/" target="_blank"><i class="fab fa-blogger-b fa-fw"></i></a> &nbsp;
+<a href="https://twitter.com/@KevinPagano3" target="_blank"><i class="fab fa-twitter fa-fw"></i></a> &nbsp;
+<a href="https://github.com/stark4n6" target="_blank"><i class="fab fa-github fa-fw"></i></a>
+
+                </span>
+            </li>
+
+            <li class="list-group-item d-flex justify-content-between align-items-center bg-white"><i class="fas fa-medal"></i>Ed Michael
+                <span>
+                    <i class="fab fa-fw"></i> &nbsp;
+<a href="https://twitter.com/@EdXlg123" target="_blank"><i class="fab fa-twitter fa-fw"></i></a> &nbsp;
+<a href="https://github.com/edmichael" target="_blank"><i class="fab fa-github fa-fw"></i></a>
+
+                </span>
+            </li>
+
+            <li class="list-group-item d-flex justify-content-between align-items-center bg-white"><i class="fas fa-medal"></i>Anna-Mariya Mateyna
+                <span>
+                    <i class="fab fa-fw"></i> &nbsp;
+<a href="https://twitter.com/@any333_snickers" target="_blank"><i class="fab fa-twitter fa-fw"></i></a> &nbsp;
+<a href="https://github.com/any333" target="_blank"><i class="fab fa-github fa-fw"></i></a>
+
+                </span>
+            </li>
+
+            <li class="list-group-item d-flex justify-content-between align-items-center bg-white"><i class="fas fa-medal"></i>Tommy Harris
+                <span>
+                    <i class="fab fa-fw"></i> &nbsp;
+<a href="https://twitter.com/@tobraha" target="_blank"><i class="fab fa-twitter fa-fw"></i></a> &nbsp;
+<a href="https://github.com/tobraha" target="_blank"><i class="fab fa-github fa-fw"></i></a>
+
+                </span>
+            </li>
+
+        </ul>
+    </div>
+
+            </main>
+        </div>
+    </div>
+
+    <!-- End your project here-->
+
+    <!-- jQuery -->
+    <script type="text/javascript" src="_elements/MDB-Free_4.13.0/js/jquery.min.js"></script>
+    <!-- Bootstrap tooltips -->
+    <script type="text/javascript" src="_elements/MDB-Free_4.13.0/js/popper.min.js"></script>
+    <!-- Bootstrap core JavaScript -->
+    <script type="text/javascript" src="_elements/MDB-Free_4.13.0/js/bootstrap.js"></script>
+    <!-- MDB core JavaScript -->
+    <script type="text/javascript" src="_elements/MDB-Free_4.13.0/js/mdb.min.js"></script>
+    <!-- Your custom scripts -->
+    <!-- MDBootstrap Datatables  -->
+    <script type="text/javascript" src="_elements/MDB-Free_4.13.0/js/addons/datatables.min.js"></script>
+    <script>
+        feather.replace()
+    </script>
+
+    <script>
+        var elemScrollTop = document.getElementById("sidebar_id").scrollTop.toString();
+        document.addEventListener("DOMContentLoaded", function() {
+            var element = document.getElementById("sidebar_id");
+            element.addEventListener("scroll", function() {
+                elemScrollTop = document.getElementById("sidebar_id").scrollTop.toString();
+            });
+        });
+        $('a.nav-link').click(function(e) {
+            e.preventDefault();
+            location.href = $(this).attr('href') + "?navpos=" + elemScrollTop;
+        });
+    </script>
+
+    </body>
+</html>

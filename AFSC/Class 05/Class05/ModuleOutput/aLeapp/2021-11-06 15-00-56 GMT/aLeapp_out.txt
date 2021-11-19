@@ -1,0 +1,257 @@
+Procesing started. Please wait. This may take a few minutes...
+
+--------------------------------------------------------------------------------------
+ALEAPP v1.8.0: Android Logs, Events, and Protobuf Parser
+Objective: Triage Android Full System Extractions.
+By: Alexis Brignoni | @AlexisBrignoni | abrignoni.com
+By: Yogesh Khatri   | @SwiftForensics | swiftforensics.com
+Building files listing...
+File listing complete - 2 files
+Artifact categories to parse: 85
+File/Directory selected: \\?\C:\Users\sofas\AppData\Local\Temp\Autopsy\class05_20211106_140922\Temp\aLeapp\fs_1
+
+--------------------------------------------------------------------------------------
+
+No files found for adb_hosts -> **/data/misc/adb/adb_keys
+
+No files found for etc_hosts -> **/system/etc/hosts
+
+No files found for BashHistory -> **/.bash_history
+
+No files found for ChessWithFriends -> **/com.zynga.chess.googleplay/databases/wf_database.sqlite
+
+No files found for ChessWithFriends -> **/com.zynga.chess.googleplay/db/wf_database.sqlite
+
+No files found for WordsWithFriends -> **/com.zynga.words/db/wf_database.sqlite
+
+No files found for accounts_ce -> **/system_ce/*/accounts_ce.db
+
+No files found for accounts_ce_authtokens -> **/accounts_ce.db
+
+No files found for accounts_de -> **/system_de/*/accounts_de.db
+
+No files found for appicons -> */data/com.google.android.apps.nexuslauncher/databases/app_icons.db*
+
+No files found for build -> **/vendor/build.prop
+
+No files found for calllog -> **/com.android.providers.contacts/databases/calllog.db
+
+No files found for Cast -> **/com.google.android.gms/databases/cast.db
+
+No files found for Cello -> */com.google.android.apps.docs/app_cello/*/cello.db*
+
+No files found for Cello -> */com.google.android.apps.docs/files/shiny_blobs/blobs/*
+
+No files found for chrome -> **/app_chrome/Default/History*
+
+No files found for chrome -> **/app_sbrowser/Default/History*
+
+No files found for chrome -> **/app_opera/History*
+
+No files found for chromeBookmarks -> **/app_chrome/Default/Bookmarks*
+
+No files found for chromeBookmarks -> **/app_sbrowser/Default/Bookmarks*
+
+No files found for chromeBookmarks -> **/app_opera/Bookmarks*
+
+No files found for chromeCookies -> **/app_chrome/Default/Cookies*
+
+No files found for chromeCookies -> **/app_sbrowser/Default/Cookies*
+
+No files found for chromeCookies -> **/app_opera/Cookies*
+
+No files found for chromeDownloads -> **/app_chrome/Default/History*
+
+No files found for chromeDownloads -> **/app_sbrowser/Default/History*
+
+No files found for chromeDownloads -> **/app_opera/History*
+
+No files found for chromeLoginData -> **/app_chrome/Default/Login Data*
+
+No files found for chromeLoginData -> **/app_sbrowser/Default/Login Data*
+
+No files found for chromeLoginData -> **/app_opera/Login Data*
+
+No files found for chromeMediaHistory -> **/app_chrome/Default/Media History*
+
+No files found for chromeMediaHistory -> **/app_sbrowser/Default/Media History*
+
+No files found for chromeMediaHistory -> **/app_opera/Media History*
+
+No files found for chromeNetworkActionPredictor -> **/app_Chrome/Default/Network Action Predictor*
+
+No files found for chromeNetworkActionPredictor -> **/app_sbrowser/Default/Network Action Predictor*
+
+No files found for chromeNetworkActionPredictor -> **/app_opera/Network Action Predicator*
+
+No files found for chromeOfflinePages -> **/app_chrome/Default/Offline Pages/metadata/OfflinePages.db*
+
+No files found for chromeOfflinePages -> **/app_sbrowser/Default/Offline Pages/metadata/OfflinePages.db*
+
+No files found for chromeSearchTerms -> **/app_chrome/Default/History*
+
+No files found for chromeSearchTerms -> **/app_sbrowser/Default/History*
+
+No files found for chromeSearchTerms -> **/app_opera/History*
+
+No files found for chromeTopSites -> **/app_chrome/Default/Top Sites*
+
+No files found for chromeTopSites -> **/app_sbrowser/Default/Top Sites*
+
+No files found for chromeTopSites -> **/app_opera/Top Sites*
+
+No files found for chromeWebsearch -> **/app_chrome/Default/History*
+
+No files found for chromeWebsearch -> **/app_sbrowser/Default/History*
+
+No files found for chromeWebsearch -> **/app_opera/History*
+
+No files found for cmh -> **/cmh.db
+
+No files found for DocList -> **/com.google.android.apps.docs/databases/DocList.db*
+
+No files found for emulatedSmeta -> **/com.google.android.providers.media.module/databases/external.db*
+
+No files found for FacebookMessenger -> **/threads_db2*
+
+No files found for gboardCache -> **/com.google.android.inputmethod.latin/databases/trainingcache*.db
+
+No files found for googleNowPlaying -> **/com.google.intelligence.sense/db/history_db*
+
+No files found for googlePlaySearches -> **/com.android.vending/databases/suggestions.db*
+
+No files found for installedappsGass -> */com.google.android.gms/databases/gass.db
+
+No files found for installedappsLibrary -> */com.android.vending/databases/library.db
+
+No files found for installedappsVending -> */com.android.vending/databases/localappstate.db
+
+No files found for pSettings -> */com.google.android.gsf/databases/googlesettings.db*
+
+No files found for package_info -> */system/packages.xml
+
+No files found for packageGplinks -> */system/packages.list
+
+No files found for quicksearch -> */com.google.android.googlequicksearchbox/app_session/*.binarypb
+
+No files found for quicksearch_recent -> */com.google.android.googlequicksearchbox/files/recently/*
+
+No files found for recentactivity -> */system_ce/*
+
+No files found for lgRCS -> */mmssms.db*
+
+No files found for permissions -> */system/packages.xml
+
+No files found for roles -> */system/users/*/roles.xml
+
+No files found for roles -> */misc_de/*/apexdata/com.android.permission/roles.xml
+
+No files found for runtimePerms -> */system/users/*/runtime-permissions.xml
+
+No files found for runtimePerms -> */misc_de/*/apexdata/com.android.permission/runtime-permissions.xml
+
+No files found for scontextLog -> */com.samsung.android.providers.context/databases/ContextLog.db
+
+No files found for settingsSecure -> */system/users/*/settings_secure.xml
+
+No files found for siminfo -> */user_de/*/com.android.providers.telephony/databases/telephony.db
+
+No files found for smanagerCrash -> */com.samsung.android.sm/databases/sm.db
+
+No files found for smanagerLow -> */com.samsung.android.sm/databases/lowpowercontext-system-db
+
+No files found for smembersAppInv -> */com.samsung.oh/databases/com_pocketgeek_sdk_app_inventory.db
+
+No files found for smembersEvents -> */com.samsung.oh/databases/com_pocketgeek_sdk.db
+
+No files found for sms_mms -> */com.android.providers.telephony/databases/mmssms*
+
+No files found for smyfilesRecents -> */com.sec.android.app.myfiles/databases/myfiles.db
+
+No files found for smyFiles -> **/com.sec.android.app.myfiles/databases/MyFiles*.db*
+
+No files found for smyfilesStored -> **/com.sec.android.app.myfiles/databases/FileCache.db
+
+No files found for swellbeing -> **/com.samsung.android.forest/databases/dwbCommon.db*
+
+No files found for tikTok -> *_im.db*
+
+No files found for tikTok -> *db_im_xx*
+
+No files found for Turbo -> */com.google.android.apps.turbo/databases/turbo.db*
+
+No files found for usageapps -> **/com.google.android.as/databases/reflection_gel_events.db*
+
+No files found for usagestats -> */system/usagestats/*
+
+No files found for usagestats -> **/system_ce/*/usagestats*
+
+No files found for userDict -> **/com.android.providers.userdictionary/databases/user_dict.db*
+
+No files found for Viber -> **/com.viber.voip/databases/*
+
+No files found for vlcMedia -> *vlc_media.db*
+
+No files found for vlcThumbs -> */org.videolan.vlc/files/medialib/*.jpg
+
+No files found for walStrings -> **/*-wal
+
+No files found for walStrings -> **/*-journal
+
+No files found for wellbeing -> **/com.google.android.apps.wellbeing/databases/app_usage*
+
+No files found for wellbeingURLs -> **/com.google.android.apps.wellbeing/databases/app_usage*
+
+No files found for wellbeingaccount -> **/com.google.android.apps.wellbeing/files/AccountData.pb
+
+No files found for wifiHotspot -> **/misc/wifi/softap.conf
+
+No files found for wifiHotspot -> **/misc**/apexdata/com.android.wifi/WifiConfigStoreSoftAp.xml
+
+No files found for wifiProfiles -> **/misc/wifi/WifiConfigStore.xml
+
+No files found for wifiProfiles -> **/misc**/apexdata/com.android.wifi/WifiConfigStore.xml
+
+No files found for Xender -> **/cn.xender/databases/trans-history-db*
+
+No files found for Zapya -> **/com.dewmobile.kuaiya.play/databases/transfer20.db*
+
+No files found for Whatsapp -> */com.whatsapp/databases/*.db*
+
+No files found for shareit -> */com.lenovo.anyshare.gps/databases/history.db*
+
+No files found for tangomessage -> **/com.sgiggle.production/files/tc.db*
+
+No files found for imo -> **/com.imo.android.imous/databases/*.db*
+
+No files found for contacts -> **/com.android.providers.contacts/databases/contact*
+
+No files found for contacts -> **/com.sec.android.provider.logsprovider/databases/logs.db*
+
+No files found for calllogs -> **/com.android.providers.contacts/databases/contact*
+
+No files found for calllogs -> **/com.sec.android.provider.logsprovider/databases/logs.db*
+
+No files found for Oruxmaps -> **/oruxmaps/tracklogs/oruxmapstracks.db*
+
+No files found for textnow -> **/com.enflick.android.TextNow/databases/textnow_data.db*
+
+No files found for skype -> **/com.skype.raider/databases/live*
+
+No files found for line -> **/jp.naver.line.android/databases/**
+
+No files found for cachelocation -> **/com.google.android.location/files/cache.cell/cache.cell
+
+No files found for cachelocation -> **/com.google.android.location/files/cache.wifi/cache.wifi
+
+No files found for browserlocation -> **/com.android.browser/app_geolocation/CachedGeoposition.db
+
+No files found for googlemaplocation -> **/com.google.android.apps.maps/databases/da_destination_history*
+
+Processes completed.
+Processing time = 00:00:00
+
+Report generation started.
+Report generation Completed.
+
+Report location: C:\Users\sofas\Documents\GitHub\Y1S1\AFSC\Class 05\Class05\ModuleOutput\aLeapp\2021-11-06 15-00-56 GMT\ALEAPP_Reports_2021-11-06_Saturday_150057

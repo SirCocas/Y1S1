@@ -1,8 +1,10 @@
-*.pdf
-*.ppt
-*.ppsx
+*.003
+*.002
+*.E02
 *.ova
 *.7z
 *.vmdk
 *.iso
 *.e01
+*.fdt
+*0

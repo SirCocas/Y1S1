@@ -1,0 +1,5 @@
+FTK Imager			https://bit.ly/3EIohCu	https://www.exterro.com/ftk-imager 								
+Autopsy 4.19.1 (Windows x64)	https://bit.ly/3q73jsQ	https://www.autopsy.com/download/
+RegistryReport 1.6		https://bit.ly/3nXGa9B	https://www.gaijin.at/en/files?dir=old-software%2F&file=registryreport.7z&vk=0wMSe9_40aOc3
+ForensicUserInfo		https://bit.ly/3ofooz1	https://github.com/woanware/ForensicUserInfo/releases/download/v1.0.6/ForensicUserInfo.v1.0.6.zip	
+Windows Registry Recovery 	https://bit.ly/3nQQqR2	http://www.mitec.cz/Downloads/WRR.zip

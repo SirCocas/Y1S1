@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<AutopsyCase>
+  <SchemaVersion>5.0</SchemaVersion>
+  <CreatedDate>2021/11/06 14:09:22 (GMT)</CreatedDate>
+  <ModifiedDate>2021/11/06 14:09:23 (GMT)</ModifiedDate>
+  <CreatedByAutopsyVersion>4.19.1</CreatedByAutopsyVersion>
+  <SavedByAutopsyVersion>4.19.1</SavedByAutopsyVersion>
+  <Case>
+    <Name>class05_20211106_140922</Name>
+    <DisplayName>Class05</DisplayName>
+    <Number>5</Number>
+    <Examiner>Sofia Vaz</Examiner>
+    <ExaminerPhone/>
+    <ExaminerEmail/>
+    <CaseNotes/>
+    <CaseType>Single-user case</CaseType>
+    <Database/>
+    <CaseDatabase>autopsy.db</CaseDatabase>
+    <TextIndex/>
+  </Case>
+  <OriginalCase/>
+</AutopsyCase>

@@ -1,57 +1,27 @@
-from Crypto.Cipher import AES
 import math
 import ctypes
 import random
+import codecs
+import numpy as np
+import base64
 
-c_saes = ctypes.CDLL("./saes_c.so")
-#TODO: 
-#   criar decipher first, decipher normal, decipher special e decipher last
 
-def prepareKeys(key, sk = None, side = 4):
+
+def prepareKey(sk, side = 4):
     # by default, side =  16 
-    idx = 0
-    toRetKey = []
-    toRetSKey = [] if sk!= None else None
-    try:
-        while(len(toRetKey)< side*side):
-            toRetKey.append(int(key[idx:idx+2],16))
-            if(toRetSKey!=None):
-                toRetSKey.append(int(sk[idx:idx+2],16))
-            idx+=2
-            
-        return (toRetKey, toRetSKey)
-    except:
-        print("key is not a readable number")
-        exit()
-
+    while(len(sk)<side*side):
+        sk+=sk
+    return(list(map(ord, sk[:16])))
+    
 
 def xor(x,y):
     return [a^b for a,b in zip(x, y)]
 
-def prepareInput(input, side = 4):
+def prepareInput(input,X=0, side = 4):
     # by default, side =  16 
-    i = 0
-    j = 0
-    padding =  int(str(int((math.pow(side,2)*2 - len(input))/2)),16)
-    while(len(input)< math.pow(side, 2)*2):
-        input+=str(padding)
-        # if the message isn't long enough, it will be padded by the distance (can't use 0s, as it would leave the key clear)
-    idx=0
-    toRetInp = []
-    
-    try:
-        toRetInp.append([])
-        while(i< side):
-            toRetInp[i].append(int(input[idx:idx+2],16)) 
-            
-            idx+=2
-            if(len(toRetInp[i]) == side):
-                i +=1
-                toRetInp.append([])
-        return toRetInp[:-1]
-    except:
-        print("Input or key is not a readable number")
-        return -1
+    while(len(input)<16):
+        input+=chr(X)
+    return np.reshape(list(map(ord,input[:16])), (4, 4))
 
 def stringify(input):
     return [input[i][j] for i in range(0,4) for j in range (0,4)]
@@ -97,22 +67,21 @@ class saes:
             self.offsets[i], self.offsets[current] = self.offsets[current], self.offsets[i]
         return self.offsets
 
-    def sub_word(self,word):
-        return (self.s_box[b] for b in word)
     def rot_word(self, word):
         return word[1:] + word[:1]
 
-    def expandKey(self):
+    def sub_word(self, word):
+        return (self.s_box[b] for b in word)
+
+    def expandKey(self, key):
+
         expanded = []
-        expanded+= self.key
+        expanded.extend(map(ord, key))
         for i in range(4, 4 * (10 + 1)):
             t = expanded[(i-1)*4:i*4]
             if i % 4 == 0:
                 t = xor( self.sub_word( self.rot_word(t) ), (self.rcon[i // 4],0,0,0) )
-            elif 4 > 6 and i % 4 == 4:
-                t = self.sub_word(t)
             expanded.extend( xor(t, expanded[(i-4)*4:(i-4+1)*4]))
-
         return expanded
 
     def __init__(self, key, sk=None):
@@ -151,19 +120,25 @@ class saes:
             0x60, 0x51, 0x7F, 0xA9, 0x19, 0xB5, 0x4A, 0x0D, 0x2D, 0xE5, 0x7A, 0x9F, 0x93, 0xC9, 0x9C, 0xEF,
             0xA0, 0xE0, 0x3B, 0x4D, 0xAE, 0x2A, 0xF5, 0xB0, 0xC8, 0xEB, 0xBB, 0x3C, 0x83, 0x53, 0x99, 0x61,
             0x17, 0x2B, 0x04, 0x7E, 0xBA, 0x77, 0xD6, 0x26, 0xE1, 0x69, 0x14, 0x63, 0x55, 0x21, 0x0C, 0x7D]
-        self.rcon=Rcon = [0x8d, 0x01, 0x02, 0x04, 0x08, 0x10, 0x20, 0x40, 0x80, 0x1b, 0x36, 0x6c, 0xd8, 0xab, 0x4d, 0x9a]
 
+
+
+        self.rcon = [0x8d, 0x01, 0x02, 0x04, 0x08, 0x10, 0x20, 0x40, 0x80, 0x1b, 0x36, 0x6c, 0xd8, 0xab, 0x4d, 0x9a]
+        self.Gmul = {}
+        for f in (0x02, 0x03, 0x0e, 0x0b, 0x0d, 0x09):
+                self.Gmul[f] = tuple(self.gmul(f, x) for x in range(0,0x100))
         #not constants
-        self.key, self.sk = prepareKeys(key,sk)
-        self.key = self.expandKey()
+        self.keys = self.expandKey(key[:16])
+        self.key = self.keys
 
         self.currentLoop = 0
-        
-        if (self.sk!= None):
+        self.inverse_regular_offsets = [4,3,2,1,0]
+        self.regular_offsets = [0,1,2,3] 
+        if (sk!= None):
+            self.sk = prepareKey(sk)
             self.shuffled_s_box = self.generates_box()
             self.rev_shuffled_s_box = self.invert(self.shuffled_s_box)
             self.offsets = self.mixoffsets()
-
             sum = 0
             for i in self.sk:
                 sum+=i
@@ -171,36 +146,30 @@ class saes:
         else:
             self.special_round_time = 10000
 
-    def addRoundKey (self, txt):
-        Nb = len(txt)
-        new_state = [[None for j in range(Nb)] for i in range(Nb)]
+    def addRoundKey (self):
+        key = self.key[16*self.currentLoop:]
         offset = self.sk[self.currentLoop]%16
-        key = self.key[self.currentLoop*16:]
+
         idx = 0
-        for i in range(Nb):
-            for j in range(Nb):
-                idx+=offset
-                idx=idx%(len(key)+1)
-                new_state[i][j] = txt[i][j] ^ key[idx]
+        for i in range(0,4):
+            for j in range(0,4):
+                self.state[i][j] ^= key[idx+offset]
                 idx+=1
+        return self.state
 
 
-        return new_state
+    def reg_addRoundKey (self):
 
-    def reg_addRoundKey (self, txt):
-        Nb = len(txt)
-        new_state = [[None for j in range(Nb)] for i in range(Nb)]
-        key = self.key[self.currentLoop*16:]
-        #print(key)
+        key = self.key[16*self.currentLoop:]
+
         idx = 0
-        for i in range(Nb):
-            for j in range(Nb):
-                new_state[i][j] = txt[i][j] ^ key[idx]
+        for i in range(0,4):
+            for j in range(0,4):
+                self.state[i][j] ^= key[idx]
                 idx+=1
-
-        return new_state
+        return self.state
     
-    def gmul(self, a,b):
+    def gmul(self, a, b):
         p = 0
         for c in range(8):
             if b & 1:
@@ -211,242 +180,299 @@ class saes:
             b >>= 1
         return p
 
-    def reg_subBytes(self, txt, Nb=4):
-        new_state = [[None for j in range(Nb)] for i in range(Nb)]
-        for i in range(Nb):
-            for j in range(Nb):
-                new_state[i][j] = self.s_box[txt[i][j]]
-        return new_state
+    def reg_subBytes(self):
 
-    def inv_reg_sub_bytes(self,txt,Nb=4):
-        new_state = [[None for j in range(Nb)] for i in range(Nb)]
-        for i in range(Nb):
-            for j in range(Nb):
-                new_state[i][j] = self.rev_s_box[txt[i][j]]
-        return new_state
+        for i, b in enumerate(self.state):
+            for j, el in enumerate(b):
+                self.state[i][j] = self.s_box[el]
+        return self.state
 
-    def subBytes(self, txt, Nb=4):
-        new_state = [[None for j in range(Nb)] for i in range(Nb)]
-        for i in range(Nb):
-            for j in range(Nb):
-                new_state[i][j] = self.shuffled_s_box[txt[i][j]]
-        return new_state
+    def inv_reg_sub_bytes(self):
 
-    def inv_sub_bytes(self,txt,Nb=4):
-        new_state = [[None for j in range(Nb)] for i in range(Nb)]
-        for i in range(Nb):
-            for j in range(Nb):
-                new_state[i][j] = self.rev_shuffled_s_box[txt[i][j]]
-        return new_state
+        for i in range(4):
+            for j in range(4):
+                self.state[i][j] = self.rev_s_box[self.state[i][j]]
+        return self.state
+
+    def subBytes(self):
+
+        for i, b in enumerate(self.state):
+            for j, el in enumerate(b):
+                self.state[i][j] = self.shuffled_s_box[el]
+        return self.state
 
 
-    def reg_shift_rows(self,txt, Nb=4):
-        new_state=[]
-        offsets =[i for i in range(0, Nb)]
-        for r in range(4):
-            currentoffset = offsets[r]
-            new_state.append( txt[r] )
-            new_state[r] = new_state[r][currentoffset:] + new_state[r][:currentoffset] 
-        return new_state
-    
-    def inv_reg_shift_rows(self, txt, Nb=4):
-        new_state=[]
-        offsets =[i for i in range(0, Nb)]
-        for r in range(4):
-            currentoffset = 4 - offsets[r]
-            new_state.append( txt[r] )
-            new_state[r] = new_state[r][currentoffset:] + new_state[r][:currentoffset]
-        return new_state
+    def inv_sub_bytes(self):
 
-    def inv_shift_rows(self,txt, Nb=4):
-        new_state=[]
-        for r in range(4):
-            currentoffset = 4 - self.offsets[r]
-            new_state.append( txt[r] )
-            new_state[r] = new_state[r][currentoffset:] + new_state[r][:currentoffset]
-        return new_state
-
-
-    def shift_rows(self,txt, Nb=4):
-        new_state=[]
-        for r in range(4):
-            currentoffset = self.offsets[r]
-            new_state.append( txt[r] )
-            new_state[r] = new_state[r][currentoffset:] + new_state[r][:currentoffset] 
-        return new_state
-
-    def mix_columns(self,txt, Nb=4):
-        new_state = [[None for j in range(Nb)] for i in range(Nb)]
-        offset = self.sk[self.currentLoop]%Nb
-        ss = []
-        for i in range(0,Nb):
-            col = [txt[k][(i+offset)%Nb] for k in range(0,Nb)]
-
-            ss=[
-                        self.gmul(0x02,col[0]) ^ self.gmul(0x03,col[1]) ^                col[2]  ^                col[3] ,
-                                       col[0]  ^ self.gmul(0x02,col[1]) ^ self.gmul(0x03,col[2]) ^                col[3] ,
-                                       col[0]  ^                col[1]  ^ self.gmul(0x02,col[2]) ^ self.gmul(0x03,col[3]),
-                        self.gmul(0x03,col[0]) ^                col[1]  ^                col[2]  ^ self.gmul(0x02,col[3]),
-                    ]
-            for k in range(0,Nb):
-                new_state[k][i] = ss[k]
-
-        return new_state
-    
-    def reg_mix_columns(self,txt, Nb=4):
-        new_state = [[None for j in range(Nb)] for i in range(Nb)]
-        ss = []
-        for i in range(0,Nb):
-            col = [txt[k][i%Nb] for k in range(0,Nb)]
-
-            ss=[
-                        self.gmul(0x02,col[0]) ^ self.gmul(0x03,col[1]) ^                col[2]  ^                col[3] ,
-                                       col[0]  ^ self.gmul(0x02,col[1]) ^ self.gmul(0x03,col[2]) ^                col[3] ,
-                                       col[0]  ^                col[1]  ^ self.gmul(0x02,col[2]) ^ self.gmul(0x03,col[3]),
-                        self.gmul(0x03,col[0]) ^                col[1]  ^                col[2]  ^ self.gmul(0x02,col[3]),
-                    ]
-            for k in range(0,Nb):
-                new_state[k][i] = ss[k]
-
-        return new_state
-    
-    def inv_reg_mix_columns(self, txt, Nb=4):
-        new_state = [[None for j in range(Nb)] for i in range(Nb)]
-        ss = []
-        for i in range(0,Nb):
-            col = [txt[k][i%Nb] for k in range(0,Nb)]
-
-            ss=[
-                        self.gmul(0x0e,col[0]) ^ self.gmul(0x0b,col[1]) ^ self.gmul(0x0d,col[2]) ^ self.gmul(0x09,col[3]),
-                        self.gmul(0x09,col[0]) ^ self.gmul(0x0e,col[1]) ^ self.gmul(0x0b,col[2]) ^ self.gmul(0x0d,col[3]),
-                        self.gmul(0x0d,col[0]) ^ self.gmul(0x09,col[1]) ^ self.gmul(0x0e,col[2]) ^ self.gmul(0x0b,col[3]),
-                        self.gmul(0x0b,col[0]) ^ self.gmul(0x0d,col[1]) ^ self.gmul(0x09,col[2]) ^ self.gmul(0x0e,col[3])
-                    ]
-            for k in range(0,Nb):
-                new_state[k][i] = ss[k]
-
-        return new_state
-
-    def inv_mix_columns(self,txt, Nb=4):
-        new_state = [[None for j in range(Nb)] for i in range(Nb)]
-        offset = self.sk[self.currentLoop]%Nb
-        ss = []
-        for i in range(0,Nb):
-            col = [txt[k][(i+offset)%Nb] for k in range(0,Nb)]
-
-            ss=[
-                        self.gmul(0x0e,col[0]) ^ self.gmul(0x0b,col[1]) ^ self.gmul(0x0d,col[2]) ^ self.gmul(0x09,col[3]),
-                        self.gmul(0x09,col[0]) ^ self.gmul(0x0e,col[1]) ^ self.gmul(0x0b,col[2]) ^ self.gmul(0x0d,col[3]),
-                        self.gmul(0x0d,col[0]) ^ self.gmul(0x09,col[1]) ^ self.gmul(0x0e,col[2]) ^ self.gmul(0x0b,col[3]),
-                        self.gmul(0x0b,col[0]) ^ self.gmul(0x0d,col[1]) ^ self.gmul(0x09,col[2]) ^ self.gmul(0x0e,col[3])
-                    ]
-            for k in range(0,Nb):
-                new_state[k][i] = ss[k]
-
-        return new_state
-
-    def cipher_round_special(self):
-        tmp = self.addRoundKey(self.mix_columns(self.shift_rows(self.subBytes(self.input))))
-        return tmp
-    
-    
-    def cipher_round(self):
-        return self.reg_addRoundKey(self.reg_mix_columns(self.reg_shift_rows(self.reg_subBytes(self.input))))
-
-    def cipher_last_round(self):
-        self.currentLoop = 10
-        return stringify(self.reg_addRoundKey(self.reg_shift_rows(self.reg_subBytes(self.input))))
+        for i, b in enumerate(self.state):
+            for j, el in enumerate(b):
+                self.state[i][j] = self.rev_shuffled_s_box[el]
+        return self.state
         
 
-    def cipher_first_round(self, Nb = 4):
+
+    def reg_shift_rows(self):
+        rows=[]
+        of = [i for i in range(0, 4)]
+        for r in range(4):
+            rows.append([self.state[i][r] for i in range(0,4)])
+            i = self.regular_offsets[r]
+            rows[r] = rows[r][i:] + rows[r][:i]
+        
+        for i in range(4):
+            self.state[i] = [rows[r][i] for r in range(0,4)]
+
+        return self.state
+    
+    def inv_reg_shift_rows(self):
+        rows=[]
+        for r in range(4):
+            rows.append([self.state[i][r] for i in range(0,4)])
+            i = self.inverse_regular_offsets[r]
+            rows[r] = rows[r][i:] + rows[r][:i]
+        
+        for i in range(4):
+            self.state[i] = [rows[r][i] for r in range(0,4)]
+
+        return self.state
+
+    def inv_shift_rows(self):
+        rows=[]
+        of =[4-i for i in self.offsets]
+        #print(self.state)
+        for r in range(4):
+            rows.append([self.state[i][r] for i in range(0,4)])
+            i = of[r]
+            rows[r] = rows[r][i:] + rows[r][:i]
+        
+        for i in range(4):
+            self.state[i] = [rows[r][i] for r in range(0,4)]
+        #print(self.state)
+        return self.state
+
+
+    def shift_rows(self):
+        rows=[]
+        of =[i for i in self.offsets]
+        for r in range(4):
+            rows.append([self.state[i][r] for i in range(0,4)])
+            i = of[r]
+            rows[r] = rows[r][i:] + rows[r][:i]
+        
+        for i in range(4):
+            self.state[i] = [rows[r][i] for r in range(0,4)]
+        return self.state
+
+    def mix_columns(self):
+        offset = self.sk[self.currentLoop]%4
+        new_state = []
+
+        for c in range(0,4):
+            col = self.state[(c+offset)%len(self.state)]
+            new_state.append([
+                        self.Gmul[0x02][col[0]] ^ self.Gmul[0x03][col[1]] ^                col[2]  ^                col[3] ,
+                                       col[0]  ^ self.Gmul[0x02][col[1]] ^ self.Gmul[0x03][col[2]] ^                col[3] ,
+                                       col[0]  ^                col[1]  ^ self.Gmul[0x02][col[2]] ^ self.Gmul[0x03][col[3]],
+                        self.Gmul[0x03][col[0]] ^                col[1]  ^                col[2]  ^ self.Gmul[0x02][col[3]],
+            ])
+        
+        self.state = new_state
+
+        return self.state
+    
+    def reg_mix_columns(self):
+        new_state = []
+
+        for c in range(0,4):
+            col = self.state[c]
+            new_state.append([
+                        self.Gmul[0x02][col[0]] ^ self.Gmul[0x03][col[1]] ^                col[2]  ^                col[3] ,
+                                       col[0]  ^ self.Gmul[0x02][col[1]] ^ self.Gmul[0x03][col[2]] ^                col[3] ,
+                                       col[0]  ^                col[1]  ^ self.Gmul[0x02][col[2]] ^ self.Gmul[0x03][col[3]],
+                        self.Gmul[0x03][col[0]] ^                col[1]  ^                col[2]  ^ self.Gmul[0x02][col[3]],
+            ])
+        
+        self.state = new_state
+
+        return self.state
+    
+    def inv_reg_mix_columns(self):
+
+        new_state = []
+        for c in range(0,4):
+            col = self.state[c]
+            new_state.append([
+                        self.Gmul[0x0e][col[0]] ^ self.Gmul[0x0b][col[1]] ^ self.Gmul[0x0d][col[2]] ^ self.Gmul[0x09][col[3]],
+                        self.Gmul[0x09][col[0]] ^ self.Gmul[0x0e][col[1]] ^ self.Gmul[0x0b][col[2]] ^ self.Gmul[0x0d][col[3]],
+                        self.Gmul[0x0d][col[0]] ^ self.Gmul[0x09][col[1]] ^ self.Gmul[0x0e][col[2]] ^ self.Gmul[0x0b][col[3]],
+                        self.Gmul[0x0b][col[0]] ^ self.Gmul[0x0d][col[1]] ^ self.Gmul[0x09][col[2]] ^ self.Gmul[0x0e][col[3]],
+            ])
+        self.state = new_state
+        return self.state
+
+    def inv_mix_columns(self):
+        offset = self.sk[self.currentLoop]%4
+        new_state = []
+        for c in range(0,4):
+            col = self.state[(c-offset)%len(self.state)]
+            new_state.append([
+                        self.Gmul[0x0e][col[0]] ^ self.Gmul[0x0b][col[1]] ^ self.Gmul[0x0d][col[2]] ^ self.Gmul[0x09][col[3]],
+                        self.Gmul[0x09][col[0]] ^ self.Gmul[0x0e][col[1]] ^ self.Gmul[0x0b][col[2]] ^ self.Gmul[0x0d][col[3]],
+                        self.Gmul[0x0d][col[0]] ^ self.Gmul[0x09][col[1]] ^ self.Gmul[0x0e][col[2]] ^ self.Gmul[0x0b][col[3]],
+                        self.Gmul[0x0b][col[0]] ^ self.Gmul[0x0d][col[1]] ^ self.Gmul[0x09][col[2]] ^ self.Gmul[0x0e][col[3]],
+            ])
+        
+        self.state = new_state
+
+        return self.state
+
+    def encrypt_round_special(self):
+        
+        #print(self.state)
+        
+        self.subBytes()
+       
+        #print(self.state)
+
+        self.shift_rows()
+        #print(self.state)
+
+        self.mix_columns()
+        #print(self.state)
+
+        self.addRoundKey()
+        #print(self.state)
+        
+        return self.state
+    
+    
+    def encrypt_round(self):
+        self.reg_subBytes()
+        self.reg_shift_rows()
+        self.reg_mix_columns()
+        self.reg_addRoundKey()
+        return self.state
+
+    def encrypt_last_round(self):
+        self.currentLoop = 10
+        self.reg_subBytes()
+        self.reg_shift_rows()
+        self.reg_addRoundKey()
+        return stringify(self.state)
+        
+
+    def encrypt_first_round(self, Nb = 4):
         self.currentLoop = 0
-        return self.reg_addRoundKey(self.input)
+        self.reg_addRoundKey()
+        return self.state
 
-    def cipher(self, input):
+    def encrypt(self, input):
         result = []
-        while input!= []:
-            #creating several blocks if the input is too big
-            if(len(input)>32):
-                tmp = input[0:32]
-                input = input[32:]
+        B = 16
+        X = B - (len(input)%B)
+        while(input):
 
-            else:
-                tmp=input
-                input=[]
-
-            self.input = prepareInput(tmp)
+            self.state=prepareInput(input[:16],X)
+            input=input[16:]
             
-
-            self.input = self.cipher_first_round()
+            self.encrypt_first_round()
             for i in range(1,10):
                 self.currentLoop = i
                 if(i==self.special_round_time):
-                    self.input = self.cipher_round_special()
+                    self.encrypt_round_special()
                 else:
-                    self.input = self.cipher_round()
+                    self.encrypt_round()
 
-            result += self.cipher_last_round()
+            result += self.encrypt_last_round()
         
-        return ''.join("%02x"%my_int for my_int in result)
+        self.result = result
+        hex_data = "".join(map(chr, result))
+        return hex_data
 
 
-    def decipher_first_round(self):
+    def decrypt_first_round(self):
         self.currentLoop = 10
-        return self.reg_addRoundKey(self.input)
+        self.reg_addRoundKey()
+        self.inv_reg_shift_rows()
+        return self.inv_reg_sub_bytes()
+        
 
-    def decipher_round(self):
-        #this is wrong!!!
-        return self.inv_reg_mix_columns(self.reg_addRoundKey(self.inv_reg_sub_bytes(self.inv_reg_shift_rows(self.input))))
+    def decrypt_round(self):
+        
+        
+        
+        self.reg_addRoundKey()
+        self.inv_reg_mix_columns()
 
-    def decipher_special(self):
-        #this is wrong!!!
-        """
-        AddRoundKey(InvMixColumns(InvSubBytes(InvShiftRows(x)))
-        """
-        return self.inv_mix_columns(self.addRoundKey(self.inv_sub_bytes(self.inv_shift_rows(self.input))))
+        self.inv_reg_shift_rows()
+        self.inv_reg_sub_bytes()
+        
+        return self.state
 
-    def decipher_last_round(self):
+
+    def decrypt_special(self):
+
+        #print(self.state)
+
+        
+        #print(self.state)
+
+        self.addRoundKey()
+        #print(self.state)
+
+        self.inv_mix_columns()
+        #print(self.state)
+
+        self.inv_shift_rows()
+
+        #print(self.state)
+
+
+        self.inv_sub_bytes()
+        
+        return self.state
+
+    def decrypt_last_round(self):
         self.currentLoop = 0
-        return stringify(self.reg_addRoundKey(self.inv_reg_sub_bytes(self.inv_reg_shift_rows(self.input))))
+        self.reg_addRoundKey()
+        return stringify(self.state)
 
 
-    def decipher(self, input):
+    def decrypt(self, input):
+        #note: every step in the decrypt process perfectly mirrors one of the encryption process
+        #print("DECIPHER...")
         result = []
-        while input!= []:
-            #creating several blocks if the input is too big
-            if(len(input)>32):
-                tmp = input[0:32]
-                input = input[32:]
-
-            else:
-                tmp=input
-                input=[]
-
-            self.input = prepareInput(tmp)
-
-            self.input = self.decipher_first_round()
+        
+        while(input):
+            self.state = prepareInput(input[:16])        
+            input = input[16:]
+            
+            self.decrypt_first_round()
             for i in range(9,0,-1):
+                #print(i)
                 self.currentLoop = i
-                if(i == self.special_round_time):
-                    self.input = self.decipher_special()
+                if(i == self.special_round_time ):
+                    self.decrypt_special()
                 else:
-                    self.input = self.decipher_round()
-            result+=self.decipher_last_round()
-        return ''.join("%02x"%my_int for my_int in result)
+                    self.decrypt_round()
+            result+=self.decrypt_last_round()
+
+        lastElem = result[-1]
+
+        padding = len(result)-lastElem
+        
+        if(padding>0):
+            #this cycle is here to make sure that we're actually removing padding instead of content -> if it's content, it won't be likely that all of the
+            #elements will be the same
+            if all(elem == lastElem for elem in result[padding:]):
+                result=result[:padding]
+
+        self.result=result
+
+        hex_data = "".join(map(chr, result))
+        return hex_data
             
     
     
-
-
-
-
-s = saes("1b1113973213927309213283182381231321238329237983721", "A234213AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA")
-
-print(prepareInput("123123213211331231123"))
-
-tmp = s.reg_addRoundKey(prepareInput("123123213211331231123"))
-
-print(s.reg_addRoundKey(tmp))
-
 
 

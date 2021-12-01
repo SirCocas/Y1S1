@@ -109,8 +109,12 @@ def main():
     slidingValue=3
     obsData=slidingMultObsWindow(data,allLengthsObsWindow,slidingValue)
     features=extractFeatures(obsData)
-    
+    print("PRINTING FEATURES")
     print(features)
+    print("PRINTING STATS")
+    
+    for i in features:
+        print(extratctSilenceActivity(i))
         
 
 if __name__ == '__main__':

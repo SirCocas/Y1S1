@@ -1,0 +1,52 @@
+Exercise 2
+
+Goal: 
+    Check the health status and amount of data written on your storage drive.
+
+
+Requirements:
+    - Smartmontools
+    - storage device with S.M.A.R.T enabled
+    
+
+Introduction:
+    S.M.A.R.T. (Self-Monitoring, Analysis and Reporting Technology; often written as SMART) is a monitoring system included in computer hard disk drives (HDDs), solid-state drives (SSDs)[1], and eMMC drives. Its primary function is to detect and report various indicators of drive reliability with the intent of anticipating imminent hardware failures.
+    
+    When S.M.A.R.T. data indicates a possible imminent drive failure, software running on the host system may notify the user so preventative action can be taken to prevent data loss, and the failing drive can be replaced and data integrity maintained.
+
+
+1) Install the smartmontools:
+    commandline version:
+        Windows / OS X: https://www.smartmontools.org/wiki/Download
+        Linux: sudo apt install smartmontools
+    
+    or try the GUI version:
+        Windows: https://gsmartcontrol.sourceforge.io/home/index.php/Downloads
+        Linux: sudo apt install gsmartcontrol
+    
+    
+    
+2) Get information about your storage device
+    smartctl -x /dev/sda
+        Note 1: the command syntax for windows and Linux is the same
+        Note 2: replace "sda" by "sbb", ... (or /dev/nvme0, ...) to test different storage devices
+        Note 3: some high performance USB sticks also support SMART
+    
+    or try the GUI version
+    
+    
+3) Read the output of the previous command and answer:
+    Note: SMART information is highly dependent on the brand and model of the device. Check some report samples here: https://www.smartmontools.org/wiki/Help#Howtoreadsmartctlreports
+
+    a. What is the device brand, model and serial number?	
+    
+    b. How many bytes have been written so far?
+    
+    c. What is the size of each sector?
+    
+    d. How many hours the drive have been online?
+    
+    e. Are there any errors reported?
+
+
+

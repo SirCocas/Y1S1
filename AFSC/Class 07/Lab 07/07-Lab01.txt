@@ -1,0 +1,35 @@
+Exercise 1 -- test and compare command line tools to identify partition tables
+
+Goal: test the following tools mmls, fdisk and disktype
+
+
+==============================================================
+    This exercise was designed for Linux
+    But some tools also work on Windows
+==============================================================
+
+1) Download from Moodle the file "08-Lab01--imagens.bz2" (23 MB)
+    a. Decompress it
+        
+        
+2) Download from Moodle the file "08-Lab1_table.xls"
+    a. Fill in the table with information obtained with listed tools 
+
+    # command line to test the drives images 
+    file *.dd
+    fdisk -l *.dd 
+    disktype *.dd
+    mmls <image-dd>  # replace <image-dd> with the filename
+
+    b. Based on the previous tests, how many types of partitions are supported by the tools?
+    Tip:
+        man <tool name>
+    
+    
+3) Regarding the drive image "ext-part-test-2.dd" answer:
+    a. How many extended partitions exist?
+1, which is made up of partition 5,6 and 7
+    b. Does all tools report the same begin and end sectors for the partitions?
+
+   
+    

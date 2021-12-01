@@ -1,0 +1,78 @@
+Exercise 1
+
+Goal: 
+    Create a VirtualBox RAW disk. This will allow a Virtual Machine (VM) to access a physical disk, which can be useful to run diagnostic and repair tools.
+
+==============================================================
+    To be done on Windows OS.
+    Can also be done on Linux with some adaptations.
+==============================================================
+
+Requirements:
+    - latest version of VirtualBox (https://www.virtualbox.org/wiki/Downloads)
+    - latest version of VirtualBox Extension Pack (to enable USB 3 support)
+    - Administrator/root privileges
+    - one physical storage device (USB stick, USB external HDD, memory card, ...)
+
+
+1) Cdisonnect your physical storage device to your computer and get its ID
+    a. run cmd.exe as admin
+    
+    b. run the "diskpart" command and list connected disks:
+    
+        » C:\>diskpart
+        » 
+        » Microsoft DiskPart version 10.0.17763.1
+        » 
+        » Copyright (C) Microsoft Corporation.
+        » On computer: DESKTOP-4472961
+        » 
+        » DISKPART> list disk
+        » 
+        » Disk ###  Status         Size     Free     Dyn  Gpt
+        » --------  -------------  -------  -------  ---  ---
+        » Disk 0    Online          953 GB      0 B        *
+        » Disk 1    Online          119 GB      0 B
+        » Disk 2    Online           58 GB      0 B
+        » 
+        » DISKPART> exit
+        » 
+        » Leaving DiskPart...
+
+    c. take note of the disk number of your physical storage device
+
+
+2) Create VirtualBox RAW disk
+    a. in the CMD create a dir:
+        mkdir C:\VirtualBoxRAW
+        
+    b. With an elevated CMD change to the install dir of VirtualBox:
+        cd C:\Program Files\Oracle\VirtualBox\
+        
+    c. execute the following command, but replace the "X" in "\\.\PhysicalDriveX" by the disk number obtained in 1)
+        vboxManage internalcommands createrawvmdk -filename "C:\VirtualBoxRAW\raw.vmdk" -rawdisk "\\.\PhysicalDriveX"
+
+
+---------------------------------------------------------------------    
+For Linux users:
+
+1) connect your physical storage device to your computer and get its ID
+    sudo fdisk -l
+    
+2) Create VirtualBox RAW disk, replace "sdX" by your device ID
+    vboxManage internalcommands createrawvmdk -filename ~/VirtualBoxRAW/raw.vmdk -rawdisk /dev/sdX
+    
+---------------------------------------------------------------------    
+
+        
+3) Use WinFE to analyze the storage device
+    a. run VirtualBox as admin (otherwise it won't work)
+    
+    b. select and edit the settings of your WinFE VM from class 04
+    
+    c. go to: Settings -> Storage -> add SATA controller -> Add existing disk -> choose RAW disk and select "C:\VirtualBoxRAW\raw.vmdk"
+    
+    d. boot your WinFE VM and use FTK Image to inspect your physical storage device
+
+    
+ 

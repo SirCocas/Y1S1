@@ -56,7 +56,7 @@ def main():
     parser.add_argument('-i', '--input', nargs='?',required=True, help='input file')
     args=parser.parse_args()
     
-    fileInput=args.input
+    fileInput='test_data.txt'
         
     data=np.loadtxt(fileInput,dtype=int)
     
@@ -65,23 +65,28 @@ def main():
     # plt.subplot(2,1,2)
     # plt.plot(data[:,0],data[:,2],data[:,0],data[:,4])
     # plt.show()
-    
-    lengthObsWindow=10
+    """
+    lengthObsWindow=5
     print("\n\n### SEQUENTIAL Observation Windows with Length {} ###".format(lengthObsWindow))
     obsData=seqObsWindow(data,lengthObsWindow)
     print(obsData)
+    """
     
+    """
     lengthObsWindow=10
     slidingValue=3
     print("\n\n### SLIDING Observation Windows with Length {} and Sliding {} ###".format(lengthObsWindow,slidingValue))
     obsData=slidingObsWindow(data,lengthObsWindow,slidingValue)
     print(obsData)
-    
+    """
+    #"""
     allLengthsObsWindow=[5,10]
     slidingValue=3
     print("\n\n### SLIDING Observation Windows with Lengths {} and Sliding {} ###".format(allLengthsObsWindow,slidingValue))    
     obsData=slidingMultObsWindow(data,allLengthsObsWindow,slidingValue)
     print(obsData)
+
+    # """
             
         
 

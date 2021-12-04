@@ -82,6 +82,7 @@ class saes:
             if i % 4 == 0:
                 t = xor( self.sub_word( self.rot_word(t) ), (self.rcon[i // 4],0,0,0) )
             expanded.extend( xor(t, expanded[(i-4)*4:(i-4+1)*4]))
+        print(len(expanded))
         return expanded
 
     def __init__(self, key, sk=None):

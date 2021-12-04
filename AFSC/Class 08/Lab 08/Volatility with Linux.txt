@@ -1,0 +1,71 @@
+#sudo -s
+cd ~
+
+apt update && sudo apt upgrade
+apt install build-essential
+
+uname -r
+apt install linux-headers-$(uname -r)
+
+================= PYTON  AND GIT ==================================
+
+#sudo -s
+cd ~
+
+apt install python
+apt install git
+
+================= AVML  ================================== 
+(Install)
+
+wget https://github.com/microsoft/avml/releases/download/v0.3.0/avml
+file avml
+chmod 755 avml
+
+
+(Make a memory Dump)
+
+df -h
+sudo ./avml memory.dmp
+strings memory.dmp | grep -i 'Linux version' | uniq
+
+================= LIME =================
+(Install)
+
+#sudo -s
+cd ~
+
+git clone https://github.com/504ensicsLabs/LiME.git	
+make -C Lime/src
+
+(Make a memory Dump)
+
+insmod lime-$(uname -r).ko "path=/tmp/mem.lime format=lime"
+mkdir Dumps
+cp /tmp/mem.lime ~/Dumps/mem.lime
+
+================= PYTHON ADD-ONS =================
+
+# sudo -s
+cd ~
+
+apt install python-pip
+pip2 install pycrypto
+pip2 install distorm3
+
+================= DWARFDUMP =================
+
+# sudo -s
+cd ~
+
+apt install dwarfdump
+
+================= VOLATILITY =================
+
+# sudo -s
+cd ~
+
+git clone https://github.com/volatilityfoundation/volatility.git
+make -C volatility/tools/linux
+
+zip volatility/volatility/plugins/overlays/linux/Ubuntu.zip ~/volatility/tools/linux/module.dwarf /boot/System.map-$(uname -r)

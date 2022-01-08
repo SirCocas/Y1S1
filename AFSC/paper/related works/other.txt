@@ -1,0 +1,1013 @@
+[6] M. M. Ahmadian, H. R. Shahriari, and S. M. Ghaffarian. Connectionmonitor & connection-breaker: A novel approach for prevention and
+detection of high survivable ransomwares. In Information Security
+and Cryptology (ISCISC), 2015 12th International Iranian Society of
+Cryptology Conference on, pages 79–84. IEEE, 2015.
+[7] D. Bilar et al. Statistical structures: Fingerprinting malware for
+classification and analysis. Proceedings of Black Hat Federal 2006,
+2006.
+[8] K. Cabaj, M. Gregorczyk, and W. Mazurczyk. Software-defined
+networking-based crypto ransomware detection using http traffic characteristics. arXiv preprint arXiv:1611.08294, 2016.
+[9] K. Cabaj and W. Mazurczyk. Using software-defined networking
+for ransomware mitigation: the case of cryptowall. IEEE Network,
+30(6):14–20, 2016.
+[10] R. Chong. Locky ransomware distributed via docm attachments in
+latest email campaigns. FireEye (17 Aug 2016) Accessed Sep, 2016.
+[11] L. Constantin. Cryptowall ransomware held over 600k computers
+hostage, encrypted 5 billion files. IDG News Service, 29, 2014.
+[12] A. Continella, A. Guagnelli, G. Zingaro, G. De Pasquale, A. Barenghi,
+S. Zanero, and F. Maggi. Shieldfs: a self-healing, ransomwareaware filesystem. In Proceedings of the 32nd Annual Conference on
+Computer Security Applications, pages 336–347. ACM, 2016.
+[13] E. Eilam. Reversing: secrets of reverse engineering. John Wiley &
+Sons, 2011.
+[14] J. Han, J. Pei, and Y. Yin. Mining frequent patterns without candidate
+generation. SIGMOD Rec., 29(2):1–12, May 2000.
+[15] F. L. Janis, J. D. Aman, and D. R. Cox. Dynamic link libraries system
+and method, Sept. 21 1993. US Patent 5,247,681.
+[16] K. Jarvis. Cryptolocker ransomware, 2013. URL http://www.
+secureworks. com/cyber-threat-intelligence/threats/cryptolockerransomware/. R etrieved on April, 21:30–31, 2014.
+[17] F. Mercaldo, V. Nardone, and A. Santone. Ransomware inside out. In
+Availability, Reliability and Security (ARES), 2016 11th International
+Conference on, pages 628–637. IEEE, 2016.
+[18] C. Moore. Detecting ransomware with honeypot techniques. In
+Cybersecurity and Cyberforensics Conference (CCC), 2016, pages 77–
+81. IEEE, 2016.
+[19] M. Pietrek. Inside windows-an in-depth look into the win32 portable
+executable file format. MSDN magazine, 17(2), 2002.
+[20] W. Roche. The advanced encryption standard, the process, its strengths
+and weaknesses. University of Colorado, Denver, Spring, 2006.
+[21] M. H. U. Salvi and M. R. V. Kerkar. Ransomware: A cyber extortion.
+Asian Journal of Convergence in Technology, 2016.
+[22] M. Santosa. Understanding elf using readelf and objdump. Linux
+Forms article, pages 1–6, 2006.
+[23] N. Scaife, H. Carter, P. Traynor, and K. R. Butler. Cryptolock (and
+drop it): stopping ransomware attacks on user data. In Distributed
+Computing Systems (ICDCS), 2016 IEEE 36th International Conference on, pages 303–312. IEEE, 2016.
+[24] M. Stevanovic. Linux toolbox. In Advanced C and C++ Compiling,
+pages 243–276. Springer, 2014.
+[25] K. P. Subedi, D. R. Budhathoki, B. Chen, and D. Dasgupta. Rds3:
+Ransomware defense strategy by using stealthily spare space. In
+Computational Intelligence (SSCI), 2017 IEEE Symposium Series on,
+pages 1–8. IEEE, 2017.
+[26] M. Sutton, A. Greene, and P. Amini. Fuzzing: brute force vulnerability
+discovery. Pearson Education, 2007.
+[27] V. Total. Virustotal-free online virus, malware and url scanner. Online:
+https://www. virustotal. com/en, 2012.
+[28] J. H. Yang and Y. Ryu. Design and development of a commandline tool for portable executable file analysis and malware detection
+in iot devices. International Journal of Security and Its Applications,
+9(8):127–136, 2015.
+
+[1] K. Allix, T. F. Bissyande, Q. Jerome, J. Klein, R. State, and ´
+Y. Le Traon, “Large-scale machine learning-based malware
+detection: Confronting the ”10-fold cross validation scheme”
+with reality,” in CODASPY ’14, 2014.
+[2] S. Arzt, S. Rasthofer, E. Bodden, A. Bartel, J. Klein,
+Y. Le Traon, D. Octeau, and P. McDaniel, “Flowdroid: Precise
+context, flow, field, object-sensitive and lifecycle-aware taint
+analysis for android apps,” in Conference on Programming
+Language Design and Implementation (PLDI), 2014.
+[3] A. Bartel, J. Klein, M. Monperrus, K. Allix, and Y. Le Traon,
+“Improving privacy on android smartphones through in-vivo
+bytecode instrumentation,” Technical Report, May 2012.
+[4] A. Bartel, J. Klein, M. Monperrus, and Y. Le Traon, “Dexpler:
+Converting Android Dalvik Bytecode to Jimple for Static
+Analysis with Soot,” in ACM Sigplan Workshop on the State
+Of The Art in Java Program Analysis (SOAP), 2012.
+[5] J. Bickford, R. O’Hare, A. Baliga, V. Ganapathy, and
+L. Iftode, “Rootkits on smart phones: attacks, implications
+and opportunities,” in HotMobile ’10, Maryland, 2010.
+[6] J. Brodkin, “On its 5th birthday, 5 things we love about
+android,” Nov. 2012, http://arstechnica.com/gadgets/2012/11/
+on-androids-5th-birthday-5-things-we-love-about-android/.
+[7] S. Bugiel, L. Davi, A. Dmitrienko, T. Fischer, and
+A.-R. Sadeghi, “Xmandroid: A new android evolution to
+mitigate privilege escalation attacks,” Technische Universitat¨
+Darmstadt, Technical Report TR-2011-04, Apr. 2011.
+[8] I. Burguera, U. Zurutuza, and S. Nadjm-Tehrani, “Crowdroid:
+behavior-based malware detection system for android,” in
+SPSM ’11, Chicago, Illinois, USA, 2011, pp. 15–26.
+[9] P. P. Chan, L. C. Hui, and S. M. Yiu, “Droidchecker:
+analyzing android applications for capability leak,” in WISEC
+’12. Tucson, Arizona, USA: ACM, 2012, pp. 125–136.
+[10] L. Davi, A. Dmitrienko, A.-R. Sadeghi, and M. Winandy,
+“Privilege escalation attacks on android,” in ISC’10. Boca
+Raton, FL, USA: Springer-Verlag, 2011, pp. 346–360.
+[11] A. Desnos, “Android: Static analysis using similarity
+distance,” in HICSS ’12. Washington, DC, USA: IEEE
+Computer Society, 2012, pp. 5394–5403.
+[12] W. Enck, P. Gilbert, B.-G. Chun, L. P. Cox, J. Jung,
+P. McDaniel, and A. N. Sheth, “Taintdroid: an
+information-flow tracking system for realtime privacy
+monitoring on smartphones,” in OSDI’10. Vancouver, BC,
+Canada: USENIX Association, 2010, pp. 1–6.
+[13] W. Enck, D. Octeau, P. McDaniel, and S. Chaudhuri, “A study
+of android application security,” in SEC’11. San Francisco,
+CA: USENIX Association, 2011, pp. 21–21.
+[14] W. Enck, M. Ongtang, and P. McDaniel, “On lightweight
+mobile phone application certification,” in CCS ’09. Chicago,
+Illinois, USA: ACM, 2009, pp. 235–245.
+[15] A. P. Felt, M. Finifter, E. Chin, S. Hanna, and D. Wagner, “A
+survey of mobile malware in the wild,” in SPSM ’11. New
+York, NY, USA: ACM, 2011, pp. 3–14.
+[16] S. Hobarth and R. Mayrhofer, “A framework for on-device ¨
+privilege escalation exploit execution on android,” in Proc.
+IWSSI/SPMU, June 2011.
+[17] P. Hornyack, S. Han, J. Jung, S. Schechter, and D. Wetherall,
+“These aren’t the droids you’re looking for: Retrofitting
+android to protect data from imperious applications,” in
+Proceedings of the 18th ACM Conference on Computer and
+Communications Security, ser. CCS ’11. New York, NY,
+USA: ACM, 2011, pp. 639–652.
+[18] ITU, “Information technology Open Systems Interconnection
+The Directory: Public-key and attribute certificate frameworks
+Technical Corrigendum 2,” ITU, Genebra, Series X: Data
+Networks, Open System Communications and Security
+Directory, nov 2008, ITU-T Recommendation X.509.
+[19] H. B. Mann and D. R. Whitney, “On a test of whether one of
+two random variables is stochastically larger than the other,”
+The Annals of Mathematical Statistics, vol. 18, no. 1, pp.
+50–60, 1947.
+[20] M. Nauman, S. Khan, and X. Zhang, “Apex: extending
+android permission model and enforcement with user-defined
+runtime constraints,” in ASIACCS ’10, 2010, pp. 328–332.
+[21] D. Octeau, P. McDaniel, S. Jha, A. Bartel, E. Bodden,
+J. Klein, and Y. Le Traon, “Effective inter-component
+communication mapping in android with epicc: An essential
+step towards holistic security analysis,” in Proceedings of the
+22nd USENIX Security Symposium, 2013.
+[22] T. Vidas and N. Christin, “Sweetening android lemon
+markets: Measuring and combating malware in application
+marketplaces,” in CODASPY ’13, 2013.
+[23] W. Zhou, Y. Zhou, X. Jiang, and P. Ning, “Detecting
+repackaged smartphone applications in third-party android
+marketplaces,” in CODASPY ’12. ACM, 2012, pp. 317–326.
+[24] Y. Zhou, Z. Wang, W. Zhou, and X. Jiang, “Hey, you, get
+off of my market: Detecting malicious apps in official and
+alternative android markets,” in NDSS’12, 2012.
+[25] Y. Zhou and X. Jiang, “Dissecting android malware:
+Characterization and evolution,” in SP ’12, Washington, DC,
+USA, 2012, pp. 95–109.
+[26] Y. Zhou, X. Zhang, X. Jiang, and V. W. Freeh, “Taming
+information-stealing smartphone applications (on android),”
+in TRUST’11. Pittsburgh, PA: Springer-Verlag, 2011, pp.
+93–107.
+
+[1] OPF format corpus. http://openpreservation.org/technology/corpora/
+opf-format-corpus/.
+[2] N. Agrawal, W. J. Bolosky, J. R. Douceur, and J. R. Lorch. A five-year study of
+file-system metadata. ACM Transactions on Storage (TOS), 2007.
+[3] N. Andronio, S. Zanero, and F. Maggi. HelDroid: Dissecting and detecting mobile
+ransomware. In Proceedings of the International Symposium on Research in
+Attacks, Intrusion and Detection (RAID), 2015.
+[4] E. Arnold. Tennessee sheriff pays ransom to cybercriminals,
+in bitcoin. http://www.bizjournals.com/memphis/blog/2014/11/
+tennessee-sheriff-pays-ransom-to-cybercriminals-in.html, 2014.
+[5] S. Axelsson. The base-rate fallacy and its implications for the difficulty of
+intrusion detection. In Proceedings of the ACM Conference on Computer and
+Communications Security (CCS), 1999.
+[6] D. Carrigan. Police departments hit by ransomware virus. http://www.wcsh6.
+com/story/news/local/2015/04/10/police-departments-hit-by-ransomware-virus/
+25593777/, 2015.
+[7] S. Chakradeo, B. Reaves, P. Traynor, and W. Enck. MAST: Triage for marketscale mobile malware analysis. In Proceedings of ACM Conference on Security
+and Privacy in Wireless and Mobile Networks (WiSec). ACM, 2013.
+[8] V. Chandola, A. Banerjee, and V. Kumar. Anomaly detection: A survey. ACM
+Comput. Surv., 41(3), 2009.
+[9] X. Chen, J. Andersen, Z. M. Mao, M. Bailey, and J. Nazario. Towards an understanding of anti-virtualization and anti-debugging behavior in modern malware.
+In IEEE International Conference on Dependable Systems and Networks, 2008.
+[10] N. Coldwell. Comparison of audio compression. http://nigelcoldwell.co.uk/audio/.
+[11] D. Common. Ransomware victims pay cybercriminals
+to save family photos. http://www.cbc.ca/news/technology/
+ransomware-victims-pay-cybercriminals-to-save-family-photos-1.2962106,
+2015.
+[12] Cuckoo Foundation. Automated malware analysis - cuckoo sandbox. http://www.
+cuckoosandbox.org/.
+[13] C. Cuevas and C. Shaffer. Raising the white flag. http://www.shmoocon.org/2012/
+videos/ShafferCuevas-RaisingTheWhiteFlag.m4v, 2012. Presented at ShmooCon.
+[14] T. Dewan. Teslacrypt joins ransomware field. https://blogs.mcafee.com/
+mcafee-labs/teslacrypt-joins-ransomware-field, 2015.
+[15] C. J. Dietrich, C. Rossow, and N. Pohlmann. Exploiting visual appearance to
+cluster and detect rogue software. In Proceedings of the ACM Symposium on
+Applied Computing. ACM, 2013.
+[16] J. R. Douceur and W. J. Bolosky. A large-scale study of file-system contents. In
+Proceedings of the ACM SIGMETRICS International Conference on Measurement
+and Modeling of Computer Systems, 1999.
+[17] S. Forrest, S. A. Hofmeyr, A. Somayaji, and T. A. Longstaff. A sense of self for
+unix processes. In Proceedings of the IEEE Symposium on Security and Privacy
+(S&P), 1996.
+[18] B. Fraga. Swansea police pay $750 “ransom” after computer virus strikes. The
+Herald News, 2013.
+[19] S. Garfinkel, P. Farrell, V. Roussev, and G. Dinolt. Bringing science to digital
+forensics with standardized forensic corpora. Digital Investigation, 6, Supplement(0), 2009.
+[20] G. Gu, P. Porras, V. Yegneswaran, M. Fong, and W. Lee. BotHunter: detecting
+malware infection through IDS-driven dialog correlation. In Proceedings of the
+USENIX Security Symposium, 2007.
+[21] D. Hadziosmanovi ˇ c, L. Simionato, D. Bolzoni, E. Zambon, and S. Etalle. N-gram ´
+against the machine: On the feasibility of the N-gram network analysis for binary
+protocols. In Proceedings of the International Symposium on Research in Attacks,
+Intrusion and Detection (RAID), 2012.
+[22] B. J. Hicks, A. Dong, R. Palmer, and H. C. Mcalpine. Organizing and managing
+personal electronic files: A mechanical engineer’s perspective. ACM Transactions
+on Information Systems (TOIS), 26(4), 2008.
+[23] S. A. Hofmeyr, S. Forrest, and A. Somayaji. Intrusion detection using sequences
+of system calls. International Journal of Information and Computer Security,
+6(3), 1998.
+[24] S. Jana and V. Shmatikov. Abusing file processing in malware detectors for fun
+and profit. In IEEE Symposium on Security and Privacy (S&P), 2012.
+[25] A. Kharraz, W. Robertson, D. Balzarotti, L. Bilge, and E. Kirda. Cutting the
+gordian knot: A look under the hood of ransomware attacks. DIMVA, 2015.
+[26] G. H. Kim and E. H. Spafford. The design and implementation of tripwire: A file
+system integrity checker. In Proceedings of the ACM Conference on Computer
+and Communications Security, 1994.
+[27] J. Kornblum. Identifying almost identical files using context triggered piecewise
+hashing. Digital Investigation, 3, Supplement(0), 2006.
+[28] S. Kumar and E. H. Spafford. A generic virus scanner for c++. In Proceedings
+of the Computer Security Applications Conference, 1992.
+[29] A. Lanzi, D. Balzarotti, C. Kruegel, M. Christodorescu, and E. Kirda. AccessMiner: Using system-centric models for malware protection. In Proceedings of
+the ACM Conference on Computer and Communications Security (CCS), 2010.
+[30] C. Lever, M. Antonakakis, B. Reaves, P. Traynor, and W. Lee. The core of the
+matter: Analyzing malicious traffic in cellular carriers. In Proceedings of the
+Network and Distributed System Security Symposium (NDSS), 2013.
+[31] R. Lyda and J. Hamrock. Using entropy analysis to find encrypted and packed
+malware. IEEE Security and Privacy, 5(2), 2007.
+[32] D. Maiorca, I. Corona, and G. Giacinto. Looking at the bag is not enough
+to find the bomb: An evasion of structural methods for malicious PDF files
+detection. In Proceedings of the ACM Symposium on Information, Computer
+and Communications Security, 2013.
+[33] J. A. P. Marpaung, M. Sain, and H.-J. Lee. Survey on malware evasion techniques:
+State of the art and challenges. In International Conference on Advanced
+Communication Technology (ICACT), 2012.
+[34] Y. Nadji, J. Giffin, and P. Traynor. Automated remote repair for mobile malware. In Proceedings of the Annual Computer Security Applications Conference
+(ACSAC). ACM, 2011.
+[35] J. Oberheide, M. Bailey, and F. Jahanian. PolyPack: An automated online packing
+service for optimal antivirus evasion. In Proceedings of the USENIX Conference
+on Offensive Technologies, 2009.
+[36] J. Oberheide, E. Cooke, and F. Jahanian. CloudAV: N-Version antivirus in the
+network cloud. In USENIX Security Symposium, 2008.
+[37] G. O’Gorman and G. McDonald. Ransomware: A growing menace. Technical
+report, Symantec Corporation, 2012.
+[38] A. Patcha and J.-M. Park. An overview of anomaly detection techniques: Existing
+solutions and latest technological trends. Computer Networks, 51(12), 2007.
+[39] R. Perdisci, A. Lanzi, and W. Lee. Classification of packed executables for
+accurate computer virus detection. Pattern recognition letters, 29(14), 2008.
+[40] V. Roussev. Data fingerprinting with similarity digests. In Advances in Digital
+Forensics VI, IFIP Advances in Information and Communication Technology.
+Springer Berlin Heidelberg, 2010.
+[41] N. Scaife, H. Carter, and P. Traynor. OnionDNS: A seizure-resistant top-level
+domain. In In IEEE Conference on Communications and Network Security (CNS),
+2015.
+[42] I. Sorokin. Comparing files using structural entropy. Journal in Computer
+Virology, 7(4), 2011.
+[43] A. Tang, S. Sethumadhavan, and S. Stolfo. Unsupervised Anomaly-based
+Malware Detection using Hardware Features. In Proceedings of the International
+Symposium on Research in Attacks, Intrusion and Detection (RAID), 2014.
+[44] D. J. Tian, A. Bates, and K. Butler. Defending against malicious USB firmware
+with GoodUSB. In Proceedings of the Annual Computer Security Applications
+Conference (ACSAC). ACM, 2015.
+[45] P. Traynor, M. Chien, S. Weaver, B. Hicks, and P. McDaniel. Noninvasive methods
+for host certification. ACM Transactions on Information and System Security,
+11(3), 2008.
+[46] X. Ugarte-Pedrero, D. Balzarotti, I. Santos, P. G. Bringas, and S. Antipolis. SoK
+: Deep Packer Inspection : A Longitudinal Study of the Complexity of Run-Time
+Packers. In IEEE Symposium on Security and Privacy (S&P), 2015.
+[47] A. Viswanathan, K. Tan, and C. Neuman. Deconstructing the assessment of
+anomaly-based intrusion detectors. In Proceedings of the International Symposium
+on Research in Attacks, Intrusion and Detection (RAID), 2013.
+[48] J. Walter. Meet tox: Ransomware for the rest of us. https://blogs.mcafee.com/
+mcafee-labs/meet-tox-ransomware-for-the-rest-of-us/, 2015.
+[49] C. Warrender, S. Forrest, and B. Pearlmutter. Detecting intrusions using system
+calls: alternative data models. In Proceedings of the IEEE Symposium on Security
+and Privacy (S&P), 1999.
+[50] H. Weisbaum. CryptoLocker crooks launch ‘customer service’ site. http://www.
+cnbc.com/id/101195861, 2013.
+
+1. Computer economics 2007 malware report: The economic impact of viruses, spyware, adware, botnets, and other malicious code (June 2007)
+2. Darkparanoid virus (August 1998)
+3. Offensive computing (June), http://www.offensivecomputing.net
+4. Anckaert, B., Madou, M., De Bosschere, K.: A model for self-modifying code. In:
+Workshop on Information Hiding. pp. 232–248. Alexandria, VA (September 2007)
+5. Balakrishnan, G., Reps, T.: Analyzing memory accesses in x86 executables. In:
+Conference on Compiler Construction (CC). pp. 5–23. New York, NY (March 2004)
+6. Bayer, U., Moser, A., Kruegel, C., Kirda, E.: Dynamic analysis of malicious code.
+Journal in Computer Virology 2(1), 66–77 (August 2006)
+7. Bellard, F.: QEMU, a fast and portable dynamic translator. In: USENIX Annual
+Technical Conference. Anaheim, CA (April 2005)
+8. BitDefender: BitDefender anti-virus technology. White Paper (April 2007)
+9. Bustamante, P.: Malware prevalence. Panda Research web article (August 2008)
+10. Bustamante, P.: Packer (r)evolution. Panda Research web article (March 2008)
+11. Bustamante, P.: Personal correspondence (March 2009)
+12. Chiang, K., Lloyd, L.: A case study of the rustock rootkit and spam bot. In: First
+Conference on Hot Topics in Understanding Botnets. Cambridge, MA (April 2007)
+13. Cifuentes, C., Van Emmerik, M.: UQBT: adaptable binary translation at low cost.
+Computer 33(3) (March 2000)
+14. Collberg, C., Thomborson, C., Low, D.: Manufacturing cheap, resilient, and
+stealthy opaque constructs. In: Symposium on Principles of Programming Languages (POPL). San Diego, CA (January 1998)
+15. Coogan, K., Debray, S., Kaochar, T., Townsend, G.: Automatic static unpacking
+of malware binaries. In: Working Conference on Reverse Engineering. Antwerp,
+Belgium (October 2009)
+16. Danehkar, A.: Inject your code into a portable executable file (November 2005),
+http://www.codeproject.com/KB/system/inject2exe.aspx
+17. Dinaburg, A., Royal, P., Sharif, M., Lee, W.: Ether: Malware analysis via hardware virtualization extensions. In: Conference on Computer and Communications
+Security. Alexandria, VA (October 2008)
+18. Ferrie, P.: Anti-unpacker tricks. In: International CARO Workshop. Amsterdam,
+The Netherlands (May 2008)
+19. Garfinkel, T., Rosenblum, M.: A virtual machine introspection based architecture
+for intrusion detection. In: Network and Distributed System Security Symposium
+(NDSS). San Diego, CA (Feb 2003)
+20. Guo, F., Ferrie, P., Chiueh, T.: A study of the packer problem and its solutions. In:
+Symposium on Recent Advances in Intrusion Detection (RAID). Springer Berlin /
+Heidelberg, Cambridge, MA (September 2008)
+21. Hind, M., Pioli, A.: Which pointer analysis should I use? In: International Symposium on Software Testing and Analysis (ISSTA). Portland, OR (August 2000)
+22. Hollingsworth, J.K., Miller, B.P., Cargille, J.: Dynamic program instrumentation
+for scalable performance tools. In: Scalable High Performance Computing Conference. Knoxville, TN (May 1994)
+23. Kang, M.G., Poosankam, P., Yin, H.: Renovo: A hidden code extractor for packed
+executables. In: Workshop on Recurring Malcode. Alexandria, VA (October 2007)
+24. Kruegel, C., Robertson, W., Valeur, F., Vigna, G.: Static disassembly of obfuscated
+binaries. In: USENIX Security Symposium. San Diego, CA (August 2004)
+25. Linn, C., Debray, S.: Obfuscation of executable code to improve resistance to static
+disassembly. In: Conference on Computer and Communications Security. Washington, D.C. (October 2003)
+26. Linn, C., Debray, S., Andrews, G., Schwarz, B.: Stack analysis of x86 executables
+(April 2004), manuscript
+27. Luk, C.K., Cohn, R., Muth, R., Patil, H., Klauser, A., Lowney, G., Wallace, S.,
+Reddi, V.J., Hazelwood, K.: PIN: Building customized program analysis tools with
+dynamic instrumentation. In: Conference on Programming Language Design and
+Implementation (PLDI). Chicago, IL (June 2005)
+28. Madou, M., Anckaert, B., De Sutter, B., De Bosschere, K.: Hybrid static-dynamic
+attacks against software protection mechanisms. In: ACM workshop on Digital
+Rights Management. Alexandria, VA (November 2005)
+29. Maebe, J., De Bosschere, K.: Instrumenting self-modifying code. In: Workshop on
+Automated and Algorithmic Debugging. Ghent, Belgium (September 2003)
+30. Martignoni, L., Christodorescu, M., Jha, S.: Omniunpack: Fast, generic, and safe
+unpacking of malware. In: Annual Computer Security Applications Conference
+(ACSAC). Miami Beach, FL (December 2007)
+31. Mirgorodskiy, A.V., Miller, B.P.: Autonomous analysis of interactive systems with
+self-propelled instrumentation. In: Conference on Parallel Computing (ParCo). San
+Jose, CA (January 2005)
+32. Moser, A., Kruegel, C., Kirda, E.: Exploring multiple execution paths for malware
+analysis. In: Symposium on Security and Privacy. Oakland, CA (May 2007)
+33. Moser, A., Kruegel, C., Kirda, E.: Limits of static analysis for malware detection.
+In: Annual Computer Security Applications Conference (ACSAC). Miami Beach,
+FL (December 2007)
+34. Nanda, S., Li, W., Lam, L.C., cker Chiueh, T.: Bird: Binary interpretation using runtime disassembly. In: Symposium on Code Generation and Optimization
+(CGO). New York, NY (March 2006)
+35. Neumann, R.: Exepacker blacklisting part 2. Virus Bulletin (2007)
+36. Nguyen, A.M., Schear, N., Jung, H., Godiyal, A., King, S.T., Nguyen, H.: Mavmm:
+A lightweight and purpose-built vmm for malware analysis. In: Annual Computer
+Security Applications Conference (ACSAC). Honolulu, HI (December 2009)
+37. Panda Security: Annual report Pandalabs 2008 (January 2009)
+38. Perriot, F., Ferrie, P.: Principles and practise of x-raying. In: Virus Bulletin Conference. Chicago, IL (September 2004)
+39. Popov, I., Debray, S., Andrews, G.: Binary obfuscation using signals. In: USENIX
+Security Symposium. Boston, MA (August 2007)
+40. Porras, P., Saidi, H., Yegneswaran, V.: A multi-perspective analysis of the storm
+(peacomm) worm. Tech. rep., SRI International (November 2007)
+41. Porras, P., Saidi, H., Yegneswaran, V.: A foray into conficker’s logic and rendezvous
+points. Tech. rep., SRI International (February 2009)
+42. Quist, D., Ames, C.: Temporal reverse engineering. In: Blackhat USA. Las Vegas,
+NV (August 2008)
+43. Quist, D.A., Liebrock, L.M.: Visualizing compiled executables for malware analysis.
+In: Workshop on Visualization for Cyber Security. Atlantic City, NJ (October 2009)
+44. Rosenblum, N.E., Zhu, X., Miller, B.P., Hunt, K.: Learning to analyze binary
+computer code. In: Conference on Artificial Intelligence (AAAI). Chicago, IL (July
+2008)
+45. Royal, P., Halpin, M., Dagon, D., Edmonds, R., Lee, W.: PolyUnpack: Automating
+the hidden-code extraction of unpack-executing malware. In: Annual Computer
+Security Applications Conference (ACSAC). Miami Beach, FL (December 2006)
+46. Sharif, M., Lanzi, A., Giffin, J., Lee, W.: Impeding malware analysis using conditional code obfuscation. In: Network and Distributed System Security Symposium
+(NDSS). San Diego, CA (February 2008)
+47. Sites, R.L., Chernoff, A., Kirk, M.B., Marks, M.P., Robinson, S.G.: Binary translation. Communications of the ACM 36(2) (February 1993
+48. Srivastava, A., Edwards, A., Vo, H.: Vulcan: Binary transformation in a distributed
+environment. Tech. Rep. MSR-TR-2001-50, Microsoft Research (April 2001)
+49. Srivastava, A., Eustace, A.: ATOM: a system for building customized program
+analysis tools. In: Conference on Programming Language Design and Implementation (PLDI). Orlando, FL (June 1994)
+50. Trilling, S.: Project green bay–calling a blitz on packers. CIO Digest: Strategies
+and Analysis from Symantec (October 2008)
+51. Vigna, G.: Static disassembly and code analysis. In: Malware Detection. Advances
+in Information Security, vol. 35. Springer (September 2007)
+52. Yegneswaran, V., Saidi, H., Porras, P.: Eureka: A framework for enabling static
+analysis on malware. Tech. Rep. SRI-CSL-08-01, SRI International (April 2008)
+
+[1] 2018. mauri870/ransomware. https://github.com/mauri870/ransomware
+[2] 2020. PaysafeCard. https://www.paysafe.com/paysafecard/. [Online; accessed 13-October-2020].
+[3] M. Abbasi, H. Al-Sahaf, and I. Welch. 2020. Particle Swarm Optimization: A Wrapper-Based Feature Selection Method
+for Ransomware Detection and Classification. In Applications of Evolutionary Computation. Springer Int.
+[4] J. A. Abraham and S. M. George. 2019. A Survey on Preventing Crypto Ransomware Using Machine Learning. In 2019
+2nd International Conference on Intelligent Computing, Instrumentation and Control Technologies (ICICICT), Vol. 1.
+[5] L. Abrams. 2020. Netwalker ransomware hits Argentinian government, demands $4 million.
+https://www.bleepingcomputer.com/news/security/netwalker-ransomware-hits-argentinian-governmentdemands-4-million/. [Online; accessed 13-October-2020].
+[6] L. Abrams. 2020. SunCrypt Ransomware shuts down North Carolina school district.
+https://www.bleepingcomputer.com/news/security/suncrypt-ransomware-shuts-down-north-carolina-schooldistrict/. [Online; accessed 13-October-2020].
+[7] Y. Abukar, B. Koçer, and B. Al-rimy. 2020. Automated Analysis Approach for the Detection of High Survivable
+Ransomware. KSII Transactions on Internet and Information Systems 14 (2020).
+[8] Acronis. 2020. Digital CoronaVirus: Yet Another Ransomware Combined with Infostealer.
+https://www.cbronline.com/news/tesla-cyber-attack. [Online; accessed 13-October-2020].
+[9] R. Agrawal, J. W. Stokes, K. Selvaraj, and M. Marinescu. 2019. Attention in Recurrent Neural Networks for Ransomware Detection. In ICASSP 2019 - 2019 IEEE International Conference on Acoustics, Speech and Signal Processing
+(ICASSP).
+[10] Y. Ahmed, B. Koçer, S. Huda, B. A. S. Al-rimy, and M. Hassan. 2020. A system call refinement-based enhanced Minimum Redundancy Maximum Relevance method for ransomware early detection. Journal of Network and Computer
+Applications (2020).
+[11] J. Ahn, D. Park, C. Lee, D. Min, J. Lee, S. Park, Q. Chen, and K. Youngjae. 2019. KEY-SSD: Access-Control Drive to
+Protect Files from Ransomware Attacks. CoRR abs/1904.05012 (04 2019). http://arxiv.org/abs/1904.05012
+[12] M. Akbanov, G. Vassilakis, and M. Logothetis. 2019. Ransomware detection and mitigation using software-defined
+networking: The case of WannaCry. Computers & Electrical Engineering 76 (2019).
+[13] Muna Al-Hawawreh and Elena Sitnikova. 2019. Industrial Internet of Things Based Ransomware Detection Using
+Stacked Variational Neural Network. In Proceedings of the 3rd Int. Conf. on Big Data and Internet of Things. ACM.
+[14] M. Al-Hawawreh and E. Sitnikova. 2019. Leveraging Deep Learning Models for Ransomware Detection in the Industrial Internet of Things Environment. In 2019 Military Communications and Information Systems Conference.
+[15] B. Al-rimy, M. Maarof, Y. Prasetyo, Syed Z. Mohd S., and A. Ariffin. 2018. Zero-Day Aware Decision Fusion-Based
+Model for Crypto-Ransomware Early Detection. International Journal of Integrated Engineering 10 (11 2018).
+[16] B. Al-rimy, M. Maarof, and S. Shaid. 2018. Ransomware threat success factors, taxonomy, and countermeasures: A
+survey and research directions. Computers & Security 74 (01 2018).
+[17] B. A. S. Al-rimy, M. A. Maarof, and S. Z. M Shaid. 2019. Crypto-ransomware early detection model using novel incremental bagging with enhanced semi-random subspace selection. Future Generation Computer Systems 101 (2019).
+[18] O. M. K. Alhawi, J. Baldwin, and A. Dehghantanha. 2018. Leveraging Machine Learning Techniques for Windows
+Ransomware Network Traffic Detection. In Cyber Threat Intelligence. Springer International Publishing.
+[19] K. Alrawashdeh and C. Purdy. 2018. Ransomware Detection Using Limited Precision Deep Learning Structure in
+FPGA. In NAECON 2018 - IEEE National Aerospace and Electronics Conference.
+[20] S. Alsoghyer and I. Almomani. 2019. Ransomware Detection System for Android Applications. Electronics 8 (08
+2019).
+[21] S. Alsoghyer and I. Almomani. 2020. On the Effectiveness of Application Permissions for Android Ransomware
+Detection. In 2020 6th Conference on Data Science and Machine Learning Applications (CDMA).
+[22] A. Alzahrani, H. Alshahrani, A. Alshehri, and H. Fu. 2019. An Intelligent Behavior-Based Ransomware Detection
+System For Android Platform. In First IEEE Int. Conf. on Trust, Privacy and Security in Intel. Systems and Apps.
+[23] A. Alzahrani, A. Alshehri, R. Alharthi, H. Alshahrani, and H. Fu. 2017. An Overview of Ransomware in the Windows
+Platform. In 2017 International Conference on Computational Science and Computational Intelligence (CSCI).
+[24] A. Alzahrani, A. Alshehri, H. Alshahrani, R. Alharthi, H. Fu, A. Liu, and Y. Zhu. 2018. RanDroid: Structural Similarity
+Approach for Detecting Ransomware Applications in Android Platform. In IEEE Int. Conf. on Electro/Info. Technology.
+[25] A. Alzahrani, A. Alshehri, H. Alshahrani, and H. Fu. 2020. Ransomware in Windows and Android Platforms.
+arXiv:2005.05571 [cs.CY]
+[26] N. Alzahrani and D. Alghazzawi. 2019. A Review on Android Ransomware Detection Using Deep Learning Techniques. In Proceedings of the 11th International Conference on Management of Digital EcoSystems. ACM.
+[27] N. Andronio, S. Zanero, and F. Maggi. 2015. HelDroid: Dissecting and Detecting Mobile Ransomware. In Research in
+Attacks, Intrusions, and Defenses. Springer International Publishing.
+[28] Enrique de Argaez. 2006. One Billion Internet Users as of December 2005.
+https://www.internetworldstats.com/pr/edi014.html
+[29] A. Ashraf, A. Aziz, Umme Zahoora, and Asifullah Khan. 2019. Ransomware Analysis using Feature Engineering and
+Deep Neural Networks. CoRR abs/1910.00286 (2019). arXiv:1910.00286 http://arxiv.org/abs/1910.00286
+[30] A. Atapour-Abarghouei, S. Bonner, and A. S. McGough. 2019. Volenti non fit injuria: Ransomware and its Victims.
+In 2019 IEEE International Conference on Big Data (Big Data). 4701–4707.
+[31] S. Aurangzeb, M. Aleem, and A. Iqbal, M.and Islam. 2017. Ransomware: A Survey and Trends. Journal of Information
+Assurance and Security 12 (06 2017).
+[32] A. Azmoodeh, A. Dehghantanha, M. Conti, and K. Raymond Choo. 2017. Detecting crypto-ransomware in IoT
+networks based on energy consumption footprint. Journal of Ambient Intelligence and Humanized Computing (2017).
+[33] Alvin Bacani. 2014. REVETON Ransomware Spreads with Old Tactics, New Infection Method - TrendLabs Security Intelligence Blog. https://blog.trendmicro.com/trendlabs-security-intelligence/reveton-ransomware-spreads-with-old-tactics-new-infection-method/
+[34] S. Bae, G. Lee, and E. Im. 2020. Ransomware detection using machine learning algorithms. Concurrency and Computation: Practice and Experience 32, 18 (2020).
+[35] S. Baek, Y. Jung, A. Mohaisen, S. Lee, and D. Nyang. 2018. SSD-Insider: Internal Defense of Solid-State Drive against
+Ransomware with Perfect Data Recovery. In 2018 IEEE 38th International Conference on Distributed Computing Systems.
+[36] P. Bajpai, A. K. Sood, and R. Enbody. 2018. A key-management-based taxonomy for ransomware. In 2018 APWG
+Symposium on Electronic Crime Research (eCrime).
+[37] J. Baldwin and A. Dehghantanha. 2018. Leveraging Support Vector Machine for Opcode Density Based Detection of
+Crypto-Ransomware. In Cyber Threat Intelligence. Springer International Publishing, 107–136.
+[38] J. Bates. 1990. High level-programs and the AIDS Trojan. Virus Bulletin (1990).
+[39] J. Bates. 1990. Trojan horse: AIDS information introductory diskette version 2.0. Virus Bulletin (1990).
+[40] E. Berrueta, D. Morato, E. Magaña, and M. Izal. 2019. A Survey on Detection Techniques for Cryptographic Ransomware. IEEE Access 7 (2019).
+[41] C. Bijitha, R. Sukumaran, and H. Nath. 2020. A Survey on Ransomware Detection Techniques. In Secure Knowledge
+Management In Artificial Intelligence Era. Springer Singapore, Singapore.
+[42] David Bisson. 2015. Website files encrypted by Linux.Encoder.1 ransomware? There is now a free fix • Graham
+Cluley. https://grahamcluley.com/website-files-encrypted-linux-encoder-1-ransomware-free-fix/
+[43] K. Cabaj, M. Gregorczyk, and W. Mazurczyk. 2016. Software-Defined Networking-based Crypto Ransomware Detection Using HTTP Traffic Characteristics. CoRR abs/1611.08294 (2016). arXiv:1611.08294
+[44] Joshua Cannell. 2013. Cryptolocker ransomware: what you need to know.
+https://blog.malwarebytes.com/101/2013/10/cryptolocker-ransomware-what-you-need-to-know/
+[45] J. Chandra, R. Kumar, and A. Vidyapeetham. 2017. On the efficacy of Android ransomware detection techniques: a
+survey. International Journal of Pure and Applied Mathematics 115 (2017).
+[46] J. Chen, C. Wang, Z. Zhao, K. Chen, R. Du, and G. Ahn. 2018. Uncovering the Face of Android Ransomware: Characterization and Real-Time Detection. IEEE Transactions on Information Forensics and Security 13, 5 (2018).
+[47] Q. Chen, S. Islam, H. Haswell, and R. Bridges. 2019. Automated Ransomware Behavior Analysis: Pattern Extraction
+and Early Detection. In Science of Cyber Security. Springer International Publishing.
+[48] Z. Chen, H. Kang, S. Yin, and S. Kim. 2017. Automatic Ransomware Detection and Analysis Based on Dynamic API
+Calls Flow Graph. In Proceedings of the Int. Conference on Research in Adaptive and Convergent Systems. ACM.
+[49] A. Cimitile, F. Mercaldo, V. Nardone, A. Santone, and C. Visaggio. 2017. Talos: no more ransomware victims with
+formal methods. International Journal of Information Security 17 (2017).
+[50] C. Cimpanu. 2019. Reveton ransomware distributor sentenced to six years in prison in the UK.
+https://www.zdnet.com/article/reveton-ransomware-distributor-sentenced-to-six-years-in-prison-in-the-uk/. [Online; accessed 13-October-2020].
+[51] C. Cimpanu. 2020. Chilean bank shuts down all branches following ransomware attack.
+https://www.zdnet.com/article/chilean-bank-shuts-down-all-branches-following-ransomware-attack/. [Online;
+accessed 13-October-2020].
+[52] C. Cimpanu. 2020. Cloud provider stopped ransomware attack but had to pay ransom demand anyway. https://www.zdnet.com/article/cloud-provider-stopped-ransomware-attack-but-had-to-pay-ransom-demandanyway/. [Online; accessed 13-October-2020].
+[53] C. Cimpanu. 2020. Here’s a list of all the ransomware gangs who will steal and leak your data if you don’t
+pay. https://www.zdnet.com/article/heres-a-list-of-all-the-ransomware-gangs-who-will-steal-and-leak-your-dataif-you-dont-pay/. [Online; accessed 13-October-2020].
+[54] A. Cohen and N. Nissim. 2018. Trusted detection of ransomware in a private cloud using machine learning methods
+leveraging meta-features from volatile memory. Expert Systems with Applications 102 (2018).
+[55] K. Collier. 2020. Major hospital system hit with cyberattack. https://www.nbcnews.com/tech/security/cyberattackhits-major-u-s-hospital-system-n1241254. [Online; accessed 13-October-2020].
+[56] A. Continella, A. Guagnelli, G. Zingaro, G. Pasquale, A. Barenghi, S. Zanero, and F. Maggi. 2016. ShieldFS: A SelfHealing, Ransomware-Aware Filesystem. In Proceedings of the 32nd Annual Conference on Computer Security Applications (ACSAC ’16). ACM, 336–347.
+[57] Brooke Crothers. 2020. Apps designed to track COVID-19 might be full of ransomware, report says.
+https://www.foxnews.com/tech/apps-track-covid-19-full-ransomware
+[58] G. Cusack, O. Michel, and E. Keller. 2018. Machine Learning-Based Detection of Ransomware Using SDN (SDN-NFV
+Sec’18). ACM.
+[59] A. Cuzzocrea, F. Martinelli, and F. Mercaldo. 2018. A Novel Structural-Entropy-based Classification Technique for
+Supporting Android Ransomware Detection and Analysis. In 2018 IEEE International Conference on Fuzzy Systems.
+[60] T. Dargahi, A. Dehghantanha, P. N. Bahrami, M. Conti, G. Bianchi, and L. Benedetto. 2019. A Cyber-Kill-Chain based
+taxonomy of crypto-ransomware features. Journal of Computer Virology and Hacking Techniques 15, 4 (2019).
+[61] S. Demesie Yalew, G. Q. Maguire, S. Haridi, and M. Correia. 2017. Hail to the Thief: Protecting data from mobile ransomware with ransomsafedroid. In 2017 IEEE 16th International Symposium on Network Computing and Applications.
+[62] U. Desai. 2019. A Survey on Android Ransomware and its Detection Methods. International Research Journal of
+Engineering and Technology.
+[63] B. Dickson. 2016. What makes IoT ransomware a different and more dangerous threat?
+https://techcrunch.com/2016/10/02/what-makes-iot-ransomware-a-different-and-more-dangerous-threat/
+[64] S. Egunjobi, S. Parkinson, and A. Crampton. 2019. Classifying Ransomware Using Machine Learning Algorithms. In
+Intelligent Data Engineering and Automated Learning – IDEAL 2019. Springer.
+[65] D. Emm. 2008. Cracking the code: The history of Gpcode. Computer Fraud & Security 2008, 9 (2008).
+[66] R. Falcone. 2020. Thanos Ransomware: Destructive Variant Targeting State-Run Organizations in the Middle East
+and North Africa. https://unit42.paloaltonetworks.com/thanos-ransomware
+[67] H. Faris, I. Almomani, M. Eshtay, I. Aljarah, and M. Habib. 2020. Optimizing Extreme Learning Machines Using
+Chains of Salps for Efficient Android Ransomware Detection. Applied Sciences 10 (05 2020).
+[68] L. Fernández-Maimó, A. Huertas, A. Luis Gomez, Félix J. G. Clemente, J. Weimer, and I. Lee. 2019. Intelligent and
+Dynamic Ransomware Spread Detection and Mitigation in Integrated Clinical Environments. Sensors 19 (03 2019).
+[69] A. Ferrante, M. Malek, F. Martinelli, F. Mercaldo, and J. Milosevic. 2018. Extinguishing Ransomware - A Hybrid
+Approach to Android Ransomware Detection. In Foundations and Practice of Security. Springer International Publishing.
+[70] Dennis Fisher. 2010. New Seftad Ransomware Attacks Master Boot Record. https://threatpost.com/new-seftadransomware-attacks-master-boot-record-113010/74714/. [Online; accessed 13-October-2020].
+[71] B. Fraga. 2013. Swansea police pay $750 "ransom" after computer virus strikes.
+https://www.heraldnews.com/x2132756948/Swansea-police-pay-750-ransom-after-computer-virus-strikes. [Online;
+accessed 13-October-2020].
+[72] B. Freed. 2020. Ransomware attacks appeared to decline as pandemic arrived.
+https://statescoop.com/ransomware-attacks-declined-coronavirus-pandemic/
+[73] L. Freedman. 2020. Ransomware Attacks Predicted to Occur Every 11 Seconds in 2021 with a Cost of $20
+Billion. https://www.dataprivacyandsecurityinsider.com/2020/02/ransomware-attacks-predicted-to-occur-every-11-
+seconds-in-2021-with-a-cost-of-20-billion/. [Online; accessed 13-October-2020].
+[74] D. Garg, A. Thakral, T. Nalwa, and T. Choudhury. 2018. A Past Examination and Future Expectation: Ransomware.
+2018 International Conference on Advances in Computing and Communication Engineering (2018).
+[75] Z. Genç, G. Lenzini, and D. Sgandurra. 2019. On Deception-Based Protection Against Cryptographic Ransomware.
+In Detection of Intrusions and Malware, and Vulnerability Assessment. Springer Int. Publ.
+[76] Z. Genç, G. Lenzini, and P. Ryan. 2018. No Random, No Ransom: A Key to Stop Cryptographic Ransomware. In
+Detection of Intrusions and Malware, and Vulnerability Assessment. Springer International Publishing, 234–255.
+[77] A. Gharib and A. Ghorbani. 2017. DNA-Droid: A Real-Time Android Ransomware Detection Framework. In Network
+and System Security. Springer International Publishing.
+[78] D. Gonzalez and T. Hayajneh. 2017. Detection and prevention of crypto-ransomware. In 2017 IEEE 8th Annual
+Ubiquitous Computing, Electronics and Mobile Communication Conference (UEMCON).
+[79] A. Gostev. 2005. Krotten source traced. https://securelist.com/krotten-source-traced-for-the-moment/30086/
+[80] P. Goyal, A. Kakkar, G. Vinod, and G. Joseph. 2020. Crypto-Ransomware Detection Using Behavioural Analysis. In
+Reliability, Safety and Hazard Assessment for Risk-Based Technologies. Springer Singapore.
+[81] Juan A. H. Silva, L. Barona, L. Valdivieso, and M. Alvarez. 2019. A Survey on Situational Awareness of Ransomware
+Attacks—Detection and Prevention Parameters. Remote Sensing 11 (05 2019).
+[82] Isobel Asher Hamilton. 2020. Elon Musk: Tesla was target of a failed ransomware attack - Business Insider.
+https://www.businessinsider.com/elon-musk-confirms-tesla-was-target-of-failed-ransomware-attack-2020-8
+[83] M. M. Hasan and M. M. Rahman. 2017. RansHunt: A support vector machines based ransomware analysis framework
+with integrated feature set. In 2017 20th International Conference of Computer and Information Technology (ICCIT).
+[84] K. J. Higgins. 2019. Ransomware “Crisis” in US Schools: More Than 1,000 Hit So Far in 2019.
+https://www.darkreading.com/threat-intelligence/ransomware-crisis-in-us-schools-more-than-1000-hit-so-far-in-2019/d/d-id/1336634
+[85] S. Homayoun, A. Dehghantanha, M. Ahmadzadeh, S. Hashemi, and R. Khayami. 2020. Know Abnormal, Find Evil:
+Frequent Pattern Mining for Ransomware Threat Hunting and Intelligence. IEEE Transactions on Emerging Topics in
+Computing 8, 2 (2020).
+[86] D. Y. Huang, M. M. Aliapoulios, V. G. Li, L. Invernizzi, E. Bursztein, K. McRoberts, J. Levin, K. Levchenko, A. C.
+Snoeren, and D. McCoy. 2018. Tracking Ransomware End-to-end. In 2018 IEEE Symposium on Security and Privacy.
+[87] J. Huang, J. Xu, X. Xing, P. Liu, and M. K. Qureshi. 2017. FlashGuard: Leveraging Intrinsic Flash Properties to Defend
+Against Encryption Ransomware. In 2017 ACM SIGSAC Conference on Computer and Communications Security.
+[88] G. Hull, H. John, and B. Arief. 2019. Ransomware deployment methods and analysis: views from a predictive model
+and human responses. Crime Science 8 (2019).
+[89] M. Humayun, A. Alsayat N. Jhanjhi, and V. Ponnusamy. 2020. Internet of things and ransomware: Evolution, mitigation and prevention. Egyptian Informatics Journal (2020).
+[90] J. Hwang, J. Kim, S. Lee, and K. Kim. 2020. Two-Stage Ransomware Detection Using Dynamic Analysis and Machine
+Learning Techniques. Wireless Personal Communications 112 (2020).
+[91] J. Ibarra, U. Javed Butt, A. Do, H. Jahankhani, and A. Jamal. 2019. Ransomware Impact to SCADA Systems and its
+Scope to Critical Infrastructure. In 2019 IEEE 12th International Conference on Global Security, Safety and Sustainability.
+[92] L. Iffländer, A. Dmitrienko, C. Hagen, M. Jobst, and S. Kounev. 2019. Hands Off my Database: Ransomware Detection
+in Databases through Dynamic Analysis of Query Sequences. arXiv:1907.06775 [cs.CR]
+[93] O’Ryan J. 2020. ConnectWise Partners Hit By Ransomware Via Automate Flaw. https://www.crn.com/news/channelprograms/connectwise-partners-hit-by-ransomware-via-automate-flaw. [Online; accessed 13-October-2020].
+[94] K. Jercich. 2020. Ransomware attack leaves 5 years of patient records inaccessible at Colo. hospital.
+https://www.healthcareitnews.com/news/ransomware-attack-leaves-5-years-patient-records-inaccessible-co-hospital
+[95] B. Jethva, I. Traoré, A. Ghaleb, K. Ganame, and S. Ahmed. 2019. Multilayer ransomware detection using grouped
+registry key operations, file entropy and file signature monitoring. Journal of Computer Security (2019).
+[96] Sudhakar K. and S. Kumar. 2020. An emerging threat Fileless malware: a survey and research challenges. Cybersecurity 3 (2020).
+[97] D. Kao, S. Hsiao, and R. Tso. 2019. Analyzing WannaCry Ransomware Considering the Weapons and Exploits. In
+2019 21st International Conference on Advanced Communication Technology (ICACT).
+[98] A. Karimi and M. H. Moattar. 2017. Android ransomware detection using reduced opcode sequence and image
+similarity. In 2017 7th International Conference on Computer and Knowledge Engineering (ICCKE).
+[99] C. Keong Ng, S. Rajasegarar, L. Pan, F. Jiang, and L. Yu Zhang. 2020. VoterChoice: A ransomware detection honeypot
+with multiple voting framework. Concurrency and Computation: Practice and Experience 32, 14 (2020).
+[100] M. Keshavarzi and H. Ghaffary. 2020. I2CE3: A dedicated and separated attack chain for ransomware offenses as the
+most infamous cyber extortion. Computer Science Review 36 (2020).
+[101] A. Kharaz, S. Arshad, C. Mulliner, W. Robertson, and E. Kirda. 2016. UNVEIL: A Large-Scale, Automated Approach
+to Detecting Ransomware. In 25th USENIX Security Symposium (USENIX Security 16).
+[102] A. Kharraz and E. Kirda. 2017. Redemption: Real-Time Protection Against Ransomware at End-Hosts. In Research in
+Attacks, Intrusions, and Defenses. Springer International Publishing, 98–119.
+[103] A. Kharraz, W. Robertson, D. Balzarotti, L. Bilge, and E. Kirda. 2015. Cutting the Gordian Knot: A Look Under the
+Hood of Ransomware Attacks. Detection of Intrusions and Malware, and Vulnerability Assessment LNCS (2015).
+[104] E. Kirda. 2016. Most ransomware isn’t as complex as you might think. https://privacy-pc.com/articles/mostransomware-isnt-as-complex-as-you-might-think.htm. [Online; accessed 13-October-2020].
+[105] M. Kiru and J. Aman. 2019. The Age of Ransomware: Understanding Ransomware and Its Countermeasures.. In
+Artificial Intelligence and Security Challenges in Emerging Networks.
+[106] KnowBe4. [n.d.]. Archiveus Trojan. https://www.knowbe4.com/archiveus-trojan. [Online; accessed 13-October2020].
+[107] KnowBe4. 2019. CryptoWall Ransomware | KnowBe4. https://www.knowbe4.com/cryptowall. [Online; accessed
+13-October-2020].
+[108] S-H Kok, Azween Abdullah, N. Jhanjhi, and Mahadevan Supramaniam. 2019. Ransomware , Threat and Detection
+Techniques : A Review. IJCSNS International Journal of Computer Science and Network Security 19.
+[109] E. Kolodenker, W. Koch, G. Stringhini, and M. Egele. 2017. PayBreak: Defense Against Cryptographic Ransomware.
+In Proceedings of the 2017 ACM on Asia Conference on Computer and Communications Security.
+[110] Ahmet Kurt, Enes Erdin, Mumin Cebe, Kemal Akkaya, and A Selcuk Uluagac. 2020. LNBot: A Covert Hybrid Botnet
+on Bitcoin Lightning Network for Fun and Profit. In European Symposium on Research in Computer Security. Springer.
+[111] N. Lachtar, D. Ibdah, and A. Bacha. 2019. The Case for Native Instructions in the Detection of Mobile Ransomware.
+IEEE Letters of the Computer Society 2, 2 (2019).
+[112] K. Laffan. 2015. A Brief History of Ransomware. https://www.varonis.com/blog/a-brief-history-of-ransomware/
+[113] K. Lee, S. Lee, and K. Yim. 2019. Effective Ransomware Detection Using Entropy Estimation of Files for Cloud
+Services. In Pervasive Systems, Algorithms and Networks. Springer International Publishing.
+[114] S. Lee, H. Kim, and K. Kim. 2019. Ransomware protection using the moving target defense perspective. Computers
+& Electrical Engineering 78 (2019).
+[115] R. Lemos. 2020. Attackers Prefer Ransomware to Stealing Data. https://www.darkreading.com/threat-intelligence/attackers-prefer-ransomware-to-stealing-data/d/d-id/1337627
+[116] T. Lu, Y. Du, J. Wu, and Y. Bao. 2020. Ransomware Detection Based on an Improved Double-Layer Negative Selection
+Algorithm. In Testbeds and Research Infrastructures for the Development of Networks and Communications. Springer.
+[117] Cybercrime Magazine. 2020. Cybercrime Bytes: Time Bomb Attacks, Security’s Fuzz Buzz, Ransomware For Dummies. https://cybersecurityventures.com/cybercrime-bytes-time-bomb-attacks-securitys-fuzz-buzz-ransomwarefor-dummies/. [Online; accessed 13-October-2020].
+[118] Security Magazine. 2020. First ransomware-related death reported in Germany.
+https://www.securitymagazine.com/articles/93409-first-ransomware-related-death-reported-in-germany. [Online; accessed 13-October-2020].
+[119] A. Maigida, S. Abdulhamid, M. Olalere, K. Alhassan, H. Chiroma, and E. Dada. 2019. Systematic literature review and
+metadata analysis of ransomware attacks and detection mechanisms. J. of Reliable Intelligent Environments (2019).
+[120] A. Maigida, S. Abdulhamid, M. Olalere, and I. Idris. 2019. An intelligent crypto-locker ransomware detection technique using Support Vector Machine classification and Grey Wolf Optimization algorithms. i-manager’s Journal on
+Software Engineering 13 (03 2019).
+[121] Proton Mail. 2013. https://protonmail.com/. [Online; accessed 13-October-2020].
+[122] D. Maiorca, F. Mercaldo, G. Giacinto, C. Visaggio, and F. Martinelli. 2017. R-PackDroid: API package-based characterization and detection of mobile ransomware. In SAC ’17.
+[123] S. Maniath, A. Ashok, P. Poornachandran, V. G. Sujadevi, P. Sankar A.U., and S. Jan. 2017. Deep learning LSTM based
+ransomware detection. In 2017 Recent Developments in Control, Automation Power Engineering (RDCAPE).
+[124] S. Maniath, P. Poornachandran, and V. G. Sujadevi. 2019. Survey on Prevention, Mitigation and Containment of
+Ransomware Attacks. In Security in Computing and Communications. Springer Singapore, Singapore.
+[125] F. Martinelli, F. Mercaldo, C. Michailidou, and A. Saracino. 2018. Phylogenetic Analysis for Ransomware Detection
+and Classification into Families. In Proceedings of the 15th International Joint Conference on e-Business and Telecommunications, ICETE 2018 - Volume 2: SECRYPT, Porto, Portugal, July 26-28, 2018. SciTePress, 732–737.
+[126] D. Matos, M. Pardal, G. Carle, and M. Correia. 2018. RockFS: Cloud-backed File System Resilience to Client-Side
+Attacks. Middleware ’18: Proceedings of the 19th International Middleware Conference.
+[127] M. Medhat, S. Gaber, and N. Abdelbaki. 2018. A New Static-Based Framework for Ransomware Detection. In IEEE
+16th Intl Conf on Dependable, Autonomic and Secure Computing.
+[128] S. Mehnaz, A. Mudgerikar, and E. Bertino. 2018. RWGuard: A Real-Time Detection System Against Cryptographic
+Ransomware. In Research in Attacks, Intrusions, and Defenses. Springer International Publishing.
+[129] F. Mercaldo, V. Nardone, A. Santone, and C. Visaggio. 2016. Ransomware Steals Your Phone. Formal Methods Rescue
+It. In Formal Techniques for Distributed Objects, Components, and Systems. Springer International Publishing, Cham.
+[130] Trend Micro. [n.d.]. Command and Control Server. https://www.trendmicro.com/vinfo/us/security/definition/commandand-control-server. [Online; accessed 13-October-2020].
+[131] D. Min, D. Park, J. Ahn, R. Walker, J. Lee, S. Park, and Y. Kim. 2018. Amoeba: An Autonomous Backup and Recovery
+SSD for Ransomware Attack Defense. IEEE Computer Architecture Letters 17, 2 (2018).
+[132] J. Modi, I. Traore, A. Ghaleb, K. Ganame, and S. Ahmed. 2020. Detecting Ransomware in Encrypted Web Traffic. In
+Foundations and Practice of Security. Springer International Publishing.
+[133] D. Morato, E. Berrueta, E. Magaña, and M. Izal. 2018. Ransomware early detection by the analysis of file sharing
+traffic. Journal of Network and Computer Applications 124 (2018).
+[134] A. Naseer, R. Mir, A. Mir, and M.Aleem. 2020. Windows-based Ransomware: A Survey. Journal of Information
+Assurance and Security 15 (2020).
+[135] BBC News. 2017. iPhone users fooled by fake ransomware. (Mar 2017).
+https://www.bbc.com/news/technology-39432350
+[136] BBC News. 2020. Northumbria University hit by cyber attack. https://www.bbc.com/news/uk-england-tyne53989404. [Online; accessed 13-October-2020].
+[137] Nikolai. 2016. Ransomware Brief - Evolution and The Future - 3583 BYTES FREE, READY?
+https://3583bytesready.net/2016/01/27/ransomware_evolution_introduction/
+[138] Dick Obrien. 2017. Internet Security Threat Report ISTR Ransomware 2017.
+https://docs.broadcom.com/doc/istr-ransomware-2017-en
+[139] Lindsey O’Donnell. 2019. ThreatList: Top 5 Most Dangerous Attachment Types.
+https://threatpost.com/threatlist-top-5-most-dangerous-attachment-types/144635/
+[140] A.n Palisse, A. Durand, H. Le Bouder, C. Le Guernic, and J. Lanet. 2017. Data Aware Defense (DaD): Towards a
+Generic and Practical Ransomware Countermeasure. In Secure IT Systems. Springer International Publishing.
+[141] Dorka Palotay. 2017. Deconstructing Philadelphia. https://www.sophos.com/en-us/medialibrary/PDFs/technical-papers/RaaS-Philadelphia.pdf
+[142] J. Park, Y. Jung, J. Won, M. Kang, S. Lee, and J. Kim. 2019. RansomBlocker: a Low-Overhead Ransomware-Proof SSD.
+In 2019 56th ACM/IEEE Design Automation Conference (DAC).
+[143] A. Petcu. 2020. Netwalker Ransomware Explained:. https://heimdalsecurity.com/blog/netwalker-ransomware-explained/
+[144] S. Poudyal, K. P. Subedi, and D. Dasgupta. 2018. A Framework for Analyzing Ransomware using Machine Learning.
+In 2018 IEEE Symposium Series on Computational Intelligence (SSCI).
+[145] L. Štefanko R. Lipovský and G. Braniša. 2016. The Rise of Android Ransomware.
+http://www.neotericnetworks.com/wp-content/uploads/2016/11/Rise-of-Android-Ransomware.pdf
+[146] H. Rehman, E. Yafi, M. Nazir, and K. Mustafa. 2019. Security Assurance Against Cybercrime Ransomware. In Intelligent Computing & Optimization. Springer International Publishing.
+[147] roothaxor. 2017. roothaxor/Ransom. https://github.com/roothaxor/Ransom
+[148] K. Chandra Roy and Q. Chen. 2020. DeepRan: Attention-based BiLSTM and CRF for Ransomware Early Detection
+and Classification. Information Systems Frontiers (2020).
+[149] M. Saleh. 2019. A Proactive Approach for Detecting Ransomware based on Hidden Markov Model (HMM). International Journal of Intelligent Computing Research 10 (2019).
+[150] S. Salehi, H. Shahriari, M. M. Ahmadian, and L. Tazik. 2018. A Novel Approach for Detecting DGA-based Ransomwares. In 2018 15th International ISC (Iranian Society of Cryptology) Conference on Information Security and Cryptology (ISCISC).
+[151] J. Sangmoon and W. Yoojae. 2018. Ransomware detection method based on context-aware entropy analysis. Soft
+Computing 22 (2018).
+[152] K. Savage, P. Coogan, and H. Lau. 2015. The evolution of ransomware.
+https://its.fsu.edu/sites/g/files/imported/storage/images/information-security-and-privacy-office/the-evolution-of-ransomware.pdf
+[153] N. Scaife, H. Carter, P. Traynor, and K. R. B. Butler. 2016. CryptoLock (and Drop It): Stopping Ransomware Attacks
+on User Data. In 2016 IEEE 36th International Conference on Distributed Computing Systems (ICDCS).
+[154] M. Scalas, D. Maiorca, F. Mercaldo, C. Visaggio, F. Martinelli, and G. Giacinto. 2019. On the effectiveness of system
+API-related information for Android ransomware detection. Computers & Security (2019).
+[155] B. Schneier. 2016. Stop Trying to Fix the User. IEEE Security & Privacy 14, 05 (2016).
+[156] CIS Security. 2019. Fall 2019 Threat of the Quarter: Ryuk Ransomware. https://www.cisecurity.org/white-papers/fall2019-threat-of-the-quarter-ryuk-ransomware/. [Online; accessed 13-October-2020].
+[157] Krebson Security. 2020. Ransomware Gangs Don’t Need PR Help — Krebs on Security.
+https://krebsonsecurity.com/2020/07/ransomware-gangs-dont-need-pr-help/
+[158] Microsoft Security. 2020. Human Operated Ransomware Attacks A Preventable Disaster.
+https://www.microsoft.com/security/blog/2020/03/05/human-operated-ransomware-attacks-a-preventabledisaster/. [Online; accessed 13-October-2020].
+[159] I. Segun, B. I. Ujioghosa, S. O. Ojewande, F. O. Sweetwilliams, S. N. John, and A. A. Atayero. 2017. Ransomware:
+Current Trend, Challenges, and Research Directions. In Proceedings of The World Congress on Eng. and Comp. Science.
+[160] Jérôme Segura. 2020. WOOF locker: Unmasking the browser locker behind a stealthy tech support scam operation.
+https://blog.malwarebytes.com/threat-analysis/2020/01/woof-locker-stealthy-browser-locker-tech-support-scam/
+[161] D. Sgandurra, L. Muñoz-González, R. Mohsen, and E. Lupu. 2016. Automated Dynamic Analysis of Ransomware:
+Benefits, Limitations and use for Detection. CoRR abs/1609.03020 (2016). http://arxiv.org/abs/1609.03020
+[162] S. Sharmeen, Y. Ahmed, S. Huda, B. Koçer, and M. Hassan. 2020. Avoiding Future Digital Extortion Through Robust
+Protection Against Ransomware Threats Using Deep Learning Based Adaptive Approaches. IEEE Access (2020).
+[163] S. K. Shaukat and V. J. Ribeiro. 2018. RansomWall: A layered defense system against cryptographic ransomware
+attacks using machine learning. In 2018 10th International Conference on Communication Systems Networks (COMSNETS).
+[164] S. Sheen and A. Yadav. 2018. Ransomware detection by mining API call usage. In 2018 International Conference on
+Advances in Computing, Communications and Informatics (ICACCI).
+[165] R. Shinde, P. Van der Veeken, S. Van Schooten, and J. van den Berg. 2016. Ransomware: Studying transfer and
+mitigation. In 2016 International Conference on Computing, Analytics and Security Trends (CAST).
+[166] M. Sikorski and A. Honig. 2012. Practical Malware Analysis: The Hands-On Guide to Dissecting Malicious Software
+(1st ed.). No Starch Press, USA.
+[167] S. Smith. 2016. The evolution of mobile ransomware. https://blog.avast.com/the-evolution-of-mobile-ransomware
+[168] J. Snow. 2016. Ransomware on mobile devices: knock-knock-block. https://www.kaspersky.com/blog/mobile-ransomware-2016/12491/
+[169] S. Song, B. Kim, and S. Lee. 2016. The Effective Ransomware Prevention Technique Using Process Monitoring on
+Android Platform. Mobile Information Systems 2016 (2016).
+[170] Sophos. 2015. The current state of ransomware: CTB-Locker. https://news.sophos.com/en-us/2015/12/31/the-current-state-of-ransomware-ctb-locker/
+[171] Sophos. 2020. Ransomware: How an attack works. https://support.sophos.com/support/s/article/KB-000036277
+[172] Reuters Staff. 2017. Ransomware: Facts, Threats, and Countermeasures.
+https://www.cisecurity.org/blog/ransomware-facts-threats-and-countermeasures/. [Online; accessed 13-October2020].
+[173] Reuters Staff. 2020. Carnival hit by ransomware attack. https://www.reuters.com/article/us-carnival-cyber/carnivalhit-by-ransomware-attack-guest-and-employee-data-accessed-idUSKCN25D2GR. [Online; accessed 13-October2020].
+[174] Reuters Staff. 2020. Reflective Loading Runs Netwalker Fileless Ransomware.
+https://www.trendmicro.com/netwalker-fileless-ransomware-injected-via-reflective-loading.html. [Online;
+accessed 13-October-2020].
+[175] Statista. 2013. Desktop OS market share 2013-2018 | Statista. 
+[176] R. Stubbs. 2019. An Overview of Symmetric Encryption and the Key Lifecycle. https://www.cryptomathic.com/newsevents/blog/an-overview-of-symmetric-encryption-and-the-key-lifecycle. [Online; accessed 13-October-2020].
+[177] O. Suciu, S. Coull, and J. Johns. 2018. Exploring Adversarial Examples in Malware Detection. CoRR abs/1810.08280
+(2018). arXiv:1810.08280 http://arxiv.org/abs/1810.08280
+[178] Y. Takeuchi, K. Sakai, and S. Fukumoto. 2018. Detecting Ransomware Using Support Vector Machines. In Proceedings
+of the 47th International Conference on Parallel Processing Companion. ACM.
+[179] F. Tang, B. Ma, Jinku Li, F. Zhang, J. Su, and J. Ma. 2020. RansomSpector: An introspection-based approach to detect
+crypto ransomware. Computers & Security 97 (2020).
+[180] M. Taylor, K. Smith, and M. Thornton. 2017. Sensor-based Ransomware Detection. In Future Technologies Conference.
+[181] Symantec Threat Hunter Team. 2020. WastedLocker: Symantec Identifies Wave of Attacks Against U.S. Organizations. https://symantec-enterprise-blogs.security.com/blogs/threat-intelligence/wastedlocker-ransomware-us. [Online; accessed 13-October-2020].
+[182] J. Tolbert. 2020. Malicious Actors Exploiting Coronavirus Fears. https://www.kuppingercole.com/blog/tolbert/maliciousactors-exploiting-coronavirus-fears. [Online; accessed 13-October-2020].
+[183] TrendMicro. 2019. Emerging Threat on Ransom Locky. https://success.trendmicro.com/solution/1113859-emerging-threat-on-ransom-locky
+[184] Veracode. 2014. Rootkit. https://www.veracode.com/security/rootki. [Online; accessed 13-October-2020].
+[185] P. Wang, S. Jia, B. Chen, L. Xia, and P. Liu. 2019. MimosaFTL: Adding Secure and Practical Ransomware Defense
+Strategy to Flash Translation Layer.
+[186] A. Wani and R. Sathiya. 2020. Ransomware protection in IoT using software defined networking. International
+Journal of Electrical and Computer Engineering (IJECE) 10 (2020).
+[187] Doctor Web. 2015. Encryption ransomware threatens Linux users. https://news.drweb.com/show/?i=9686&c=5&lng=en&p=0.
+[Online; accessed 13-October-2020].
+[188] F. Wei, Y. Li, S. Roy, X. Ou, and W. Zhou. 2017. Deep Ground Truth Analysis of Current Android Malware. In Detection
+of Intrusions and Malware, and Vulnerability Assessment. Springer Inter. Publ.
+[189] N. Weiss, M. Schrötter, and R. Hackenberg. 2019. On Threat Analysis and Risk Estimation of Automotive Ransomware. In ACM Computer Science in Cars Symposium (Kaiserslautern, Germany) (CSCS ’19). ACM, Article 6.
+[190] WIRED. 2018. Atlanta Spent 2.6푀푡표푅푒푐표푣푒푟 퐹푟표푚푎52,000 Ransomware Scare.
+https://www.wired.com/story/atlanta-spent-26m-recover-from-ransomware-scare/
+[191] C. Xiao. 2016. New OS X Ransomware KeRanger Infected Transmission BitTorrent Client Installer.
+https://unit42.paloaltonetworks.com/new-os-x-ransomware-keranger-infected-transmission-bittorrent-clientinstaller/. [Online; accessed 13-October-2020].
+[192] A. Young and Moti Yung. 1996. Cryptovirology: extortion-based security threats and countermeasures. In Proceedings
+1996 IEEE Symposium on Security and Privacy.
+[193] A. L. Young and M. Yung. 2017. On Ransomware and Envisioning the Enemy of Tomorrow. Computer 50, 11 (2017).
+[194] ytisf. 2018. TheZoo. https://github.com/ytisf/theZoo. [Online; accessed 13-October-2020].
+[195] J. YUN, J. HUR, Y. Shin, and D. Koo. 2017. CLDSafe: An Efficient File Backup System in Cloud Storage against
+Ransomware. IEICE Transactions on Information and Systems E100.D (09 2017).
+[196] B. Zhang, W. Xiao, Xi Xiao, A. Sangaiah, W. Zhang, and J. Zhang. 2020. Ransomware classification using patch-based
+CNN and self-attention network on embedded N-grams of opcodes. Future Generation Computer Systems 110 (2020).
+[197] H. Zhang, X. Xiao, F. Mercaldo, S. Ni, F. Martinelli, and Arun Kumar Sangaiah. 2019. Classification of ransomware
+families with machine learning based on N-gram of opcodes. Future Generation Computer Systems 90 (2019).
+[198] C. Zheng, N. Dellarocca, N. Andronio, S. Zanero, and F. Maggi. 2017. GreatEatlon: Fast, Static Detection of Mobile
+Ransomware. In Security and Privacy in Communication Networks. Springer Int. Publ.
+[199] J. Zhou, M. Hirose, Y. Kakizaki, and A. Inomata. 2020. Evaluation to Classify Ransomware Variants based on Correlations between APIs. In 6th International Conference on Information Systems Security and Privacy.
+[200] A. Zimba and M. Chishimba. 2019. Understanding the Evolution of Ransomware:Paradigm Shifts in Attack Structures.
+I. J. Computer Network and Information Security 1 (01 2019).
+[201] H. Zuhair, A. Selamat, and O. Krejcar. 2020. A Multi-Tier Streaming Analytics Model of 0-Day Ransomware Detection
+Using Machine Learning. Applied Sciences 10 (2020).
+
+[1] Corinna Cortes and Vladimir Vapnik. 1995. Support-Vector Networks. Journal of
+Machine Learning 20, 3 (1995), 273–297.
+[2] Jesse M Ehrenfeld. 2017. Wannacry, Cybersecurity and Health Information
+Technology: A Time to Act. Journal of Medical Systems 41, 7 (2017), 104.
+[3] Ivan Firdausi, Alva Erwin, Anto Satriyo Nugroho, et al. 2010. Analysis of Machine
+Learning Techniques Used in Behavior-Based Malware Detection. In Advances in
+Computing, Control and Telecommunication Technologies. IEEE, 201–203.
+[4] Cuckoo Foundation. Accessed 4-20-2018. Cuckoo Sandbox - Automated Malware
+Analysis. https://cuckoosandbox.org/. (Accessed 4-20-2018).
+[5] Dragoş Gavriluţ, Mihai Cimpoeşu, Dan Anton, and Liviu Ciortuz. 2009. Malware
+Detection Using Machine Learning. In International Multiconference on Computer
+Science and Information Technology. IEEE, 735–741.
+[6] Inc. Hybrid Analysis GmbH. Accessed 4-20-2018. Free Automated Malware Analysis Service - powered by Falcon Sandbox. https://www.hybrid-analysis.com/.
+(Accessed 4-20-2018).
+[7] IBM. 2016. Ransomware: How Consumers and Businesses Value Their Data.
+(2016), 6 pages.
+[8] Inc. Informer Technologies. Accessed 4-20-2018. Must-have software for windows
+- download for free. http://software.informer.com/software/. (Accessed 4-20-
+2018).
+[9] Kevin Liao, Ziming Zhao, Adam Doupé, and Gail-Joon Ahn. 2016. Behind Closed
+Doors: Measurement and Analysis of CryptoLocker Ransoms in Bitcoin. In Electronic Crime Research. IEEE, 1–13.
+[10] Andreas Moser, Christopher Kruegel, and Engin Kirda. 2007. Limits of Static
+Analysis for Malware Detection. In Computer Security Applications Conference.
+IEEE, 421–430.
+[11] R. Richardson and M. North. 2017. Ransomware: Evolution, mitigation and
+prevention. International Management Review 13, 1 (2017), 10.
+[12] Konrad Rieck, Philipp Trinius, Carsten Willems, and Thorsten Holz. 2011. Journal
+of Computer Security 19, 4 (2011), 639–668.
+[13] Nolen Scaife, Henry Carter, Patrick Traynor, and Kevin RB Butler. 2016. Cryptolock (and drop it): stopping ransomware attacks on user data. In International
+Conference on Distributed Computing Systems. IEEE, 303–312.
+[14] Daniele Sgandurra, Luis Muñoz-González, Rabih Mohsen, and Emil C. Lupu. 2016.
+Automated Dynamic Analysis of Ransomware: Benefits, Limitations and Use for
+Detection. Computing Research Repository (2016), 104.
+[15] P. Vinod, Rajasthan Jaipur, V. Laxmi, and M. Gaur. 2009. Survey on Malware
+Detection Methods. In 3rd Hacker’s Workshop on Computer and Internet Security.
+74–79
+
+[1] D. Dagon, T. Martin, and T. Starner, “Mobile phones as computing
+devices: The viruses are coming!” IEEE Pervasive Computing, vol. 3,
+no. 4, pp. 11–15, 2004.
+[2] M. Piercy, “Embedded devices next on the virus target list,” IEE
+Electronics Systems and Software, vol. 2, pp. 42–43, Dec.-Jan. 2004.
+[3] Y. Bulygin, “Epidemics of mobile worms,” in Proceedings of the
+26th IEEE International Performance Computing and Communications
+Conference, IPCCC 2007, April 11-13, 2007, New Orleans, Louisiana,
+USA. IEEE Computer Society, 2007, pp. 475–478.
+[4] J. Oberheide, E. Cooke, and F. Jahanian, “Cloudav: N-version antivirus
+in the network cloud,” in Proceedings of the 17th USENIX Security
+Symposium (Security’08), San Jose, CA, July 2008.
+[5] D. Samfat and R. Molva, “IDAMN: An Intrusion Detection Architecture
+for Mobile Networks,” IEEE Journal on Selected Areas in Communications, vol. 15, no. 7, pp. 1373–1380, Sep. 1997.
+[6] A.-D. Schmidt, F. Peters, F. Lamour, and S. Albayrak, “Monitoring
+smartphones for anomaly detection,” in MOBILWARE 2008, International Conference on MOBILe Wireless MiddleWARE, Operating Systems, and Applications, Innsbruck, Austria, 2008.
+[7] A. Bose, X. Hu, K. G. Shin, and T. Park, “Behavioral detection of
+malware on mobile handsets,” in Proceeding of the 6th international
+conference on Mobile systems, applications, and services. Breckenridge, CO, USA: ACM, 2008, pp. 225–238.
+[8] D. C. Nash, T. L. Martin, D. S. Ha, and M. S. Hsiao, “Towards an
+intrusion detection system for battery exhaustion attacks on mobile
+computing devices,” in PERCOMW ’05: Proceedings of the Third IEEE
+International Conference on Pervasive Computing and Communications
+Workshops. Washington, DC, USA: IEEE Computer Society, 2005, pp.
+141–145.
+[9] H. Kim, J. Smith, and K. G. Shin, “Detecting energy-greedy anomalies
+and mobile malware variants,” in MobiSys ’08: Proceeding of the 6th
+international conference on Mobile systems, applications, and services.
+New York, NY, USA: ACM, 2008, pp. 239–252.
+[10] G. Jacoby and N. Davis, “Battery-based intrusion detection,” in Global
+Telecommunications Conference, 2004. GLOBECOM ’04. IEEE, vol. 4,
+2004, pp. 2250–2255.
+[11] T. K. Buennemeyer, T. M. Nelson, L. M. Clagett, J. P. Dunning, R. C.
+Marchany, and J. G. Tront, “Mobile device profiling and intrusion
+detection using smart batteries,” in HICSS ’08: Proceedings of the
+Proceedings of the 41st Annual Hawaii International Conference on
+System Sciences. Washington, DC, USA: IEEE Computer Society,
+2008, p. 296.
+[12] M. Miettinen, P. Halonen, and K. Hat¨ onen, “Host-Based Intrusion ¨
+Detection for Advanced Mobile Devices,” in AINA ’06: Proceedings of
+the 20th International Conference on Advanced Information Networking
+and Applications - Volume 2 (AINA’06). Washington, DC, USA: IEEE
+Computer Society, 2006, pp. 72–76.
+[13] Q. Zhang and D. S. Reeves, “Metaaware: Identifying metamorphic
+malware,” in ACSAC, 2007, pp. 411–420.
+[14] F. V. Christopher Kruegel, William Robertson and G. Vigna, “Static
+disassembly of obfuscated binaries,” USENIX Security Symposium, vol.
+Volume 13, pp. 18 – 18, 2004.
+[15] C. H. T. Wang, C. Wu, “A virus prevention model based on static
+analysis and data mining methods,” in Computer and Information
+Technology Workshops, 2008, pp. 288–293.
+[16] S. J. S. Eleazar Eskin, Matthew G. Schultz and E. Zadok, “Data mining
+methods for detection of new malicious executables,” in Proceedings of
+the 2001 IEEE Symposium on Security and Privacy, 2001.
+[17] Y. Zhang, W. Lee, and Y.-A. Huang, “Intrusion detection techniques for
+mobile wireless networks,” Wireless Networks, vol. 9, no. 5, pp. 545–
+556, 2003.
+[18] Y. an Huang, “A cooperative intrusion detection system for ad hoc
+networks,” in In SASN ’03: Proceedings of the 1st ACM workshop
+on Security of ad hoc and sensor networks, 2003, pp. 135—147.
+[Online]. Available: http://citeseerx.ist.psu.edu/viewdoc/summary?doi=
+10.1.1.94.8768
+[19] D. Sterne, P. Balasubramanyam, D. Carman, B. Wilson, R. Talpade,
+C. Ko, R. Balupari, C.-Y. Tseng, and T. Bowen, “A general cooperative
+intrusion detection architecture for manets,” in Proceedings of the Third
+IEEE International Workshop on Information Assurance, March 2005,
+pp. 57–70.
+[20] J. W. Tiranuch Anantvalee, Wireless Network Security. Springer, 2007,
+ch. A Survey on Intrusion Detection in Mobile Ad Hoc Networks, pp.
+159–180.
+[21] R. Bye and S. Albayrak, “CIMD- Collaborative Intrusion and Malware
+Detection,” Technische Universitat Berlin - DAI-Labor, Tech. Rep. TUB- ¨
+DAI 08/08-01, Aug. 2008, http://www.dai-labor.de.
+[22] A.-D. Schmidt, R. Bye, H.-G. Schmidt, K. A. Yuksel, O. Kiraz, ¨
+J. Clausen, K. Raddatz, A. Camtepe, and S. Albayrak, “Monitoring
+android for collaborative anomaly detection: A first architectural draft,”
+Technische Universitat Berlin - DAI-Labor, Tech. Rep. TUB-DAI 08/08- ¨
+02, Aug. 2008, http://www.dai-labor.de.
+[23] E. Frank and I. H. Witten, “Generating accurate rule sets without global
+optimization,” in Shavlik, J., ed., Machine Learning, vol. Proceedings
+of the Fifteenth International Conference, 1998.
+[24] J. Cendrowska, “Prism: An algorithm for inducing modular rules,”
+International Journal of Man-Machine Studies, vol. 27, No. 4, pp. 349–
+370, 1987.
+[25] K. Luther, R. Bye, T. Alpcan, S. Albayrak, and A. Muller, “A Coop- ¨
+erative AIS Framework for Intrusion Detection,” in Proceedings of the
+IEEE International Conference on Communications (ICC 2007), 2007.
+[24] Roberto Perdisci et al. 2012. VAMO: Towards a fully automated malware clustering validity analysis. In Proceedings
+of the 28th Annual Computer Security Applications Conference. ACM, 329–338.
+[25] Neil J. Rubenking. 2015. False Positives Sink Antivirus Ratings. Retrieved on June 2019 from http://tiny.cc/eyh2uz.
+[26] Shefali Sachdeva, Romuald Jolivot, and Worawat Choensawat. 2018. Android malware classification based on mobile
+security framework. IAENG International Journal of Computer Science 45, 4 (2018).
+[27] Aleieldin Salem and Alexander Pretschner. 2018. Poking the bear: Lessons learned from probing three android malware datasets. In Proceedings of the 1st International Workshop on Advances in Mobile App Analysis. ACM, 19–24.
+[28] Hillary Sanders and Joshua Saxe. 2017. Garbage in, garbage out: How purportedly great ML models can be screwed
+up by bad data. Technical Report.
+[29] Borja Sanz, Igor Santos, Carlos Laorden, Xabier Ugarte-Pedrero, and Pablo Garcia Bringas. 2012. On the automatic
+categorisation of android applications. In Proceedings of the 2012 IEEE Consumer Communications and Networking
+Conference (CCNC’12). IEEE, 149–153.
+[30] Borja Sanz, Igor Santos, Carlos Laorden, Xabier Ugarte-Pedrero, Pablo Garcia Bringas, and Gonzalo Álvarez. 2013.
+Puma: Permission usage to detect malware in android. In International Joint Conference CISIS’12-ICEUTE’12-SOCO’12
+Special Sessions. Springer, 289–298.
+[31] Ryo Sato, Daiki Chiba, and Shigeki Goto. 2013. Detecting android malware by analyzing manifest files. Proceedings of
+the Asia-Pacific Advanced Network 36 (2013), 23–31.
+[32] scikit learn. 2019. Feature Selection. Retrieved on October 2019 from http://tiny.cc/2d997y.
+[33] scikit learn. 2019. GridSearchCV. Retrieved on October 2019 from http://tiny.cc/mquy9y.
+[34] Marcos Sebastián, Richard Rivera, Platon Kotzias, and Juan Caballero. 2016. AVclass: A tool for massive malware
+labeling. In International Symposium on Research in Attacks, Intrusions, and Defenses. Springer, 230–253.
+[35] Tim Stazzere. 2016. Detecting pirated and malicious android apps with apkid. Retrieved from https://goo.gl/Na2ZAX.
+[36] Guillermo Suarez-Tangil, Santanu Kumar Dash, Mansour Ahmadi, Johannes Kinder, Giorgio Giacinto, and Lorenzo
+Cavallaro. 2017. DroidSieve: Fast and accurate classification of obfuscated android malware. In Proceedings of the 7th
+ACM Conference on Data and Application Security and Privacy. ACM, 309–320.
+[37] Kimberly Tam, Ali Feizollah, Nor Badrul Anuar, Rosli Salleh, and Lorenzo Cavallaro. 2017. The evolution of android
+malware and android analysis techniques. ACM Computing Surveys (CSUR) 49, 4 (2017), 76.
+[38] VirusTotal. 2019. VirusTotal. Retrieved on September 2019 from http://tiny.cc/xjbb7y.
+[39] Haoyu Wang, Zhe Liu, Jingyue Liang, Narseo Vallina-Rodriguez, Yao Guo, Li Li, Juan Tapiador, Jingcun Cao, and Guoai
+Xu. 2018. Beyond Google Play: A large-scale comparative study of Chinese android app markets. In Proceedings of the
+Internet Measurement Conference 2018. ACM, 293–307.
+[40] Ting Wang, Shicong Meng, Wei Gao, and Xin Hu. 2014. Rebuilding the tower of babel: Towards cross-system malware information sharing. In Proceedings of the 23rd ACM International Conference on Conference on Information and
+Knowledge Management. ACM, 1239–1248.
+[41] Fengguo Wei, Yuping Li, Sankardas Roy, Xinming Ou, and Wu Zhou. 2017. Deep ground truth analysis of current
+android malware. In International Conference on Detection of Intrusions and Malware, and Vulnerability Assessment.
+Springer, 252–276.
+[42] Dong-Jie Wu, Ching-Hao Mao, Te-En Wei, Hahn-Ming Lee, and Kuo-Ping Wu. 2012. Droidmat: Android malware
+detection through manifest and api calls tracing. In Proceedings of the 2012 7th Asia Joint Conference on Information
+Security (Asia JCIS’12). IEEE, 62–69.
+[43] Wei Yang, Deguang Kong, Tao Xie, and Carl A. Gunter. 2017. Malware detection in adversarial settings: Exploiting
+feature evolutions and confusions in android apps. In Proceedings of the 33rd Annual Computer Security Applications
+Conference. ACM, 288–302.
+[44] Wu Zhou, Yajin Zhou, Michael Grace, Xuxian Jiang, and Shihong Zou. 2013. Fast, scalable detection of piggybacked
+mobile applications. In Proceedings of the 3rd ACM Conference on Data and Application Security and Privacy. ACM,
+185–196.
+[45] Yajin Zhou and Xuxian Jiang. 2012. Dissecting android malware: Characterization and evolution. In 2012 IEEE Symposium on Security and Privacy (SP’12). IEEE, 95–109.
+[46] Shuofei Zhu, Jianjun Shi, Limin Yang, Boqin Qin, Ziyi Zhang, Linhai Song, and Gang Wang. 2020. Measuring and
+modeling the label dynamics of online anti-malware engines. In 29th USENIX Security Symposium (USENIX Security
+20)
+
+[1] R. Goyda, S. Sharma, and S. Bevinakoppa, “Obfuscation of stuxnet and flame 
+malware,” In. Proc. of the 3rd international conference on applied informatics 
+and computing theory(AICT'12), 150--154, 2012.
+[2] J. W. Kim, J. Bang, Y.S. Moon, and M. J. Choi, “Disabling anti-debugging 
+techniques for unpacking system in user-level debugger,” in 2019 
+International Conference on Information and Communication Technology 
+Convergence(ICTC), Jeju Island, South Korea, 2019, 
+doi:10.1109/ICTC46691.2019.8939719.
+[3] M. N. Gagnon, S. Taylor, and A. K. Ghosh, “Software protection through antidebugging,” IEEE Security & Privacy, 5(3), 82--84, 2007, 
+doi:10.1109/MSP.2007.71.
+[4] C.K. Luk, R. Chon, R. Muth, H. Patil, and A. Klauser, “Pin: building 
+customized program analysis tools with dynamic instrumentation, ” ACM 
+SIGPLAN Notices, 40(6), 190--200, 2005, doi:10.1145/1064978.1065034.
+[5] B. B. Rad, M. Masrom, and S. Ibrahim, “Camouflage in malware: From 
+encryption to metamorphism, ” International Journal of Computer Science 
+and Network Security, 12(8), 74--83, 2012. doi:10.1007/s11416-017-0291-9
+[6] S. Bardin, R. David, and J. Y. Marion, “Backward-bounded DSE: targeting 
+infeasibility questions on obfuscated codes,” 2017 IEEE Symposium on 
+Security and Privacy, 633--651, 2017, doi:10.1109/SP.2017.36.
+[7] T. Blazytko, M. Contag, and C. Aschermann, “Syntia: Synthesizing the 
+Semantics of Obfuscated Code,” In Proc. of USENIX Security Symposium, 
+643--659, 2017.
+[8] R. Vinayakumar, M. Alazab, K. P. Soman, P. Poornachandram, and S. 
+Venkatran man, “Robust intelligent malware detection using deep learning,”
+IEEE Access, 7, 46717--46738, 2019, doi:10.1109/ACCESS.2019.2906934.
+[9] X. Chen, J. Andersen, Z. M. Mao, and M. Bailey, “Towards an understanding 
+of anti-virtualization and anti-debugging behavior in modern malware,” in 
+2008 IEEE international conference on dependable systems and networks 
+with FTCS and DCC(DSN), 177--186, 2008, 
+doi:10.1109/DSN.2008.4630086.
+[10] M. J. Choi, J. Bang, J. W. Kim, H. Kim, and Y. S. Moon, “All-in-one 
+framework for detection, unpacking, and verification for malware analysis,”
+Security and Communication Network 2019, 2019(5278137), 1--16, 2019,
+doi:10.1155/2019/5278137.
+[11] S. Cesare, Y. Xiang, and W. Zhou, “Malwise – an effective and efficient 
+classification system for packed and polymorphic malware,” IEEE 
+Transaction on Computers, 62(6), 1193--1206, 2013, 
+doi:10.1109/TC.2012.65.
+[12] F. Guo, P. Ferrie, and T. C. Chiueh, “A study of the packer problem and its 
+solutions,” in International Workshop on Recent Advances in Intrusion 
+Detection, 98--115, 2008, doi:10.1007/978-3-540-87403-4_6.
+[13] J. M. Borello, and L. Mé, “Code obfuscation techniques for metamorphic 
+viruses,” Journal in Computer Virology, 4(3), 211--200, 2008, 
+doi:10.1007/s11416-008-0084-2.
+[14] I. You, and K. Yim, “Malware obfuscation techniques: a brief survey,” in 
+2010 International conference on broadband, wireless computing, 
+communication and applications, 297--300, 2010, 
+doi:10.1109/BWCCA.2010.85.
+[15] A. Moser, C. Kruegel, and E. Kirda, “Limits of static analysis for malware 
+detection,” in 23rd Annual Computer Security Applications 
+Conference(ACSAC’07), 421--430, 2007, doi:10.1109/ACSAC.2007.21.
+[16] R. R. Branco, G. N. Barbosa, and P. D. Neo, “Scientific but not academical 
+overview of malware anti-debugging, anti-disassembly and anti-vm 
+technologies,” in Blackhat, USA, 2012.
+[17] S. Gao, and Q. Lin, “Debugging classification and anti-debugging strategies,” 
+in 4th International Conference on Machine Vision(ICMV): Computer Vision 
+and Image Analysis; Pattern Recognition and Basic Technologies, 729--734, 
+2012, doi:10.1117/12.924835.
+[18] P. Chen, C. Huygens, L.Desmet, and W. Joosen, “Advanced or not? a
+comparative study of the use of anti-debugging and anti-vm techniques in 
+generic and targeted malware,” in IFIP International Conference on ICT 
+Systems Security and Privacy Protection, 323--336, 2016, doi:10.1007/978-
+3-319-33630-5_22.
+[19] S. Bhansali, W. K. Chen, S. D. Jong, A. Edwards, “Framework for instructionlevel tracing and analysis of program executions,” In Proc. of the 2nd 
+International Conference on Virtual Execution Environments, 154--163, 2013, 
+doi:10.1145/1134760.1220164.
+[20] P. Feiner, A. D. Brown, and A. Goel, “Comprehensive kernel instrumentation 
+via dynamic binary translation,” In Proc. of the 17th international conference 
+on Architectural Support for Programming Languages and Operating Systems, 
+135--146, 2012, doi:10.1145/2150976.2150992.
+[21] N. Nethercote, and J. Seward, “Valgrind: a framework for heavyweight 
+dynamic binary instrumentation,” ACM SIGPLAN Notices, 42(6), 89--100, 
+2007, doi:10.1145/1273442.1250746.
+[22] S. Choi, T. Chang, S. Yoon, and Y. Park, “Hybrid emulation for bypassing 
+anti-reversing techniques and analyzing malware,” The Journal of 
+Supercomputing, 1--27, 2020, doi:10.1007/s11227-020-03270-6
+[23] H. Shi, and J. Mirkovic, “Hiding debuggers from malware with apate,” In
+Proc. of the Symposium on Applied Computing, 1703--1710, 2017, 
+doi:10.1145/3019612.3019791.
+[24] J. K. Lee, B. J. Kang, and E. G. Im, “Rule-based anti-anti-debugging system,” 
+In Proc. of the 2013 Research in Adaptive and Convergent Systems, 353--354, 
+2013, doi:10.1145/2513228.2513301.
+[25] J. K. Lee, B. J. Kang, and E. G. Im, “Evading anti-debugging techniques with 
+binary substitution,” International Journal of Security and its Applications, 
+8(1), 183--192, 2014, doi:10.14257/ijsia.2014.8.1.17.
+[26] P. Feng, J. Sun, S. Liu, and K. Sun, “UBER: combating sandbox evasion via
+user behavior emulators,” International Conference on Information and 
+Communications Security, 34--50, 2020, doi:10.1007/978-3-030-41579-2_3
+[27] D. P. Pham, D. L. Vu, and F. Massacci, “Mac-A-Mal: macOS malware 
+analysis framework resistant to anti evasion techniques,” Journal of Computer 
+Virology and Hacking Techniques, 15(4), 249--257, 2019, 
+doi:10.1007/s11416-019-00335-w.
+[28] O. Or-Meir, N. Nissim, Y. Elovici, and L. Rokach, “Dynamic malware 
+analysis in the modern era- a state of the art survey,” ACM Computing 
+Surveys (CSUR), 52(5), 1-48, 2019, doi: 10.1145/3329786.
+[29] C. V. Liţă, D. Cosovan, and D. Gavriluţ. “Anti-emulation trends in modern 
+packers: a survey on the evolution of anti-emulation techniques in UPA 
+packers,” Journal of Computer Virology and Hacking Techniques, 14(2), 107-
+-126, 2018, doi:10.1007/s11416-017-0291-9
+
+

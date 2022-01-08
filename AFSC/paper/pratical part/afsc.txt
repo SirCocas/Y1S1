@@ -1,0 +1,9 @@
+things to check files for:
+
+virus total
+
+strings
+
+PE File headers and sections
+
+https://github.com/PSJoshi/malware-static-analysis/blob/master/static-analysis/malware-static-analysis.py

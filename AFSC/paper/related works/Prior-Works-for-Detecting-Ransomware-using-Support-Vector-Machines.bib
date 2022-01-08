@@ -1,0 +1,119 @@
+@article{76d36dc27072b39bf42c6b7e4a954ca1afc7e373,
+title = {Automated Dynamic Analysis of Ransomware: Benefits, Limitations and use for Detection},
+year = {2016},
+url = {https://semanticscholar.org/paper/76d36dc27072b39bf42c6b7e4a954ca1afc7e373},
+abstract = {Recent statistics show that in 2015 more than 140 millions new malware samples have been found. Among these, a large portion is due to ransomware, the class of malware whose specific goal is to render the victim's system unusable, in particular by encrypting important files, and then ask the user to pay a ransom to revert the damage. Several ransomware include sophisticated packing techniques, and are hence difficult to statically analyse. We present EldeRan, a machine learning approach for dynamically analysing and classifying ransomware. EldeRan monitors a set of actions performed by applications in their first phases of installation checking for characteristics signs of ransomware. Our tests over a dataset of 582 ransomware belonging to 11 families, and with 942 goodware applications, show that EldeRan achieves an area under the ROC curve of 0.995. Furthermore, EldeRan works without requiring that an entire ransomware family is available beforehand. These results suggest that dynamic analysis can support ransomware detection, since ransomware samples exhibit a set of characteristic features at run-time that are common across families, and that helps the early detection of new variants. We also outline some limitations of dynamic analysis for ransomware and propose possible solutions.},
+author = {D. Sgandurra and Luis Muñoz-González and Rabih Mohsen and Emil C. Lupu},
+journal = {ArXiv},
+volume = {abs/1609.03020},
+pages = {},
+arxivid = {1609.03020},
+}
+
+@article{ccb08a5c512c2197f8d90688a9836ed6ae55ccf5,
+title = {UNVEIL: A large-scale, automated approach to detecting ransomware (keynote)},
+year = {2016},
+url = {https://semanticscholar.org/paper/ccb08a5c512c2197f8d90688a9836ed6ae55ccf5},
+abstract = {Although the concept of ransomware is not new (i.e., such attacks date back at least as far as the 1980s), this type of malware has recently experienced a resurgence in popularity. In fact, in the last few years, a number of high-profile ransomware attacks were reported, such as the large-scale attack against Sony that prompted the company to delay the release of the film "The Interview." Ransomware typically operates by locking the desktop of the victim to render the system inaccessible to the user, or by encrypting, overwriting, or deleting the user's files. However, while many generic malware detection systems have been proposed, none of these systems have attempted to specifically address the ransomware detection problem. 
+ 
+In this paper, we present a novel dynamic analysis system called UNVEIL that is specifically designed to detect ransomware. The key insight of the analysis is that in order to mount a successful attack, ransomware must tamper with a user's files or desktop. UNVEIL automatically generates an artificial user environment, and detects when ransomware interacts with user data. In parallel, the approach tracks changes to the system's desktop that indicate ransomware-like behavior. Our evaluation shows that UNVEIL significantly improves the state of the art, and is able to identify previously unknown evasive ransomware that was not detected by the antimalware industry.},
+author = {E. Kirda},
+doi = {10.1109/SANER.2017.7884603},
+}
+
+@article{cc2e3e0f0427a4e01e4184d2c08676dc5569bb5f,
+title = {Cutting the Gordian Knot: A Look Under the Hood of Ransomware Attacks},
+year = {2015},
+url = {https://semanticscholar.org/paper/cc2e3e0f0427a4e01e4184d2c08676dc5569bb5f},
+abstract = {In this paper, we present the results of a long-term study of ransomware attacks that have been observed in the wild between 2006 and 2014. We also provide a holistic view on how ransomware attacks have evolved during this period by analyzing 1,359 samples that belong to 15 different ransomware families. Our results show that, despite a continuous improvement in the encryption, deletion, and communication techniques in the main ransomware families, the number of families with sophisticated destructive capabilities remains quite small. In fact, our analysis reveals that in a large number of samples, the malware simply locks the victim's computer desktop or attempts to encrypt or delete the victim's files using only superficial techniques.i?źOur analysis also suggests that stopping advanced ransomware attacks is not as complex as it has been previously reported. For example, we show that by monitoring abnormal file system activity, it is possible to design a practical defense system that could stop a large number of ransomware attacks, even those using sophisticated encryption capabilities. A close examination on the file system activities of multiple ransomware samples suggests that by looking at I/O requests and protecting Master File Table MFT in the NTFS file system, it is possible to detect and prevent a significant number of zero-day ransomware attacks.},
+author = {Amin Kharraz and William K. Robertson and D. Balzarotti and Leyla Bilge and E. Kirda},
+doi = {10.1007/978-3-319-20550-2_1},
+}
+
+@article{4b6ae0ef1fbebde7b1adc1e06180697b56380a62,
+title = {Comparative analysis of various ransomware virii},
+year = {2008},
+url = {https://semanticscholar.org/paper/4b6ae0ef1fbebde7b1adc1e06180697b56380a62},
+abstract = {The word ransomware and the associated phenomenon appeared something like 3 years ago, around the year 2005. It shed light on a specific class of malwares which demand a payment in exchange for a stolen functionality. Most widespread ransomwares make an intensive use of file encryption as an extortion mean. Basically, they encrypt various files on victim’s hard drives before asking for a ransom to get the files decrypted. Security related media and some antivirus vendors quickly brandished this “new” type of virii as a major threat for computer world. This article tries to investigate the foundation of these threats beyond the phenomenon. In order to get a better understanding of ransomwares, the study relies on a comparative analysis of various ransomware virii. Based on reverse-engineering while not focused on analysis methodology, a technical review is done at different levels: quality of code, malwares’ functionalities and analysis of cryptographic primitives if any. Our analysis leads us to many interesting approaches and conclusions concerning this phenomenon, and in particular the strength and weakness of used extortion means. We also take advantage of our technical review to stand back and to analyse both the business model associated to these ransomwares and the communication that has been made around them.},
+author = {Alexandre Gazet},
+journal = {Journal in Computer Virology},
+volume = {6},
+pages = {77-90},
+doi = {10.1007/s11416-008-0092-2},
+}
+
+@article{6bd33530e5dcd90f367748bf88ba1ff337b7caf4,
+title = {CryptoLock (and Drop It): Stopping Ransomware Attacks on User Data},
+year = {2016},
+url = {https://semanticscholar.org/paper/6bd33530e5dcd90f367748bf88ba1ff337b7caf4},
+abstract = {Ransomware is a growing threat that encrypts auser's files and holds the decryption key until a ransom ispaid by the victim. This type of malware is responsible fortens of millions of dollars in extortion annually. Worse still, developing new variants is trivial, facilitating the evasion of manyantivirus and intrusion detection systems. In this work, we presentCryptoDrop, an early-warning detection system that alerts a userduring suspicious file activity. Using a set of behavior indicators, CryptoDrop can halt a process that appears to be tampering witha large amount of the user's data. Furthermore, by combininga set of indicators common to ransomware, the system can beparameterized for rapid detection with low false positives. Ourexperimental analysis of CryptoDrop stops ransomware fromexecuting with a median loss of only 10 files (out of nearly5,100 available files). Our results show that careful analysis ofransomware behavior can produce an effective detection systemthat significantly mitigates the amount of victim data loss.},
+author = {Nolen Scaife and H. Carter and Patrick Traynor and Kevin R. B. Butler},
+journal = {2016 IEEE 36th International Conference on Distributed Computing Systems (ICDCS)},
+volume = {},
+pages = {303-312},
+doi = {10.1109/ICDCS.2016.46},
+}
+
+@article{e0f97dee6d37440b952d3ece62289ed489a31603,
+title = {Detecting crypto-ransomware in IoT networks based on energy consumption footprint},
+year = {2018},
+url = {https://semanticscholar.org/paper/e0f97dee6d37440b952d3ece62289ed489a31603},
+abstract = {An Internet of Things (IoT) architecture generally consists of a wide range of Internet-connected devices or things such as Android devices, and devices that have more computational capabilities (e.g., storage capacities) are likely to be targeted by ransomware authors. In this paper, we present a machine learning based approach to detect ransomware attacks by monitoring power consumption of Android devices. Specifically, our proposed method monitors the energy consumption patterns of different processes to classify ransomware from non-malicious applications. We then demonstrate that our proposed approach outperforms K-Nearest Neighbors, Neural Networks, Support Vector Machine and Random Forest, in terms of accuracy rate, recall rate, precision rate and F-measure.},
+author = {Amin Azmoodeh and A. Dehghantanha and M. Conti and Kim-Kwang Raymond Choo},
+journal = {Journal of Ambient Intelligence and Humanized Computing},
+volume = {9},
+pages = {1141-1152},
+doi = {10.1007/s12652-017-0558-5},
+}
+
+@article{8e88d9d36cdf65de2c97c3102a0e58f73459a5e4,
+title = {HelDroid: Dissecting and Detecting Mobile Ransomware},
+year = {2015},
+url = {https://semanticscholar.org/paper/8e88d9d36cdf65de2c97c3102a0e58f73459a5e4},
+abstract = {In ransomware attacks, the actual target is the human, as opposed to the classic attacks that abuse the infected devices e.g., botnet renting, information stealing. Mobile devices are by no means immune to ransomware attacks. However, there is little research work on this matter and only traditional protections are available. Even state-of-the-art mobile malware detection approaches are ineffective against ransomware apps because of the subtle attack scheme. As a consequence, the ample attack surface formed by the billion mobile devices is left unprotected. 
+ 
+First, in this work we summarize the results of our analysis of the existing mobile ransomware families, describing their common characteristics. Second, we present HelDroid, a fast, efficient and fully automated approach that recognizes known and unknown scareware and ransomware samples from goodware. Our approach is based on detecting the "building blocks" that are typically needed to implement a mobile ransomware application. Specifically, HelDroid detects, in a generic way, if an app is attempting to lock or encrypt the device without the user's consent, and if ransom requests are displayed on the screen. Our technique works without requiring that a sample of a certain family is available beforehand. 
+ 
+We implemented HelDroid and tested it on real-world Android ransomware samples. On a large dataset comprising hundreds of thousands of APKs including goodware, malware, scareware, and ransomware, HelDroid exhibited nearly zero false positives and the capability of recognizing unknown ransomware samples.},
+author = {Nicoló Andronio and S. Zanero and F. Maggi},
+doi = {10.1007/978-3-319-26362-5_18},
+}
+
+@article{fc4a8062d5b8dfd34e61f46ebedade56e01ef001,
+title = {Machine learning aided Android malware classification},
+year = {2017},
+url = {https://semanticscholar.org/paper/fc4a8062d5b8dfd34e61f46ebedade56e01ef001},
+abstract = {The widespread adoption of Android devices and their capability to access significant private and confidential information have resulted in these devices being targeted by malware developers. Existing Android malware analysis techniques can be broadly categorized into static and dynamic analysis. In this paper, we present two machine learning aided approaches for static analysis of Android malware. The first approach is based on permissions and the other is based on source code analysis utilizing a bag-of-words representation model. Our permission-based model is computationally inexpensive, and is implemented as the feature of OWASP Seraphimdroid Android app that can be obtained from Google Play Store. Our evaluations of both approaches indicate an F-score of 95.1% and F-measure of 89% for the source code-based classification and permission-based classification models, respectively.},
+author = {N. Milosevic and A. Dehghantanha and K. Choo},
+journal = {Comput. Electr. Eng.},
+volume = {61},
+pages = {266-274},
+doi = {10.1016/j.compeleceng.2017.02.013},
+}
+
+@article{3c8bf504ddc7db1829466b6e9da5251025dd48f1,
+title = {Automatic analysis of malware behavior using machine learning},
+year = {2011},
+url = {https://semanticscholar.org/paper/3c8bf504ddc7db1829466b6e9da5251025dd48f1},
+abstract = {Malicious software - so called malware - poses a major threat to the security of computer systems. The amount and diversity of its variants render classic security defenses ineffective, such that millions of hosts in the Internet are infected with malware in the form of computer viruses, Internet worms and Trojan horses. While obfuscation and polymorphism employed by malware largely impede detection at file level, the dynamic analysis of malware binaries during run-time provides an instrument for characterizing and defending against the threat of malicious software. 
+ 
+In this article, we propose a framework for the automatic analysis of malware behavior using machine learning. The framework allows for automatically identifying novel classes of malware with similar behavior (clustering) and assigning unknown malware to these discovered classes (classification). Based on both, clustering and classification, we propose an incremental approach for behavior-based analysis, capable of processing the behavior of thousands of malware binaries on a daily basis. The incremental analysis significantly reduces the run-time overhead of current analysis methods, while providing accurate discovery and discrimination of novel malware variants.},
+author = {K. Rieck and Philipp Trinius and C. Willems and T. Holz},
+journal = {J. Comput. Secur.},
+volume = {19},
+pages = {639-668},
+doi = {10.3233/JCS-2010-0410},
+}
+
+@article{3d8df085f599dfa5f7d216fa333b98080d9c9e26,
+title = {Leveraging Machine Learning Techniques for Windows Ransomware Network Traffic Detection},
+year = {2018},
+url = {https://semanticscholar.org/paper/3d8df085f599dfa5f7d216fa333b98080d9c9e26},
+abstract = {Ransomware has become a significant global threat with the ransomware-as-a-service model enabling easy availability and deployment, and the potential for high revenues creating a viable criminal business model. Individuals, private companies or public service providers e.g. healthcare or utilities companies can all become victims of ransomware attacks and consequently suffer severe disruption and financial loss. Although machine learning algorithms are already being used to detect ransomware, variants are being developed to specifically evade detection when using dynamic machine learning techniques. In this paper we introduce NetConverse, a machine learning evaluation study for consistent detection of Windows ransomware network traffic. Using a dataset created from conversation-based network traffic features we achieved a True Positive Rate (TPR) of 97.1% using the Decision Tree (J48) classifier.},
+author = {O. Alhawi and James Baldwin and A. Dehghantanha},
+journal = {ArXiv},
+volume = {abs/1807.10440},
+pages = {},
+doi = {10.1007/978-3-319-73951-9_5},
+arxivid = {1807.10440},
+}

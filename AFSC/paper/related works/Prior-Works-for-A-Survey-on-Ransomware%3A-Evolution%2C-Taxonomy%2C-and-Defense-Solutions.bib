@@ -1,0 +1,113 @@
+@article{ccb08a5c512c2197f8d90688a9836ed6ae55ccf5,
+title = {UNVEIL: A large-scale, automated approach to detecting ransomware (keynote)},
+year = {2016},
+url = {https://www.semanticscholar.org/paper/ccb08a5c512c2197f8d90688a9836ed6ae55ccf5},
+abstract = {Although the concept of ransomware is not new (i.e., such attacks date back at least as far as the 1980s), this type of malware has recently experienced a resurgence in popularity. In fact, in the last few years, a number of high-profile ransomware attacks were reported, such as the large-scale attack against Sony that prompted the company to delay the release of the film "The Interview." Ransomware typically operates by locking the desktop of the victim to render the system inaccessible to the user, or by encrypting, overwriting, or deleting the user's files. However, while many generic malware detection systems have been proposed, none of these systems have attempted to specifically address the ransomware detection problem. 
+ 
+In this paper, we present a novel dynamic analysis system called UNVEIL that is specifically designed to detect ransomware. The key insight of the analysis is that in order to mount a successful attack, ransomware must tamper with a user's files or desktop. UNVEIL automatically generates an artificial user environment, and detects when ransomware interacts with user data. In parallel, the approach tracks changes to the system's desktop that indicate ransomware-like behavior. Our evaluation shows that UNVEIL significantly improves the state of the art, and is able to identify previously unknown evasive ransomware that was not detected by the antimalware industry.},
+author = {E. Kirda},
+doi = {10.1109/SANER.2017.7884603},
+}
+
+@article{6bd33530e5dcd90f367748bf88ba1ff337b7caf4,
+title = {CryptoLock (and Drop It): Stopping Ransomware Attacks on User Data},
+year = {2016},
+url = {https://www.semanticscholar.org/paper/6bd33530e5dcd90f367748bf88ba1ff337b7caf4},
+abstract = {Ransomware is a growing threat that encrypts auser's files and holds the decryption key until a ransom ispaid by the victim. This type of malware is responsible fortens of millions of dollars in extortion annually. Worse still, developing new variants is trivial, facilitating the evasion of manyantivirus and intrusion detection systems. In this work, we presentCryptoDrop, an early-warning detection system that alerts a userduring suspicious file activity. Using a set of behavior indicators, CryptoDrop can halt a process that appears to be tampering witha large amount of the user's data. Furthermore, by combininga set of indicators common to ransomware, the system can beparameterized for rapid detection with low false positives. Ourexperimental analysis of CryptoDrop stops ransomware fromexecuting with a median loss of only 10 files (out of nearly5,100 available files). Our results show that careful analysis ofransomware behavior can produce an effective detection systemthat significantly mitigates the amount of victim data loss.},
+author = {Nolen Scaife and H. Carter and Patrick Traynor and Kevin R. B. Butler},
+journal = {2016 IEEE 36th International Conference on Distributed Computing Systems (ICDCS)},
+volume = {},
+pages = {303-312},
+doi = {10.1109/ICDCS.2016.46},
+}
+
+@article{76d36dc27072b39bf42c6b7e4a954ca1afc7e373,
+title = {Automated Dynamic Analysis of Ransomware: Benefits, Limitations and use for Detection},
+year = {2016},
+url = {https://www.semanticscholar.org/paper/76d36dc27072b39bf42c6b7e4a954ca1afc7e373},
+abstract = {Recent statistics show that in 2015 more than 140 millions new malware samples have been found. Among these, a large portion is due to ransomware, the class of malware whose specific goal is to render the victim's system unusable, in particular by encrypting important files, and then ask the user to pay a ransom to revert the damage. Several ransomware include sophisticated packing techniques, and are hence difficult to statically analyse. We present EldeRan, a machine learning approach for dynamically analysing and classifying ransomware. EldeRan monitors a set of actions performed by applications in their first phases of installation checking for characteristics signs of ransomware. Our tests over a dataset of 582 ransomware belonging to 11 families, and with 942 goodware applications, show that EldeRan achieves an area under the ROC curve of 0.995. Furthermore, EldeRan works without requiring that an entire ransomware family is available beforehand. These results suggest that dynamic analysis can support ransomware detection, since ransomware samples exhibit a set of characteristic features at run-time that are common across families, and that helps the early detection of new variants. We also outline some limitations of dynamic analysis for ransomware and propose possible solutions.},
+author = {D. Sgandurra and Luis Muñoz-González and Rabih Mohsen and Emil C. Lupu},
+journal = {ArXiv},
+volume = {abs/1609.03020},
+pages = {},
+arxivid = {1609.03020},
+}
+
+@article{ca3b94f41998b69404a13323a457c34522d9ece7,
+title = {Ransomware threat success factors, taxonomy, and countermeasures: A survey and research directions},
+year = {2018},
+url = {https://www.semanticscholar.org/paper/ca3b94f41998b69404a13323a457c34522d9ece7},
+abstract = {The paper surveys state-of-the-art studies on ransomware analysis, detection, and prediction.The work describes the enabling technologies and factors that contribute to successful ransomware attacks.The paper proposes a general taxonomy for the different ransomware types from different perspectives.The study presents open issues and future research directions on ransomware analysis, detection and prediction. The proposed taxonomy classifies ransomware from three perspectives: severity based, platform based, and target based. Ransomware is a malware category that exploits security mechanisms such as cryptography in order to hijack user files and related resources and demands money in exchange for the locked data. Therefore, ransomware has become a lucrative business that has gained increasing popularity among attackers. Unlike traditional malware, even after removal, ransomware's effect is irreversible and difficult to mitigate without the help of its creator. In addition to the downtime costs and the money that individuals and business entities could pay as a ransom, those victims could incur other damage such as loss of data, reputation, and life. To date, several studies have been conducted to address this unique, challenging threat and have tried to provide detection and prevention solutions. However, there is a lack of survey articles that explore the research endeavors in ransomware and highlight the challenges and issues faced by existing solutions. This survey fills the gap and provides a holistic state-of-the-art review of the research on ransomware and its detection and prevention techniques. The survey puts forward a novel ransomware taxonomy, from several perspectives. It then elaborates on the factors that lead to a successful ransomware attacks before discussing in detail the research into counteracting ransomware, including analysis, prevention, detection and prediction solutions. The survey concludes with a brief discussion on the open issues and potential research directions in the near future.},
+author = {B. Al-rimy and M. A. Maarof and Syed Zainudeen Mohd Shaid},
+journal = {Comput. Secur.},
+volume = {74},
+pages = {144-166},
+doi = {10.1016/j.cose.2018.01.001},
+}
+
+@article{cc2e3e0f0427a4e01e4184d2c08676dc5569bb5f,
+title = {Cutting the Gordian Knot: A Look Under the Hood of Ransomware Attacks},
+year = {2015},
+url = {https://www.semanticscholar.org/paper/cc2e3e0f0427a4e01e4184d2c08676dc5569bb5f},
+abstract = {In this paper, we present the results of a long-term study of ransomware attacks that have been observed in the wild between 2006 and 2014. We also provide a holistic view on how ransomware attacks have evolved during this period by analyzing 1,359 samples that belong to 15 different ransomware families. Our results show that, despite a continuous improvement in the encryption, deletion, and communication techniques in the main ransomware families, the number of families with sophisticated destructive capabilities remains quite small. In fact, our analysis reveals that in a large number of samples, the malware simply locks the victim's computer desktop or attempts to encrypt or delete the victim's files using only superficial techniques.i?źOur analysis also suggests that stopping advanced ransomware attacks is not as complex as it has been previously reported. For example, we show that by monitoring abnormal file system activity, it is possible to design a practical defense system that could stop a large number of ransomware attacks, even those using sophisticated encryption capabilities. A close examination on the file system activities of multiple ransomware samples suggests that by looking at I/O requests and protecting Master File Table MFT in the NTFS file system, it is possible to detect and prevent a significant number of zero-day ransomware attacks.},
+author = {Amin Kharraz and William K. Robertson and D. Balzarotti and Leyla Bilge and E. Kirda},
+doi = {10.1007/978-3-319-20550-2_1},
+}
+
+@article{4eda27cffe3617ad76339859c783ddf1b151709f,
+title = {ShieldFS: a self-healing, ransomware-aware filesystem},
+year = {2016},
+url = {https://www.semanticscholar.org/paper/4eda27cffe3617ad76339859c783ddf1b151709f},
+abstract = {Preventive and reactive security measures can only partially mitigate the damage caused by modern ransomware attacks. Indeed, the remarkable amount of illicit profit and the cyber-criminals' increasing interest in ransomware schemes suggest that a fair number of users are actually paying the ransoms. Unfortunately, pure-detection approaches (e.g., based on analysis sandboxes or pipelines) are not sufficient nowadays, because often we do not have the luxury of being able to isolate a sample to analyze, and when this happens it is already too late for several users! We believe that a forward-looking solution is to equip modern operating systems with practical self-healing capabilities against this serious threat. Towards such a vision, we propose ShieldFS, an add-on driver that makes the Windows native filesystem immune to ransomware attacks. For each running process, ShieldFS dynamically toggles a protection layer that acts as a copy-on-write mechanism, according to the outcome of its detection component. Internally, ShieldFS monitors the low-level filesystem activity to update a set of adaptive models that profile the system activity over time. Whenever one or more processes violate these models, their operations are deemed malicious and the side effects on the filesystem are transparently rolled back. We designed ShieldFS after an analysis of billions of low-level, I/O filesystem requests generated by thousands of benign applications, which we collected from clean machines in use by real users for about one month. This is the first measurement on the filesystem activity of a large set of benign applications in real working conditions. We evaluated ShieldFS in real-world working conditions on real, personal machines, against samples from state of the art ransomware families. ShieldFS was able to detect the malicious activity at runtime and transparently recover all the original files. Although the models can be tuned to fit various filesystem usage profiles, our results show that our initial tuning yields high accuracy even on unseen samples and variants.},
+author = {Andrea Continella and Alessandro Guagnelli and Giovanni Zingaro and G. D. Pasquale and Alessandro Barenghi and S. Zanero and F. Maggi},
+journal = {Proceedings of the 32nd Annual Conference on Computer Security Applications},
+volume = {},
+pages = {},
+doi = {10.1145/2991079.2991110},
+}
+
+@article{a5a85ceca6c612a9a09e3355d86da797608cc3f8,
+title = {R-Locker: Thwarting ransomware action through a honeyfile-based approach},
+year = {2018},
+url = {https://www.semanticscholar.org/paper/a5a85ceca6c612a9a09e3355d86da797608cc3f8},
+abstract = {Abstract Ransomware has become a pandemic nowadays. Although some proposals exist to fight against this increasing type of extortion, most of them are prevention like and rely on the assumption that early detection is not so effective once the victim is infected. This paper presents a novel approach intended not just to early detect ransomware but to completely thwart its action. For that, a set of honeyfiles is deployed around the target environment in order to catch the ransomware. Instead of being normal archives, honeyfiles are FIFO like, so that the ransomware is blocked once it starts reading the file. In addition to frustrate its action, our honeyfile solution is able to automatically launch countermeasures to solve the infection. Moreover, as it does not require previous training or knowledge, the approach allows fighting against unknown, zero-day ransomware related attacks. As a proof of concept, we have developed the approach for Linux platforms. The tool, named R-Locker , shows excellent performance both from the perspective of its accuracy as well as in terms of complexity and resource consumption. In addition, it has no special needs or privileges and does not affect the normal operation of the overall environment.},
+author = {J. Gómez-Hernández and L. Álvarez-González and P. García-Teodoro},
+journal = {Comput. Secur.},
+volume = {73},
+pages = {389-398},
+doi = {10.1016/j.cose.2017.11.019},
+}
+
+@article{ae83304d4b0d211122d4fe0be655887c4e66fd40,
+title = {PayBreak: Defense Against Cryptographic Ransomware},
+year = {2017},
+url = {https://www.semanticscholar.org/paper/ae83304d4b0d211122d4fe0be655887c4e66fd40},
+abstract = {Similar to criminals in the physical world, cyber-criminals use a variety of illegal and immoral means to achieve monetary gains. Recently, malware known as ransomware started to leverage strong cryptographic primitives to hold victims' computer files "hostage" until a ransom is paid. Victims, with no way to defend themselves, are often advised to simply pay. Existing defenses against ransomware rely on ad-hoc mitigations that target the incorrect use of cryptography rather than generic live protection. To fill this gap in the defender's arsenal, we describe the approach, prototype implementation, and evaluation of a novel, automated, and most importantly proactive defense mechanism against ransomware. Our prototype, called PayBreak, effectively combats ransomware, and keeps victims' files safe. PayBreak is based on the insight that secure file encryption relies on hybrid encryption where symmetric session keys are used on the victim computer. PayBreak observes the use of these keys, holds them in escrow, and thus, can decrypt files that would otherwise only be recoverable by paying the ransom. Our prototype leverages low overhead dynamic hooking techniques and asymmetric encryption to realize the key escrow mechanism which allows victims to restore the files encrypted by ransomware. We evaluated PayBreak for its effectiveness against twenty hugely successful families of real-world ransomware, and demonstrate that our system can restore all files that are encrypted by samples from twelve of these families, including the infamous CryptoLocker, and more recent threats such as Locky and SamSam. Finally, PayBreak performs its protection task at negligible performance overhead for common office workloads and is thus ideally suited as a proactive online protection system.},
+author = {Eugene Kolodenker and W. Koch and G. Stringhini and Manuel Egele},
+journal = {Proceedings of the 2017 ACM on Asia Conference on Computer and Communications Security},
+volume = {},
+pages = {},
+doi = {10.1145/3052973.3053035},
+}
+
+@article{924b51ed7c61824dea72e8a5bca47661afc3119c,
+title = {Redemption: Real-Time Protection Against Ransomware at End-Hosts},
+year = {2017},
+url = {https://www.semanticscholar.org/paper/924b51ed7c61824dea72e8a5bca47661afc3119c},
+abstract = {Ransomware is a form of extortion-based attack that locks the victim’s digital resources and requests money to release them. The recent resurgence of high-profile ransomware attacks, particularly in critical sectors such as the health care industry, has highlighted the pressing need for effective defenses. While users are always advised to have a reliable backup strategy, the growing number of paying victims in recent years suggests that an endpoint defense that is able to stop and recover from ransomware’s destructive behavior is needed.},
+author = {Amin Kharraz and E. Kirda},
+doi = {10.1007/978-3-319-66332-6_5},
+}
+
+@article{87d93b9b50a1fb99745b5bd20ecd6a2cb47fcd45,
+title = {Software-Defined Networking-based Crypto Ransomware Detection Using HTTP Traffic Characteristics},
+year = {2018},
+url = {https://www.semanticscholar.org/paper/87d93b9b50a1fb99745b5bd20ecd6a2cb47fcd45},
+abstract = {Abstract Ransomware is currently one of the key threats facing individuals and corporate Internet users. Especially dangerous is crypto ransomware that encrypts important user data, and it is only possible to recover it once a ransom has been paid. Therefore, devising efficient and effective countermeasures is a pressing necessity. In this paper we present a novel Software-Defined Networking (SDN) based detection approach that utilizes the characteristics of the ransomware communication. Based on an observation of network communication between two crypto ransomware families, namely CryptoWall and Locky, we conclude that an analysis of the HTTP message sequences and their respective content sizes is enough to detect such threats. We show the feasibility of our approach by designing and evaluating a proof-of-concept SDN-based detection system. The experimental results confirm that the proposed approach is feasible and efficient.},
+author = {Krzysztof Cabaj and Marcin Gregorczyk and W. Mazurczyk},
+journal = {Comput. Electr. Eng.},
+volume = {66},
+pages = {353-368},
+doi = {10.1016/j.compeleceng.2017.10.012},
+arxivid = {1611.08294},
+}

@@ -1,0 +1,116 @@
+@article{cc2e3e0f0427a4e01e4184d2c08676dc5569bb5f,
+title = {Cutting the Gordian Knot: A Look Under the Hood of Ransomware Attacks},
+year = {2015},
+url = {https://semanticscholar.org/paper/cc2e3e0f0427a4e01e4184d2c08676dc5569bb5f},
+abstract = {In this paper, we present the results of a long-term study of ransomware attacks that have been observed in the wild between 2006 and 2014. We also provide a holistic view on how ransomware attacks have evolved during this period by analyzing 1,359 samples that belong to 15 different ransomware families. Our results show that, despite a continuous improvement in the encryption, deletion, and communication techniques in the main ransomware families, the number of families with sophisticated destructive capabilities remains quite small. In fact, our analysis reveals that in a large number of samples, the malware simply locks the victim's computer desktop or attempts to encrypt or delete the victim's files using only superficial techniques.i?źOur analysis also suggests that stopping advanced ransomware attacks is not as complex as it has been previously reported. For example, we show that by monitoring abnormal file system activity, it is possible to design a practical defense system that could stop a large number of ransomware attacks, even those using sophisticated encryption capabilities. A close examination on the file system activities of multiple ransomware samples suggests that by looking at I/O requests and protecting Master File Table MFT in the NTFS file system, it is possible to detect and prevent a significant number of zero-day ransomware attacks.},
+author = {Amin Kharraz and William K. Robertson and D. Balzarotti and Leyla Bilge and E. Kirda},
+doi = {10.1007/978-3-319-20550-2_1},
+}
+
+@article{ccb08a5c512c2197f8d90688a9836ed6ae55ccf5,
+title = {UNVEIL: A large-scale, automated approach to detecting ransomware (keynote)},
+year = {2016},
+url = {https://semanticscholar.org/paper/ccb08a5c512c2197f8d90688a9836ed6ae55ccf5},
+abstract = {Although the concept of ransomware is not new (i.e., such attacks date back at least as far as the 1980s), this type of malware has recently experienced a resurgence in popularity. In fact, in the last few years, a number of high-profile ransomware attacks were reported, such as the large-scale attack against Sony that prompted the company to delay the release of the film "The Interview." Ransomware typically operates by locking the desktop of the victim to render the system inaccessible to the user, or by encrypting, overwriting, or deleting the user's files. However, while many generic malware detection systems have been proposed, none of these systems have attempted to specifically address the ransomware detection problem. 
+ 
+In this paper, we present a novel dynamic analysis system called UNVEIL that is specifically designed to detect ransomware. The key insight of the analysis is that in order to mount a successful attack, ransomware must tamper with a user's files or desktop. UNVEIL automatically generates an artificial user environment, and detects when ransomware interacts with user data. In parallel, the approach tracks changes to the system's desktop that indicate ransomware-like behavior. Our evaluation shows that UNVEIL significantly improves the state of the art, and is able to identify previously unknown evasive ransomware that was not detected by the antimalware industry.},
+author = {E. Kirda},
+doi = {10.1109/SANER.2017.7884603},
+}
+
+@article{6bd33530e5dcd90f367748bf88ba1ff337b7caf4,
+title = {CryptoLock (and Drop It): Stopping Ransomware Attacks on User Data},
+year = {2016},
+url = {https://www.semanticscholar.org/paper/6bd33530e5dcd90f367748bf88ba1ff337b7caf4},
+abstract = {Ransomware is a growing threat that encrypts auser's files and holds the decryption key until a ransom ispaid by the victim. This type of malware is responsible fortens of millions of dollars in extortion annually. Worse still, developing new variants is trivial, facilitating the evasion of manyantivirus and intrusion detection systems. In this work, we presentCryptoDrop, an early-warning detection system that alerts a userduring suspicious file activity. Using a set of behavior indicators, CryptoDrop can halt a process that appears to be tampering witha large amount of the user's data. Furthermore, by combininga set of indicators common to ransomware, the system can beparameterized for rapid detection with low false positives. Ourexperimental analysis of CryptoDrop stops ransomware fromexecuting with a median loss of only 10 files (out of nearly5,100 available files). Our results show that careful analysis ofransomware behavior can produce an effective detection systemthat significantly mitigates the amount of victim data loss.},
+author = {Nolen Scaife and H. Carter and Patrick Traynor and Kevin R. B. Butler},
+journal = {2016 IEEE 36th International Conference on Distributed Computing Systems (ICDCS)},
+volume = {},
+pages = {303-312},
+doi = {10.1109/ICDCS.2016.46},
+}
+
+@article{ffd5273768bfcc984f939174fa36c5fa053cebc6,
+title = {Cryptovirology: extortion-based security threats and countermeasures},
+year = {1996},
+url = {https://semanticscholar.org/paper/ffd5273768bfcc984f939174fa36c5fa053cebc6},
+abstract = {Traditionally, cryptography and its applications are defensive in nature, and provide privacy, authentication, and security to users. In this paper we present the idea of Cryptovirology which employs a twist on cryptography, showing that it can also be used offensively. By being offensive we mean that it can be used to mount extortion based attacks that cause loss of access to information, loss of confidentiality, and information leakage, tasks which cryptography typically prevents. In this paper we analyze potential threats and attacks that rogue use of cryptography can cause when combined with rogue software (viruses, Trojan horses), and demonstrate them experimentally by presenting an implementation of a cryptovirus that we have tested (we took careful precautions in the process to insure that the virus remained contained). Public-key cryptography is essential to the attacks that we demonstrate (which we call "cryptovirological attacks"). We also suggest countermeasures and mechanisms to cope with and prevent such attacks. These attacks have implications on how the use of cryptographic tools should be managed and audited in general purpose computing environments, and imply that access to cryptographic tools should be well controlled. The experimental virus demonstrates how cryptographic packages can be condensed into a small space, which may have independent applications (e.g., cryptographic module design in small mobile devices).},
+author = {Adam L. Young and M. Yung},
+journal = {Proceedings 1996 IEEE Symposium on Security and Privacy},
+volume = {},
+pages = {129-140},
+doi = {10.1109/SECPRI.1996.502676},
+}
+
+@article{4eda27cffe3617ad76339859c783ddf1b151709f,
+title = {ShieldFS: a self-healing, ransomware-aware filesystem},
+year = {2016},
+url = {https://semanticscholar.org/paper/4eda27cffe3617ad76339859c783ddf1b151709f},
+abstract = {Preventive and reactive security measures can only partially mitigate the damage caused by modern ransomware attacks. Indeed, the remarkable amount of illicit profit and the cyber-criminals' increasing interest in ransomware schemes suggest that a fair number of users are actually paying the ransoms. Unfortunately, pure-detection approaches (e.g., based on analysis sandboxes or pipelines) are not sufficient nowadays, because often we do not have the luxury of being able to isolate a sample to analyze, and when this happens it is already too late for several users! We believe that a forward-looking solution is to equip modern operating systems with practical self-healing capabilities against this serious threat. Towards such a vision, we propose ShieldFS, an add-on driver that makes the Windows native filesystem immune to ransomware attacks. For each running process, ShieldFS dynamically toggles a protection layer that acts as a copy-on-write mechanism, according to the outcome of its detection component. Internally, ShieldFS monitors the low-level filesystem activity to update a set of adaptive models that profile the system activity over time. Whenever one or more processes violate these models, their operations are deemed malicious and the side effects on the filesystem are transparently rolled back. We designed ShieldFS after an analysis of billions of low-level, I/O filesystem requests generated by thousands of benign applications, which we collected from clean machines in use by real users for about one month. This is the first measurement on the filesystem activity of a large set of benign applications in real working conditions. We evaluated ShieldFS in real-world working conditions on real, personal machines, against samples from state of the art ransomware families. ShieldFS was able to detect the malicious activity at runtime and transparently recover all the original files. Although the models can be tuned to fit various filesystem usage profiles, our results show that our initial tuning yields high accuracy even on unseen samples and variants.},
+author = {Andrea Continella and Alessandro Guagnelli and Giovanni Zingaro and G. D. Pasquale and Alessandro Barenghi and S. Zanero and F. Maggi},
+journal = {Proceedings of the 32nd Annual Conference on Computer Security Applications},
+volume = {},
+pages = {},
+doi = {10.1145/2991079.2991110},
+}
+
+@article{8e88d9d36cdf65de2c97c3102a0e58f73459a5e4,
+title = {HelDroid: Dissecting and Detecting Mobile Ransomware},
+year = {2015},
+url = {https://semanticscholar.org/paper/8e88d9d36cdf65de2c97c3102a0e58f73459a5e4},
+abstract = {In ransomware attacks, the actual target is the human, as opposed to the classic attacks that abuse the infected devices e.g., botnet renting, information stealing. Mobile devices are by no means immune to ransomware attacks. However, there is little research work on this matter and only traditional protections are available. Even state-of-the-art mobile malware detection approaches are ineffective against ransomware apps because of the subtle attack scheme. As a consequence, the ample attack surface formed by the billion mobile devices is left unprotected. 
+ 
+First, in this work we summarize the results of our analysis of the existing mobile ransomware families, describing their common characteristics. Second, we present HelDroid, a fast, efficient and fully automated approach that recognizes known and unknown scareware and ransomware samples from goodware. Our approach is based on detecting the "building blocks" that are typically needed to implement a mobile ransomware application. Specifically, HelDroid detects, in a generic way, if an app is attempting to lock or encrypt the device without the user's consent, and if ransom requests are displayed on the screen. Our technique works without requiring that a sample of a certain family is available beforehand. 
+ 
+We implemented HelDroid and tested it on real-world Android ransomware samples. On a large dataset comprising hundreds of thousands of APKs including goodware, malware, scareware, and ransomware, HelDroid exhibited nearly zero false positives and the capability of recognizing unknown ransomware samples.},
+author = {Nicoló Andronio and S. Zanero and F. Maggi},
+doi = {10.1007/978-3-319-26362-5_18},
+}
+
+@article{4b6ae0ef1fbebde7b1adc1e06180697b56380a62,
+title = {Comparative analysis of various ransomware virii},
+year = {2008},
+url = {https://semanticscholar.org/paper/4b6ae0ef1fbebde7b1adc1e06180697b56380a62},
+abstract = {The word ransomware and the associated phenomenon appeared something like 3 years ago, around the year 2005. It shed light on a specific class of malwares which demand a payment in exchange for a stolen functionality. Most widespread ransomwares make an intensive use of file encryption as an extortion mean. Basically, they encrypt various files on victim’s hard drives before asking for a ransom to get the files decrypted. Security related media and some antivirus vendors quickly brandished this “new” type of virii as a major threat for computer world. This article tries to investigate the foundation of these threats beyond the phenomenon. In order to get a better understanding of ransomwares, the study relies on a comparative analysis of various ransomware virii. Based on reverse-engineering while not focused on analysis methodology, a technical review is done at different levels: quality of code, malwares’ functionalities and analysis of cryptographic primitives if any. Our analysis leads us to many interesting approaches and conclusions concerning this phenomenon, and in particular the strength and weakness of used extortion means. We also take advantage of our technical review to stand back and to analyse both the business model associated to these ransomwares and the communication that has been made around them.},
+author = {Alexandre Gazet},
+journal = {Journal in Computer Virology},
+volume = {6},
+pages = {77-90},
+doi = {10.1007/s11416-008-0092-2},
+}
+
+@article{ae83304d4b0d211122d4fe0be655887c4e66fd40,
+title = {PayBreak: Defense Against Cryptographic Ransomware},
+year = {2017},
+url = {https://semanticscholar.org/paper/ae83304d4b0d211122d4fe0be655887c4e66fd40},
+abstract = {Similar to criminals in the physical world, cyber-criminals use a variety of illegal and immoral means to achieve monetary gains. Recently, malware known as ransomware started to leverage strong cryptographic primitives to hold victims' computer files "hostage" until a ransom is paid. Victims, with no way to defend themselves, are often advised to simply pay. Existing defenses against ransomware rely on ad-hoc mitigations that target the incorrect use of cryptography rather than generic live protection. To fill this gap in the defender's arsenal, we describe the approach, prototype implementation, and evaluation of a novel, automated, and most importantly proactive defense mechanism against ransomware. Our prototype, called PayBreak, effectively combats ransomware, and keeps victims' files safe. PayBreak is based on the insight that secure file encryption relies on hybrid encryption where symmetric session keys are used on the victim computer. PayBreak observes the use of these keys, holds them in escrow, and thus, can decrypt files that would otherwise only be recoverable by paying the ransom. Our prototype leverages low overhead dynamic hooking techniques and asymmetric encryption to realize the key escrow mechanism which allows victims to restore the files encrypted by ransomware. We evaluated PayBreak for its effectiveness against twenty hugely successful families of real-world ransomware, and demonstrate that our system can restore all files that are encrypted by samples from twelve of these families, including the infamous CryptoLocker, and more recent threats such as Locky and SamSam. Finally, PayBreak performs its protection task at negligible performance overhead for common office workloads and is thus ideally suited as a proactive online protection system.},
+author = {Eugene Kolodenker and W. Koch and G. Stringhini and Manuel Egele},
+journal = {Proceedings of the 2017 ACM on Asia Conference on Computer and Communications Security},
+volume = {},
+pages = {},
+doi = {10.1145/3052973.3053035},
+}
+
+@article{31181e8b151ef6e1155dcc886d640afd3048da14,
+title = {Evolution of ransomware},
+year = {2018},
+url = {https://semanticscholar.org/paper/31181e8b151ef6e1155dcc886d640afd3048da14},
+abstract = {Cybercrime has long since transformed from a world of Maverick attackers to a criminal business. Ransomware is a malware that renders a victim's computer or data unusable and is increasingly being used by criminals to generate revenue through extortion. This study contributes to the authors' knowledge by exploring the transition from the early-day scams, to extortion implemented by current ransomware. They examine the pathway from the first clumsy ransomware attempts to the present day sophisticated ransomware attack campaigns. This Crypto-warfare now accounts for estimated damages of $1 billion. Considering the fact that many Internet users appear to be unaware of ransomware and do little to protect themselves, they argue that this low-impact extortion, using highly automated methods, has proven very rewarding for the criminals. As criminals have been early adopters (or abusers) of Internet technology, they expect that ransomware will continue to evolve beyond the capability of present day defence solutions.},
+author = {Philip O'Kane and S. Sezer and Domhnall Carlin},
+journal = {IET Networks},
+volume = {7},
+pages = {321-327},
+doi = {10.1049/iet-net.2017.0207},
+}
+
+@article{fade9ccfae52efd3b1d853de6d2f0f22c4b961f9,
+title = {Prudent Practices for Designing Malware Experiments: Status Quo and Outlook},
+year = {2012},
+url = {https://semanticscholar.org/paper/fade9ccfae52efd3b1d853de6d2f0f22c4b961f9},
+abstract = {Malware researchers rely on the observation of malicious code in execution to collect datasets for a wide array of experiments, including generation of detection models, study of longitudinal behavior, and validation of prior research. For such research to reflect prudent science, the work needs to address a number of concerns relating to the correct and representative use of the datasets, presentation of methodology in a fashion sufficiently transparent to enable reproducibility, and due consideration of the need not to harm others. In this paper we study the methodological rigor and prudence in 36 academic publications from 2006-2011 that rely on malware execution. 40% of these papers appeared in the 6 highest-ranked academic security conferences. We find frequent shortcomings, including problematic assumptions regarding the use of execution-driven datasets (25% of the papers), absence of description of security precautions taken during experiments (71% of the articles), and oftentimes insufficient description of the experimental setup. Deficiencies occur in top-tier venues and elsewhere alike, highlighting a need for the community to improve its handling of malware datasets. In the hope of aiding authors, reviewers, and readers, we frame guidelines regarding transparency, realism, correctness, and safety for collecting and using malware datasets.},
+author = {C. Rossow and Christian J. Dietrich and Chris Grier and C. Kreibich and V. Paxson and N. Pohlmann and H. Bos and M. V. Steen},
+journal = {2012 IEEE Symposium on Security and Privacy},
+volume = {},
+pages = {65-79},
+doi = {10.1109/SP.2012.14},
+}

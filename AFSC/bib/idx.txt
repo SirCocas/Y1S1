@@ -1,3 +1,5 @@
-file system forensic analysis : pag 82
+file system forensic analysis : pag 105
 
 1a: page 25 (documentation)
+
+The Art of Memory Forensics: 53

@@ -1,7 +1,0 @@
-2 Charlie Miller, “The Legitimate Vulnerability Market: Inside the Secretive World of 0-day Exploit Sales,” Proceedings of the 6th Workshop on the Economics of Information Security (2007).
-
-3 Juan Caballero et al., “Measuring Pay-per-Install: The Commoditization of Malware Distribution,” Proceedings of the 20th USENIX Conference on Security (2011).
-
-4 Ling Huang et al., “Adversarial Machine Learning,” Proceedings of the 4th ACM Workshop on Artificial Intelligence and Security (2011): 43–58.
-
-5 Evan Martin and Tao Xie, “Inferring Access-Control Policy Properties via Machine Learning,” Proceedings of the 7th IEEE International Workshop on Policies for Distributed Systems and Networks (2006): 235–238.

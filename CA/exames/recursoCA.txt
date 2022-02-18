@@ -1,0 +1,160 @@
+Ex 1 - As cifras contínuas, ou de fluxo (stream), construídas com base nos LFSR (Linear Feedback Shift Registers) combinam a saída de vários destes geradores, por exemplo
+, com uma função XOR (e.g. o gerador A5 do GSM). Explique porquê.
+
+A combinação da saída de vários geradores LFSR com uma função XOR prende-se com o facto de parte das saídas destes geradores serem parte da entrada inalterada. 
+Desta forma, é necessário um processo para alteração desses valores inalterados, que consiste no agrupamento de vários LFSRs em sequência com a junção da operação de 
+XOR para conferir ainda mais segurança aos valores finais. Assim, podemos afirmar que esta combinação surge como resolução do problema de inalteração de parte da saída 
+de LFSRs, deforma a poder utilizar estes componentes com sucesso na cifragem continua.
+
+Ex 2 - Comente a seguinte afirmação. O protocolo Diffie-Hellman não pode ser usado quando a aritmética é feita com curvas elípticas.
+
+Discordo da afirmação, pois o protocolo Diffie-Hellman pode ser implementado com recurso a curvas elípticas, como passo a explicar.
+
+Esse processo passa pelos intervenientes (Alice e Bob) chegarem à decisão de uma curva elíptica a usar e um ponto P, de elevada grandeza, dessa curva. Cada um gera, 
+então, um valor random (Alice-ra, Bob-rb) e envia ao outro o valor da multiplicação desse seu random privado pelo ponto P (raP e rbP). Por fim, o valor final a que 
+chegarão será rarbP. Este valor nunca circula em claro no canal de comunicação durante este processo. Num canal comprometido, alguém a escutar poderá ter acesso a P e a 
+raP ou rbP mas a dificuldade de descobrir ra ou rb sabendo P e raP/rbP é um problema que confere ao uso das curvas elípticas neste protocolo uma ótima solução. Assim, o 
+uso de curvas elípticas associado a este protocolo pode ser usado e confere uma segurança extra presente na dificuldade de obtenção dos randoms privados quando estes 
+surgem no canal sempre multiplicados por ponto P de elevada grandeza pertencente a uma curva elíptica escolhida.
+
+Ex 3 - Comente a seguinte afirmação. O protocolo Diffie-Hellman serve para que a Alice e o Bob troquem entre si mensagens de forma segura.
+
+Na sua essência, o protocolo Diffie-Hellman serve para que duas entidades cheguem a acordo sobre um valor/chave a usar, sem que em nenhum momento esse valor circule 
+abertamente pelo canal de comunicação. No entanto, a troca de mensagens de forma segura é um possível processo subsequente que poderá ser realizado com o valor 
+resultante do protocolo Diffie-Hellman. Sendo assim, não podemos concluir diretamente que este protocolo serve para que Alice e Bob troquem entre si mensagens de forma 
+segura, apesar desta ser uma das hipóteses, a partir do momento em que o protocolo é concluído.
+
+Obviamente, este protocolo está sujeito a ataques (por exemplo MitM) e não podemos concluir à partida que o contexto de segurança teoricamente esperado se aplique sempre 
+na prática. A finalidade do valor gerado no protocolo também não é unicamente o uso em troca de mensagens de forma segura, pelo que, apesar da informação referir uma 
+prática comum consequente ao uso do protocolo, não podemos inferir que é sempre este o caso. 
+
+Ex 4 - Comente a seguinte afirmação. O sistema de cifra RSA é um método de cifra de chave pública.
+Um método de cifra de chave pública é outro nome para cifras assimétricas, em que uma entidade terá uma chave chamada de pública que poderá ser livremente divulgada e 
+uma chave privada, sendo que valores encriptados com uma destas chaves poderão ser desencriptados pela outra.
+
+O RSA é um protocolo que faz uso de módulo e expoente público (que pode ser livremente divulgado), e de valor diferente (expoente privado) para a inversão dos cálculos 
+matemáticos aplicados com as partes públicas. Assim, a aplicação matemática de RSA é a de uso de valores diferentes para encriptação e desencriptação, como é o contexto 
+das cifras assimétricas, em que chave pública e privada encriptam/desencriptam valores pela outra encriptada/desencriptada. 
+
+Assim, como é dito na afirmação, concordo que o sistema de cifra RSA é um método de cifra de chave pública.
+
+Ex 5 - Relativamente ao uso de CRL (Certificate Revocation Lists), qual das seguintes afirmações é verdadeira? Justifique.
+1. Os certificados têm obrigatoriemente que referir a localização da CRL da sua Entidade Certificadora (Certification Authority)
+2. Num determinado instante só existe uma lista base e delta ativas por Entidade Certificadora (Certification Authority)
+
+Considero verdadeira a afirmação 2.
+
+Como é dito na afirmação 2, num determinado instante só existe uma lista base e uma lista delta por CA. Isto pois, se após emissão de uma lista base, forem emitidas 
+n listas delta antes da próxima base, cada lista delta irá conter a informação de revogação presente na lista delta imediatamente anterior mais a nova informação de 
+revogação. Como listas delta acumulam informação de listas delta anteriores, basta consultar a mais recente, pelo que se pode considerar que apenas uma delta e uma base 
+estão ativas num determinado instante.
+
+Relativamente à afirmação 1, os certificados não têm de referir a localização da CRL da sua CA, pois este parâmetro é irrelevante no contexto esperado, sendo que as CRLs 
+não são objectos únicos, com localização única ou fixa, podendo existir cópias de uma determinada CRL, deste que devidamente validadas pela assinatura. Assim, não existe 
+obrigatoriedade na referência de localização de CRLs num certificado.  
+
+Ex 6 - Considere que usa uma cifra simétrica para esconder conteúdos guardados num sistema de ficheiros Como é habitual num sistema de ficheiros, os dados são guardados 
+em blocos que estão espalhados num repositório, sendo referenciados por uma estrutura central que os enumera (e.g. i-node). Imagine que o dispositivo de armazenamento 
+sobre um acidente, o qual altera alguns dos bits de blocos de dados dos ficheiros. Se usasse um dos modos de cifra abaixo referidos para cifrar os ficheiros, qual deles 
+criaria menos alterações no conteúdo original do ficheiro (após decifra) por bit adulterado no criptograma? Justifique.
+1. OFB (Output FeedBack)
+2. CTR (Counter)
+
+O método OFB utiliza em cada iteração um IV que é encriptado com uma chave e com posterior operação de XOR entre os bits do bloco a encriptar nessa iteração e os bits do
+ IV encriptado. Em cada iteração seguinte, o IV resulta de shift de k bits do IV anterior com a adição de k bits do IV encriptado da iteração anterior (os k bits 
+utilizados para operação de XOR com o bloco na iteração anterior). Desta forma, neste método, por cada IV depender do conteúdo diretamente utilizado para cifra do bloco 
+anterior, existirá neste caso uma propagação de erros associada a bit adulterados no criptograma. Esta adulteração poderá levar a que se prolongue por mais que uma 
+iteração o uso de IVs incorretos, o que levaria a erros na decifra acumulados, superiores aos erros diretamente causados pela adulteração.
+
+Já o método CTR é bastante semelhante, na medida que o processo utiliza também um IV encriptado em cada iteração e posterior operação XOR com  o bloco a encriptar. No 
+entanto, o IV de cada iteração seguinte resulta do IV anterior com a soma de um contador (com valor pré-definido). Este método leva a que o conteúdo usado para cifrar 
+blocos (IV encriptado) seja completamente independente do valor cifrado. Com o conhecimento do IV inicial e incremento usado, conseguimos ter noção dos IVs utilizados 
+no processo, no método CTR, e usar então os IVs corretos.
+
+Assim, considero que o uso de CTR criaria menos alterações no conteúdo original do ficheiro por bit adulterado no criptograma, pois a propagação de erros é um fator a 
+ter mais em conta no método OFB devido a dependências de iterações no esquema de encriptação/desencriptação de blocos.
+
+Ex 7 - Comente a seguinte afirmação. A técnica zero-knowledge-proof pode ser usada para cifrar mensagens.
+
+As técnicas zero-knowledge exploradas na cadeira foram one of two oblivious ways e coin flipping. A primeira aparece no contexto de divulgação de informação de entidade 
+A para B, sem que A (detentora da informação) consiga inferir o item pretendido pela entidade B e sem que esta consiga inferir outro item além daquele pretendido. 
+Para que estas propriedades se apliquem é necessário a utilização de cifragem de valores nesta técnica. Já o coin flipping, aplica-se no contexto de uma tomada de 
+decisão binária entre 2 entidades (como o lançamento de uma moeda) sem que possa ocorrer por nenhuma das partes algum tipo de batota/manipulação do resultado e utiliza 
+conceitos como teorema do resto chinês para cálculo de 4 raízes de um resíduo quadrático, símbolo de Jacobi e ainda conceitos de RSA (utilização de valores primos p e q 
+onde n=pq).
+
+Assim, podemos dizer que internamente, ambas as técnicas utilizam cifragem de valores no seu funcionamento. No entanto, no contexto prático em que se aplicam, não estão 
+associadas à tradicional cifragem de mensagens num canal de comunicação entre entidades, até porque o conceito de zero-knowledge não é normalmente necessário no contexto 
+tradicional de comunicação cifrada de mensagens. 
+
+Ex 8 - Relativamente ao que é uma cadeia, ou hierarquia, de certificação, qual das seguintes afirmações é verdadeira? Justifique.
+1. É o conjunto de certificados emitidos por uma determinada Entidade Certificadora (Certification Authority)
+2. É o conjunto de certificados que um programa deve validar para que possa confiar num certificado recebido
+
+A afirmação correta é a 2.
+
+Uma cadeia de certificação é um conjunto hierárquico de certificados, cada um assinado pelo seu superior imediato, que deve ser validada para que se possa confiar no 
+certificado recebido, aquele que se encontra mais abaixo na hierarquia. A validação da cadeia termina no certificado em que já confiamos, sendo este, para nós, a raiz 
+da cadeia validada.
+
+Um conjunto de certificados emitidos por uma CA poderão nem sequer estar ligados em cadeia como é definição de cadeia de certificação, logo a afirmação 1 não é correta.
+
+Como referido na afirmação 2, uma cadeia é uma sequência de certificados a validar, para que, através da confiança transitiva (confio em certificado x, que emitiu 
+certificado y (x confia em y), logo posso confiar em certificado y), se possa chegar à confiança num determinado certificado recebido. 
+
+Ex 9 - Explique como se efetua a operação de adição de dois pontos numa curva elíptica. (a única que não sei se terei pontuação máxima)
+
+A operação de adição de dois pontos numa curva elíptica pode ser visualizada com o desenho da linha reta que passa por esses pontos (assumindo dois pontos distintos) e a 
+soma será um terceiro ponto (que é reflexão em relação ao eixo do x)  do ponto onde esta reta interceta novamente a curva elíptica. Assim, esta reta interceta a curva em 
+três pontos, em que a soma de dois desses pontos pode ser desta forma interpretada, como o ponto que é reflexão do terceiro ponto de interceção da reta com a curva.  
+
+Ao falarmos do conceito de curvas elípticas, considerámos que existe sempre uma simetria relativa ao eixo do x. Assim, para o problema em que os pontos a somar fazem 
+parte, por exemplo, duma linha vertical, que aparenta não intercetar a curva elíptica num terceiro ponto, teremos de utilizar o chamado ponto no infinito. Como exemplo 
+para compreender esta noção, podemos pensar num plano com linhas paralelas que é mapeado na superfície de uma esfera. Estas linhas paralelas aparentam não se intercetar 
+em nenhum ponto, mas poderemos visualizar neste contexto a interceção nos polos. Assim, podemos concluir que existe a interceção num ponto no infinito, e utilizar essa 
+noção na soma de pontos em curvas elípticas.
+
+Por fim, a multiplicação de um ponto por um escalar n, pode ser interpretada como a soma n vezes do ponto a si mesmo.
+
+Ex 10 - A técnica one-of-two oblivious-transfer permite que uma entidade extraia um item de informação (de um conjunto de dois itens) de uma outra entidade sem que esta 
+consiga saber qual dos itens foi extraído. Comente a seguinte afirmação. A técnica oblivious_transfer pode ser generalizada para extrair 1 de n itens de informação sem 
+que isso aumente muito a quantidade de informação que tem de ser trocada entre as duas entidades.
+
+A técnica one-of-two oblivious-transfer funciona da seguinte forma: Entidade Alice tem itens de informação e entidade Bob que saber um desses itens. Para isso, Alice 
+gera um random por item (r1,r2, para o exemplo com 2 itens) e envia a Bob. Bob seleciona o random com índice associado ao item que pretende saber e gera um random k. 
+De seguida, gera valor v que contém encriptado ambos o índice selecionado e o k gerado, e envia a Alice. Alice terá agora de gerar para cada item de informação, um valor 
+(chamemos i1, i2) onde cada um contém um item de informação encriptado, juntamente com o valor v recebido de Bob. Por fim, Bob com a informação privada que tem (k por ele
+ gerado), conseguirá apenas chegar ao item por ele pretendido inicialmente.
+
+Assim, a generalização deste protocolo para n itens de informação, implica da parte da Alice a geração e envio por duas vezes de n valores. Assim, podemos dizer que a 
+parte inicial da afirmação é verdadeira (a técnica pode ser generalizada para extrair 1 de n itens de informação). No entanto, discordo da parte final da afirmação, pois
+ a quantidade de informação a ser trocada irá aumentar linearmente com o aumento do valor n, da parte do detentor da informação, pelo que não existe uma boa 
+escalabilidade associada ao método.  
+
+Ex 11- Explique como se pode partilhar um segredo em que 4 de 6 entidades são necessárias para revelar o segredo.
+
+Para partilha de um segredo em que t de n entidades são necessárias para revelar o segredo, onde t é menor que n, poderemos olhar para duas técnicas: a de Blakley e a de 
+Shamir.
+
+A técnica de Blakley faz uso de equações com t incógnitas, em que o segredo é o ponto P no plano que pode ser encontrado na junção e resolução de t equações. Assim, no 
+exemplo da pergunta, teríamos equações de 4 incógnitas, divididas pelas 6 entidades, e 4 quaisquer dessas entidades teriam informação suficiente para chegar ao segredo 
+partilhado, através da junção das equações de cada um.
+
+Já a técnica de Shamir, é semelhante, mas tem como segredo o elemento sem incógnita de uma função polinomial de grau t-1 (neste caso seria grau 3). Para cada entidade 
+seriam divulgados dois valores (xk, A(xk)), em que A(xk) é a soma desde 0 até k dos componentes akx^k. 4 entidades conseguiriam juntar os seus valores para chegar ao 
+elemento sem incógnita, que é o segredo partilhado.
+
+Ex 12 - Tendo em conta a propriedade de resistência à descoberta de colisões em funções de síntese (digest functions) e o paradoxo do aniversário, qual destas afirmações 
+é verdadeira? Justifique.
+1. O paradoxo estabelece um limite superior da robustez da função à descoberta de colisões
+2. A aplicação do paradoxo tem em conta o funcionamento interno da função de síntese
+
+A afirmação correta, a meu ver, é a 1.
+
+Este paradoxo faz referência à probabilidade de colisões (2 pessoas com mesmo aniversário), tendo em conta o número de pessoas presentes no cenário e o facto de 
+existirem 366 aniversários possíveis. Assim, como referido na afirmação 1, associa um limite superior de robustez, associado ao cálculo da probabilidade de colisões, 
+consoante o universo de possibilidades. É assim, uma forma de cálculo de probabilidade de colisões associada ao universo em questão, pelo que, como consta na afirmação 1, 
+pode ser utilizado para estabelecer um limite superior de robustez da função à descoberta de colisões.
+
+A aplicação do paradoxo tem em conta o número de possibilidades e por isso, ao contrário do que diz a afirmação 2, não depende do funcionamento interno da função síntese, 
+pois é esperado que este funcionamento não altere o universo de possibilidades esperado.

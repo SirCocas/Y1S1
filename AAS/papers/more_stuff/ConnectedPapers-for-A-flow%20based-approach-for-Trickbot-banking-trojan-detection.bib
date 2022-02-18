@@ -1,0 +1,410 @@
+@article{11d4448e951b145e0737193c7ae02dc9e155cc37,
+title = {A flow-based approach for Trickbot banking trojan detection},
+year = {2019},
+url = {https://www.semanticscholar.org/paper/11d4448e951b145e0737193c7ae02dc9e155cc37},
+abstract = {Abstract Nowadays, online banking is an attractive way of carrying out financial operations such as ecommerce, e-banking, and e-payments without much effort or the need of any physical presence. This increasing popularity in online banking services and payment systems has created motivation for financial attackers to steal customer`s credentials and money. Banking trojans have been a way of committing attacks on these financial institutions for more than a decade, and they have become one of the primary drivers of botnet traffic. However, the stealthy nature of financial botnets requires new techniques and novel systems for detection and analysis in order to prevent losses and to ultimately take the botnets down. TrickBot, which specifically threatens businesses in the financial sector and their customers, has been behind man-in-the-browser attacks since 2016. Its main goal is to steal online banking information from victims when they visit their banking websites. In this study, we utilize machine learning techniques to detect TrickBot malware infections and to identify TrickBot related traffic flows without having to analyze network packet payloads, the IP addresses, port numbers and protocol information. Since command and control server IPs are updated almost daily, identification of TrickBot related traffic flows without looking at specific IP addresses is significant. We adopt behavior-based classification that uses artifacts created by the malware during the dynamic analysis of TrickBot malware samples. We compare the performance results of four different state-of-the-art machine learning algorithms, Random Forest, Sequential Minimal Optimization, Multilayer Perceptron, and Logistic Model to identify TrickBot related flows and detect a TrickBot infection. Then, we optimize the proposed classifier via exploring the best hyperparameter and feature set selection. Looking at network packet identifiers such as packet length, packet and flag counts, and inter-arrival times, the Random Forest classifier identifies TrickBot related flows with 99.9534% accuracy, 91.7% true positive rate.},
+author = {A. Gezer and Gary Warner and Clifford Wilson and Prakash Shrestha},
+doi = {10.1016/J.COSE.2019.03.013},
+}
+
+@article{3241cd3621b7fd9fce1e55766b10437a280ec3fc,
+title = {DEMO: OffPAD - Offline Personal Authenticating Device with Applications in Hospitals and e-Banking},
+year = {2016},
+url = {https://www.semanticscholar.org/paper/3241cd3621b7fd9fce1e55766b10437a280ec3fc},
+abstract = {Identity and authentication solutions often lack usability and scalability, or do not provide high enough authentication assurance. The concept of Lucidman (Local User-Centric Identity Management) is an approach to providing scalable, secure and user friendly identity and authentication functionalities. In this context we demonstrate the use of an OffPAD (Offline Personal Authentication Device) as a trusted device to support different forms of authentication. The Lucidman/OffPAD approach consists of locating the identity management and authentication functionalities on the user side instead of on the server side or in the cloud. This demo aims to show how OffPAD strengthens authentication assurance, improves usability, minimizes trust requirements, and has the advantage that trusted online interaction can be achieved even on malware infected client platforms. The trusted device OffPAD has been designed as a phone cover, therefore not requiring the user to carry an extra gadget. We focus on six demonstrators, three useful in e-banking and three in the hospital domain where nurses, doctors, or patients are authenticated and access is granted in various situations base on the OffPAD. A video with the same title is available online at www.offpad.org.},
+author = {Denis Migdal and Christian Johansen and A. Jøsang},
+journal = {Proceedings of the 2016 ACM SIGSAC Conference on Computer and Communications Security},
+volume = {},
+pages = {},
+doi = {10.1145/2976749.2989033},
+}
+
+@article{19d74776ad8065eb8967347b9eab408a944798d6,
+title = {Verified Security for Browser Extensions},
+year = {2011},
+url = {https://www.semanticscholar.org/paper/19d74776ad8065eb8967347b9eab408a944798d6},
+abstract = {Popup blocking, form filling, and many other features of modern web browsers were first introduced as third-party extensions. New extensions continue to enrich browsers in unanticipated ways. However, powerful extensions require capabilities, such as cross-domain network access and local storage, which, if used improperly, pose a security risk. Several browsers try to limit extension capabilities, but an empirical survey we conducted shows that many extensions are over-privileged under existing mechanisms. This paper presents \ibex, a new framework for authoring, analyzing, verifying, and deploying secure browser extensions. Our approach is based on using type-safe, high-level languages to program extensions against an API providing access to a variety of browser features. We propose using Data log to specify fine-grained access control and dataflow policies to limit the ways in which an extension can use this API, thus restricting its privilege over security-sensitive web content and browser resources. We formalize the semantics of policies in terms of a safety property on the execution of extensions and develop a verification methodology that allows us to statically check extensions for policy compliance. Additionally, we provide visualization tools to assist with policy analysis, and compilers to translate extension source code to either. NET byte code or JavaScript, facilitating cross-browser deployment of extensions. We evaluate our work by implementing and verifying~\NumExt extensions with a diverse set of features and security policies. We deploy our extensions in Internet Explorer, Chrome, Fire fox, and a new experimental HTML5 platform called C3. In so doing, we demonstrate the versatility and effectiveness of our approach.},
+author = {Arjun Guha and Matt Fredrikson and B. Livshits and N. Swamy},
+journal = {2011 IEEE Symposium on Security and Privacy},
+volume = {},
+pages = {115-130},
+doi = {10.1109/SP.2011.36},
+}
+
+@article{fde1a4806a8cfef90f1cc913156a13de81063f62,
+title = {Chrome Extensions: Threat Analysis and Countermeasures},
+year = {2012},
+url = {https://www.semanticscholar.org/paper/fde1a4806a8cfef90f1cc913156a13de81063f62},
+abstract = {The widely popular browser extensions now become one of the most commonly used malware attack vectors. The Google Chrome browser, which implements the principles of least privileges and privilege separation by design, offers a strong security mechanism to protect malicious websites from damaging the whole browser system via extensions. In this study, we however reveal that Chrome’s extension security model is not a panacea for all possible attacks with browser extensions. Through a series of practical bot-based attacks that can be performed even under typical settings, we demonstrate that malicious Chrome extensions pose serious threats, including both information dispersion and harvesting, to browsers. We further conduct an in-depth analysis of Chrome’s extension security model, and conclude that its vulnerabilities are rooted from the violation of the principles of least privileges and privilege separation. Following these principles, we propose a set of countermeasures that enforce the policies of microprivilege management and differentiating DOM elements. Using a prototype developed on the latest Chrome browser, we show that they can effectively mitigate the threats posed by malicious Chrome extensions with little effect on normal browsing experience.},
+author = {Lei Liu and Xinwen Zhang and Guanhua Yan and Songqing Chen},
+}
+
+@article{108064fabcaa4ecb7b354d098a95effb811f64ab,
+title = {Towards Fine-Grained Access Control on Browser Extensions},
+year = {2012},
+url = {https://www.semanticscholar.org/paper/108064fabcaa4ecb7b354d098a95effb811f64ab},
+abstract = {We propose a practical and fine-grained browser extension access control framework, which regulates the misbehavior of JSEs with malicious intent at run time by means of restricting the access to resources, in order to prevent the malicious JSEs from ruining users security. The resource access of a JSE, which constrains its behavior, is the basis of the functionalities of it. Instead of the conventional static access control rules, we formulate the fine-grained access control policies dynamically in the framework while JSEs are executing within Firefox, which makes our framework more flexible and practical in real-world use. We tested 100 popular JSEs on AMO to evaluate the compatibility of our framework, and found that only two of them are not compatible due to their sensitive behavior. To evaluate the capability of restraining the misbehavior of JSEs, we tested ten malicious ones and the results show that all of them are blocked by our framework before they actually misbehave.},
+author = {Lei Wang and Ji Xiang and Jiwu Jing and Lingchen Zhang},
+doi = {10.1007/978-3-642-29101-2_11},
+}
+
+@article{1d0ef6847b9375742fcf4443a3e868c6555a26f6,
+title = {Towards improving browser extension permission management and user awareness},
+year = {2012},
+url = {https://www.semanticscholar.org/paper/1d0ef6847b9375742fcf4443a3e868c6555a26f6},
+abstract = {Browsers have become the de-facto platform for users and their online presence. They have also become a rich environment for 3rd party extensions that enrich the user browsing experience by extending upon the browser's functionalities. Protecting user privacy against malicious or vulnerable extensions is an important task performed by modern browser platforms such as Google Chrome and Safari. To do so, these platforms adopt a per-extension permission model, where each extension is given a set of permissions based on its requirements. These models suffer from coarse-grained access controls and insufficient user awareness. In this paper we implement a runtime framework as a browser extension called REM. REM monitors the accesses made by 3rd party Chrome extensions, informs users of the accesses, and allows them to customize the permissions given to extensions. The custom permission settings are enforced by the framework at runtime. We evaluated our framework on popular Chrome extensions & were successful in monitoring and controlling their accesses with little overhead. We also conducted a user study to evaluate the effectiveness of REM compared to current standard methods.},
+author = {S. Marouf and Mohamed Shehab},
+journal = {8th International Conference on Collaborative Computing: Networking, Applications and Worksharing (CollaborateCom)},
+volume = {},
+pages = {695-702},
+doi = {10.4108/ICST.COLLABORATECOM.2012.250642},
+}
+
+@article{fc98ab982fcfc612924c2f2db0ee26d8cf8ff36d,
+title = {Malicious Browser Extensions at Scale: Bridging the Observability Gap between Web Site and Browser},
+year = {2017},
+url = {https://www.semanticscholar.org/paper/fc98ab982fcfc612924c2f2db0ee26d8cf8ff36d},
+abstract = {Browser extensions enhance the user experience in a variety of ways. However, to support these expanded services, extensions are provided with elevated privileges that have made them an attractive vector for attackers seeking to exploit Internet services. Such attacks are particularly vexing for the sites being abused because there is no standard mechanism for identifying which extensions are running on a user’s browser, nor is there an established mechanism for limiting the distribution of malicious extensions even when identified. In this paper we describe an approach used at Facebook for dealing with this problem. We present a methodology whereby users exhibiting suspicious online behaviors are scanned (with permission) to identify the set of extensions in their browser, and those extensions are in turn labelled based on the threat indicators they contain. We have employed this methodology at Facebook for six weeks, identifying more than 1700 lexically distinct malicious extensions. We use this labelling to drive user device clean-up efforts as well to report to antimalware and browser vendors.},
+author = {Louis F. DeKoven and S. Savage and G. Voelker and Nektarios Leontiadis},
+}
+
+@article{910245c934b40da9b453f7e974205f8065cee83c,
+title = {DOMtegrity: ensuring web page integrity against malicious browser extensions},
+year = {2019},
+url = {https://www.semanticscholar.org/paper/910245c934b40da9b453f7e974205f8065cee83c},
+abstract = {In this paper, we address an unsolved problem in the real world: how to ensure the integrity of the web content in a browser in the presence of malicious browser extensions? The problem of exposing confidential user credentials to malicious extensions has been widely understood, which has prompted major banks to deploy two-factor authentication. However, the importance of the “integrity” of the web content has received little attention. We implement two attacks on real-world online banking websites and show that ignoring the “integrity” of the web content can fundamentally defeat two-factor solutions. To address this problem, we propose a cryptographic protocol called DOMtegrity to ensure the end-to-end integrity of the DOM structure of a web page from delivering at a web server to the rendering of the page in the user’s browser. DOMtegrity is the first solution that protects DOM integrity without modifying the browser architecture or requiring extra hardware. It works by exploiting subtle yet important differences between browser extensions and in-line JavaScript code. We show how DOMtegrity prevents the earlier attacks and a whole range of man-in-the-browser attacks. We conduct extensive experiments on more than 14,000 real-world extensions to evaluate the effectiveness of DOMtegrity.},
+author = {Ehsan Toreini and M. Mehrnezhad and S. F. Shahandashti and F. Hao},
+journal = {International Journal of Information Security},
+volume = {18},
+pages = {801 - 814},
+doi = {10.1007/s10207-019-00442-1},
+pmid = {31632229},
+arxivid = {1905.12951},
+}
+
+@article{fe83cecc4c16e3e5e644555856b98188fe6866c6,
+title = {Chapter 28 – Man-in-the-Browser Attacks in Modern Web Browsers},
+year = {2014},
+url = {https://www.semanticscholar.org/paper/fe83cecc4c16e3e5e644555856b98188fe6866c6},
+abstract = {Man-in-the-browser is a Trojan that infects a Web browser. A Trojan has the ability to modify Web pages and online transaction content, or insert itself in a covert manner, without the user noticing anything suspicious. This chapter presents a study of several man-in-the-browser attacks that tamper with the user’s transactions and examines different attack vectors on several software layers. We conclude that there are many possible points of attack on different software layers and components of a Web browser, as the user’s transaction data flows through these layers. We also propose some countermeasures to mitigate these attacks. Our conceptual solution is based on cryptographic identification and integrity monitoring of software components.},
+author = {Sampsa Rauti and V. Leppänen},
+doi = {10.1016/B978-0-12-411474-6.00028-1},
+}
+
+@article{dc0e71fb06103d71d942573ef53a9786c0297e56,
+title = {Man-in-the-browser Attack: A Case Study on Malicious Browser Extensions},
+year = {2019},
+url = {https://www.semanticscholar.org/paper/dc0e71fb06103d71d942573ef53a9786c0297e56},
+abstract = {Man-in-the-browser (MitB) attacks, often implemented as malicious browser extensions, have the ability to alter the structure and contents of web pages, and stealthily change the data given by the user before it is sent to the server. This is done without the user or the online service (the server) noticing anything suspicious. In this study, we present a case study on the man-in-the-browser attack. Our proof-of-concept implementation demonstrates how easily this attack can be implemented as a malicious browser extension. The implementation is a UI-level, cross-browser implementation using JavaScript. We also successfully test the extension in a real online bank. By demonstrating a practical man-in-the-browser attack, our research highlights the need to better monitor and control malicious browser extensions.},
+author = {Sampsa Rauti},
+doi = {10.1007/978-981-15-4825-3_5},
+}
+
+@article{594da02c76725e2779a63ead13f5acea72331165,
+title = {Hardened Client Platforms for Secure Internet Banking},
+year = {2008},
+url = {https://www.semanticscholar.org/paper/594da02c76725e2779a63ead13f5acea72331165},
+abstract = {We review the security of e-banking platforms with particular attention to the exploitable attack vectors of three main attack categories: Man-in-the-Middle, Man-in-the-PC and Man-in-the-Browser. It will be shown that the most serious threats come from combination attacks capable of hacking any transaction without the need to control the authentication process. Using this approach, the security of any authentication system can be bypassed, including those using SecureID Tokens, OTP Tokens, Biometric Sensors and Smart Cards. We will describe and compare two recently proposed e-banking platforms, the ZTIC and the USPD, both of which are based on the use of dedicated client devices, but with diverging approaches with respect to the need of hardening the Web client application. It will be shown that the use of a Hardened Browser (or H-Browser) component is critical to force attackers to employ complex and expensive techniques and to reduce the strength and variety of social engineering attacks down to physiological fraud levels.},
+author = {Corrado Ronchi and Shukhrat Zakhidov},
+doi = {10.1007/978-3-8348-9283-6_39},
+}
+
+@article{15c1fa1d7499e4694b8df77662934fa152e768f8,
+title = {Secure inspection of web transactions},
+year = {2012},
+url = {https://www.semanticscholar.org/paper/15c1fa1d7499e4694b8df77662934fa152e768f8},
+abstract = {Web transactions are vulnerable for attacks where malicious software has infected a browser or where a root certifier has been compromised. As a countermeasure, we intercept HTTPS traffic in order to authorise certifiers as well as to inspect, verify and complement transactions securely. The interception and inspection is done in a trusted device, outside potentially compromised PC and browser. We propose a novel and flexible mechanism for controlling interception dynamically with directives embedded into HTML documents. We limit the authority of root certifiers over critical services with site-specific certification rules. We propose different models for realising the interceptor concept. The feasibility of the proposals is demonstrated by implementing and deploying interception into a USB gadget and a mobile phone.},
+author = {Mika Rautila and Jani Suomalainen},
+journal = {International Journal of Internet Technology and Secured Transactions},
+volume = {4},
+pages = {253-271},
+doi = {10.1504/IJITST.2012.054058},
+}
+
+@article{3cc88fdfc8b91c7c771dc6e039ae06d13f8dc37d,
+title = {A Survey on Countermeasures Against Man-in-the-Browser Attacks},
+year = {2019},
+url = {https://www.semanticscholar.org/paper/3cc88fdfc8b91c7c771dc6e039ae06d13f8dc37d},
+abstract = {},
+author = {Sampsa Rauti},
+doi = {10.1007/978-3-030-49336-3_40},
+}
+
+@article{38b5b562affe406e5943d28e2001f6fc2daaef2e,
+title = {Fraud Track on Secure Electronic Check System},
+year = {2018},
+url = {https://www.semanticscholar.org/paper/38b5b562affe406e5943d28e2001f6fc2daaef2e},
+abstract = {},
+author = {P. Zhang and Yijun He and K. Chow},
+journal = {Int. J. Digit. Crime Forensics},
+volume = {10},
+pages = {137-144},
+doi = {10.4018/IJDCF.2018040108},
+}
+
+@article{6d5c1f485f1c5d3da73025670ef491f1b5fe94bd,
+title = {Secure Pin-managing a user trusted unit},
+year = {2010},
+url = {https://www.semanticscholar.org/paper/6d5c1f485f1c5d3da73025670ef491f1b5fe94bd},
+abstract = {The invention relates particularly to a method for a secure PIN management of user trusted unit (10) connected via a data processing means (15) comprises, the 'to a non-persistent memory (15 with a permanent memory (15)') and interfaces (17, 18, 20) for connecting or interaction with a user (1), a memory card (16) such. is connected as a smart card and a data station (30), said method comprising the steps of: providing with a memory card (16) connected to the unit; Received in the unit: an external PIN and a card PIN, the latter being able to unlock the memory card; Generating and storing a key in the persistent storage on the data processing means and from the received PINs, so that the card PIN may be calculated based on a function that is stored in the persistent memory, wherein the external PIN and the key as an argument become; Receiving a user input of the external PIN into the terminal and transmitting the PIN to the external unit; Instructing the data processing means to calculate the card PIN using the stored function; To unlock and use the calculated card PIN the memory card.},
+author = {P. Buhler and H. Dykeman and T. Eirich and M. Kaiserswerth and T. Kramp},
+}
+
+@article{1d4eaaee9af031f2abf51c95c020ef37eb5efb05,
+title = {Online banking and modern approaches toward its enhanced security},
+year = {2010},
+url = {https://www.semanticscholar.org/paper/1d4eaaee9af031f2abf51c95c020ef37eb5efb05},
+abstract = {Digital information has become a social infrastructure and with the expansion of the Internet, network infrastructure has become an indispensable part of social life and industrial activity for mankind. In recent years, the demand for online banking has increased and the number of people who rely on online transactions has tremendously increased. Thus, necessity for a reliable security for online transactions is ever than before. Furthermore, security concerns still exist among the general public when using online applications. The purpose of this paper is to explore why online banking is vulnerable to exploits and to introduce some of the modern approaches to secure online banking in an easy to follow manner. This paper, by pointing out pros and cons of existing countermeasure technologies, tries to serve as a tutorial to raise public awareness in information security developments and conceive a model for the future technology.},
+author = {A. Hisamatsu and D. Pishva and G. Nishantha},
+journal = {2010 The 12th International Conference on Advanced Communication Technology (ICACT)},
+volume = {2},
+pages = {1459-1463},
+}
+
+@article{f2ae360ea81a221ca5b9769c25b0e50a9e57e824,
+title = {Communication Protocol Between Humans and Bank Server Secure Against Man-in-the-Browser Attacks},
+year = {2020},
+url = {https://www.semanticscholar.org/paper/f2ae360ea81a221ca5b9769c25b0e50a9e57e824},
+abstract = {In recent years, illegal money transfer using man-in-the-browser (MITB) attacks with malware in internet banking has become a social problem. This study focuses on transaction-tampering MITB attacks and considers countermeasures to combat them. The existing countermeasures require that another device, such as a token device, other than the device used to carry out the actual money-transfer operation is utilized to ensure a secure route different from that carrying out the actual money-transfer operation. However, because MITB attackers have become more sophisticated, malware will be able to infect all the devices in the end and the multiple routes approach will have become ineffective against this type of attack. Therefore, we constructed a human-to-machine communication protocol that requires only one device for each user and is secure against transaction-tampering MITB attacks, even if the device is taken over by malware.},
+author = {Koki Mukaihira and Yasuyoshi Jinno and Takashi Tsuchiya and Tetsushi Ohki and Kenta Takahashi and W. Ogata and M. Nishigaki},
+doi = {10.1007/978-3-030-39512-4_79},
+}
+
+@article{44c88e33b7a7a08fc03dc32cb64912c11003e743,
+title = {Gestion par pin sécurisé d'un dispositif de confiance pour utilisateur},
+year = {2010},
+url = {https://www.semanticscholar.org/paper/44c88e33b7a7a08fc03dc32cb64912c11003e743},
+abstract = {L'invention concerne notamment un procede de gestion par PIN securise d'un dispositif (10) de confiance pour utilisateur, dote de moyens (15) de calcul couples a une memoire persistante (15"), a une memoire non persistante (15') et a des interfaces (17, 18, 20) destinees a se coupler a un utilisateur (1) ou a interagir avec celui-ci, d'une carte (16) a memoire et d'un terminal (30), le procede comportant les etapes consistant a : mettre en place le dispositif couple a une carte (16) a memoire ; recevoir au niveau du dispositif un PIN externe et un PIN de carte, ce dernier etant capable de deverrouiller la carte a memoire ; generer et stocker une cle sur la memoire persistante, via les moyens de calcul et a partir des PIN recus, de telle sorte que le PIN de la carte puisse etre calcule via une fonction stockee sur la memoire persistante, admettant comme arguments le PIN externe et la cle ; recevoir, au niveau du terminal, une saisie par l'utilisateur du PIN externe et communiquer le PIN externe au dispositif ; donner pour consigne aux moyens de calcul de calculer le PIN de la carte a l'aide de la fonction telle qu'elle est stockee ; et utiliser le PIN de carte calcule pour deverrouiller la carte a memoire.},
+author = {P. Buhler and Harold Douglas Dykeman and Thomas Eirich and Matthias Kaiserswerth and Thorsten Kramp},
+}
+
+@article{08074d26e8e7cb39eaf6838b7be6f6a7965a2eb7,
+title = {A Runtime Monitoring System to Secure Browser Extensions},
+year = {2017},
+url = {https://www.semanticscholar.org/paper/08074d26e8e7cb39eaf6838b7be6f6a7965a2eb7},
+abstract = {Web browsers are applications originally created to surf over the Internet in a friendly way. Nowadays these browsers have turned into a richer software where, apart from surfing the web, users are provided with a vast variety of small applications, called browsers extensions, that are not maintained by the web browsers. Those browser extensions are usually developed by external developers and directly interact either with the web content or with the users. Browser extensions considerably increase the functionality of the browser. For instance, using a well known translate browser extension, users can have any web page translated to their preferred language; telephone numbers can be remarked in the web page so that users can click on them and automatically open a desktop application to make that call or browser extensions that block the advertisement that some sites insert in the HTML. However, the inclusion of these third parties applications in the web browsers poses new security and privacy challenges in terms of malware [4, 5, 3], advertisement [8, 9, 2, 1] or disclosing personal information about the user [6], e.g., getting access to browser history or reading another site’s password. Nevertheless, despite working properly, an extension can have undesirable consequences. Imagine that Alice, who is not a Swedish speaker, visits her bank account website to check her current balance. She gets a HTML content with the latest transactions written in Swedish. Alice decides to use an extension to translate from Swedish to English and confirm that all transactions are correct. To perform this task the extension sends the whole HTML to an external server so that it is automatically translated. Finally, the server sends back the website completely in English. One might argue that this is an undesirable behaviour, since sensitive information— which was not relevant for the task that Alice wanted to perform—was disclosed. In this abstract, we describe preliminary ideas on how to effectively prevent leaks of this kind. According to the official browser extension developer guidelines3, a browser extension is an application composed of a manifest file, one or more HTML file(s) and zero},
+author = {Raúl Pardo and Pablo Picazo-Sanchez and Gerardo Schneider and Juan E. Tapiador},
+}
+
+@article{22a151108cf1b4d57a635410f15ea8b2baf98e31,
+title = {Desktop Browser Extension Security and Privacy Issues},
+year = {2019},
+url = {https://www.semanticscholar.org/paper/22a151108cf1b4d57a635410f15ea8b2baf98e31},
+abstract = {Since their introduction in the 1990’s, users have adopted internet browsers as a convenient method of interacting with computers and servers whether collocated with the user or located across the planet. As browsers have become more sophisticated, additional capabilities have been made available to users through browser extensions. When written by trusted agents, these browser extensions provide safeguards for users, but browser extensions can also be written so that a user’s data can be extracted and used for purposes the user would never agree to. This paper began with the exploration of extensions in four popular browsers: Safari, Firefox, Chrome, and Internet Explorer (Edge) and the author explored the security and privacy practices inherent within the extensions, but only two of these browsers will be examined in this paper. Safari is eliminating all extensions outside of its tightly controlled delivery system beginning with the debut of its new operating system in September 2018 and Internet Explorer is being replaced by Edge, which is also tightly controlled by Microsoft. Presumably, Safari and Edge extensions will be secure once the developers submit the code and it is reviewed before the extensions are published. Because there are literally thousands of browser extensions it is not possible to examine all of them in a single paper, but it is the intent of the author to establish an evaluation framework so browser extensions can be objectively scored.},
+author = {Steven Ursell and T. Hayajneh},
+journal = {Lecture Notes in Networks and Systems},
+volume = {},
+pages = {},
+doi = {10.1007/978-3-030-12385-7_59},
+}
+
+@article{a56c98445c854329714ed31b964840783a7cb558,
+title = {Privacy Leakage Attacks in Browsers by Colluding Extensions},
+year = {2014},
+url = {https://www.semanticscholar.org/paper/a56c98445c854329714ed31b964840783a7cb558},
+abstract = {Browser Extensions (BE) enhance the core functionality of the Browser and provide customization to it. Browser extensions enjoy high privileges, sometimes with the same privileges as Browser itself. As a consequence, a vulnerable or malicious extension might expose Browser and system resources to attacks. This may put Browser resources at risk of unwanted operations, privilege escalation etc. BE can snoop on web applications, launch arbitrary processes, and even access files from host file system. In addition to that, an extension can even collude with other installed extensions to share objects and change preferences. Although well-intentioned, extension developers are often not security experts. Hence, they might end up writing vulnerable code. In this paper we present a new attacks via Browser extensions. In particular, the attack allows two malicious extensions to communicate and collaborate with each other in such a way to achieve a malicious goal. We identify the vulnerable points in extension development framework as: (a) object reference sharing, and (b) preference overriding. We illustrate the effectiveness of the proposed attack using various attack scenarios. Furthermore, we provide a proof-of-concept illustration for web domains including Banking & shopping. We believe that the scenarios we use in use-case demonstration underlines the severity of the presented attack. Finally, we also contribute an initial framework to address the presented attack.},
+author = {Anil Saini and M. Gaur and V. Laxmi and Tushar Singhal and M. Conti},
+doi = {10.1007/978-3-319-13841-1_15},
+}
+
+@article{34322a0aab7fe19f0354f3e2f6c017c56c6d9e1e,
+title = {An Analysis of the Mozilla Jetpack Extension Framework},
+year = {2012},
+url = {https://www.semanticscholar.org/paper/34322a0aab7fe19f0354f3e2f6c017c56c6d9e1e},
+abstract = {The Jetpack framework is Mozilla's newly-introduced extension development technology. Motivated primarily by the need to improve how scriptable extensions (also called addons in Firefox parlance) are developed, the Jetpack framework structures addons as a collection of modules. Modules are isolated from each other, and communicate with other modules via cleanly-defined interfaces. Jetpack also recommends that each module satisfy the principle of least authority (POLA). The overall goal of the Jetpack framework is to ensure that the effects of any vulnerabilities are contained within a module. Its modular structure also facilitates code reuse across addons. 
+ 
+In this paper, we study the extent to which the Jetpack framework achieves its goals. Specifically, we use static analysis to study capability leaks in Jetpack modules and addons. We implemented Beacon, a static analysis tool to identify the leaks and used it to analyze 77 core modules from the Jetpack framework and another 359 Jetpack addons. In total, Beacon analyzed over 600 Jetpack modules and detected 12 capability leaks in 4 core modules and another 24 capability leaks in 7 Jetpack addons. Beacon also detected 10 over-privileged core modules. We have shared the details with Mozilla who have acknowledged our findings.},
+author = {Rezwana Karim and Mohan Dhawan and V. Ganapathy and Chung-chieh Shan},
+doi = {10.1007/978-3-642-31057-7_16},
+}
+
+@article{3ebdff109af8646bd554e983e3ffd90d80787e94,
+title = {Detecting Spying and Fraud Browser Extensions: Short Paper},
+year = {2017},
+url = {https://www.semanticscholar.org/paper/3ebdff109af8646bd554e983e3ffd90d80787e94},
+abstract = {Due to the flaws in policy followed by web browsers for granting permissions to browser extensions and due to a lack of effective static and dynamic detection systems for identifying malicious extensions uploaded on the web stores, malicious browser extensions have become the easiest way to carry out phishing, spying, fraud and other kinds of advanced attacks. This paper identifies and analyzes a subset of these attacks which can be performed with the use of malicious browser extensions (using Google Chrome) and discusses the research gaps of the existing prevention and detection schemes to adequately defend against these attacks. An initial set of malicious signatures responsible for cyber fraud and spying is identified during the study. We use this set of signatures to develop a lightweight malicious extension detection system which can alert users of suspected spying or fraud extensions installed on the Chrome browser on a PC. Results show that the proposed detection system performs better than known malicious extension detectors such as Chrome Cleanup tool and Chrome safeguard tool.},
+author = {G. Varshney and M. Misra and P. Atrey},
+journal = {Proceedings of the 2017 on Multimedia Privacy and Security},
+volume = {},
+pages = {},
+doi = {10.1145/3137616.3137619},
+}
+
+@article{ab35070d2549b5b6ca0b57d5718bb01050ff0cec,
+title = {Defeat Information Leakage from Browser Extensions via Data Obfuscation},
+year = {2013},
+url = {https://www.semanticscholar.org/paper/ab35070d2549b5b6ca0b57d5718bb01050ff0cec},
+abstract = {Today web browsers have become the de facto platform for Internet users. This makes browsers the target of a lot of attacks. With the security considerations from the very beginning, Chrome offers more protection against exploits via benign-but-buggy extensions. However, more and more attacks have been launched via malicious extensions while there is no effective solution to defeat such malicious extensions. As user's sensitive information is often the target of such attacks, in this paper, we aim to proactively defeat information leakage with our iObfus framework. With iObfus, sensitive information is always classified and labeled automatically. Then sensitive information is obfuscated before any IO operation is conducted. In this way, the users' sensitive information is always protected even information leakage occurs. The obfuscated information is properly restored for legitimate browser transactions. A prototype has been implemented and iObfus works seamlessly with the Chromium 25. Evaluation against malicious extensions shows the effectiveness of iObfus, while it only introduces trivial overhead to benign extensions.},
+author = {Wentao Chang and Songqing Chen},
+doi = {10.1007/978-3-319-02726-5_3},
+}
+
+@article{3786b1806d9c35ceae279149a4a75a3bbfb59b04,
+title = {CrossFire: An Analysis of Firefox Extension-Reuse Vulnerabilities},
+year = {2016},
+url = {https://www.semanticscholar.org/paper/3786b1806d9c35ceae279149a4a75a3bbfb59b04},
+abstract = {Extension architectures of popular web browsers have been carefully studied by the research community; however, the security impact of interactions between different extensions installed on a given system has received comparatively little attention. In this paper, we consider the impact of the lack of isolation between traditional Firefox browser extensions, and identify a novel extension-reuse vulnerability that allows adversaries to launch stealthy attacks against users. This attack leverages capability leaks from legitimate extensions to avoid the inclusion of security-sensitive API calls within the malicious extension itself, rendering extensions that use this technique difficult to detect through the manual vetting process that underpins the security of the Firefox extension ecosystem. We then present CROSSFIRE, a lightweight static analyzer to detect instances of extension-reuse vulnerabilities. CROSSFIRE uses a multi-stage static analysis to efficiently identify potential capability leaks in vulnerable, benign extensions. If a suspected vulnerability is identified, CROSSFIRE then produces a proof-ofconcept exploit instance – or, alternatively, an exploit template that can be adapted to rapidly craft a working attack that validates the vulnerability. To ascertain the prevalence of extension-reuse vulnerabilities, we performed a detailed analysis of the top 10 Firefox extensions, and ran further experiments on a random sample drawn from the top 2,000. The results indicate that popular extensions, downloaded by millions of users, contain numerous exploitable extension-reuse vulnerabilities. A case study also provides anecdotal evidence that malicious extensions exploiting extension-reuse vulnerabilities are indeed effective at cloaking themselves from extension vetters.},
+author = {A. S. Buyukkayhan and Kaan Onarlioglu and William K. Robertson and E. Kirda},
+doi = {10.14722/NDSS.2016.23149},
+}
+
+@article{f516d982f54188889cbd7a9128ab60c4a7cc4bf5,
+title = {Extension Breakdown: Security Analysis of Browsers Extension Resources Control Policies},
+year = {2017},
+url = {https://www.semanticscholar.org/paper/f516d982f54188889cbd7a9128ab60c4a7cc4bf5},
+abstract = {All major web browsers support browser extensions to add new features and extend their functionalities. Nevertheless, browser extensions have been the target of several attacks due to their tight relation with the browser environment. As a consequence, extensions have been abused in the past for malicious tasks such as private information gathering, browsing history retrieval, or passwords theft — leading to a number of severe targeted attacks. Even though no protection techniques existed in the past to secure extensions, all browsers now implement defensive countermeasures that, in theory, protect extensions and their resources from third party access. In this paper, we present two attacks that bypass these control techniques in every major browser family, enabling enumeration attacks against the list of installed extensions. In particular, we present a timing side-channel attack against the access control settings and an attack that takes advantage of poor programming practice, affecting a large number of Safari extensions. Due to the harmful nature of our findings, we also discuss possible countermeasures against our own attacks and reported our findings and countermeasures to the different actors involved. We believe that our study can help secure current implementations and help developers to avoid similar attacks in the future.},
+author = {Iskander Sánchez-Rola and I. Santos and D. Balzarotti},
+}
+
+@article{e977ab2285528653088a57a51d586135f0ccb965,
+title = {A Browser Extension Vulnerability Detecting Approach Based on Behavior Monitoring and Analysis},
+year = {2012},
+url = {https://www.semanticscholar.org/paper/e977ab2285528653088a57a51d586135f0ccb965},
+abstract = {Browser extension is a mechanism used to improve the performance and applicability of browsers by adding new personalization features. However, it may also introduce more security related vulnerabilities. Though the threats of malicious or vulnerable extensions have been addressed by several solutions, these solutions are still far from eliminating the threats, especially when the extensions’ behavior sequences are unsafe. Using Firefox as an example, this paper provides an approach firstly to synthesize abstract behavioral models from XPCOM interfaces, invoking sequences of extensions obtained by the run-time interface invoking approach, which requires the preparatory implementation of a behavior monitoring system; secondly, it purposes to define the vulnerable behavior sequence patterns that are used to guide the testing process adopted on sequence matching methods for detecting the security and reliability vulnerability of extensions. The effectiveness and performance of our approach and detecting tool is provided with the support of experimental results.},
+author = {Qin Wang and Xiaohong Li and B. Yan},
+doi = {10.1007/978-3-642-34447-3_24},
+}
+
+@article{4a2113f0482424861334e5b2edba19cdebd45df7,
+title = {CLOUBEX: A Cloud-Based Security Analysis Framework for Browser Extensions},
+year = {2016},
+url = {https://www.semanticscholar.org/paper/4a2113f0482424861334e5b2edba19cdebd45df7},
+abstract = {In today's internet world, web browser security is an important issue. Browsers can be breached in different ways. Because of the over privileged access, extensions are responsible for many security issues. Therefore, before installation, users should thoroughly analyze the security of browser extensions. Extensions are not only available for desktop browsers, many mobile browsers are also furnished with extension features. Mobile devices have various resource constraints. Hence, traditional security analysis approaches cannot be directly used to examine mobile browser extension security issues. To overcome the inadequacies of the existing approaches, we propose CLOUBEX, a CLOUd-based security analysis framework for both desktop and mobile Browser EXtensions. CLOUBEX is enriched with a number of essential features like requirement-driven security analysis, high performance, fault tolerance, and dynamic decision making. The framework has been implemented for the security analysis of Firefox desktop and Firefox for Android mobile browser extensions. Users can accurately and efficiently detect the security vulnerabilities of Firefox extensions by this solution.},
+author = {Saikat Das and Mohammad Zulkernine},
+journal = {2016 IEEE 17th International Symposium on High Assurance Systems Engineering (HASE)},
+volume = {},
+pages = {268-275},
+doi = {10.1109/HASE.2016.18},
+}
+
+@article{6026ad512cf128193292ad61c94e153e73226c94,
+title = {REM: A runtime browser extension manager with fine-grained access control},
+year = {2012},
+url = {https://www.semanticscholar.org/paper/6026ad512cf128193292ad61c94e153e73226c94},
+abstract = {In this paper we implement a runtime framework that monitors the accesses made by third party Chrome extensions, informs users of the accesses, & allows them to customize extension permissions. The custom permission settings are enforced by the framework at runtime. We evaluated our framework on popular Chrome extensions and were successful in monitoring and controlling their accesses with little overhead.},
+author = {S. Marouf and Mohamed Shehab and Adharsh Desikan},
+journal = {2012 Tenth Annual International Conference on Privacy, Security and Trust},
+volume = {},
+pages = {231-232},
+doi = {10.1109/PST.2012.6297947},
+}
+
+@article{abf406857d28b65bcfffc17da42d22ee95f9fd1a,
+title = {Vetting browser extensions for security vulnerabilities with VEX},
+year = {2011},
+url = {https://www.semanticscholar.org/paper/abf406857d28b65bcfffc17da42d22ee95f9fd1a},
+abstract = {The browser has become the de facto platform for everyday computation and a popular target for attackers of computer systems. Among the many potential attacks that target or exploit browsers, vulnerabilities in browser extensions have received relatively little attention. Currently, extensions are vetted by manual inspection, which is time consuming and subject to human error. In this paper, we present VEX, a framework for applying static information flow analysis to JavaScript code to identify security vulnerabilities in browser extensions. We describe several patterns of flows that can lead to privilege escalations in Firefox extensions. VEX analyzes Firefox extensions for such flow patterns using high-precision, context-sensitive, flow-sensitive static analysis. We subject 2460 browser extensions to the analysis, and VEX finds 5 of the 18 previously known vulnerabilities and 7 previously unknown vulnerabilities.},
+author = {Sruthi Bandhakavi and Nandit Tiku and Wyatt Pittman and Samuel T. King and P. Madhusudan and M. Winslett},
+journal = {Communications of the ACM},
+volume = {54},
+pages = {91 - 99},
+doi = {10.1145/1995376.1995398},
+}
+
+@article{f30dd15ebc580335e31edccc06e0612feb9b5dc9,
+title = {MJBlocker: A Lightweight and Run-Time Malicious JavaScript Extensions Blocker},
+year = {2013},
+url = {https://www.semanticscholar.org/paper/f30dd15ebc580335e31edccc06e0612feb9b5dc9},
+abstract = {We propose MJBlocker, a lightweight and run-time malicious JavaScript Extensions (JSEs) blocker for preventing them from hurting user security. MJBlocker can identify and block malicious JSEs whenever they are executed. It is motivated by the observation that most attack goals of malicious JSEs are accomplished via invoking Cross-Platform Component Object Model (XPCOM) calls, and the XPCOM call sequences acquired from malicious JSEs have distinct traits that are different from regular ones. We use simple regular expressions to capture these distinct traits. MJBlocker is interposed into Firefox between JSEs and XPCOMs, and intercepts all XPCOM calls made by JSEs. Whenever a JSE invokes an XPCOM call, the call is appended to its call sequence, and the sequence is checked against several regular-expression-based signatures to identify the suspicious call sequence patterns. If some suspicious patterns are found, an alarm is triggered and the XPCOM call which triggers the alarm is blocked from executing. However, some innocent JSEs may have suspicious call sequence patterns. To avoid false positives, a verifier utilizes several heuristics to filter off suspicious patterns generated by innocent JSEs. We have implemented MJBlocker atop Firefox. According to our experiments on 10 different malicious JSEs and 260 legitimate ones, MJBlocker causes negligible overhead (no more than 5%) and has zero false negative and very few false positives.},
+author = {Pingjian Wang and Lei Wang and Ji Xiang and Peng Liu and Neng Gao and Jiwu Jing},
+journal = {2013 IEEE 7th International Conference on Software Security and Reliability},
+volume = {},
+pages = {119-128},
+doi = {10.1109/SERE.2013.14},
+}
+
+@article{295429c4e7da443f80aa85ee3945da2a00507ff6,
+title = {ExtensionGuard: Towards runtime browser extension information leakage detection},
+year = {2016},
+url = {https://www.semanticscholar.org/paper/295429c4e7da443f80aa85ee3945da2a00507ff6},
+abstract = {Many browser extensions process sensitive information, such as bookmarks and browsing history that are available from the browsers, and social security number and password that are shown on web pages. Thus, an increasing interest has been growing among attackers to exploit this new attacking platform to compromise browser security. The most common attacks from malicious extensions include accessing users' sensitive information and leaking them to unauthorized third parties. Some recent studies discussed the possible attacks launched from malicious extensions but few proposed practical solutions to address the issue. In this paper, we present the ExtensionGuard, an optimized and customizable dynamic taint tracking system that can closely track the sensitive information processed by browser extensions, and detect any information leakage events at runtime. We evaluate ExtensionGuard against a set of malicious and benign extensions. The evaluation results show that ExtensionGuard is able to effectively mitigate various information leakage attacks without incurring high performance overhead.},
+author = {Wentao Chang and Songqing Chen},
+journal = {2016 IEEE Conference on Communications and Network Security (CNS)},
+volume = {},
+pages = {154-162},
+doi = {10.1109/CNS.2016.7860481},
+}
+
+@article{a4ebb757ea215851146b7a4f78b79278f6d42b33,
+title = {VEX: Vetting Browser Extensions for Security Vulnerabilities},
+year = {2010},
+url = {https://www.semanticscholar.org/paper/a4ebb757ea215851146b7a4f78b79278f6d42b33},
+abstract = {The browser has become the de facto platform for everyday computation. Among the many potential attacks that target or exploit browsers, vulnerabilities in browser extensions have received relatively little attention. Currently, extensions are vetted by manual inspection, which does not scale well and is subject to human error. 
+ 
+In this paper, we present VEX, a framework for highlighting potential security vulnerabilities in browser extensions by applying static information-flow analysis to the JavaScript code used to implement extensions. We describe several patterns of flows as well as unsafe programming practices that may lead to privilege escalations in Firefox extensions. VEX analyzes Firefox extensions for such flow patterns using high-precision, context-sensitive, flow-sensitive static analysis. We analyze thousands of browser extensions, and VEX finds six exploitable vulnerabilities, three of which were previously unknown. VEX also finds hundreds of examples of bad programming practices that may lead to security vulnerabilities. We show that compared to current Mozilla extension review tools, VEX greatly reduces the human burden for manually vetting extensions when looking for key types of dangerous flows.},
+author = {Sruthi Bandhakavi and Samuel T. King and P. Madhusudan and M. Winslett},
+}
+
+@article{b47b6398f47f79cbb0c39065003963ab42be48af,
+title = {Retargetting Legacy Browser Extensions to Modern Extension Frameworks},
+year = {2014},
+url = {https://www.semanticscholar.org/paper/b47b6398f47f79cbb0c39065003963ab42be48af},
+abstract = {Most modern Web browsers export a rich API allowing third-party extensions to access privileged browser objects that can also be misused by attacks directed against vulnerable ones. Web browser vendors have therefore recently developed new extension frameworks aimed at better isolating extensions while still allowing access to privileged browser state. For instance Google Chrome extension architecture and Mozilla's Jetpack extension framework. 
+ 
+We present Morpheus, a tool to port legacy browser extensions to these new frameworks. Specifically, Morpheus targets legacy extensions for the Mozilla Firefox browser, and ports them to the Jetpack framework. We describe the key techniques used by Morpheus to analyze and transform legacy extensions so that they conform to the constraints imposed by Jetpack and simplify runtime policy enforcement. Finally, we present an experimental evaluation of Morpheus by applying it to port 52 legacy Firefox extensions to the Jetpack framework.},
+author = {Rezwana Karim and Mohan Dhawan and V. Ganapathy},
+doi = {10.1007/978-3-662-44202-9_19},
+}
+
+@article{470c5dfa56ef0e5623b5902f589c3a0c3f0eef5c,
+title = {An Evaluation of the Google Chrome Extension Security Architecture},
+year = {2012},
+url = {https://www.semanticscholar.org/paper/470c5dfa56ef0e5623b5902f589c3a0c3f0eef5c},
+abstract = {Vulnerabilities in browser extensions put users at risk by providing a way for website and network attackers to gain access to users' private data and credentials. Extensions can also introduce vulnerabilities into the websites that they modify. In 2009, Google Chrome introduced a new extension platform with several features intended to prevent and mitigate extension vulnerabilities: strong isolation between websites and extensions, privilege separation within an extension, and an extension permission system. We performed a security review of 100 Chrome extensions and found 70 vulnerabilities across 40 extensions. Given these vulnerabilities, we evaluate how well each of the security mechanisms defends against extension vulnerabilities. We find that the mechanisms mostly succeed at preventing direct web attacks on extensions, but new security mechanisms are needed to protect users from network attacks on extensions, website metadata attacks on extensions, and vulnerabilities that extensions add to websites. We propose and evaluate additional defenses, and we conclude that banning HTTP scripts and inline scripts would prevent 47 of the 50 most severe vulnerabilities with only modest impact on developers.},
+author = {Nicholas Carlini and A. Felt and D. Wagner},
+}
+
+@article{f58956cff556638a41e2c9c3d3f72b8ea85b10b9,
+title = {Securing Legacy Firefox Extensions with SENTINEL},
+year = {2013},
+url = {https://www.semanticscholar.org/paper/f58956cff556638a41e2c9c3d3f72b8ea85b10b9},
+abstract = {A poorly designed web browser extension with a security vulnerability may expose the whole system to an attacker. Therefore, attacks directed at "benign-but-buggy" extensions, as well as extensions that have been written with malicious intents pose significant security threats to a system running such components. Recent studies have indeed shown that many Firefox extensions are over-privileged, making them attractive attack targets. Unfortunately, users currently do not have many options when it comes to protecting themselves from extensions that may potentially be malicious. Once installed and executed, the extension needs to be trusted. This paper introduces Sentinel, a policy enforcer for the Firefox browser that gives fine-grained control to the user over the actions of existing JavaScript Firefox extensions. The user is able to define policies (or use predefined ones) and block common attacks such as data exfiltration, remote code execution, saved password theft, and preference modification. Our evaluation of Sentinel shows that our prototype implementation can effectively prevent concrete, real-world Firefox extension attacks without a detrimental impact on users' browsing experience.},
+author = {Kaan Onarlioglu and Mustafa Battal and William K. Robertson and E. Kirda},
+doi = {10.1007/978-3-642-39235-1_7},
+}
+
+@article{537a2bc96926faef3a3c33ce670444ce08fa3b6c,
+title = {SENTINEL: A DYNAMIC SECURITY POLICY CHECKER FOR FIREFOX EXTENSIONS},
+year = {2014},
+url = {https://www.semanticscholar.org/paper/537a2bc96926faef3a3c33ce670444ce08fa3b6c},
+abstract = {SENTINEL: A DYNAMIC SECURITY POLICY CHECKER FOR FIREFOX EXTENSIONS Mustafa Battal M.S. in Computer Engineering Advisor: Asst. Prof. Dr. Bedir Tekinerdoğan December, 2014 A poorly designed web browser extension with a security vulnerability may expose the whole system to an attacker. Therefore, attacks directed at “benign-butbuggy” extensions, as well as extensions that have been written with malicious intents pose significant security threats to a system running such components. Recent studies have indeed shown that many Firefox extensions are over-privileged, making them attractive attack targets. Unfortunately, users currently do not have many options when it comes to protecting themselves from extensions that may potentially be malicious. Once installed and executed, the extension needs to be trusted. This thesis introduces Sentinel, a policy enforcer for the Firefox browser that gives fine-grained control to the user over the actions of existing JavaScript Firefox extensions. The user is able to define policies (or use predefined ones) and block common attacks such as data exfiltration, remote code execution, saved password theft, and preference modification. Our evaluation of Sentinel shows that our prototype implementation can effectively prevent concrete, real-world Firefox extension attacks without a detrimental impact on users’ browsing experience.},
+author = {Mustafa Battal},
+}
+
+@article{616ea2e7be5ba868bcebd5a33969e1095a250374,
+title = {Behavior Decomposition: Aspect-Level Browser Extension Clustering and Its Security Implications},
+year = {2013},
+url = {https://www.semanticscholar.org/paper/616ea2e7be5ba868bcebd5a33969e1095a250374},
+abstract = {Browser extensions are widely used by millions of users. However, large amount of extensions can be downloaded from webstores without sufficient trust or safety scrutiny, which keeps users from differentiating benign extensions from malicious ones. In this paper, we propose an aspect-level behavior clustering approach to enhancing the safety management of extensions. We decompose an extension's runtime behavior into several pieces, denoted as AEBs Aspects of Extension Behavior. Similar AEBs of different extensions are grouped into an "AEB cluster" based on subgraph isomorphism. We then build profiles of AEB clusters for both extensions and categories of extensions to detect suspicious extensions. To the best of our knowledge, this is the first study to do aspect-level extension clustering based on runtime behaviors. We evaluate our approach with more than 1,000 extensions and demonstrate that it can effectively and efficiently detect suspicious extensions.},
+author = {Bin Zhao and Peng Liu},
+doi = {10.1007/978-3-642-41284-4_13},
+}
+
+@article{c5050135553e0cfd7d27d6954f8b9ea99024d318,
+title = {Review of Man-in-the-Browser Attack using Security Attack Scenarios},
+year = {2013},
+url = {https://www.semanticscholar.org/paper/c5050135553e0cfd7d27d6954f8b9ea99024d318},
+abstract = {A Web browser is an important component of every computer system as it provides the interface to the Internet world. Browsers facilitate the web users through online services like email, banking and shopping. The new unforeseen functionalities may be added to the web browsers in the form of extensions. The extensions have access to sensitive browser APIs and untrusted web page content, which may result in browser attack like Man-in-theBrowser attack. The major target of this attack is customers of Internet banking. This paper makes two major contributions. First, it presents the threat model for Man-in-the-Browser (MITB) attack. This model identifies various threats and point of attacks used by MITB attack. The major cause of MITB attack is malicious extensions and vulnerabilities found in benign-but-buggy browser extensions. In our study we find that the current browser security model is not secure enough to protect against MITB attack. Second, this paper presents the possible security attack scenarios for MITB threat model. The aim of adopting scenario based approach is to generate possible test cases for MITB attack and show how the system will react on these test cases. Keywords—Threat model, Browser extensions, Vulnerabilities, Browser attack, Security attack scenarios},
+author = {Anil Saini and M. Gaur and V. Laxmi},
+}
+
+@article{ff242d66f3194f81a22dd56be15a674c88e99517,
+title = {An Empirical Study of Dangerous Behaviors in Firefox Extensions},
+year = {2012},
+url = {https://www.semanticscholar.org/paper/ff242d66f3194f81a22dd56be15a674c88e99517},
+abstract = {Browser extensions provide additional functionality and customization to browsers. To support such functionality, extensions interact with browsers through a set of APIs of different privilege levels. As shown in previous studies, browser extensions are often granted more privileges than necessary. Extensions can directly threaten the host system as well as web applications, or bring in indirect threats to web sessions by injecting contents into web pages. In this paper, we make an empirical study to analyze extension behaviors, especially the behaviors that affect web sessions. We developed a dynamic technique to track the behaviors of injected scripts and analyzed the impact of these scripts. We analyzed the behaviors of 2465 extensions and discussed their security implications. We also proposed a solution to mitigate indirect threats to web sessions.},
+author = {Jiangang Wang and Xiaohong Li and Xuhui Liu and X. Dong and Junjie Wang and Zhenkai Liang and Zhiyong Feng},
+doi = {10.1007/978-3-642-33383-5_12},
+}
+
+@article{762286723ae28179c180775e9ff9d4605a38402a,
+title = {SENTINEL: Securing Legacy Firefox Extensions},
+year = {2015},
+url = {https://www.semanticscholar.org/paper/762286723ae28179c180775e9ff9d4605a38402a},
+abstract = {Abstract A poorly designed web browser extension with a security vulnerability may expose the whole system to an attacker. Therefore, attacks directed at “benign-but-buggy” extensions, as well as extensions that have been written with malicious intent, pose significant security threats to a system running such components. Recent studies have indeed shown that many Firefox extensions are over-privileged, making them attractive attack targets. Unfortunately, users currently do not have many options when it comes to protecting themselves from extensions that may potentially be malicious. Once installed and executed, the extension is considered trusted. This paper introduces SENTINEL, a policy enforcer for the Firefox browser that gives fine-grained control to the user over the actions of existing JavaScript Firefox extensions. The user is able to define policies (or use predefined ones) and block common attacks such as data exfiltration, remote code execution, saved password theft, preference modification, phishing, browser window clickjacking, and namespace collision exploits. Our evaluation of SENTINEL shows that our prototype implementation can effectively prevent concrete, real-world Firefox extension attacks without a detrimental impact on the user's browsing experience.},
+author = {Kaan Onarlioglu and A. S. Buyukkayhan and William K. Robertson and E. Kirda},
+journal = {Comput. Secur.},
+volume = {49},
+pages = {147-161},
+doi = {10.1016/j.cose.2014.12.002},
+}

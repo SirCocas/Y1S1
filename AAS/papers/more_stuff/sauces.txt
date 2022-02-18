@@ -1,0 +1,275 @@
+[1] S. E. Quadir, J. Chen, D. Forte, N. Asadizanjani, S. Shahbazmohamadi 
+and L Wang et al. ³A survey on chip to system reverse engineering´
+JETC, 13(1):6:1±6:34, 2016. 
+[2] M. Fyrbiak, S. Wallat, P. Swierczynski, M. Hoffmann, S. Hoppach and 
+M. Wilhelm et al. ³HAL̾The Missing Piece of the Puzzle for Hardware 
+Reverse Engineering, Trojan Detection and Insertion´ in IEEE 
+Transactions on Dependable and Secure Computing, vol. 16, no. 3, pp. 
+498-510, 1 May-June 2019. 
+[3] G. Zarrinchian and M. S. Zamani ³Latch-based structure: a High 
+resolution and self-reference technique for hardware trojan detection´
+in IEEE Transactions on Computers, vol. 66, no. 1, pp. 100-113, 1 January. 
+2017. 
+[4] Y. Yang, L. Wu, X. Zhang and J. He³A novel hardware trojan detection 
+with chip ID based on relative time delays´2017 11th IEEE International 
+Conference on Anti-counterfeiting, Security, and Identification (ASID), 
+Xiamen, pp. 163-167, 2017. 
+[5] K. Hasegawa, M. Oya, M. Yanagisawa and N. Togawa ³Hardware 
+Trojans classification for gate-level netlists based on machine learning´
+2016 IEEE 22nd International Symposium on On-Line Testing and
+Robust System Design (IOLTS), Sant Feliu de Guixols, pp. 203-206, 
+2016. 
+[6] T. Inoue, K.Hasegawa, M. Yanagisawa and N. Togawa ³Designing
+hardware trojans and their detection based on a SVM-based approach´
+2017 IEEE 12th International Conference on ASIC (ASICON), Guiyang, 
+pp. 811-814, 2017.
+
+[7] Q. Cui, K. Sun, S. Wang, L. Zhang and D. Li³Hardware trojan detection 
+based on cluster analysis of mahalanobis distance´ 2016 8th International 
+Conference on Intelligent Human-Machine Systems and Cybernetics 
+(IHMSC), Hangzhou, pp. 234-238, 2016. 
+[8] L. Lin, M. Kasper, T. Güneysu, C. Paar and W. Burleson³Trojan side̺
+channels: lightweight hardware trojans through side激channel engineering´
+11th International Cryptographic Hardware and 
+(PEHGGHG6\VWHPV&+(6SSဨ.
+[9] S. Bhunia, M. S. Hsiao, M. Banga and S. Narasimhan³Hardware trojan 
+attacks: threat analysis and countermeasures´in Proceedings of the IEEE, 
+vol. 102, no. 8, pp. 1229-1247, Augest. 2014. 
+[10] S濁 Bhunia and M濁 M. Tehranipoor ³The hardware trojan war: attacks, 
+myths and defenses´Springer Publishing Company, Incorporated, 2017. 
+[11] X. Wang, M. Tehranipoor and J. Plusquellic ³Detecting malicious 
+inclusions in secure hardware: challenges and solutions´ 2008 IEEE 
+International Workshop on Hardware-Oriented Security and Trust, 
+Anaheim, CA, pp. 15-19, 2008. 
+[12] A. Kulkarni, Y. Pino and T. Mohsenin³SVM-based real-time hardware 
+Trojan detection for many-core platform´ 2016 17th International 
+Symposium on Quality Electronic Design (ISQED), Santa Clara, CA, pp. 
+362-367, 2016. 
+[13] ͆Trust-+8%´ http://www.trust-hub.org. 
+
+[1] S. Bhunia, M. Abramovici, D. Agrawal, P. Bradley, M. S. Hsiao,
+J. Plusquellic, and M. Tehranipoor, “Protection against hardware trojan
+attacks: Towards a comprehensive solution,” IEEE Design & Test,
+vol. 30, no. 3, pp. 6–17, 2013.
+[2] C. Rooney, A. Seeam, and X. Bellekens, “Creation and detection of hardware trojans using non-invasive off-the-shelf technologies,” Electronics,
+vol. 7, no. 7, p. 124, 2018.
+[3] S. Adee, “The hunt for the kill switch,” iEEE SpEctrum, vol. 45, no. 5,
+pp. 34–39, 2008.
+[4] L. Pyrgas, F. Pirpilidis, A. Panayiotarou, and P. Kitsos, “Thermal
+sensor based hardware trojan detection in fpgas,” in 2017 Euromicro
+Conference on Digital System Design (DSD). IEEE, 2017, pp. 268–
+273.
+[5] R. Elnaggar and K. Chakrabarty, “Machine learning for hardware
+security: Opportunities and risks,” Journal of Electronic Testing, vol. 34,
+no. 2, pp. 183–201, 2018.
+[6] A. Krizhevsky, I. Sutskever, and G. E. Hinton, “Imagenet classification
+with deep convolutional neural networks,” Communications of the ACM,
+vol. 60, no. 6, pp. 84–90, 2017.
+[7] A. Karpathy, G. Toderici, S. Shetty, T. Leung, R. Sukthankar, and
+L. Fei-Fei, “Large-scale video classification with convolutional neural
+networks,” in Proceedings of the IEEE conference on Computer Vision
+and Pattern Recognition, 2014, pp. 1725–1732.
+[8] H. Salmani, M. Tehranipoor, and R. Karri, “On design vulnerability
+analysis and trust benchmarks development,” in 2013 IEEE 31st international conference on computer design (ICCD). IEEE, 2013, pp.
+471–474.
+[9] B. Shakya, T. He, H. Salmani, D. Forte, S. Bhunia, and M. Tehranipoor,
+“Benchmarking of hardware trojans and maliciously affected circuits,”
+Journal of Hardware and Systems Security, vol. 1, no. 1, pp. 85–102,
+2017.
+[10] K. Xiao, D. Forte, Y. Jin, R. Karri, S. Bhunia, and M. Tehranipoor,
+“Hardware trojans: Lessons learned after one decade of research,” ACM
+Transactions on Design Automation of Electronic Systems (TODAES),
+vol. 22, no. 1, pp. 1–23, 2016.
+[11] X. Chen, L. Wang, Y. Wang, Y. Liu, and H. Yang, “A general framework
+for hardware trojan detection in digital circuits by statistical learning
+algorithms,” IEEE Transactions on Computer-Aided Design of Integrated
+Circuits and Systems, vol. 36, no. 10, pp. 1633–1646, 2016.
+[12] K. Hasegawa, M. Yanagisawa, and N. Togawa, “Trojan-feature extraction at gate-level netlists and its application to hardware-trojan detection
+using random forest classifier,” in 2017 IEEE International Symposium
+on Circuits and Systems (ISCAS). IEEE, 2017, pp. 1–4.
+[13] A. Kulkarni, Y. Pino, and T. Mohsenin, “Svm-based real-time hardware
+trojan detection for many-core platform,” in 2016 17th International
+Symposium on Quality Electronic Design (ISQED). IEEE, 2016, pp.
+362–367.
+[14] M. A. Hearst, S. T. Dumais, E. Osuna, J. Platt, and B. Scholkopf, “Support vector machines,” IEEE Intelligent Systems and their applications,
+vol. 13, no. 4, pp. 18–28, 1998.
+[15] D. M. Tax and R. P. Duin, “Support vector data description,” Machine
+learning, vol. 54, no. 1, pp. 45–66, 2004.
+[16] D. R. Cox, “The regression analysis of binary sequences,” Journal of
+the Royal Statistical Society: Series B (Methodological), vol. 20, no. 2,
+pp. 215–232, 1958.
+[17] L. E. Peterson, “K-nearest neighbor,” Scholarpedia, vol. 4, no. 2, p.
+1883, 2009.
+[18] J. A. Hartigan and M. A. Wong, “Algorithm as 136: A k-means
+clustering algorithm,” Journal of the royal statistical society. series c
+(applied statistics), vol. 28, no. 1, pp. 100–108, 1979.
+[19] J. R. Quinlan, “Induction of decision trees,” Machine learning, vol. 1,
+no. 1, pp. 81–106, 1986.
+[20] W.-Y. Loh, “Classification and regression trees,” Wiley Interdisciplinary
+Reviews: Data Mining and Knowledge Discovery, vol. 1, no. 1, pp. 14–
+23, 2011.
+[21] J. R. Quinlan, C4. 5: programs for machine learning. Elsevier, 2014.
+[22] T. K. Ho, “Random decision forests,” in Proceedings of 3rd international
+conference on document analysis and recognition, vol. 1. IEEE, 1995,
+pp. 278–282.
+[23] S. C. Tan, K. M. Ting, and T. F. Liu, “Fast anomaly detection for
+streaming data,” in Twenty-Second International Joint Conference on
+Artificial Intelligence, 2011.
+[24] M. H. Hassoun et al., Fundamentals of artificial neural networks. MIT
+press, 1995.
+[25] Y. Jin, D. Maliuk, and Y. Makris, “Post-deployment trust evaluation
+in wireless cryptographic ics,” in 2012 Design, Automation & Test in
+Europe Conference & Exhibition (DATE). IEEE, 2012, pp. 965–970.
+[26] T. Iwase, Y. Nozaki, M. Yoshikawa, and T. Kumaki, “Detection technique for hardware trojans using machine learning in frequency domain,”
+in 2015 IEEE 4th Global Conference on Consumer Electronics (GCCE).
+IEEE, 2015, pp. 185–186.
+[27] J. Li, L. Ni, J. Chen, and E. Zhou, “A novel hardware trojan detection
+based on bp neural network,” in 2016 2nd IEEE International Conference on Computer and Communications (ICCC). IEEE, 2016, pp.
+2790–2794.
+[28] R. Elnaggar, K. Chakrabarty, and M. B. Tahoori, “Run-time hardware
+trojan detection using performance counters,” in 2017 IEEE International Test Conference (ITC). IEEE, 2017, pp. 1–10.
+[29] Y. Liu, Y. Jin, A. Nosratinia, and Y. Makris, “Silicon demonstration
+of hardware trojan design and detection in wireless cryptographic ics,”
+IEEE Transactions on Very Large Scale Integration (VLSI) Systems,
+vol. 25, no. 4, pp. 1506–1519, 2016.
+[30] K. Hasegawa, M. Oya, M. Yanagisawa, and N. Togawa, “Hardware
+trojans classification for gate-level netlists based on machine learning,”
+in 2016 IEEE 22nd International Symposium on On-Line Testing and
+Robust System Design (IOLTS). IEEE, 2016, pp. 203–206.
+[31] K. Hasegawa, M. Yanagisawa, and N. Togawa, “Hardware trojans
+classification for gate-level netlists using multi-layer neural networks,”
+in 2017 IEEE 23rd International Symposium on On-Line Testing and
+Robust System Design (IOLTS). IEEE, 2017, pp. 227–232.
+[32] A. Kulkarni, Y. Pino, and T. Mohsenin, “Adaptive real-time trojan detection framework through machine learning,” in 2016 IEEE International
+Symposium on Hardware Oriented Security and Trust (HOST). IEEE,
+2016, pp. 120–123.
+[33] A. Kulkarni, Y. Pino, M. French, and T. Mohsenin, “Real-time anomaly
+detection framework for many-core router through machine-learning
+techniques,” ACM Journal on Emerging Technologies in Computing
+Systems (JETC), vol. 13, no. 1, pp. 1–22, 2016.
+[34] V. R. Carvalho and W. W. Cohen, “Single-pass online learning: Performance, voting schemes and online feature selection,” in Proceedings
+of the 12th ACM SIGKDD international conference on Knowledge
+discovery and data mining, 2006, pp. 548–553.
+[35] M. Xue, J. Wang, and A. Hu, “An enhanced classification-based golden
+chips-free hardware trojan detection technique,” in 2016 IEEE Asian
+Hardware-Oriented Security and Trust (AsianHOST). IEEE, 2016, pp.
+1–6.
+[36] Y. Liu, K. Huang, and Y. Makris, “Hardware trojan detection through
+golden chip-free statistical side-channel fingerprinting,” in Proceedings
+of the 51st Annual Design Automation Conference, 2014, pp. 1–6.
+[37] H. Salmani, “Cotd: Reference-free hardware trojan detection and recovery based on controllability and observability in gate-level netlist,” IEEE
+Transactions on Information Forensics and Security, vol. 12, no. 2, pp.
+338–350, 2016.
+[38] B. Cakır and S. Malik, “Hardware trojan detection for gate-level ics
+using signal correlation based clustering,” in 2015 Design, Automation
+& Test in Europe Conference & Exhibition (DATE). IEEE, 2015, pp.
+471–476.
+[39] L. Huang, A. D. Joseph, B. Nelson, B. I. Rubinstein, and J. D.
+Tygar, “Adversarial machine learning,” in Proceedings of the 4th ACM
+workshop on Security and artificial intelligence, 2011, pp. 43–58.
+[40] S. M. P. Dinakarrao, S. Amberkar, S. Bhat, A. Dhavlle, H. Sayadi,
+A. Sasan, H. Homayoun, and S. Rafatirad, “Adversarial attack on
+microarchitectural events based malware detectors,” in Proceedings of
+the 56th Annual Design Automation Conference 2019, 2019, pp. 1–6
+
+
+REFERENCES
+Alshammari R, Zincir-Heywood AN. A flow-based approach for
+SSH traffic detection. In: Proceedings of the IEEE international
+conference on systems, man and cybernetics. ISIC; 2007.
+p. 296–301.
+Black P, Gondal I, Layton R. A survey of similarities in banking
+malware behaviours. Comput Secur 2018;77:756–72.
+Breiman L. Bagging predictors. Mach Learn 1996;26(2):123–40.
+Breiman L. Random Forests. Mach Learn 2001;45(1):5–32.
+Carminti M. Security evaluation of a banking fraud analysis
+system. ACM Trans Priv Secur 2018;21(3):11.
+Criscione C, Bosatelli F, Zanero S, Maggi F. ZARATHUSTRA:
+extracting Web inject signatures from banking Trojans. In:
+Proceedings of the 12th annual international conference on
+privacy, security and trust; 2014. p. 139–48 July 23–24.
+Haddadi F, Zincir-Heywood AN. Benchmarking the effect of flow
+exporters and protocol filters on botnet traffic classification.
+IEEE Syst J 2016;10(4):1390–401.
+Ho TK. The random subspace method for constructing decision
+forests. IEEE Trans Pattern Anal Mach Intell 1998;20(8):832–44.
+IETF, http://www3.ietf.org/proceedings/97apr/97apr-final/xrtftr70.
+htm
+Keshet L. An aggressive lauch: TrickBot Trojan rises with
+redirection attacks in the UK. Secur Intell November 2016.
+available: https://securityintelligence.com/an-aggressivelaunch-TrickBot-trojan-rises-with-redirection-attacks-inthe-uk/.
+Kessem L, Trojan Widens Its attack scope in Spain, Brings
+redirection attacks to local banks, July 19, 2017, Available:
+https://securityintelligence.com/TrickBot-habla-espanoltrojan-widens-its-attack-scope-in-spain-brings-redirectionattacks-to-local-banks/, Accessed 07 December 2018.
+Khattak S, Ramay NR, Khan KR, Syed AA, Khayam SA. A
+taxonomy of botnet behavior, detection, and defense. IEEE
+Commun Surv Tutor 2014;16(2):898–924.
+Khoshgoftaa TM, Golawala M, Hulse JV. An empirical study of
+learning from imbalanced data using random forest.
+Proceedings of the 19th IEEE international conference on tools
+with artificial intelligence, 2007.
+Kiwia D, Dehghantanha A, Choo KR, Slaughter J. A cyber kill
+chain based taxonomy of banking Trojans for evolutionary
+computational intelligence. J Comput Sci 2018;27:394–409.
+Kremez V, Burbage P, With a boost from Necurs, TrickBot expands
+its targeting to numerous U.S. financial instutions, July 2017,
+Available: https://www.flashpoint-intel.com/blog/
+TrickBot-targets-us-financials/, Accessed 07 December 2018.
+Lopez PP, Martin H. Hardware trojans against virtual keyboards
+on e-banking platforms- a proof of concept. AEU-Int J Electron
+Commun 2017;76:146–51.
+Malwarebytes Labs, TrickBot-Dyreza’s Successor, October 24,
+2016, Available: https://blog.malwarebytes.com/threatanalysis/2016/10/trick-bot-dyrezas-successor/, Accessed 07
+December 2018.
+Milletary J. Citadel trojan malware analysis. Dell SecureWorks
+Threat Unit Intelligence Services; 2012. Available
+https://blog.barkly.com/top-banking-trojans-2017. [Accessed
+23 June 2018].
+Mohaisen A, Alrawi O. Unveiling Zeus Automated Classification
+of Malware Samples. In: Proceedings of the 22nd international
+conference on world wide web ACM; 2013. p. 829–32 May
+13–17.
+Netmate, Available: https://github.com/DanielArndt/netmateflowcalc, Accessed 29 May 2018.
+Ono K, Kawaishi I, Kamon T. Trend of Botnet Activities. In:
+Proccedings of the 41st annual IEEE international Carnahan
+conference on Security Technology, Canada; 2007. p. 243–9.
+Pauli D, Dyre malware re-surfaces as TrickBot, targets Australian
+bank, October 2016, Available: https://www.theregister.co.
+uk/2016/10/18/one_of_the_worlds_worst_trojans_feared_
+back_and_targeting_aussie_banks/ Accessed 07 December
+2018.
+Peotta L. A formal classification of Internet banking attacks and
+vulnerabilities. Int J Comput Sci Inf Technol 2011;3(1):186–97.
+Riccardi M, Oro D, Jana J, Cremonini M, Vilanova M. A framework
+for financial botnet analysis. In: Proceedings of the ECrime
+researchers summit (ECrime); 2010. p. 1–7.
+Soniya B, Wilscy M. Detection of randomized bot command and
+control traffic on an end-point host. Alex Eng J
+2016;55(3):2771–81.
+Szopinski TS. Factors affecting the adoption of online banking in
+Poland. J Bus Res 2016;69(11):4763–8.
+Top 10 Banking trojans for 2017: What you need to know,
+Jonathan Crove, April 2017, Available: http://www.secure
+works.com/cyber-threatintelligence/threats/top-bankingbotnets-of-2013/ Accessed 07 December 2018.
+Trick Bot config files, Available: https://github.com/JR0driguezB/
+malware_configs/tree/master/TrickBot, Accessed 07 December
+2018.
+TrickBot-Toolkit, Available: https://github.com/MalwareTech/
+TrickBot-Toolkit, Accessed 29 May 2018.
+Watkins L, Kawka C, Corbett C, Robinson WH. Fighting banking
+botnets by exploiting inherent command and control
+vulnerabilities. In: Proceedings of the 9th international
+conference on malicious and unwanted software: the
+Americas (MALWARE); 2014. p. 93–100.
+WEKA, Available: http://www.cs.waikato.ac.nz/ml/weka/,
+Accessed 05 May 2018.
+Williams N, Zander S, Armitage G. A preliminary performance
+comparison of five machine learning algorithms for practical
+IP traffic flow classification. ACM SIGCOMM Comput Commun
+Rev 2006;36(5):7–15.
+Zhang X, Deep analysis of the online banking botnet TrickBot,
+December 2016, Available: https://www.fortinet.com/blog/
+threat-research/deep-analysis-of-the-online-bankingbotnet-TrickBot.html, Accessed 07 December 2018.
+Zhao D, Traore I, Sayed B, Lu W, Saad S, Ghorbani A, et al. Botnet
+detection based on traffic behavior analysis. Comput Secur
+2013;39:2–16 Part A.

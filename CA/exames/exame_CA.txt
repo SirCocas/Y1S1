@@ -1,0 +1,147 @@
+Ex 1 - Tive 100%
+A técnica one-of-two oblivious-transfer permite que uma entidade extraia um item de informação (de um conjunto de dois itens) de uma 
+outra entidade sem que esta consiga saber qual dos itens foi extraído. Comente a seguinte afirmação. A técnica oblivious_transfer pode 
+ser generalizada para extrair 1 de n itens de informação sem que isso aumente muito a quantidade de informação que tem de ser trocada 
+entre as duas entidades.
+
+A técnica oblivious-transfer apresenta um problema de escalabilidade por parte de quem possui a informação a partilhar (chamemos-lhe Alice enquanto que quem pretende 
+extrair será o Bob). Isto porque esta técnica implica o envio de n randoms gerados, um por item de informação, para que o Bob possa proceder à escolha do random de 
+índice associado ao índice do item que pretende saber. De seguida, após envio de um valor v onde se encontra protegido o random selecionado pelo Bob, a Alice terá de 
+gerar novamente n valores, cada um contendo um item encriptado de forma a que o Bob apenas consiga chegar ao item que pretende, com a informação que tem (o random k que 
+ele próprio gerou).
+
+Assim, como o protocolo implica o envio de n coisas, duas vezes, por parte da Alice, apesar da parte inicial da afirmação ser verdade (A técnica oblivious_transfer pode 
+ser generalizada para extrair 1 de n itens de informação), a questão da quantidade de informação a trocar (e escalabilidade da técnica) é algo com que não concordo na 
+afirmação.
+
+
+------------------------------------
+Ex 2 - Tive 0.7 valores em 1.5
+Comente a seguinte afirmação. O protocolo Diffie-Hellman não pode ser usado quando a aritmética é feita com curvas elípticas.
+
+O protocolo Diffie-Hellman permite que duas entidades cheguem a acordo sobre uma chave simétrica a utilizar na comunicação. As curvas elípticas podem ser utilizadas no 
+processo de partilha de segredos, e por isso mesmo neste protocolo, sendo que as entidades podem chegar a acordo sobre curva P a utilizar e ponto da curva como segredo 
+do protocolo.
+
+O uso de curvas elípticas associado ao protocolo é, assim, algo fazível, pelo que discordo da afirmação.
+
+------------------------------------
+Ex 3 - Tive 1.3 valores em 1.5
+Comente a seguinte afirmação. O sistema de cifra RSA é um método de cifra de chave simétrica.
+
+Um método de cifra de chave simétrica pressupõe a utilização de uma chave única e privada, partilhada apenas pelas entidades em comunicação e utilizada para ambos os 
+processos de encriptação e desencriptação de informação.
+
+Por outro lado, o RSA é um sistema de cifra de chave assimétrica, onde existe uma chave pública, de conhecimento geral, associada a uma chave privada, conhecida apenas 
+pela entidade à qual as chaves estão associadas. Existe, assim, um expoente e um módulo públicos, para que qualquer entidade consiga encriptar informação que só poderá 
+ser desencriptada pelo detentor do expoente privado ( e vice-versa, encriptação com expoente privado desencriptada pelo expoente público- situação de assinatura de 
+informação).
+
+Assim, discordo da afirmação pois, como referido, RSA é processo de cifra com chave assimétrica. 
+
+------------------------------------
+Ex 4 - Tive 100%
+Comente a seguinte afirmação. O protocolo Diffie-Hellman original é imune a ataques do tipo man-in-the-middle
+
+O protocolo Diffie-Hellman original não é de todo imune a ataques man-in-the-middle (MitM) pois sustenta-se no acordo de um valor comum conhecido pelas entidades, a ser
+ combinado com valores privados, um por entidade e gerados pelas próprias, para que a combinação dos valores privados com o comum dê resultado à chave a ser utilizada 
+ (esta acaba por nunca ser partilhada na troca de comunicações). Basta pensar que um simples ataque MitM pressupõe uma entidade x entre as entidades Alice e Bob. A 
+ entidade x faz-se passar por Bob para a Alice e por Alice para o Bob, e na prática pode proceder à negociação de chaves com o protocolo Diffie-Hellman entre si mesmo e 
+ cada uma das outras entidades, gerando uma chave para a comunicação Alice-entidade_x e outra para entidade_x-Bob. 
+
+Assim, discordo da afirmação.
+
+------------------------------------
+Ex 5 - Tive 0.5 valores em 1.5
+
+A propriedade de resistência à descoberta de colisões em funções de síntese refere-se à dificuldade elevada em descobrir quaisquer dois valores iniciais que gerem a 
+mesma assinatura. A redução desta resistência implica então uma maior facilidade na produção de documentos com a mesma assinatura, ou seja, documentos que colidem.
+
+A afirmação 1 refere-se à propriedade semelhante mas aplicada a uma assinatura já conhecida, ou seja, a propriedade que se refere à dificuldade em encontrar um outro 
+valor inicial que gere a mesma assinatura que já se conhece.
+
+Assim, apesar da semelhança e conectividade que vejo nas duas propriedades, olhando para a afirmação 2, vejo esta como a verdadeira neste caso.
+Os processos de criação e validação de assinaturas são comprometidos na sua robustez, pois a probabilidade de colisão de assinatura para documentos diferentes cresce, 
+ou seja, o produto final do processo não é tão "bom" como esperado, podendo tornar o processo de validação de assinaturas mais difícil.
+
+Assim, na minha opinião, a afirmação correta é a 2.
+
+------------------------------------
+Ex 6 - Tive 100%
+
+Sobre a técnica zero-knowledge, falámos dos processos one-of-two-oblivious ways e coin-flipping, não sobre uma aplicação direta de partilha de mensagens cifradas no 
+contexto habitual em que recetor e emissor sabem o que é enviado nas mensagens.
+
+Na prática, e como explicado na questão 1, a técnica one-of-two-oblivious ways utiliza cifra de mensagens (items partilhados) de forma a que quem envia não sabe o que 
+quem recebe pretende ver e este só consegue ver aquilo que pediu. Já a técnica de coin-flipping está associada à tomada de decisões sem que possa ocorrer batota de 
+qualquer uma das partes, com as probabilidades associadas às várias escolhas a serem as mesmas.
+
+Assim, estas técnicas não estão habitualmente associadas à tarefa de cifragem e partilha de mensagens no contexto esperado e associam-se mais à partilha de informação 
+com desconhecimento de pelo menos uma das partes. No entanto, no seu "core" utilizam cifragem de valores.
+
+------------------------------------
+Ex 7 - Tive 0.7 valores em 1.5
+
+Relativamente às cifras de stream, considero mais relevante a afirmação 2. Num contexto geral, a propriedade do secretismo/confidencialidade de cifras é por norma mais 
+importante e fulcral do que o controlo de integridade. Aplicado às cifras contínuas, sabemos que estas não possuem difusão, que é o efeito avalanche de mudança do 
+conteúdo cifrado quando um só bit do conteúdo original é alterado, apenas possuem a propriedade de confusão (forma complexa como um bit de entrada resulta no bit de 
+saída). A periodicidade do gerador será um ponto fraco deste tipo de cifras, pois pode permitir a existência de padrões analisáveis no conteúdo cifrado, que poderão ser 
+utilizados por um atacante para possivelmente chegar ao conteúdo inicial. Assim, a afirmação 2 parece-me mais relevante, pois este tipo de cifras deve normalmente estar 
+associada a um gerador no mínimo pseudo-random, sem periodicidade que comprometa o processo. 
+
+------------------------------------
+Ex 8 - Tive 1.6 valores em 2
+Para a partilha de um segredo entre n entidades (neste caso 6), onde t entidades (neste caso 4) são necessárias para revelar o segredo podemos utilizar a técnica de 
+Shamir em que o segredo a partilhar é o valor independente (sem incógnita) de uma função polinomial de grau t-1 (neste caso 3), e em que cada entidade k receberá o 
+conjunto de valores (xk, ak). Será necessária a soma das partes de 4 entidades para chegar ao valor independente, que é o segredo. 
+
+------------------------------------
+Ex 9 - seja o que Deus quiser nesta - Tive 0.5 valores em 2
+
+Em relação à facilitação do processo de recuperação de ficheiros cifrados num sistema de ficheiros de grande dimensão, com corrupção na estrutura de dados de localização 
+de blocos, é importante discutir os seguintes custos:
+
+Relativamente ao custo de leitura/escrita, este acaba por ser menor e mais vantajoso no modo CTR, pois a ordem dos blocos no modo CBC e o facto desta ter sido perdida 
+leva a um aumento deste custo. O modo CBC tem dependência de blocos que condiciona a leitura e escrita neste situação de perda de ordem, enquanto que o CTR pressupõe 
+algum custo em processamento para computar contadores mas tem a vantagem de independência de blocos a analisar.
+
+Relativamente ao custo de recuperação, parece-me ser menor no modo CTR do que no modo CBC, pois este segundo pressupõe a necessidade dos blocos anteriores para se 
+proceder à desencriptação do seguinte, o que leva ao aumento da complexidade de recuperação de blocos, como referido no ponto anterior. A meu ver, o modo CTR terá 
+custo de recuperação menor por evitar fase de encontro de ordenação de blocos que seria custosa.
+
+Assim, considerando os pontos referidos, optaria pelo modo CTR. 
+
+(Vantagens/desvantagens de custo operacional (leitura-escrita) e de custo de recuperação)
+
+------------------------------------
+Ex 10 - seja o que Deus quiser nesta - Tive 0.5 valores em 1.5
+
+Comente. Para que a operação de adição de dois pontos numa curva elíptica esteja bem definida é preciso incluir o ponto no infinito.
+
+Para que a operação de adição de dois pontos sobre uma curva elíptica possa estar bem definida, é necessário a inclusão do ponto no infinito, associado a y=+-x^(3/2), 
+como referido na afirmação, pelo que concordo com a afirmação.
+
+------------------------------------
+Ex 11 - Tive 100%
+
+A afirmação verdadeira é a 1.
+
+Uma cadeia de certificação é um conjunto de certificados em que cada anterior é utilizado para assinar o seguinte na hierarquia. Na prática, a confiança transitiva 
+permite a que confiança num qualquer certificado da cadeia signifique confiança no seguinte (se confio em x e x confia em y, eu confio em y por transição). Assim, a 
+cadeia não tem de ser confiável desde a sua raiz, tendo só de se confirmar que é válida em termos de assinaturas (que se verifica que cada certificado é assinado pelo 
+anterior).
+
+A afirmação 2 refere-se a um conjunto vasto de certificados, não necessariamente ligados em cadeia, podendo pacotes de software conter certificados não ligados de 
+nenhuma forma. A cadeia de certificados é um conjunto de certificados ligados pelo facto de cada um ser issuer do seguinte e, como referido na afirmação 1, serve para 
+validar confiança em certificados, através da análise da confiança na cadeia, ou parte dela.
+
+------------------------------------
+Ex 12 - Tive 100%
+
+Apenas por exclusão de partes, facilmente se percebe que a afirmação 1 é a verdadeira, pois CRLs base num dado momento podem ser constituídas pela CRL base anterior 
+mais a CRL delta ativa, e assim, uma CRL base pode conter informação sobre certificados anteriormente expirados.
+
+Em relação à afirmação 1, constata-se a sua veracidade, pois mesmo que sejam emitidas mais que uma CRL delta entre os instantes de duas CRL base, cada CRL delta 
+contém a informação das CRL deltas entre si e a base, sendo uma acumulação das anteriores com a adição nova que só esta delta tem enquanto é a mais recente. Assim, na 
+prática, num determinado instante, podemos olhar apenas para a base e a delta mais recente (delta ativa) pois se existem outra deltas criadas entre estas duas, essas 
+estarão contidas na delta mais recente.

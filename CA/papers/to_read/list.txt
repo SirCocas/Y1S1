@@ -1,0 +1,132 @@
+[1] R. L. Rivest, A. Shamir, L. Adleman, A method for obtaining digital 
+signatures and public-key cryptosystems, Communications of the 
+ACM 21 (2) (1978) 120–126.
+[2] G. Lokeshwari, S. Susarla, S. U. Kumar, A modified technique for reliable image encryption method using merkle-hellman cryptosystem 
+and rsa algorithm, Journal of Discrete Mathematical Sciences and Cryptography 18 (3) (2015) 293–300. doi:10.1080/09720529.2014.968367.
+[3] G. Iovane, A. Amorosia, E. Benedetto, G. Lamponi, An information 
+fusion approach based on prime numbers coming from rsa algorithm 
+and fractals for secure coding, Journal of Discrete Mathematical Sciences 
+and Cryptography 18 (5) (2015) 455–479. doi:10.1080/09720529.2014.89
+4311.
+[4]	 O. Khadir, Algorithm for factoring some rsa and rabin moduli, Journal of Discrete Mathematical Sciences and Cryptography 11 (5) (2008) 
+537–543. doi:10.1080/09720529.2008.10698205.
+[5]	 B. Kitchenham, R. Pretorius, D. Budgen, O. P. Brereton, M. Turner, 
+M. Niazi, S. Linkman, Systematic literature reviews in software engineering–a tertiary study, Information and Software Technology 52 (8) 
+(2010) 792– 805.
+[6]	 C. Pomerance, The quadratic sieve factoring algorithm, in: Workshop 
+on the Theory and Application of Cryptographic Techniques, Springer, 1984, pp. 169–182.
+[7]	 H. W. Lenstra Jr, Factoring integers with elliptic curves, Annals of 
+mathematics (1987) 649–673.
+[8]	 A. K. Lenstra, H. W. Lenstra Jr, M. S. Manasse, J. M. Pollard, The number field sieve, in: Proceedings of the twenty-second annual ACM 
+symposium on Theory of computing, ACM, 1990, pp. 564–572.
+[9]	 A. K. Lenstra, H. W. Lenstra Jr, M. S. Manasse, J. M. Pollard, The 
+number field sieve, in: The development of the number field sieve, 
+Springer, 1993, pp. 11–42.
+[10]	 T. Kleinjung, K. Aoki, J. Franke, A. Lenstra, E. Thomé, J. Bos, P. Gaudry, A. Kruppa, P. Montgomery, D. A. Osvik, et al., Factorization of a 
+768-bit rsa modulus, in: CRYPTO 2010, Vol. 6223, Springer, 2010, pp. 
+333–350.
+[11]	 K. Gagneja, J. Singh, Survey and analysis of security issues on rsa algorithm for digital video data, Journal of Discrete Mathematical Sciences 
+26 M. MUMTAZ AND L. PING
+and Cryptography 19 (1) (2016) 39–55. doi:10.1080/09720529.2015.1085
+730.
+[12]	 H. Om, M. R. Reddy, Rsa based remote password authentication using smart card, Journal of Discrete Mathematical Sciences and Cryptography 15 (2-3) (2012) 105–111. doi:10.1080/09720529.2012.10698367.
+[13]	 D. Chaum, Blind signature system, in: Advances in cryptology, 
+Springer, 1984, pp. 153–153.
+[14]	 R. L. Rivest, B. Kaliski, Rsa problem, in: Encyclopedia of cryptography and security, Springer, 2005, pp. 532–536.
+[15]	 M. Bellare, C. Namprempre, D. Pointcheval, M. Semanko, The power 
+of rsa inversion oracles and the security of chaum’s rsa-based blind 
+signature scheme, in: International Conference on Financial Cryptography, Springer, 2001, pp. 319–338.
+[16] H. Om, S. Kumari, Comment and modification of rsa based remote 
+password authentication using smart card, Journal of Discrete Mathematical Sciences and Cryptography 20 (3) (2017) 625–635. doi:10.1080/
+09720529.2014.932130.
+[17] D. Pointcheval, J. Stern, Security arguments for digital signatures and 
+blind signatures, Journal of cryptology 13 (3) (2000) 361–396.
+[18] M. Burmester, E. Magkos, Towards secure and practical e-elections in 
+the new era., Secure electronic voting 7 (2003) 63–76.
+[19] X.-h. Sun, Study of a secure e-lottery scheme based on e-cash, in: Intelligent Computing and Intelligent Systems, 2009. ICIS 2009. IEEE 
+International Conference on, Vol. 3, IEEE, 2009, pp. 195–197.
+[20] J. Hastad, Solving simultaneous modular equations of low degree, 
+siam Journal on Computing 17 (2) (1988) 336–341.
+[21] D. Coppersmith, M. Franklin, J. Patarin, M. Reiter, Low-exponent rsa 
+with related messages, in: International Conference on the Theory 
+and Applications of Cryptographic Techniques, Springer, 1996, pp. 
+1–9.
+[22] D. Coppersmith, Small solutions to polynomial equations, and low 
+exponent rsa vulnerabilities, Journal of Cryptology 10 (4) (1997) 233–
+260.
+[23] D. Boneh, et al., Twenty years of attacks on the rsa cryptosystem, Notices of the AMS 46 (2) (1999) 203–213.
+FORTY YEARS OF ATTACKS ON RSA 27
+[24] A. May, M. Ritzenhofen, Solving systems of modular equations in 
+one variable: how many rsa-encrypted messages does eve need to 
+know?, Lecture Notes in Computer Science 4939 (2008) 37–46.
+[25] M. K. Franklin, A linear protocol failure for rsa with exponent three, 
+Crypto’95 Rump Session, August.
+[26] M. Bellare, P. Rogaway, The exact security of digital signatures-how 
+to sign with rsa and rabin, in: International Conference on the Theory 
+and Applications of Cryptographic Techniques, Springer, 1996, pp. 
+399–416.
+[27] R. Steinfeld, Y. Zheng, On the security of rsa with primes sharing 
+least-significant bits, Applicable Algebra in Engineering, Communication and Computing 15 (3) (2004) 179–200.
+[28] D. Boneh, G. Durfee, Y. Frankel, An attack on rsa given a small fraction of the private key bits, in: AsiaCrypt, Vol. 98, Springer, 1998, pp. 
+25–34.
+[29] H.-M. Sun, M.-E. Wu, H. Wang, J. Guo, On the improvement of the 
+bdf attack on lsbs-rsa, in: Australasian Conference on Information Security and Privacy, Springer, 2008, pp. 84–97.
+[30] E. Jochemsz, A. May, A strategy for finding roots of multivariate 
+polynomials with new applications in attacking rsa variants, in: Asiacrypt, Vol. 6, Springer, 2006, pp. 267–282.
+[31] M. Herrmann, A. May, Maximizing small root bounds by linearization and applications to small secret exponent rsa., in: Public Key 
+Cryptography, Vol. 6056, Springer, 2010, pp. 53–69.
+[32] Y. Lu, L. Peng, N. Kunihiro, Recent progress on coppersmith’s latticebased method: A survey, in: Mathematical Modelling for Next-Generation Cryptography, Springer, 2018, pp. 297–312.
+[33] M. Herrmann, A. May, Attacking power generators using unravelled 
+linearization: When do we output too much?, in: ASIACRYPT, Vol. 
+5912, Springer, 2009, pp. 487–504.
+[34] N. Howgrave-Graham, Approximate integer common divisors, in: 
+CaLC, Vol. 1, Springer, 2001, pp. 51–66.
+[35] L. Peng, L. Hu, J. Xu, Z. Huang, Y. Xie, Further improvement of factoring rsa moduli with implicit hint, in: International Conference on 
+Cryptology in Africa, Springer, 2014, pp. 165–177.
+[36] T. Takagi, Fast rsa-type cryptosystem modulo p k q, in: Annual International Cryptology Conference, Springer, 1998, pp. 318–326.
+28 M. MUMTAZ AND L. PING
+[37] Y. Lu, R. Zhang, L. Peng, D. Lin, Solving linear equations modulo unknown divisors: revisited, in: International Conference on the Theory 
+and Application of Cryptology and Information Security, Springer, 
+2015, pp. 189–213.
+[38] H.-M. Sun, M.-E. Wu, W.-C. Ting, M. J. Hinek, Dual rsa and its security analysis, IEEE Transactions on Information Theory 53 (8) (2007) 
+2922– 2933.
+[39] D. Coppersmith, Finding a small root of a univariate modular equation, in: Advances in cryptology—EUROCRYPT’96, Springer, 1996, 
+pp. 155–165.
+[40] N. Howgrave-Graham, Finding small roots of univariate modular 
+equations revisited, in: IMA International Conference on Cryptography and Coding, Springer, 1997, pp. 131–142.
+[41] M. J. Wiener, Cryptanalysis of short rsa secret exponents, IEEE Transac-tions on Information theory 36 (3) (1990) 553–558.
+[42] E. R. Verheul, H. C. van Tilborg, Cryptanalysis of ‘less short’rsa secret 
+exponents, Applicable Algebra in Engineering, Communication and 
+Computing 8 (5) (1997) 425–435.
+[43] A. Dujella, Continued fractions and rsa with small secret exponent, 
+arXiv preprint cs/0402052.
+[44] Y. Aono, A new lattice construction for partial key exposure attack for 
+rsa., in: Public Key Cryptography, Springer, 2009, pp. 34–53.
+[45] Y. Aono, Simplification of the lattice based attack of boneh and durfee 
+for rsa cryptoanalysis, in: Computer Mathematics, Springer, 2014, pp. 
+15–32.
+[46] M. Bunder, A. Nitaj, W. Susilo, J. Tonien, A generalized attack on 
+rsa type cryptosystems, Theoretical Computer Science 1 (2017) 1–8. 
+doi:10.1016/j.tcs.2017.09.009.
+[47] A. Nitaj, A new vulnerable class of exponents in rsa, JP Journal of Algebra, Number Theory and Applications 21 (2) (2011) 203–220.
+[48] L. Lovász, An algorithmic theory of numbers, graphs and convexity, 
+SIAM, 1986.
+[49] A. K. Lenstra, H. W. Lenstra, L. Lovász, Factoring polynomials with 
+ra-tional coefficients, Mathematische Annalen 261 (4) (1982) 515–534.
+[50] N. Gama, P. Nguyen, Predicting lattice reduction, Advances in Cryptology– EUROCRYPT 2008 (2008) 31–51.
+FORTY YEARS OF ATTACKS ON RSA 29
+[51] D. Stehlé, Floating-point lll: theoretical and practical aspects, in: The 
+LLL Algorithm, Springer, 2009, pp. 179–213.
+[52] J. Blömer, A. May, Low secret exponent rsa revisited, in: Cryptography and Lattices, Springer, 2001, pp. 4–19.
+[53] J.-S. Coron, Finding small roots of bivariate integer polynomial equations revisited, in: International Conference on the Theory and Applications of Cryptographic Techniques, Springer, 2004, pp. 492–505.
+[54] P. Luo, H. Zhou, D. Wang, Y. Dai, Cryptanalysis of rsa for a special 
+case with d > e, Science in China Series F: Information Sciences 52 (4) 
+(2009) 609–616.
+[55] A. Bauer, A. Joux, Toward a rigorous variation of coppersmith’s algorithm on three variables, in: Annual International Conference on 
+the Theory and Applications of Cryptographic Techniques, Springer, 
+2007, pp. 361–378.
+[56] S. D. Miller, B. Narayanan, R. Venkatesan, Coppersmith’s lattices 
+and” focus groups”: an attack on small-exponent rsa, arXiv preprint 
+arXiv:1708.09445.
+[57] H. Zhao, Research on applying physical chaos generator to spacecraft information security, Science in China Series E: Technological 
+Sciences 52 (5) (2009) 1463–1470.
